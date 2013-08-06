@@ -10,3 +10,9 @@ R CMD BATCH Generate_Group_Membership_Data.R
 R CMD BATCH Make_Long_Group_Data_File.R
 #clean up group data
 R CMD BATCH Clean_Group_Data.R
+#generate edgelists for current and previous network
+R CMD BATCH Make_Edgelists_Current_and_Initial.R
+#make overlap matrixes for group type
+R CMD BATCH Overlap_Matrixes_By_GroupType.R
+#turn into weighted matrixes by participation level
+R CMD BATCH Weighted_Overlap_Matrixes.R

@@ -1,4 +1,4 @@
-Short.Data<-read.csv("//Users/TScott/Google Drive/PSP_Project/PS_Data/Final_Condense.csv",header=T)
+Short.Data<-read.csv("//Users/TScott/Google Drive/PSP_Project/PS_Data/Final_Scrubbed.csv",header=T)
 SD<-Short.Data
 SD.fullorgs<-subset(SD,SD[,20]!="")
 SD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",SD.fullorgs$Last.page.saved))
