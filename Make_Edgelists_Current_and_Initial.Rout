@@ -1,0 +1,262 @@
+
+R version 3.0.0 (2013-04-03) -- "Masked Marvel"
+Copyright (C) 2013 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin10.8.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> #begin script 5
+> 
+> Wide.Data<-read.csv("//Users/TScott/Google Drive/PSP_Project/PS_Data/Final_Verbose.csv",header=T,sep=",")
+> Short.Data<-read.csv("//Users/TScott/Google Drive/PSP_Project/PS_Data/Final_Scrubbed.csv",header=T)
+> SD<-Short.Data
+> SD.fullorgs<-subset(SD,SD[,20]!="")
+> SD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",SD.fullorgs$Last.page.saved))
+> SD.answers<-subset(SD.fullorgs,SD.fullorgs$Last.page.saved>=15)
+> dat2<-SD.answers
+> WD<-Wide.Data
+> WD.fullorgs<-subset(WD,WD[,91]!="")
+> WD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",WD.fullorgs$Last.page.saved))
+> WD.answers<-subset(WD.fullorgs,WD.fullorgs$Last.page.saved>=15)
+> dat1<-WD.answers
+> 
+> 
+> dat4<-read.csv("//Users/TScott/Google Drive/PSP_Project/PS_Data/Group.Member.Dat.csv",row.names=1,header=T)
+> temp1<-dat4[,-1]
+> names(temp1)
+ [1] "G.LC"               "G.ECB"              "G.SCIENCE"         
+ [4] "G.SOCSCI"           "G.SRC"              "G.RITT"            
+ [7] "G.WLEADS"           "G.FED"              "G.ENVIRO"          
+[10] "G.PSEMP"            "G.PSI"              "G.PSNERP"          
+[13] "G.ECO.HOOD"         "G.ECO.KING"         "G.ECO.KITSAP"      
+[16] "G.ECO.MASON"        "G.ECO.PIERCE"       "G.ECO.SJ"          
+[19] "G.ECO.SKAGIT"       "G.ECO.SNOHO"        "G.ECO.STRAIT"      
+[22] "G.ECO.THURST"       "G.ECO.WHAT"         "G.ECO.WHID"        
+[25] "G.ECM.BIRD"         "G.ECM.FRESH"        "G.ECM.FOOD"        
+[28] "G.ECM.MARINE"       "G.ECM.MODEL"        "G.ECM.NEAR"        
+[31] "G.ECM.SALM"         "G.ECM.STORM"        "G.ECM.TOXIC"       
+[34] "G.MRC.CLALLAM"      "G.MRC.ISLAND"       "G.MRC.JEFF"        
+[37] "G.MRC.SJ"           "G.MRC.SKAGIT"       "G.MRC.SNOHO"       
+[40] "G.MRC.WHAT"         "G.LOC.GREEN"        "G.LOC.HOOD"        
+[43] "G.LOC.ISLAND"       "G.LOC.CEDAR"        "G.LOC.NISQ"        
+[46] "G.LOC.NOOK"         "G.LOC.NOLY"         "G.LOC.PUY"         
+[49] "G.LOC.SJ"           "G.LOC.SKAGIT"       "G.LOC.SNOHO"       
+[52] "G.LOC.SOUTH"        "G.LOC.STILL"        "G.LOC.WEST"        
+[55] "G.LIO.SJWATER"      "G.LIO.NOOKWATER"    "G.LIO.ISLANDWATER" 
+[58] "G.LIO.SNOHOSTILL"   "G.LIO.SOUTHCENTRAL" "G.LIO.SOUTHSOUND"  
+[61] "G.LIO.HOOD"         "G.LIO.STRAIT"       "G.LIO.NORTHCENTRAL"
+[64] "G.OTHER.1"          "G.OTHER.2"          "G.OTHER.3"         
+[67] "G.OTHER.4"          "G.OTHER.5"         
+> temp1$G.OTHER.1<-ifelse(temp1$G.OTHER.1=="",0,1)
+> temp1$G.OTHER.2<-ifelse(temp1$G.OTHER.2=="",0,1)
+> temp1$G.OTHER.3<-ifelse(temp1$G.OTHER.3=="",0,1)
+> temp1$G.OTHER.4<-ifelse(temp1$G.OTHER.4=="",0,1)
+> temp1$G.OTHER.5<-ifelse(temp1$G.OTHER.5=="",0,1)
+> Num.Groups1<-rowSums(temp1)
+> dat4$Num.Groups<-Num.Groups1
+> dat2<-SD.answers
+> ng<-data.frame(cbind(as.character(dat1$ID),dat4$NumGroups));colnames(ng)<-c("ID","NumGroups")
+> 
+> dat2<-merge(dat2,ng,by.x="Response.ID",by.y="ID",all.x=TRUE,all.y=FALSE)
+> 
+> 
+> 
+> aa<-(c(
++ grep("routinely.implement",colnames(dat2)),
++ grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),
++ grep("routinely.coordinate.plans",colnames(dat2)),
++ grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),
++ grep("do.you.informally.consult",colnames(dat2)),
++ grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2))
++ ))
+> 
+> 
+> 
+> net1.calls<-cbind(
++ grep("routinely.implement",colnames(dat2)),
++ grep("routinely.coordinate.plans",colnames(dat2)),
++ grep("do.you.informally.consult",colnames(dat2)))
+> 
+> net0ind.calls<-cbind(
++ grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),
++ grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),
++ grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)))
+> 
+> colnames(net1.calls)<-c("Work1","Plan1","Cons1")
+> colnames(net0ind.calls)<-c("Work0","Plan0","Cons0")
+> rownames(net1.calls)<-c("T1","T2","T3","T4","T5")
+> rownames(net0ind.calls)<-c("T1","T2","T3","T4","T5")
+> 
+> #Network 1
+> Network1<-data.frame(dat2[,1],dat2[,net1.calls])
+> head(Network1)
+                         dat2...1.
+1 006a558bad564f95a483d151fb8648a4
+2 009ec89ea5b0427d892cd9878eaa9eee
+3 00ab64d810b149b084e9fb7d7299e17d
+4 0120571cfc1c4ba4aa286b52d0d05a70
+5 015a9498b1ff426c99eee515e267bd86
+6 01eb38b631f741e2b24a01311a12e1ed
+  With.which.organizations.do.you.routinely.implement.or.formally.support.joint.projects.or.programs..e.g...habitat.restoration.projects.or.outreach.programs...We.would.like.to.know.the.primary.organizations.that.you.routinely.work.with..not.all.of.the ...
+1                                                                                                                                                                                                                                                  Squaxin Tribe
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                             San Juan Island Conservation Corps
+4                                                                                                                                                                                                                                              Skagit Land Trust
+5                                                                                                                                                                                                                                                           NOAA
+6                                                                                                                                                                                                                                   Pierce Conservation District
+  With.which.organizations.do.you.routinely.implement.or.formally.support.joint.projects.or.programs..e.g...habitat.restoration.projects.or.outreach.programs...We.would.like.to.know.the.primary.organizations.that.you.routinely.work.with..not.all.of.the ...
+1                                                                                                                                                                                                                                                     WSUX Mason
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                San Juan Island Farmer's Market
+4                                                                                                                                                                                                                                   Skagit Fisheries Enhancement
+5                                                                                                                                                                                                                                                          USEPA
+6                                                                                                                                                                                                                                                  WSUX Puyallup
+  With.which.organizations.do.you.routinely.implement.or.formally.support.joint.projects.or.programs..e.g...habitat.restoration.projects.or.outreach.programs...We.would.like.to.know.the.primary.organizations.that.you.routinely.work.with..not.all.of.the ...
+1                                                                                                                                                                                                                                    Mason Conservation District
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                      San Juan County Land Bank
+4                                                                                                                                                                                                                                   Skagit Conservation District
+5                                                                                                                                                                                                                                                             UW
+6                                                                                                                                                                                                                                                           <NA>
+  With.which.organizations.do.you.routinely.implement.or.formally.support.joint.projects.or.programs..e.g...habitat.restoration.projects.or.outreach.programs...We.would.like.to.know.the.primary.organizations.that.you.routinely.work.with..not.all.of.the ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                             San Juan Island Preservation Trust
+4                                                                                                                                                                                                                                             WSUX Beachwatchers
+5                                                                                                                                                                                                                                                           WDFW
+6                                                                                                                                                                                                                                                           <NA>
+  With.which.organizations.do.you.routinely.implement.or.formally.support.joint.projects.or.programs..e.g...habitat.restoration.projects.or.outreach.programs...We.would.like.to.know.the.primary.organizations.that.you.routinely.work.with..not.all.of.the ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                            BLM
+4                                                                                                                                                                                                                                                     Skagit MRC
+5                                                                                                                                                                                                                    Pacific Coast Shellfish Growers Association
+6                                                                                                                                                                                                                                                           <NA>
+  With.which.organizations.do.you.routinely.coordinate.plans.or.strategies..e.g...setting.environmental.performance.goals..project.selection...We.would.like.to.know.the.primary.organizations.that.you.routinely.coordinate.with..not.all.of.them..thus..yo ...
+1                                                                                                                                                                                                                                                  Squaxin Tribe
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                             WSUX Beachwatchers
+5                                                                                                                                                                                                                                                            PSP
+6                                                                                                                                                                                                                                                  WSUX Puyallup
+  With.which.organizations.do.you.routinely.coordinate.plans.or.strategies..e.g...setting.environmental.performance.goals..project.selection...We.would.like.to.know.the.primary.organizations.that.you.routinely.coordinate.with..not.all.of.them..thus..yo ...
+1                                                                                                                                                                                                                                                     WSUX Mason
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                           <NA>
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                   Pierce Conservation District
+  With.which.organizations.do.you.routinely.coordinate.plans.or.strategies..e.g...setting.environmental.performance.goals..project.selection...We.would.like.to.know.the.primary.organizations.that.you.routinely.coordinate.with..not.all.of.them..thus..yo ...
+1                                                                                                                                                                                                                                    Mason Conservation District
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                           <NA>
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           <NA>
+  With.which.organizations.do.you.routinely.coordinate.plans.or.strategies..e.g...setting.environmental.performance.goals..project.selection...We.would.like.to.know.the.primary.organizations.that.you.routinely.coordinate.with..not.all.of.them..thus..yo ...
+1                                                                                                                                                                                                                                                Skokomish Tribe
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                           <NA>
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           <NA>
+  With.which.organizations.do.you.routinely.coordinate.plans.or.strategies..e.g...setting.environmental.performance.goals..project.selection...We.would.like.to.know.the.primary.organizations.that.you.routinely.coordinate.with..not.all.of.them..thus..yo ...
+1                                                                                                                                                                                                                                                           HCCC
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                           <NA>
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           <NA>
+  Aside.from.the.organizations.with.which.you.coordinate.plans.or.strategies.or.implement.joint.projects..with.which.organizations.do.you.informally.consult.on.a.routine.basis..e.g...seek.technical.guidance..get.feedback.from.local.stakeholders...Pleas ...
+1                                                                                                                                                                                                                           Lower Hood Canal Watershed Coalition
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                              Skagit Land Trust
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           WDOE
+  Aside.from.the.organizations.with.which.you.coordinate.plans.or.strategies.or.implement.joint.projects..with.which.organizations.do.you.informally.consult.on.a.routine.basis..e.g...seek.technical.guidance..get.feedback.from.local.stakeholders...Pleas ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                   Skagit Fisheries Enhancement
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                          USEPA
+  Aside.from.the.organizations.with.which.you.coordinate.plans.or.strategies.or.implement.joint.projects..with.which.organizations.do.you.informally.consult.on.a.routine.basis..e.g...seek.technical.guidance..get.feedback.from.local.stakeholders...Pleas ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                     Skagit MRC
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           WDFW
+  Aside.from.the.organizations.with.which.you.coordinate.plans.or.strategies.or.implement.joint.projects..with.which.organizations.do.you.informally.consult.on.a.routine.basis..e.g...seek.technical.guidance..get.feedback.from.local.stakeholders...Pleas ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                     RE Sources
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                            PSP
+  Aside.from.the.organizations.with.which.you.coordinate.plans.or.strategies.or.implement.joint.projects..with.which.organizations.do.you.informally.consult.on.a.routine.basis..e.g...seek.technical.guidance..get.feedback.from.local.stakeholders...Pleas ...
+1                                                                                                                                                                                                                                                           <NA>
+2                                                                                                                                                                                                                                                           <NA>
+3                                                                                                                                                                                                                                                           <NA>
+4                                                                                                                                                                                                                                                           <NA>
+5                                                                                                                                                                                                                                                           <NA>
+6                                                                                                                                                                                                                                                           <NA>
+> 
+> #network indicator
+> #temp<-Network1[,-1]
+> #temp2<-temp
+> #for (i in 1:nrow(temp))
+> #{
+> #	for (i in 1:ncol(temp))
+> #	{
+> #		if (temp[i,j]==""){temp2[i,j]==0}
+> #		else {temp2[i,j]==1}
+> #	}
+> #}
+> 
+> 
+> #old tie indicator
+> Nettie<-data.frame(dat2[,1],dat2[,net0ind.calls])
+> Numtie<-Nettie
+> 
+> 
+> for (i in 1:nrow(Numtie))
++ {
++ 	for (j in 1:ncol(Numtie))
++ 	{
++ 		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])
++ 	}
++ }
+There were 50 or more warnings (use warnings() to see the first 50)
+> 
+> 
+> Network0<-Network1
+> 
+> #build network 0
+> for (i in 1:nrow(Network1))
++ {
++ 	for (j in 2:ncol(Network1))
++ 	{
++ 		if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}
++ 		else if (Numtie[i,j]==0){Network0[i,j]<-0}
++ 		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	
++ 		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}
++ 	}
++ }
+Error in if (Numtie[i, j] == 1) { : missing value where TRUE/FALSE needed
+Execution halted
