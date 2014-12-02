@@ -1,19 +1,37 @@
 rm(list=ls())
-
+setwd("//Users/TScott/Google Drive/elwha")
 library(statnet)
 
-dat_imp=read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/edgelist_implement.csv",row.names=1)
-dat_plan=read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/edgelist_plan.csv",row.names=1)
-dat_cons=read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/edgelist_consult.csv",row.names=1)
-dat_all=read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/edgelist_all.csv",row.names=1)
-resp.dat=read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/Response.Contact.Dat.csv",row.names=1)
+#dat_imp=read.csv(file="edgelist_implement.csv",row.names=1)
+#dat_plan=read.csv(file="edgelist_plan.csv",row.names=1)
+#dat_cons=read.csv(file="edgelist_consult.csv",row.names=1)
+dat_all=read.csv(file="edgelist_all.csv",row.names=1)
+dat_all$combi = paste(dat_all$ORG,dat_all$Contact)
+dat_imp = dat_all[dat_all$TType=='WT',]
+dat_plan = dat_all[dat_all$TType=='PT',]
+dat_cons = dat_all[dat_all$TType=='CT',]
 
-psp_group = read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/Group.Overlap.Matrix.PSP.csv",row.names=1)
-all_group = read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/Group.Overlap.Matrix.csv",row.names=1)
-npsp_group = read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/Group.Overlap.Matrix.NPSP.csv",row.names=1)
+#sum(dat_imp$combi %in% dat_plan$combi)
+#sum(dat_imp$combi %in% dat_cons$combi)
+#sum(dat_cons$combi %in% dat_plan$combi)
+resp.dat=read.csv(file="Response.Used.csv",row.names=1)
+psp_group = read.csv(file="Group.Overlap.Matrix.PSP.csv",row.names=1)
+all_group = read.csv(file="Group.Overlap.Matrix.csv",row.names=1)
+npsp_group = read.csv(file="Group.Overlap.Matrix.NPSP.csv",row.names=1)
+fina_up_group=read.csv(file="Group.Fina.Up.Matrix.csv",row.names=1)
+fina_down_group=read.csv(file="Group.Fina.Down.Matrix.csv",row.names=1)
+huma_up_group=read.csv(file="Group.Huma.Up.Matrix.csv",row.names=1)
+huma_down_group=read.csv(file="Group.Huma.Down.Matrix.csv",row.names=1)
+valu_up_group=read.csv(file="Group.Valu.Up.Matrix.csv",row.names=1)
+valu_down_group=read.csv(file="Group.Value.Down.Matrix.csv",row.names=1)
+lang_up_group=read.csv(file="Group.Lang.Up.Matrix.csv",row.names=1)
+lang_down_group=read.csv(file="Group.Lang.Down.Matrix.csv",row.names=1)
+scie_up_group=read.csv(file="Group.Scie.Up.Matrix.csv",row.names=1)
+scie_down_group=read.csv(file="Group.Scie.Down.Matrix.csv",row.names=1)
+face_up_group=read.csv(file="Group.Face.Up.Matrix.csv",row.names=1)
+face_down_group=read.csv(file="Group.Face.Down.Matrix.csv",row.names=1)
 
-
-
+test<-(read.csv(file="Group.Overlap.Matrix.PSP.csv",row.names=1))
 
 
 #sort out only those who responded to survey
@@ -29,6 +47,26 @@ dat_plan = dat_plan[dat_plan$Contact %in% all_vertices==TRUE,]
 dat_cons = dat_cons[dat_cons$Contact %in% all_vertices==TRUE,]
 
 
+dat0 = rbind(dat_imp,dat_plan,dat_cons)
+dat1 = dat0[as.character(dat0$ORG) != as.character(dat0$Contact),]
+edgename = paste(dat1$ORG,"@@@",dat1$Contact)
+unique_dat = dat1[ifelse(duplicated(edgename),0,1)==1,]
+
+dat0 = dat_imp
+dat1 = dat0[as.character(dat0$ORG) != as.character(dat0$Contact),]
+edgename = paste(dat1$ORG,"@@@",dat1$Contact)
+dat_imp = dat1[ifelse(duplicated(edgename),0,1)==1,]
+
+dat0 = dat_cons
+dat1 = dat0[as.character(dat0$ORG) != as.character(dat0$Contact),]
+edgename = paste(dat1$ORG,"@@@",dat1$Contact)
+dat_cons = dat1[ifelse(duplicated(edgename),0,1)==1,]
+
+dat0 = dat_plan
+dat1 = dat0[as.character(dat0$ORG) != as.character(dat0$Contact),]
+edgename = paste(dat1$ORG,"@@@",dat1$Contact)
+dat_plan = dat1[ifelse(duplicated(edgename),0,1)==1,]
+
 #combine all three types of ties
 dat_imp$TYPE = "IMP"
 dat_plan$TYPE = "PLAN"
@@ -36,65 +74,11 @@ dat_cons$TYPE = "CONS"
 temp = rbind(dat_imp,dat_plan,dat_cons)
 dat_combined = temp[temp$Contact %in% all_vertices==TRUE,]
 
-#reorder weighted matrices alphabetically by org name
-temp = psp_group
-temp1 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-temp1[,i] = temp[i][order(rownames(temp)),]
-}
-rownames(temp1) = sort(rownames(temp))
-colnames(temp1) = colnames(temp)
-temp2 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-	temp2[i,] = temp1[i,][sort(as.character(colnames(temp1)))]
-}
-rownames(temp2) = rownames(temp1)
-colnames(temp2) = rownames(temp1)
-psp_group_order = temp2
+colnames(npsp_group)<-rownames(npsp_group)
+colnames(psp_group)<-rownames(psp_group)
+colnames(all_group)<-rownames(all_group)
 
-temp = npsp_group
-temp1 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-temp1[,i] = temp[i][order(rownames(temp)),]
-}
-rownames(temp1) = sort(rownames(temp))
-colnames(temp1) = colnames(temp)
-temp2 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-	temp2[i,] = temp1[i,][sort(as.character(colnames(temp1)))]
-}
-rownames(temp2) = rownames(temp1)
-colnames(temp2) = rownames(temp1)
-npsp_group_order = temp2
-
-
-temp = all_group
-temp1 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-temp1[,i] = temp[i][order(rownames(temp)),]
-}
-rownames(temp1) = sort(rownames(temp))
-colnames(temp1) = colnames(temp)
-temp2 = matrix(0,ncol=ncol(temp),nrow=nrow(temp))
-for (i in 1:ncol(temp))
-{
-	temp2[i,] = temp1[i,][sort(as.character(colnames(temp1)))]
-}
-rownames(temp2) = rownames(temp1)
-colnames(temp2) = rownames(temp1)
-all_group_order = temp2
-
-
-
-
-
-
-net_temp = network.initialize(length(all_vertices),directed=TRUE,loops=TRUE)
+net_temp = network.initialize(length(all_vertices),directed=TRUE,loops=FALSE)
 
 vertex_attributes  = data.frame(sort(all_vertices))
 colnames(vertex_attributes) = "NAME"
@@ -135,6 +119,49 @@ for (i in 1:length(ORGTYPE))
 }
 vertex_attributes$ORGTYPE = ORGTYPE
 
+USEPLAN = rep(0,length(vertex_attributes$NAME))
+for (i in 1:length(USEPLAN))
+{
+	USEPLAN[i]=as.character(resp.dat$useful_plan[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
+}
+vertex_attributes$USEPLAN = USEPLAN
+
+USEWORK = rep(0,length(vertex_attributes$NAME))
+for (i in 1:length(USEWORK))
+{
+	USEWORK[i]=as.character(resp.dat$useful_work[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
+}
+vertex_attributes$USEWORK = USEWORK
+
+USECONS = rep(0,length(vertex_attributes$NAME))
+for (i in 1:length(USECONS))
+{
+	USECONS[i]=as.character(resp.dat$useful_cons[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
+}
+vertex_attributes$USECONS = USECONS
+
+
+
+for (i in 1:nrow(resp.dat))
+{resp.dat$npsp[i]<-tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(sort(unique(resp.dat$ORG))==resp.dat$ORG[i])]}
+
+
+PSP_N = rep(0,length(vertex_attributes$NAME))
+for (i in 1:length(PSP_N))
+{
+	{
+	PSP_N[i]=tapply(resp.dat$psp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$psp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]
+}
+}
+vertex_attributes$PSP_N = PSP_N
+
+NPSP_N = rep(0,length(vertex_attributes$NAME))
+for (i in 1:length(PSP_N))
+{
+	NPSP_N[i]=tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$npsp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]
+}
+vertex_attributes$NPSP_N = NPSP_N
+
 
 network.vertex.names(net_temp) = as.character(vertex_attributes$NAME)
 set.vertex.attribute(net_temp,"ORGTYPE",value=vertex_attributes$ORGTYPE)
@@ -142,7 +169,11 @@ set.vertex.attribute(net_temp,"TOTALYEARS",value=vertex_attributes$TOTALYEARS)
 set.vertex.attribute(net_temp,"NUMGROUPS",value=vertex_attributes$NUMGROUPS)
 set.vertex.attribute(net_temp,"NUMRESP",value=vertex_attributes$NUMRESP)
 set.vertex.attribute(net_temp,"MEANYEARS",value=vertex_attributes$MEANYEARS)
-
+set.vertex.attribute(net_temp,"PSP_N",value=vertex_attributes$PSP_N)
+set.vertex.attribute(net_temp,"NPSP_N",value=vertex_attributes$NPSP_N)
+set.vertex.attribute(net_temp,"USEWORK",value=ifelse(is.na(as.numeric(vertex_attributes$USEWORK)),0,as.numeric(vertex_attributes$USEWORK)))
+set.vertex.attribute(net_temp,"USEPLAN",value=ifelse(is.na(as.numeric(vertex_attributes$USEPLAN)),0,as.numeric(vertex_attributes$USEPLAN)))
+set.vertex.attribute(net_temp,"USECONS",value=ifelse(is.na(as.numeric(vertex_attributes$USECONS)),0,as.numeric(vertex_attributes$USECONS)))
 
 TAIL_ID = rep(0,nrow(respondent_edges))
 HEAD_ID = rep(0,nrow(respondent_edges))
@@ -196,6 +227,22 @@ for (i in 1:length(PLAN_TAIL_ID))
 }
 
 
+PLAN_TAIL_ID = rep(0,nrow(unique_dat))
+PLAN_HEAD_ID = rep(0,nrow(unique_dat))
+
+net_uq = net_temp
+
+for (i in 1:nrow(unique_dat))
+{
+	PLAN_TAIL_ID[i] = (which(network.vertex.names(net_uq)==unique_dat$ORG[i]))
+	PLAN_HEAD_ID[i] = (which(network.vertex.names(net_uq)==unique_dat$Contact[i]))
+}
+
+for (i in 1:length(PLAN_TAIL_ID))
+{
+	net_uq[PLAN_TAIL_ID[i],PLAN_HEAD_ID[i]]<-1
+}
+
 net_temp_p <- net_plan
 net_temp_i <- net_imp
 net_temp_c <- net_cons
@@ -210,180 +257,84 @@ net_temp_all <-net_temp_c
 add.edges(net_temp_all,tail=as.edgelist(net_temp_i)[,1],head=as.edgelist(net_temp_i)[,2],names.eval="T_VALUE",vals.eval=3)
 add.edges(net_temp_all,tail=as.edgelist(net_temp_p)[,1],head=as.edgelist(net_temp_p)[,2],names.eval="T_VALUE",vals.eval=2)
 
-net_temp_p
-net_temp_c
-net_temp_i
-net_temp_all
-net_temp_p$mel[[]]$inl
-net_temp_p$mel[[]]$outl
-net_temp_p$mel[[]]$T_VALUE
 
-get.edge.attribute(net_temp_all,"T_VALUE")
+#set.edge.attribute(net_temp_all,"WIN5_dk1",value=)
+#set.edge.attribute(net_temp_all,"WIN5_dk0",value=)
 
-
-
-
-
-
-
-
-
-
-
-net_imp
-
-
-net_plan
-net_cons
-net_imp
-
-t = dat_combined[dat_combined$TYPE=="IMP",]
-tt = (t[order(t$ORG),])
-
-tt[as.character(tt$ORG)==as.character(tt$Contact),]
-
-dat_combined$TYPE=="PLAN"
-head(dat_combined)
-
-
-dim(dat_combined)
-
-net_temp[head(TAIL_ID)[1],head(HEAD_ID)[1]]
-head(respondent_edges)
-
-
-network.vertic
-
-
-
-
-respondent_edges[respondent_edges$Contact =="WDOE",]
-head(respondent_edges)
-
-
-small = dat_combined[1:10,]
-add.edges(net_temp,tail=as.character(small$ORG),head=small$Contact, names.eval="TYPE", vals.eval=small$TYPE)
-
-
-add.edges(net_temp,tail=dat_combined$ORG[1:10],head=dat_combined$Contact[1:10],names.eval="TYPE",vals.eval=dat_combined$TYPE[1:10])
-
-
-head(dat_combined,10)
-
-respondent_edges$Contact %in% network.vertex.names(net_temp)
-
-as.character(respondent_edges$ORG[1])
-
-names(vertex_attributes)
-seq_len(network.size(net_temp))
-vertex_attributes$ORGTYPE[63] = "Local_Commission"
-
-warnings()
-unique(vertex_attributes$ORGTYPE)
-
-all_net = network.initialize(dim(vertex_attributes)[1],directed=TRUE)
-network.vertex.names(all_net) = as.character(vertex_attributes$NAME)
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[2],value=vertex_attributes[,2])
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[-1],value=vertex_attributes[,3])
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[3],value=vertex_attributes[,3])
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[4],value=vertex_attributes[,4])
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[5],value=vertex_attributes[,5])
-set.vertex.attribute(all_net,attrname=colnames(vertex_attributes)[6],value=vertex_attributes[,6])
-
-
-set.edge.attribute(all_net,"PSP_OVERLAP",value=psp_group)
-set.edge.attribute(all_net,"NPSP_OVERLAP",value=npsp_group)
-set.edge.attribute(all_net,"OVERLAP",value=all_group)
-
-add.edge(all_net,tail=as.character(dat_all_resp$ORG),head=as.character(dat_all_resp$Contact))
-
-
-test_net = as.network.matrix(dat_all_resp,matrix.type="edgelist",directed=TRUE)
-add.vertices(test_net,length(isolate_vertices))
-
-
-length(unique(c(as.character(dat_all_resp$ORG),as.character(dat_all_resp$Contact))))
-
-
-network.vertex.names(test_net)[201:222] = as.character(isolate_vertices)
-network.vertex.names(test_net)
-
-
-
-isolate_vertices
-?add.vertices
-as.character(dat_all_resp$ORG) %in% network.vertex.names(all_net)
-
-?add.isolates
-dat_all_resp = dat_all[dat_all$Contact %in% network.vertex.names(all_net)==TRUE,]
-
-?add.edges
-
-dat_imp_resp = dat_imp[dat_imp$Contact %in% network.vertex.names(all_net)==TRUE,]
-dat_cons_resp = dat_cons[dat_cons$Contact %in% network.vertex.names(all_net)==TRUE,]
-dat_plan_resp = dat_plan[dat_plan$Contact %in% network.vertex.names(all_net)==TRUE,]
-
-
-
-
-dim(dat_all)
-
-
-head(dat_all)
-
-?add.edge
-temp = psp_group[order(colnames(psp_group)&colnames(psp_group))][1:10,1:10]
-temp2 = temp[order(rownames(temp))]
-
-temp
-temp2
-
-
-
-list.vertex.attributes(all_net)
-
-head(vertex_attributes)
-
-imp_net = network.initialize(dim(vertex_attributes)[1],directed=TRUE)
-plan_net = network.initialize(dim(vertex_attributes)[1],directed=TRUE)
-cons_net = network.initialize(dim(vertex_attributes)[1],directed=TRUE)
-
-
-
-temp = read.csv(file="//Users/TScott/Google Drive/PSP_Project/PS_Data/Group.Overlap.Matrix.csv",row.names=1)
-
-dim(temp)
-dim(vertex_attributes)
-
-rownames(temp)[rownames(temp) %in% vertex_attributes$NAME==FALSE]
-
-resp.dat$ORG[resp.dat$ORG=="Snohomish County Surface Water Management"]
-
-vertex_attributes$NAME
-
-
-temp[0:10,0:10]
-
-
-
-head(sort(dat_all$Contact),20)
-vertexes.all<-sort(unique(c(as.character(dat_all[,1]),subset(as.character(dat_all[,2]),dat_all[,2]!=""&dat_all[,2]!=" "))))
-
-vertexes.all
-
-observed.vertices<-(resp.dat[duplicated(resp.dat$ORG)==FALSE,])
-
-pull = rep(0,length(observed.vertices$ORG))
-for (i in 1:length(observed.vertices$ORG))
+for (i in 1:nrow(dat_imp))
 {
-	pull[i] = which(vertexes.all == observed.vertices$ORG[i])
+	t<-which(network.vertex.names(net_temp_i)==dat_imp$ORG[i])
+	h<-which(network.vertex.names(net_temp_i)==dat_imp$Contact[i])
+	if (h>0)
+	{
+		set.edge.attribute(net_temp_i,"WIN5_dk1",value=ifelse(dat_imp$WIN5>0,1,dat_imp$WIN5))
+		set.edge.attribute(net_temp_i,"WIN5_dk0",value=ifelse(dat_imp$WIN5==1,1,0))
+	}
 }
 
-observed.vertexes = sort(vertexes.all[pull])
+for (i in 1:nrow(dat_cons))
+{
+	t<-which(network.vertex.names(net_temp_c)==dat_cons$ORG[i])
+	h<-which(network.vertex.names(net_temp_c)==dat_cons$Contact[i])
+	if (h>0)
+	{
+		set.edge.attribute(net_temp_c,"WIN5_dk1",value=ifelse(dat_cons$WIN5>0,1,dat_cons$WIN5))
+		set.edge.attribute(net_temp_c,"WIN5_dk0",value=ifelse(dat_cons$WIN5==1,1,0))
+	}
+}
+
+for (i in 1:nrow(dat_plan))
+{
+	t<-which(network.vertex.names(net_temp_p)==dat_plan$ORG[i])
+	h<-which(network.vertex.names(net_temp_p)==dat_plan$Contact[i])
+	if (h>0)
+	{
+		set.edge.attribute(net_temp_p,"WIN5_dk1",value=ifelse(dat_plan$WIN5>0,1,dat_plan$WIN5))
+		set.edge.attribute(net_temp_p,"WIN5_dk0",value=ifelse(dat_plan$WIN5==1,1,0))
+	}
+}
+
+#for (i in 1:nrow(dat_all))
+#{
+#	t<-which(network.vertex.names(net_temp_all)==dat_all$ORG[i])
+#	h<-which(network.vertex.names(net_temp_all)==dat_all$Contact[i])
+#	if (h>0)
+#	{
+#		set.edge.attribute(net_temp_all,"WIN5_dk1",value=ifelse(dat_all$WIN5>0,1,dat_all$WIN5))
+#		set.edge.attribute(net_temp_all,"WIN5_dk0",value=ifelse(dat_all$WIN5==1,1,0))
+#	}
+#}
+
+
+dat_plan2 = dat_plan[dat_plan$combi %in% dat_imp$combi == FALSE,]
+
+dat_cons2 = dat_cons[dat_cons$combi %in% dat_imp$combi | dat_cons$combi %in% dat_plan$combi == FALSE,]
+
+full_temp = rbind(dat_imp,dat_plan2,dat_cons2)
+
+
+net_temp = network.initialize(length(all_vertices),directed=TRUE,loops=FALSE)
+network.vertex.names(net_temp) = as.character(all_vertices)
+
+TEMP_TAIL_ID = rep(0,nrow(full_temp))
+TEMP_HEAD_ID = rep(0,nrow(full_temp))
+
+for (i in 1:nrow(full_temp))
+{
+  TEMP_TAIL_ID[i] = (which(network.vertex.names(net_temp)==full_temp$ORG[i]))
+  TEMP_HEAD_ID[i] = (which(network.vertex.names(net_temp)==full_temp$Contact[i]))
+}
+
+add.edges(net_temp,tail=TEMP_TAIL_ID,head=TEMP_HEAD_ID)
+
+summary(degree(net_temp,gmode='digraph',cmode='indegree'))
+sd(degree(net_temp,gmode='digraph',cmode='indegree'))
+summary(degree(net_temp,gmode='digraph',cmode='outdegree'))
+sd(degree(net_temp,gmode='digraph',cmode='outdegree'))
 
 
 
-
+save.image(file="Ready_to_ERGM.RData")
 
 
 
