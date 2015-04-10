@@ -1,0 +1,2262 @@
+ggplot(dat)+geom_point(aes(y=pX,x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1))
+ggplot(dat)+geom_point(aes(y=pX,x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1),labels=c("p(x=0)","p(x=1)","p(x=2)","p(x=3)","p(x=4)"))
+ggplot(dat)+geom_point(aes(y=pX,x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+ylim=c(-.1,1.1)+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1),labels=c("p(x=0)","p(x=1)","p(x=2)","p(x=3)","p(x=4)"))
+ggplot(dat)+geom_point(aes(y=pX,x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+ylim=c(-.1,1.1)+#
+scale_y_manual(breaks=c(0,.25,.50,.75,1),labels=c("p(x=0)","p(x=1)","p(x=2)","p(x=3)","p(x=4)"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+ylim=c(-.1,1.1)+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1),labels=c("p(x=0)","p(x=1)","p(x=2)","p(x=3)","p(x=4)"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1),labels=c("p(x=0)","p(x=1)","p(x=2)","p(x=3)","p(x=4)"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1))
+dat
+is.numeric(dat$pX)
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))+#
+scale_y_continuous(breaks=c(0,.25,.50,.75,1))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))+xlim(c(-.5,4.5))
+?scale_x_discrete
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"),limits=c(-.5,4.5))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"),limits=c(-1,5))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_discrete(breaks=c(0:4),labels=c("x=0","x=1","x=2","x=3","x=4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_discrete(breaks=c(0,1,2,3,4),labels=c("x=0","x=1","x=2","x=3","x=4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_discrete(labels=c("x=0","x=1","x=2","x=3","x=4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(labels=c("x=0","x=1","x=2","x=3","x=4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x=X",labels=c("x=0","x=1","x=2","x=3","x=4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)")
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))
+ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.points = ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+ggsave(filename="//Users/TScott/Google Drive/Course_Materials/PBAF_527/Lectures",pdf.points)
+ggsave(filename="//Users/TScott/Google Drive/Course_Materials/PBAF_527/Lectures",plot=pdf.points)
+pdf.points = ggplot(dat)+geom_point(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.point
+pdf.points
+ggsave(filename="//Users/TScott/Google Drive/Course_Materials/PBAF_527/Lectures",plot=pdf.points)
+pdf.line = ggplot(dat)+geom_line(aes(y=as.numeric(pX),x=X),size=8)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.line
+pdf.line = ggplot(dat)+geom_line(aes(y=as.numeric(pX),x=X),size=2)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.line
+pdf.line = ggplot(dat)+geom_line(aes(y=as.numeric(pX),x=X),size=2)+#
+geom_point(aes(y=as.numeric(pX),x=X),size=4)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.line
+pdf.hist = ggplot(dat)+geom_bar(aes(y=as.numeric(pX),x=X),size=2)+#
+#geom_point(aes(y=as.numeric(pX),x=X),size=4)+#
+scale_x_continuous(name="x = X",labels=c("x = 0","x = 1","x = 2","x = 3","x = 4"))+#
+scale_y_continuous(name="p(x = X)",limits=c(0,1))+ggtitle("Probability Density f(X)")
+pdf.hist
+pdf.hist = ggplot(dat)+geom_bar(aes(y=as.numeric(pX),x=X),size=2)
+pdf.hist
+pdf.hist = ggplot(dat)+geom_bar(aes(y=as.numeric(pX),x=X),stat="identity")
+pdf.hist
+pdf.hist = ggplot(dat)+geom_bar(aes(y=as.numeric(pX),x=X),stat="identity")+#
+ylim(c(0,1))
+pdf.hist
+Part 2: exercise 12.2#
+# File:   TScott.hw4.R#
+# Title:  Uses BernTwoJags.R and BernBetaMuKappaJags.R #
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 1.  Set up for the BernTwoJags analysis  ----#
+#
+rm(list = ls())#
+graphics.off()#
+#
+# setwd( "<Location of Kruschke's .R files>" )#
+# setwd( "<Location of Kruschke's .R files>" )#
+setwd( "//Users/TScott/Google Drive/PSYCH548/Assignments/assignment6" )#
+#
+source("openGraphSaveGraph.R")#
+source("plotPost.R")#
+source("HDIofMCMC.R")#
+# You can see that the two "sourced" files produced#
+# objects "openGraph", "plotPost", and "saveGraph".#
+ls()#
+#
+require(rjags)         #
+#
+# Kruschke, J. K. (2011). Doing Bayesian Data #
+# Analysis:#
+# A Tutorial with R and BUGS. Academic Press /#
+# Elsevier.#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+# Table 2.  Create the model file                ----#
+#
+# THE MODEL.#
+#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 3.  Enter the data for this analysis     ----#
+#
+# THE DATA.#
+# Specify the data in a form that is compatible #
+# with JAGS model, as a list:#
+#
+dataList = list(#
+#
+    N1 = 285 ,#
+    y1 = c(rep(1,251),rep(0,(285-251))) ,#
+#
+    N2 = 53 ,#
+    y2 = c( rep(1,48),rep(0,(53-48)))#
+#
+)#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 4.  Give values to parameters that will  ----#
+# be used to control the way that JAGS runs,     ----#
+# e.g., how many burnin samples to draw, which   ----#
+# parameters should be saved, etc.               ----#
+#
+# INITIALIZE THE CHAIN.#
+# Can be done automatically in jags.model() by #
+# commenting out inits argument. Otherwise could be #
+# established as:#
+#
+# initsList = list( #
+#   theta1 = sum(dataList$y1)/length(dataList$y1) , #
+#   theta2 = sum(dataList$y2)/length(dataList$y2) )#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = dataList , #
+   n.chains = nChains , #
+   n.adapt  = adaptSteps )
+Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)#
+#
+# resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 7.  Plot the trajectory of the last 500  ----#
+# sampled values.                                ----
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]#
+#
+openGraph(width=7,height=4)#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.03,0.03))
+saveGraph(file="BirdROPE",device=3,type="png")
+library(ggplot2)#
+ggplot()+geom_histogram(aes(x=thetaDiff),binwidth=.005,col="white",fill="dark blue",position="identity",freq=T)+#
+scale_x_continuous(name=expression(theta[1]-theta[2]),expand=c(0,0),limits=c(-0.3,.3))+ylab("Density")+#
+geom_errorbarh(aes(x=0,xmin=HDIofMCMC(thetaDiff)[1],xmax=HDIofMCMC(thetaDiff)[2],y=0),height=100,size=2)+#
+geom_text(aes(x=HDIofMCMC(thetaDiff)[1]-.01,y=-100,label=round(HDIofMCMC(thetaDiff)[1],2)))+#
+geom_text(aes(x=HDIofMCMC(thetaDiff)[2]+.01,y=-100,label=round(HDIofMCMC(thetaDiff)[2],2)))+#
+geom_text(aes(x=0,y=-100,label="95% HDI"))+#
+geom_segment(aes(x=0,xend=0,y=0,yend=2100),col="red",linetype=2)+#
+geom_text(aes(x=mean(thetaDiff),y=2200,label=paste("Mean = ",round(mean(thetaDiff),2),sep="")))
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )
+openGraph(width=7,height=4)#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.05,0.05))#
+#
+saveGraph(file="BirdROPE",device=3,type="png")
+saveGraph(file="BirdROPE",device=2,type="png")
+rm(list = ls())
+THE MODEL.#
+#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 3.  Enter the data for this analysis     ----#
+#
+# THE DATA.#
+# Specify the data in a form that is compatible #
+# with JAGS model, as a list:#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 4.  Give values to parameters that will  ----#
+# be used to control the way that JAGS runs,     ----#
+# e.g., how many burnin samples to draw, which   ----#
+# parameters should be saved, etc.               ----#
+#
+# INITIALIZE THE CHAIN.#
+# Can be done automatically in jags.model() by #
+# commenting out inits argument. Otherwise could be #
+# established as:#
+#
+# initsList = list( #
+#   theta1 = sum(dataList$y1)/length(dataList$y1) , #
+#   theta2 = sum(dataList$y2)/length(dataList$y2) )#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   #data     = dataList , #
+   n.chains = nChains , #
+   n.adapt  = adaptSteps )
+rm(list = ls())
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 3.  Enter the data for this analysis     ----#
+#
+# THE DATA.#
+# Specify the data in a form that is compatible #
+# with JAGS model, as a list:#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 4.  Give values to parameters that will  ----#
+# be used to control the way that JAGS runs,     ----#
+# e.g., how many burnin samples to draw, which   ----#
+# parameters should be saved, etc.               ----#
+#
+# INITIALIZE THE CHAIN.#
+# Can be done automatically in jags.model() by #
+# commenting out inits argument. Otherwise could be #
+# established as:#
+#
+# initsList = list( #
+#   theta1 = sum(dataList$y1)/length(dataList$y1) , #
+#   theta2 = sum(dataList$y2)/length(dataList$y2) )#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )
+rm(list = ls())
+THE MODEL.#
+#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )#
+# Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)
+rm(list = ls())
+RUN WITHOUT DATA#
+#
+# THE MODEL.#
+#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = NULL , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )#
+# Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)#
+#
+# resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--
+rm(list = ls())
+THE MODEL.#
+#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+z1 = 251 ; N1 = 285 ; z2 = 48 ; N2 = 53 # data are specified here #
+if ( priorOnly ) { #
+ datalist = list( #
+ N1 = N1 , #
+ #y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 #, #
+ #y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+} else { #
+ datalist = list( #
+ N1 = N1 , #
+ y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 , #
+ y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+}#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = datalist , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )#
+# Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)#
+#
+# resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--
+rm(list = ls())#
+# THE MODEL.#
+priorOnly=T#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+z1 = 251 ; N1 = 285 ; z2 = 48 ; N2 = 53 # data are specified here #
+if ( priorOnly ) { #
+ datalist = list( #
+ N1 = N1 , #
+ #y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 #, #
+ #y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+} else { #
+ datalist = list( #
+ N1 = N1 , #
+ y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 , #
+ y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+}
+The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = datalist , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )
+Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)
+resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--
+if ( priorOnly ) { #
+ fnrt = "Exercise12.2.prior" #
+} else { #
+ fnrt = "Exercise12.2.post" #
+}
+theta1Sample = samplesSample( "theta1" ) # Put sampled values in a vector. #
+theta2Sample = samplesSample( "theta2" ) # Put sampled values in a vector.
+fnrt
+plotPost(thetaDiff)
+source("plotPost.R")
+plotPost(thetaDiff)
+plotPost.R(thetaDiff)
+plotPost(theta1Sample-theta2Sample)
+Table 7.  Plot the trajectory of the last 500  ----#
+# sampled values.                                ----#
+#
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )
+par(mfrow=c(1,2))#
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]#
+#
+openGraph(width=7,height=4)#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.05,0.05))
+saveGraph(file="BirdROPE.prior",device=2,type="png")
+source("openGraphSaveGraph.R")
+saveGraph(file="BirdROPE.prior",device=2,type="png")
+rm(list = ls())#
+# THE MODEL.#
+priorOnly=F#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+z1 = 251 ; N1 = 285 ; z2 = 48 ; N2 = 53 # data are specified here #
+if ( priorOnly ) { #
+ datalist = list( #
+ N1 = N1 , #
+ #y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 #, #
+ #y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+} else { #
+ datalist = list( #
+ N1 = N1 , #
+ y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 , #
+ y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+}#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = datalist , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )#
+# Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)#
+#
+# resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+# Table 7.  Plot the trajectory of the last 500  ----#
+# sampled values.                                ----#
+par(mfrow=c(1,2))#
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )#
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]#
+#
+openGraph(width=7,height=4)#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.05,0.05))#
+saveGraph(file="BirdROPE.post",device=2,type="png")
+par(mfrow=c(1,2))#
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )#
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.05,0.05))
+RUN WITHOUT DATA#
+rm(list = ls())#
+source("openGraphSaveGraph.R")#
+source("plotPost.R")#
+source("HDIofMCMC.R")#
+# THE MODEL.#
+priorOnly=F#
+modelString = "#
+#
+# JAGS model specification begins here...#
+#
+model {#
+#
+    # Likelihood. Each flip is Bernoulli. #
+#
+    for ( i in 1 : N1 ) { y1[i] ~ dbern( theta1 ) }#
+#
+    for ( i in 1 : N2 ) { y2[i] ~ dbern( theta2 ) }#
+    # Prior. Independent beta distributions.#
+#
+    theta1 <- mu + deflect#
+#
+    theta2 <- mu - deflect#
+    mu ~ dbeta( 16 , 6)#
+    delta ~ dbeta (1 , 1)#
+    deflect <- (delta-.5)*2 * min(mu, 1-mu)#
+#
+}#
+# ... end JAGS model specification#
+#
+" # close quote for modelstring#
+#
+# Write the modelString to a file, using R commands:#
+writeLines(modelString, con = "model.txt")#
+#
+z1 = 251 ; N1 = 285 ; z2 = 48 ; N2 = 53 # data are specified here #
+if ( priorOnly ) { #
+ datalist = list( #
+ N1 = N1 , #
+ #y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 #, #
+ #y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+} else { #
+ datalist = list( #
+ N1 = N1 , #
+ y1 = c( rep(1,z1) , rep(0,N1-z1) ) , #
+ N2 = N2 , #
+ y2 = c( rep(1,z2) , rep(0,N2-z2) ) #
+ ) #
+}#
+#
+# The parameter(s) to be monitored.#
+parameters = c( "theta1" , "theta2" )     #
+#
+# Number of steps to "tune" the samplers.#
+adaptSteps = 500              #
+#
+# Number of steps to "burn-in" the samplers.#
+burnInSteps = 1000            #
+#
+# Number of chains to run.#
+nChains = 3                   #
+#
+# Total number of steps in chains to save.#
+numSavedSteps=50000           #
+#
+# Number of steps to "thin" (1=keep every step).#
+thinSteps=1                   #
+#
+# Steps per chain.#
+nIter = ceiling( #
+   ( numSavedSteps * thinSteps ) / nChains#
+            ) #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 5.  Use rjags to run JAGS                ----#
+#
+# Create, initialize, and adapt the model:#
+jagsModel = jags.model( #
+   file     = "model.txt" , #
+   data     = datalist , #
+	n.chains = nChains , #
+   n.adapt  = adaptSteps )#
+# Alternative code that includes a specification of#
+# initial values.#
+#
+# jagsModel = jags.model(#
+#  file     = "model.txt" ,  data     = dataList ,#
+# inits    = initsList ,  n.chains = nChains ,#
+# n.adapt  = adaptSteps )#
+#
+# Burn-in:#
+cat( "Burning in the MCMC chain...\n" )#
+#
+update( jagsModel, n.iter = burnInSteps )#
+#
+# The saved MCMC chain:#
+cat( "Sampling final MCMC chain...\n" )#
+#
+codaSamples = coda.samples( #
+#
+   model = jagsModel , #
+#
+   variable.names = parameters , #
+#
+   n.iter = nIter , #
+#
+   thin = thinSteps #
+#
+)#
+#
+# resulting codaSamples object has these indices: #
+#   codaSamples[[ chainIdx ]][ stepIdx , paramIdx ]#
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+#
+# Table 6.  Convert the coda.samples output to   ----#
+# a form that is easier to work with in R.       ----#
+#
+# Convert coda-object codaSamples to matrix object#
+# for easier handling. But note that this#
+# concatenates the different chains into one long#
+# chain.#
+# Result is mcmcChain[ stepIdx , paramIdx ]#
+#
+mcmcChain = as.matrix( codaSamples )#
+#
+# Put sampled values in a vector.#
+theta1Sample = mcmcChain[,"theta1"] #
+#
+# Put sampled values in a vector.#
+theta2Sample = mcmcChain[,"theta2"] #
+#
+# ---+---+---+---+---+---+---+---+---+---+---+---+--#
+# Table 7.  Plot the trajectory of the last 500  ----#
+# sampled values.                                ----#
+par(mfrow=c(1,2))#
+openGraph(width=7,height=7)#
+#
+par( pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )#
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]
+openGraph(width=7,height=7)#
+par( mfrow=c(1,2),pty="s" )#
+#
+chainlength = NROW(mcmcChain)#
+#
+plot( #
+#
+   theta1Sample[(chainlength-500):chainlength] ,#
+#
+   theta2Sample[(chainlength-500):chainlength] , #
+#
+   type = "o", xlim = c(0,1), #
+   xlab = quote(theta[1]),#
+   ylim = c(0,1), #
+   ylab = bquote(theta[2]), #
+   main="JAGS Result", col="skyblue" #
+#
+   )#
+#
+# The next lines of code put text information about#
+# mean parameters values in the plot. #
+theta1mean = mean(theta1Sample)#
+theta2mean = mean(theta2Sample)#
+#
+if (theta1mean > .5) { #
+   xpos = 0.0 ; xadj = 0.0#
+   } else { #
+   xpos = 1.0 ; xadj = 1.0 }#
+#
+if (theta2mean > .5) { #
+   ypos = 0.0 ; yadj = 0.0#
+   } else { #
+   ypos = 1.0 ; yadj = 1.0 }#
+#
+text( xpos , ypos ,#
+#
+   bquote(#
+      "M=" * .(signif(theta1mean,3)) * "," #
+      * .(signif(theta2mean,3)) ),#
+#
+   adj = c(xadj,yadj), cex = 1.5  #
+#
+   )#
+thetaDiff = theta1Sample - theta2Sample#
+cbind( theta1Sample, theta2Sample, thetaDiff )[1:20,]#
+plotPost(thetaDiff,xlab=expression(theta[1]-theta[2]) , compVal=0.0,ROPE=c(-0.05,0.05))
+saveGraph(file="BirdROPE.post",device=2,type="png")
+library(statnet)
+rm(list=ls())
+setwd("//Users/TScott/Google Drive/elwha")
+load("SOCKmods.RData")#
+load("Sim7_Poisson_Workspace.RData")
+gof(modAp)
+mcmc.diagnostics(modAp)
+mcmc.diagnostics(modAdu)
+mcmc.diagnostics(modAg)
+mcmc.diagnostics(modAb)
+par(mfrow=c(6,2))#
+mcmc.diagnostics(modAp)
+mcmc.diagnostics(modAp,vars.per.page=8)
+mcmc.diagnostics(modAp,vars.per.page=5)
+mcmc.diagnostics(modAdu,vars.per.page=5)
+mcmc.diagnostics(modAb,vars.per.page=5)
+?mcmc.diagnostics
+mcmc.diagnostics(modAp,vars.per.page=5)
+mcmc.diagnostics
+traceplot(modAp)
+class(modAp)
+mcmc.diagnostics(modAp,vars.per.page=5,auto.layout=TRUE)
+mcmc.diagnostics(modAp,vars.per.page=5,auto.layout=FALSE)
+library(mcmcplot)
+library(mcmcplots)
+install.packages("mcmcplots")
+mcmc.diagnostics(modAp,vars.per.page=5,main="MCMC diagnostics - Poisson Model")
+mcmc.diagnostics(modAdu,vars.per.page=5)
+mcmc.diagnostics(modAp,vars.per.page=5,main="MCMC Samples - Poisson Model")
+plot.mcmc.list.ergm(modAp,main="MCMC Samples - Poisson Model", vars.per.page=5)
+modAp$Sample
+modAp$sample
+plot.mcmc.list.ergm(modAp,sample=modAp$sample,main="MCMC Samples - Poisson Model", vars.per.page=5)
+densityplot(modAp)
+densityplot(modAp$sample)
+traceplot(modAp$sample)
+traceplot
+par(mfrow=c(2,3))#
+traceplot(modAp$sample)
+densityplot(modAp$sample)
+par(mfrow=c(5,5))#
+densityplot(modAp$sample)#
+traceplot(modAp$sample)
+head(modAp$sample)
+traceplot
+mcmc.list(modAp$sample)
+head(mcmc.list(modAp$sample))
+traceplot
+install.packages("ggmcmc")
+library(ggmcmc)
+ggmcmc(modAp)
+ggmcmc(modAp$sample)
+ggs_density(modAp$sample)
+ggs(modAp$sample)
+ggs_density(ggs(modAp$sample))
+ggs(modAp$sample)
+head(ggs(modAp$sample))
+ggs(modAP$Sample)[,2]
+ggs(modAp$Sample)[,2]
+temp<-ggs(modAp$Sample)#
+temp[,2]
+head(temp)
+ggs(modAp$Sample)
+head(ggs(modAp$sample))
+temp<-ggs(modAp$sample)
+head(temp)
+temp[,2]
+head(temp)
+ggplot(data=temp,aes(colour=Chain,x=Iteration,y=value))+geom_line()
+dev(onn)
+dev(on)
+gg = ggplot(data=temp,aes(colour=Chain,x=Iteration,y=value))+geom_line()
+print(gg)
+device(on)
+ggplot()
+ggplot()+geom_line()
+print(gg)
+setwd("//Users/TScott/Google Drive/elwha/Process_Base_Data")#
+Short.Data<-read.csv("Base_Data/Final_Scrubbed.csv",header=T)#
+#
+dat2<-Short.Data#
+colnames(dat2)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname","Groups")#
+Base.Dat<-data.frame(dat2$ID,dat2$Date0,dat2$Date1,dat2$Time,dat2$Lpage,dat2$Fname,dat2$Lname)#
+colnames(Base.Dat)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname")#
+completion.page<-as.numeric(gsub("P","",Short.Data[,5]))#
+#
+Base.Dat<-subset(Base.Dat,completion.page>=15)#
+write.csv(Base.Dat,file="Base.Dat.csv")
+Short.Data<-read.csv("//Users/TScott/Google Drive/elwha/Base_Data/Final_Scrubbed.csv",header=T)#
+#
+dat2<-Short.Data#
+colnames(dat2)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname","Groups")#
+Base.Dat<-data.frame(dat2$ID,dat2$Date0,dat2$Date1,dat2$Time,dat2$Lpage,dat2$Fname,dat2$Lname)#
+colnames(Base.Dat)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname")#
+completion.page<-as.numeric(gsub("P","",Short.Data[,5]))#
+#
+Base.Dat<-subset(Base.Dat,completion.page>=15)#
+write.csv(Base.Dat,file="Base.Dat.csv")
+setwd("//Users/TScott/Google Drive/elwha/")#
+Short.Data<-read.csv("Final_Scrubbed.csv",header=T)#
+#
+dat2<-Short.Data#
+colnames(dat2)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname","Groups")#
+Base.Dat<-data.frame(dat2$ID,dat2$Date0,dat2$Date1,dat2$Time,dat2$Lpage,dat2$Fname,dat2$Lname)#
+colnames(Base.Dat)<-c("ID","Date0","Date1","Time","Lpage","Fname","Lname")#
+completion.page<-as.numeric(gsub("P","",Short.Data[,5]))#
+#
+Base.Dat<-subset(Base.Dat,completion.page>=15)#
+write.csv(Base.Dat,file="Base.Dat.csv")
+#begin script 5#
+rm(list=ls())#
+setwd("//Users/TScott/Google Drive/elwha")#
+Wide.Data<-read.csv("Final_Verbose.csv",header=T,sep=",")#
+Short.Data<-read.csv("Final_Scrubbed.csv",header=T)#
+SD<-Short.Data#
+#
+Wide.Data<-Wide.Data[SD$Response.ID %in% Wide.Data$Response.ID,]#
+SD.fullorgs<-subset(SD,SD[,20]!="")#
+SD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",SD.fullorgs$Last.page.saved))#
+SD.answers<-subset(SD.fullorgs,SD.fullorgs$Last.page.saved>=15)#
+dat2<-SD.answers#
+WD<-Wide.Data#
+WD.fullorgs<-subset(WD,WD[,91]!="")#
+WD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",WD.fullorgs$Last.page.saved))#
+WD.answers<-subset(WD.fullorgs,WD.fullorgs$Last.page.saved>=15)#
+dat1<-WD.answers#
+#
+dat1[,91]<-dat2[,20]#
+#
+dat4<-read.csv("Group.Member.Dat.csv",row.names=1,header=T)#
+temp1<-dat4[,-1]#
+#
+temp1$G.OTHER.1<-ifelse(temp1$G.OTHER.1=="",0,1)#
+temp1$G.OTHER.2<-ifelse(temp1$G.OTHER.2=="",0,1)#
+temp1$G.OTHER.3<-ifelse(temp1$G.OTHER.3=="",0,1)#
+temp1$G.OTHER.4<-ifelse(temp1$G.OTHER.4=="",0,1)#
+temp1$G.OTHER.5<-ifelse(temp1$G.OTHER.5=="",0,1)#
+Num.Groups1<-rowSums(temp1)#
+dat4$Num.Groups<-Num.Groups1#
+dat2<-SD.answers#
+ng<-data.frame(cbind(as.character(dat1$ID),dat4$NumGroups));colnames(ng)<-c("ID","NumGroups")#
+#
+dat2<-merge(dat2,ng,by.x="Response.ID",by.y="ID",all.x=TRUE,all.y=FALSE)#
+aa<-(c(#
+grep("routinely.implement",colnames(dat2)),#
+grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),#
+grep("routinely.coordinate.plans",colnames(dat2)),#
+grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),#
+grep("do.you.informally.consult",colnames(dat2)),#
+grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2))#
+))#
+net1.calls<-cbind(#
+grep("routinely.implement",colnames(dat2)),#
+grep("routinely.coordinate.plans",colnames(dat2)),#
+grep("do.you.informally.consult",colnames(dat2)))#
+#
+net0ind.calls<-cbind(#
+grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),#
+grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),#
+grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)))#
+#
+colnames(net1.calls)<-c("Work1","Plan1","Cons1")#
+colnames(net0ind.calls)<-c("Work0","Plan0","Cons0")#
+rownames(net1.calls)<-c("T1","T2","T3","T4","T5")#
+rownames(net0ind.calls)<-c("T1","T2","T3","T4","T5")#
+#
+#Network 1#
+Network1<-data.frame(dat2[,1],dat2[,net1.calls])#
+#network indicator#
+#temp<-Network1[,-1]#
+#temp2<-temp#
+#for (i in 1:nrow(temp))#
+#{#
+#	for (i in 1:ncol(temp))#
+#	{#
+#		if (temp[i,j]==""){temp2[i,j]==0}#
+#		else {temp2[i,j]==1}#
+#	}#
+#}#
+#old tie indicator#
+Nettie<-data.frame(dat2[,1],dat2[,net0ind.calls])#
+Numtie<-Nettie#
+colnames(Numtie)[1]<-"ID"#
+#
+for (i in 1:nrow(Numtie))#
+{#
+	for (j in 1:ncol(Numtie))#
+	{#
+		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])#
+	}#
+}#
+Network0<-Network1#
+#
+#build network 0#
+for (i in 1:nrow(Network1))#
+{#
+	for (j in 2:ncol(Network1))#
+	{#
+		if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}#
+		else if (Numtie[i,j]==0){Network0[i,j]<-0}#
+		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	#
+		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}#
+	}#
+}
+warnings()
+Nettie
+Network1
+net0ind.call
+net0ind.calls
+Nettie<-data.frame(dat2[,1],dat2[,net0ind.calls])
+dim(Nettie)
+head(Nettie)
+Numtie<-Nettie#
+colnames(Numtie)[1]<-"ID"
+for (i in 1:nrow(Numtie))#
+{#
+	for (j in 1:ncol(Numtie))#
+	{#
+		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])#
+	}#
+}
+is.na(Nettie)
+for (i in 1:nrow(Numtie))#
+{#
+	for (j in 1:ncol(Numtie))#
+	{#
+		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])#
+	}#
+}
+warnings()
+Nettie[100,5]
+Nettie[100,6]
+Nettie[101,6]
+is.na(Nettie[101,6])
+is.na(Nettie[101,6])==TRUE
+ifelse(is.na(Nettie[101,6])==TRUE,NA,Nettie[101,6])
+head(Numtie)
+head(dat2[,1])
+#old tie indicator#
+Nettie<-data.frame(dat2[,1],dat2[,net0ind.calls])#
+Numtie<-Nettie#
+colnames(Numtie)[1]<-"ID"
+head(Numtie)
+for (i in 1:nrow(Numtie))#
+{#
+	for (j in 2:ncol(Numtie))#
+	{#
+		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])#
+	}#
+}
+head(Numtie)
+Network1
+Network0<-Network1
+#build network 0#
+for (i in 1:nrow(Network1))#
+{#
+	for (j in 2:ncol(Network1))#
+	{#
+		if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}#
+		else if (Numtie[i,j]==0){Network0[i,j]<-0}#
+		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	#
+		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}#
+	}#
+}
+dim(Numtie)
+head(Numtie[,1])
+dim(Network1)
+Numtie[10,100]
+Numtie[10,10]
+Numtie[10,11]
+for (i in 1:nrow(Network1))#
+{#
+	for (j in 2:ncol(Network1))#
+	{#
+		if (is.na(Numtie[i,j])){Network0[i,j]<--99}#
+		else if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}#
+		else if (Numtie[i,j]==0){Network0[i,j]<-0}#
+		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	#
+		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}#
+	}#
+}
+warnings()
+head(Network1)
+c(Network1)
+c(Network0)
+c(Network1)
+#begin script 5#
+rm(list=ls())#
+setwd("//Users/TScott/Google Drive/elwha")#
+Wide.Data<-read.csv("Final_Verbose.csv",header=T,sep=",")#
+Short.Data<-read.csv("Final_Scrubbed.csv",header=T)#
+SD<-Short.Data#
+#
+Wide.Data<-Wide.Data[SD$Response.ID %in% Wide.Data$Response.ID,]#
+SD.fullorgs<-subset(SD,SD[,20]!="")#
+SD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",SD.fullorgs$Last.page.saved))#
+SD.answers<-subset(SD.fullorgs,SD.fullorgs$Last.page.saved>=15)#
+dat2<-SD.answers#
+WD<-Wide.Data#
+WD.fullorgs<-subset(WD,WD[,91]!="")#
+WD.fullorgs$Last.page.saved<-as.numeric(gsub("P","",WD.fullorgs$Last.page.saved))#
+WD.answers<-subset(WD.fullorgs,WD.fullorgs$Last.page.saved>=15)#
+dat1<-WD.answers#
+#
+dat1[,91]<-dat2[,20]#
+#
+dat4<-read.csv("Group.Member.Dat.csv",row.names=1,header=T)#
+temp1<-dat4[,-1]#
+#
+temp1$G.OTHER.1<-ifelse(temp1$G.OTHER.1=="",0,1)#
+temp1$G.OTHER.2<-ifelse(temp1$G.OTHER.2=="",0,1)#
+temp1$G.OTHER.3<-ifelse(temp1$G.OTHER.3=="",0,1)#
+temp1$G.OTHER.4<-ifelse(temp1$G.OTHER.4=="",0,1)#
+temp1$G.OTHER.5<-ifelse(temp1$G.OTHER.5=="",0,1)#
+Num.Groups1<-rowSums(temp1)#
+dat4$Num.Groups<-Num.Groups1#
+dat2<-SD.answers#
+ng<-data.frame(cbind(as.character(dat1$ID),dat4$NumGroups));colnames(ng)<-c("ID","NumGroups")#
+#
+dat2<-merge(dat2,ng,by.x="Response.ID",by.y="ID",all.x=TRUE,all.y=FALSE)
+aa<-(c(#
+grep("routinely.implement",colnames(dat2)),#
+grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),#
+grep("routinely.coordinate.plans",colnames(dat2)),#
+grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),#
+grep("do.you.informally.consult",colnames(dat2)),#
+grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2))#
+))
+net1.calls<-cbind(#
+grep("routinely.implement",colnames(dat2)),#
+grep("routinely.coordinate.plans",colnames(dat2)),#
+grep("do.you.informally.consult",colnames(dat2)))#
+#
+net0ind.calls<-cbind(#
+grep("work.on.joint.projects.or.programs.with.these.organizations.begin.within.the.past.five.years",colnames(dat2)),#
+grep("coordinated.planning.or.strategizing.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)),#
+grep("informal.consultation.with.these.organizations.begin.within.the.last.five.years",colnames(dat2)))
+colnames(net1.calls)<-c("Work1","Plan1","Cons1")#
+colnames(net0ind.calls)<-c("Work0","Plan0","Cons0")#
+rownames(net1.calls)<-c("T1","T2","T3","T4","T5")#
+rownames(net0ind.calls)<-c("T1","T2","T3","T4","T5")
+Network1<-data.frame(dat2[,1],dat2[,net1.calls])
+#old tie indicator#
+Nettie<-data.frame(dat2[,1],dat2[,net0ind.calls])#
+Numtie<-Nettie#
+colnames(Numtie)[1]<-"ID"
+for (i in 1:nrow(Numtie))#
+{#
+	for (j in 2:ncol(Numtie))#
+	{#
+		Numtie[i,j]<-ifelse(is.na(Nettie[i,j])==TRUE,NA,Nettie[i,j])#
+	}#
+}
+unique(Numtie)
+unique(c(Numtie))
+for (i in 1:nrow(Network1))#
+{#
+	for (j in 2:ncol(Network1))#
+	{#
+		if (is.na(Numtie[i,j])){Network0[i,j]<-NA}#
+		else if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}#
+		else if (Numtie[i,j]==0){Network0[i,j]<-0}#
+		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	#
+		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}#
+	}#
+}
+Network0<-Network1
+for (i in 1:nrow(Network1))#
+{#
+	for (j in 2:ncol(Network1))#
+	{#
+		if (is.na(Numtie[i,j])){Network0[i,j]<-NA}#
+		else if (Numtie[i,j]==1){Network0[i,j]<-Network1[i,j]}#
+		else if (Numtie[i,j]==0){Network0[i,j]<-0}#
+		else if (Numtie[i,j]==-99){Network0[i,j]<--99}	#
+		else if (Numtie[i,j]==0.5){Network0[i,j]<-Network1[i,j]}#
+	}#
+}
+warnings()
+is.na(Numtie[10,10])
+is.na(Numtie[10,10])==TRUE
+is.na(Numtie[10,11])==TRUE
+ifelse(is.na(Numtie[10,11])==TRUE,NA,Numtie[10,11])
+dim(Network1)
+dim(Numtie)
+head(Network0)
+Network1[,1]
+Network0[,1]
+temp<-merge(dat2,dat4,by.x="Response.ID",by.y="ID")#
+#
+Org.Rep<-data.frame(cbind(as.character(dat2$Response.ID),as.character(dat2$What.organization.do.you.primarily.represent..work.for..volunteer.for..or.are.otherwise.affiliated.with..on.the.collaborative.group.s..that.you.previously.identified..Organization),as.character(dat2$ExtraOrg),as.character(dat2$OrgType),(dat2$How.many.years.have.you.worked.at.or.volunteered.for.the.organization.that.you.identified.above..Years),(dat4$Num.Groups)))#
+#
+colnames(Org.Rep)#
+colnames(Org.Rep)<-c("ID","ORG","Details","ORGType","Years","NumGroups")#
+#
+colnames(Network1)[1]<-c("ID")#
+#
+egolist<-Org.Rep$ORG#
+egolist2<-ifelse(egolist=="","nonegiven",as.character(egolist))#
+egolist3<-na.omit(egolist2)#
+rescount<-table(egolist3)#
+rescountn<-as.vector(rescount)#
+newvar<-rep(0,length(egolist3))#
+for (i in 1:length(egolist3))#
+{#
+	pullv<-grep(egolist3[i],names(rescount))#
+	newvar[i]<-rescountn[pullv]#
+}#
+#
+Org.Rep<-data.frame(cbind(Org.Rep,newvar))#
+colnames(Org.Rep)[ncol(Org.Rep)]<-c("Numres")#
+#
+OR<-Org.Rep#
+temp<-merge(OR,Network1)#
+#
+EMatrix<-data.frame(temp)#
+E<-EMatrix#
+for (i in 1:ncol(EMatrix))#
+{#
+	E[,i]<-as.vector(as.character(EMatrix[,i]))#
+}#
+#
+total.years<-rep(0,nrow(EMatrix))#
+#
+for (i in 1:nrow(EMatrix))#
+{#
+	total.years[i]<-sum(as.numeric(EMatrix$Years[subset(grep(EMatrix$ORG[i],EMatrix$ORG),grep(EMatrix$ORG[i],EMatrix$ORG,value=TRUE)==EMatrix$ORG[i])]))#
+}
+tempdat<-data.frame(EMatrix,total.years)#
+#
+write.csv(tempdat,file="Response.Contact.Dat.csv")
+E<-tempdat#
+#
+colnames(E)[8:22]<-c("T1","T2","T3","T4","T5","T6","T7","T8","T9","T10","T11","T12","T13","T14","T15")#
+ee<-as.matrix(E)#
+ee1<-c(ee[,8],ee[,9],ee[,10],ee[,11],ee[,12],ee[,13],ee[,14],ee[,15],ee[,16],ee[,17],ee[,18],ee[,19],ee[,20],ee[,21],ee[,22])#
+#
+E.long<-data.frame(cbind(rep(as.character(E$ID),15),rep(as.character(E$ORG),15),rep(as.character(E$Details),15),rep(as.character(E$ORGType),15),rep(E$Years,15),rep(E$NumGroups,15),rep(E$Numres,15),rep(E$total.years,15),ee1,rep(c(rep("WT",5),rep("PT",5),rep("CT",5)),nrow(E)),rep(colnames(E)[8:22],each=length(unique(E$ID)))))
+colnames(E.long)<-c("ID","ORG","Details","ORGType","Years","NumGroups","Numres","total.years","Contact","TType","TPOS")#
+ww<-subset(E.long,E.long$ORG!="")#
+vv<-subset(ww,ww$Contact!="")
+colnames(Nettie)<-c("ID",colnames(E)[8:22])
+Nettie
+vv
+head(vv)
+colnames(Nettie)
+as.character(vv$TPOS)
+as.character(vv$TPOS)[1]
+head(vv)
+vv$WIN5<-rep(0,nrow(vv))
+for (i in 1:nrow(vv))#
+{#
+	xl<-which(Nettie$ID==as.character(vv$ID)[i])#
+	yl<-which(colnames(Nettie)==as.character(vv$TPOS)[i])#
+	vv$WIN5[i]<-Nettie[xl,yl]#
+}
+head(vv)
+head(Numtie)
+rm(list=ls())#
+#install.packages('statnet',dependencies=TRUE,repos='http://cran.us.r-project.org')#
+setwd("//Users/TScott/Google Drive/elwha/")#
+require(statnet)#
+list.files()#
+dat_all=read.csv(file="edgelist_all.csv",row.names=1)#
+temp<-dat_all[as.character(dat_all$ORG)!=as.character(dat_all$Contact),]#
+temp1<-paste(temp$ORG,temp$Contact)#
+temp$paste<-temp1#
+#
+temptab<-table(temp$paste)#
+for (i in 1:nrow(temp))#
+{#
+	loc<-which(names(table(temp$paste))==temp$paste[i])#
+	temp$count[i]<-temptab[loc]#
+}#
+#
+t<-temp[order(temp$TType,decreasing=T),]#
+t$dup<-duplicated(t$paste)#
+tt<-t[duplicated(t$paste)!=TRUE,]#
+resp.dat=read.csv(file="Response.Used.csv",row.names=1)#
+#
+allorgs<-sort(unique(c(as.character(resp.dat$ORG),as.character(tt$ORG),as.character(tt$Contact))))#
+#
+tt$INSURV<-tt$Contact %in% resp.dat$ORG#
+#
+t1<-tt[tt$INSURV==TRUE,]#
+#
+net_temp = network.initialize(length(unique(resp.dat$ORG)),directed=TRUE,loops=FALSE)#
+vertex_attributes  = data.frame(sort(unique(resp.dat$ORG)))#
+colnames(vertex_attributes) = "NAME"#
+network.vertex.names(net_temp)<-as.character(vertex_attributes$NAME)#
+#
+TAIL_ID = rep(0,nrow(t1))#
+HEAD_ID = rep(0,nrow(t1))#
+for (i in 1:nrow(t1))#
+{#
+	TAIL_ID[i] = (which(network.vertex.names(net_temp)==t1$ORG[i]))#
+	HEAD_ID[i] = (which(network.vertex.names(net_temp)==t1$Contact[i]))#
+}#
+for (i in 1:length(TAIL_ID))#
+{#
+	net_temp[TAIL_ID[i],HEAD_ID[i]]<-1#
+	net_temp[TAIL_ID[i],HEAD_ID[i],"TCO"]<-t1$count[i]#
+	net_temp[TAIL_ID[i],HEAD_ID[i],"TVAL"]<-ifelse(t1$TType[i]=="WT",#
+	3,ifelse(t1$TType[i]=="PT",2,1))#
+	net_temp[TAIL_ID[i],HEAD_ID[i],"WIN5_dk1"]<-ifelse(is.na(t1$WIN5[i]),1,(ifelse(t1$WIN5[i]>0,1,t1$WIN5)))#
+	net_temp[TAIL_ID[i],HEAD_ID[i],"WIN5_dk0"]<-ifelse(is.na(t1$WIN5[i]),0,(ifelse(t1$WIN5[i]==1,1,0)))#
+	net_temp[TAIL_ID[i],HEAD_ID[i],"PRIOR_TIE"]<-ifelse(is.na(t1$WIN5[i]),0,(ifelse(t1$WIN5[i]>0,0,1)))#
+}#
+TOTALYEARS = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(TOTALYEARS))#
+{#
+	TOTALYEARS[i]=resp.dat$total.years[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]]#
+}#
+vertex_attributes$TOTALYEARS = TOTALYEARS#
+NUMGROUPS = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(NUMGROUPS))#
+{#
+	NUMGROUPS[i]=mean(resp.dat$NumGroups[which(resp.dat$ORG==vertex_attributes$NAME[i])])#
+}#
+vertex_attributes$NUMGROUPS = NUMGROUPS#
+#
+NUMRESP = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(NUMRESP))#
+{#
+	NUMRESP[i]=mean(resp.dat$Numres[which(resp.dat$ORG==vertex_attributes$NAME[i])])#
+}#
+vertex_attributes$NUMRESP = NUMRESP#
+#
+MEANYEARS = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(MEANYEARS))#
+{#
+	MEANYEARS[i]=mean(resp.dat$Years[which(resp.dat$ORG==vertex_attributes$NAME[i])])#
+}#
+vertex_attributes$MEANYEARS = MEANYEARS#
+#
+ORGTYPE = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(ORGTYPE))#
+{#
+	ORGTYPE[i]=as.character(resp.dat$ORGType[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])#
+}#
+vertex_attributes$ORGTYPE = ORGTYPE#
+#
+USEPLAN = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(USEPLAN))#
+{#
+	USEPLAN[i]=as.character(resp.dat$useful_plan[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])#
+}#
+vertex_attributes$USEPLAN = USEPLAN#
+#
+USEWORK = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(USEWORK))#
+{#
+	USEWORK[i]=as.character(resp.dat$useful_work[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])#
+}#
+vertex_attributes$USEWORK = USEWORK#
+#
+USECONS = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(USECONS))#
+{#
+	USECONS[i]=as.character(resp.dat$useful_cons[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])#
+}#
+vertex_attributes$USECONS = USECONS#
+for (i in 1:nrow(resp.dat))#
+{resp.dat$npsp[i]<-tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(sort(unique(resp.dat$ORG))==resp.dat$ORG[i])]}#
+PSP_N = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(PSP_N))#
+{#
+	{#
+	PSP_N[i]=tapply(resp.dat$psp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$psp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]#
+}#
+}#
+vertex_attributes$PSP_N = PSP_N#
+#
+NPSP_N = rep(0,length(vertex_attributes$NAME))#
+for (i in 1:length(PSP_N))#
+{#
+	NPSP_N[i]=tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$npsp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]#
+}#
+vertex_attributes$NPSP_N = NPSP_N#
+network.vertex.names(net_temp) = as.character(vertex_attributes$NAME)#
+set.vertex.attribute(net_temp,"ORGTYPE",value=vertex_attributes$ORGTYPE)#
+set.vertex.attribute(net_temp,"TOTALYEARS",value=vertex_attributes$TOTALYEARS)#
+set.vertex.attribute(net_temp,"NUMGROUPS",value=vertex_attributes$NUMGROUPS)#
+set.vertex.attribute(net_temp,"NUMRESP",value=vertex_attributes$NUMRESP)#
+set.vertex.attribute(net_temp,"MEANYEARS",value=vertex_attributes$MEANYEARS)#
+set.vertex.attribute(net_temp,"PSP_N",value=vertex_attributes$PSP_N)#
+set.vertex.attribute(net_temp,"NPSP_N",value=vertex_attributes$NPSP_N)#
+set.vertex.attribute(net_temp,"USEWORK",value=ifelse(is.na(as.numeric(vertex_attributes$USEWORK)),0,as.numeric(vertex_attributes$USEWORK)))#
+set.vertex.attribute(net_temp,"USEPLAN",value=ifelse(is.na(as.numeric(vertex_attributes$USEPLAN)),0,as.numeric(vertex_attributes$USEPLAN)))#
+set.vertex.attribute(net_temp,"USECONS",value=ifelse(is.na(as.numeric(vertex_attributes$USECONS)),0,as.numeric(vertex_attributes$USECONS)))#
+#
+set.vertex.attribute(x=net, attrname='allpart',#
+                     value=get.vertex.attribute(net,'IPn')+get.vertex.attribute(net,'IPpsp'))#
+set.vertex.attribute(x=net, attrname='allpartquad', value = get.vertex.attribute(net,'allpart')^2)#
+set.vertex.attribute(net,'allpartmc',get.vertex.attribute(net,'allpart') - #
+                       mean(get.vertex.attribute(net,'allpart')))#
+net<-net_temp#
+psp_group = read.csv(file="Group.Overlap.Matrix.PSP.csv",row.names=1)#
+all_group = read.csv(file="Group.Overlap.Matrix.csv",row.names=1)#
+npsp_group = read.csv(file="Group.Overlap.Matrix.NPSP.csv",row.names=1)#
+fina_up_group=read.csv(file="Group.Fina.Up.Matrix.csv",row.names=1)#
+fina_down_group=read.csv(file="Group.Fina.Down.Matrix.csv",row.names=1)#
+huma_up_group=read.csv(file="Group.Huma.Up.Matrix.csv",row.names=1)#
+huma_down_group=read.csv(file="Group.Huma.Down.Matrix.csv",row.names=1)#
+valu_up_group=read.csv(file="Group.Valu.Up.Matrix.csv",row.names=1)#
+valu_down_group=read.csv(file="Group.Value.Down.Matrix.csv",row.names=1)#
+lang_up_group=read.csv(file="Group.Lang.Up.Matrix.csv",row.names=1)#
+lang_down_group=read.csv(file="Group.Lang.Down.Matrix.csv",row.names=1)#
+scie_up_group=read.csv(file="Group.Scie.Up.Matrix.csv",row.names=1)#
+scie_down_group=read.csv(file="Group.Scie.Down.Matrix.csv",row.names=1)#
+face_up_group=read.csv(file="Group.Face.Up.Matrix.csv",row.names=1)#
+face_down_group=read.csv(file="Group.Face.Down.Matrix.csv",row.names=1)#
+#
+sppsp<-read.csv("SharedParticipationMatrixPSP.csv",row.names=1)#
+spn<-read.csv("SharedParticipationMatrixN.csv",row.names=1)#
+dppsp<-read.csv("DirectParticipationMatrixPSP.csv",row.names=1)#
+dpn<-read.csv("DirectParticipationMatrixN.csv",row.names=1)#
+ip<-read.csv("IndirectParticipation.csv",row.names=1)#
+tname<-data.frame(network.vertex.names(net))#
+colnames(tname)<-"Name"#
+ww<-merge(tname,ip,by.x="Name",by.y="ORG",all.x=T)#
+ww$TotPartpsp<-ifelse(is.na(ww$TotPartpsp),0,ww$TotPartpsp)#
+ww$TotPartn<-ifelse(is.na(ww$TotPartn),0,ww$TotPartn)#
+set.vertex.attribute(net,"IPn",ww$TotPartn)#
+set.vertex.attribute(net,"IPpsp",ww$TotPartpsp)#
+set.vertex.attribute(net,"IPx",ww$TotPartn*ww$TotPartpsp)#
+set.vertex.attribute(net,'allpartdiv7',get.vertex.attribute(net,'allpart')/7) #
+set.vertex.attribute(net,'allpartdiv7quad',get.vertex.attribute(net,'allpartdiv7')^2) #
+set.vertex.attribute(net,'IPn7',get.vertex.attribute(net,'IPn')/7) #
+set.vertex.attribute(net,'IPpsp7',get.vertex.attribute(net,'IPpsp')/7) #
+set.vertex.attribute(net,'IPx7',get.vertex.attribute(net,'IPn7')*get.vertex.attribute(net,'IPpsp7')) #
+#
+colnames(spn)<-rownames(spn)#
+colnames(sppsp)<-rownames(sppsp)#
+colnames(dpn)<-rownames(dpn)#
+colnames(dppsp)<-rownames(dppsp)#
+#
+emp<-matrix(0,nrow=(network.size(net)),ncol=network.size(net))#
+colnames(emp)<-network.vertex.names(net)#
+rownames(emp)<-network.vertex.names(net)#
+fullmatrix<-function(netx,fm)#
+{#
+emp<-matrix(0,nrow=(network.size(netx)),ncol=network.size(netx))#
+colnames(emp)<-network.vertex.names(netx)#
+rownames(emp)<-network.vertex.names(netx)#
+for (i in 1:nrow(fm))#
+{#
+for (j in 1:ncol(fm))#
+{#
+r<-which(rownames(emp)==colnames(fm)[i])#
+c<-which(colnames(emp)==colnames(fm)[j])#
+emp[r,c]<-fm[i,j]#
+}}#
+new<-emp#
+return(new)#
+}#
+#
+dpn<-fullmatrix(net,dpn)#
+dppsp<-fullmatrix(net,dppsp)#
+sppsp<-fullmatrix(net,sppsp)#
+spn<-fullmatrix(net,spn)
+net
+get.edge.attributes(net,'allpartdiv7')
+get.vertex.attributes(net,'allpartdiv7')
+library(statnet)
+get.vertex.attributes(net,'allpartdiv7')
+get_vertex_attributes(net,'allpartdiv7')
+?statnet

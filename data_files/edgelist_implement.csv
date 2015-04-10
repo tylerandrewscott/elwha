@@ -1,0 +1,953 @@
+"","ORG","Contact","TType","WIN5"
+"1","Mason County","Squaxin Tribe","WT",1
+"2","NPS","San Juan Island Conservation Corps","WT",0
+"3","Skagit Land Trust","Skagit Land Trust","WT",1
+"4","Northern Economics","NOAA","WT",1
+"15","Snohomish Conservation District","Snohomish County","WT",1
+"16","Snohomish County","NOAA","WT",0
+"17","Thurston County","Nisqually Habitat Work Group","WT",1
+"18","City of Bonney Lake","City of Sumner","WT",0
+"27","City of Sammamish","S.T.O.R.M.","WT",0
+"28","Snohomish Conservation District","Washington Conservation Commission","WT",1
+"29","Skagit Tribe","WDFW","WT",1
+"30","Stillaguamish Watershed Council","Stillaguamish Watershed Council","WT",0
+"39","WDFW","NSEA","WT",0
+"40","West Sound Watershed Council","Suquamish Tribe","WT",1
+"41","San Juan MRC","Washington Environmental Council","WT",0
+"42","WDOE","Oakland Bay Clean Water Advisory Group","WT",0
+"43","Port Townsend Marine Science Center","Marine Mammal Stranding Network","WT",0
+"54","Skagit Tribe","USEPA","WT",0
+"55","Snohomish MRC","Northwest Straits Commission","WT",0
+"56","City of Seattle","King County","WT",0
+"57","Pierce Conservation District","Puyallup Tribe","WT",0
+"67","Skagit MRC","Skagit MRC","WT",1
+"68","WSUX Kitsap","Fish Park Steering Committee","WT",1
+"69","UW","Washington Sea Grant","WT",0
+"70","HCCC","The Nature Conservancy","WT",0
+"79","City of Everett","Snohomish County Tomorrow","WT",0
+"80","Jefferson County","Friends of the San Juans","WT",1
+"81","City of Gig Harbor","West Sound SOG","WT",0
+"82","Friends of North Creek Forest","UW","WT",0
+"92","Whidbey/Camano Land Trust","Whidbey/Camano Land Trust","WT",0
+"93","NOSC","NOSC","WT",1
+"94","Sierra Club","Sierra Club","WT",0
+"95","Suquamish Tribe","Seattle Aquarium","WT",0
+"104","Pierce Conservation District","City of Gig Harbor","WT",1
+"105","City of Bellingham","WDOE","WT",1
+"106","PNNL","Skagit River System Cooperative","WT",0
+"107","King Conservation District","King Conservation District","WT",0
+"116","PSP Leadership Council","PSP Leadership Council","WT",0
+"117","City of Oak Harbor","WSUX Island Waste Wise","WT",1
+"118","WWU","Whatcom MRC","WT",0
+"128","WDFW","DFI/TFI","WT",0
+"129","Whatcom MRC","Whatcom MRC","WT",1
+"130","San Juan MRC","Friends of the San Juans","WT",0
+"131","Wild Fish Conservancy","King County","WT",1
+"132","Puget Soundkeeper Alliance ","Duwamish Alive Coalition","WT",0
+"142","San Juan ECO Net","San Juan ECO Net","WT",0
+"143","City of Lacey","Thurston Stream Team","WT",0
+"144","WDNR","WDOE","WT",0
+"145","Snohomish County","S.T.O.R.M.","WT",0
+"153","City of Everett","Snohomish Conservation District","WT",0
+"154","Whatcom ECO Net","WWIN","WT",0
+"155","San Juan County","NWFSC","WT",0
+"156","Salmon Recovery Funding Board","Salmon Recovery Funding Board","WT",1
+"166","Mason Conservation District","Skokomish Tribe","WT",0
+"167","WDOE","PNAMP","WT",0
+"168","WDFW","WRIA 10/12","WT",1
+"169","Washington Sea Grant","Pacific Oil Spill Prevention Education Team","WT",0
+"170","City of Puyallup","Pierce Conservation District","WT",0
+"180","San Juan County","Northwest Straits Commission","WT",1
+"181","City of Bremerton","West Sound SOG","WT",1
+"182","Pierce County","WRIA 10/12","WT",1
+"183","Stillaguamish Clean Water District","Stillaguamish Clean Water District","WT",0
+"184","WRIA 8","WRIA 8","WT",1
+"195","City of Orting","Salmon Recovery Funding Board","WT",0
+"196","Stillaguamish Tribe","Snohomish Conservation District","WT",1
+"197","Taylor Shellfish Farms","Puget Sound Restoration Fund","WT",1
+"198","Seattle Aquarium","Seattle Aquarium","WT",0
+"199","UW","Hood Canal Dissolved Oxygen Program","WT",0
+"209","Pierce Conservation District","City of Puyallup","WT",0.5
+"210","Sound Experience","Washington Environmental Council","WT",0
+"211","WDFW","Skagit Watershed Council","WT",0
+"212","PSP Leadership Council","PSP","WT",0
+"213","Kitsap County","Kitsap County","WT",0
+"223","Skagit Fisheries Enhancement","Seattle City Light","WT",0
+"224","WRIA 2","San Juan MRC","WT",0
+"225","Citizens for a Healthy Bay","Harbor Wildwatch","WT",0
+"226","San Juan MRC","San Juan MRC","WT",0
+"227","WRIA 9","WRIA 9","WT",1
+"237","City of Newcastle","King County Lake Stewardship Program","WT",1
+"238","Northwest Straits Commission","Northwest Straits Commission","WT",0
+"239","NOSC","WDFW","WT",1
+"248","Clallam Conservation District","Clallam Conservation District","WT",1
+"249","Pierce County","Pierce County","WT",0
+"250","Taylor Shellfish Farms","WSUX","WT",0
+"260","South Sound Phase II Group","Pierce Conservation District","WT",0
+"261","Friends of Freeland","Friends of Freeland","WT",1
+"262","Stillaguamish Tribe","PSP","WT",0
+"263","Stillaguamish Clean Water District","WSUX Beach Watchers","WT",0
+"271","USEPA","PSP","WT",0
+"272","Snohomish County","NPDES Phase II Municipalities","WT",0
+"273","King County","WDOE","WT",0
+"282","Point Defiance Zoo & Aquarium","City of Tacoma","WT",0
+"283","UW","Western Washington Agricultural Association","WT",0
+"284","Pierce Conservation District","Puyallup Watershed Council","WT",0
+"285","NMFS","USACOE","WT",1
+"294","Clallam County","WDOE","WT",1
+"295","Jefferson County","Jefferson Conservation District","WT",0
+"303","City of Seattle","Salmon Education Alliance","WT",0
+"304","Feiro Marine Life Center","City of Port Angeles","WT",0
+"305","WSUX Kitsap","Kitsap Conservation District","WT",0
+"306","WDFW","WRIA 8","WT",0
+"307","Stewardship Partners","American Farmland Trust","WT",1
+"315","Kitsap PUD","KEEP","WT",1
+"316","City of Gig Harbor","City of Gig Harbor","WT",0
+"317","Nisqually River Council","Nisqually River Council","WT",0
+"318","City of Bellingham","WDOE","WT",1
+"329","Clallam County Streamkeepers","NOSC","WT",1
+"330","WSUX Beachwatchers","Island MRC","WT",0
+"331","Stillaguamish Watershed Council","Sound Salmon Solutions","WT",0
+"332","Stillaguamish Clean Water District","Stillaguamish Clean Water District","WT",0
+"333","Greenfleet Monitoring Expeditions","Greenfleet Monitoring Expeditions","WT",0
+"342","City of Puyallup","WSUX Puyallup","WT",0.5
+"343","City of Seattle","Sustainable Seattle","WT",0
+"344","NWIFC","PSP","WT",0
+"345","Kitsap County","Kitsap PUD","WT",1
+"346","Thurston County","WSUX Native Plant Salvage Project","WT",1
+"355","WWU","Bullit Foundation","WT",0
+"356","Long Live the Kings","WDFW","WT",1
+"357","WRIA 10/12","Pierce Conservation District","WT",1
+"358","WDFW","Stillaguamish Tribe","WT",1
+"366","Stillaguamish Clean Water District","Warm Beach Community Association","WT",0
+"367","Whidbey ECO Net","Whidbey/Camano Land Trust","WT",1
+"368","WRIA 8","WRIA 8","WT",0
+"369","WSUX Island Waste Wise","Island County","WT",0
+"377","City of Mill Creek","Adopt-a-Stream Foundation","WT",0
+"378","WDFW","Jamestown S'Klallam Tribe","WT",0
+"379","South Puget Sound LIO","Thurston Stream Team","WT",0
+"380","Friends of the San Juans","San Juan ECO Net","WT",0
+"381","Chambers/Clover Watershed Council","Pierce Conservation District","WT",1
+"389","Lower Hood Canal Watershed Coalition","Mason County","WT",0
+"390","Skagit River System Cooperative","San Juan County","WT",0
+"391","NWFSC","UW","WT",0
+"392","Washington Trollers Association","Sierra Club","WT",1
+"393","Feiro Marine Life Center","Clallam MRC","WT",1
+"402","USCG","NWRRT","WT",0
+"403","City of Tumwater","Thurston SOG","WT",0
+"404","WSUX Jefferson","Port Townsend Marine Science Center","WT",0
+"412","Sierra Club","Wild Fish Conservancy","WT",0
+"413","WWU/Huxley College on the Peninsulas","NOSC","WT",0
+"414","City of Seattle","Snohomish County","WT",0
+"415","South Puget Sound Salmon Enhancement","Nisqually Land Trust","WT",1
+"425","Port of Tacoma","Pierce County","WT",0
+"426","Stillaguamish Tribe","Snohomish Conservation District","WT",1
+"427","Seattle Aquarium","Environmental Science Center","WT",1
+"428","Thurston County","South Sound LIO","WT",0
+"435","Feiro Marine Life Center","National Marine Sanctuary Program","WT",0
+"441","PSP","Puget Sound Local Integrating Organizations","WT",0
+"442","Island MRC","Port Susan Marine Stewardship Area","WT",0
+"443","WDOH","UW","WT",0
+"444","Sound Salmon Solutions","Ducks Unlimited","WT",0
+"445","Thurston Conservation District","WSUX Native Plant Salvage Project","WT",1
+"454","WRIA 2","WRIA 2","WT",0
+"455","WSUX CarbonMasters","WWIN","WT",0
+"456","Suquamish Tribe","Kitsap County","WT",1
+"464","NOSC","WDFW","WT",1
+"465","City of Seattle","Puget Sound Keepers","WT",0
+"466","Vashon Beach Naturalists","Keepers of Pt. Robinson","WT",0
+"476","Washington Environmental Council","Washington Environmental Council","WT",0
+"477","Island County Water Resources Advisory Committee","Whidbey/Camano Land Trust","WT",0
+"478","NOAA","NWRRT","WT",1
+"479","NWIFC","Sustainable Lands Strategy","WT",0
+"489","WDFW","NOAA","WT",1
+"490","UW","City of Seattle","WT",0
+"491","Nooksack Tribe","NWIFC","WT",0
+"502","Stewardship Partners","Sustainable Seattle","WT",0
+"503","Snohomish MRC","Northwest Straits Commission","WT",0
+"504","Taylor Shellfish Farms","Skagit Fisheries Enhancement","WT",0
+"505","Nisqually Tribe","South Puget Sound Salmon Enhancement","WT",1
+"506","Nisqually Land Trust","Nisqually River Foundation","WT",1
+"513","WSUX Clallam","WDOE","WT",0
+"514","WRIA 8","City of Seattle","WT",0
+"515","Long Live the Kings","WDFW","WT",1
+"516","Environmental Coaliton of South Seattle","EarthCorps","WT",0
+"517","Padilla Bay National Estuarine Research Reserve","Skagit County","WT",1
+"526","US Navy","PSEMP","WT",0
+"527","Thurston County","WSUX Native Plant Salvage Project","WT",1
+"528","Nisqually River Foundation","Nisqually Tribe","WT",0
+"529","King County","King County","WT",1
+"530","Jefferson County","WSUX","WT",0
+"538","King County","USFS","WT",0
+"539","Bainbridge Island Watershed Council","Suquamish Tribe","WT",1
+"540","Washington Environmental Council","Friends of the Earth","WT",0
+"541","Whatcom County","City of Bellingham","WT",1
+"542","Nisqually Tribe","Nisqually Land Trust","WT",1
+"550","WDOE","NWAC","WT",0
+"551","WSUX Beachwatchers","Jefferson MRC","WT",0
+"552","USCG","NWRRT","WT",0
+"560","Kitsap Public Health District","WDOE","WT",0
+"561","City of Bothell","City of Bellevue","WT",0
+"562","Skokomish Tribe","WRIA 16/14b","WT",0
+"569","City of Arlington","Sound Salmon Solutions","WT",1
+"570","USEPA","WDNR","WT",0
+"571","WSUX Thurston","WSUX 4H","WT",1
+"572","City of Bainbridge Island","Kitsap Conservation District","WT",0
+"578","WDFW","Long Live the Kings","WT",0
+"579","Great Peninsula Conservancy","Port Gamble S'Klallam Tribe","WT",0
+"589","WDOE","Snohomish County","WT",1
+"590","Washington Sea Grant","PSP","WT",0
+"591","King Conservation District","Wild Fish Conservancy","WT",0
+"592","WDFW","WDOE","WT",1
+"599","OrcaNet","Audubon Society","WT",0
+"600","Skokomish Tribe","Mason Conservation District","WT",1
+"601","Snohomish Conservation District","Sound Salmon Solutions","WT",0
+"602","NWFSC","Tulalip Tribe","WT",0
+"611","The Nature Conservancy","Skagit Dike Districts","WT",0
+"612","Jefferson Conservation District","Jefferson Land Trust","WT",1
+"613","City of Bellingham","WRIA 1","WT",1
+"620","Long Live the Kings","WDFW","WT",0
+"621","Washington Sea Grant","WSUX","WT",1
+"622","UW Tacoma","Citizens for a Healthy Bay","WT",0
+"623","Point No Point Treaty Council","WDFW","WT",1
+"624","Dumas & Associates, Inc.","Whatcom Farm Friends","WT",1
+"635","WDFW","WRIA 7","WT",0
+"636","Citizens for a Healthy Bay","Citizens for a Healthy Bay","WT",0
+"637","South Puget Sound Salmon Enhancement","Squaxin Tribe","WT",0
+"638","USFWS","South Puget Sound Salmon Enhancement","WT",0
+"647","Skagit Conservation District","Skagit MRC","WT",1
+"648","WDOE","Jamestown S'Klallam Tribe","WT",1
+"649","Stanford","HCCC","WT",0
+"650","Wolf Hollow Wildlife Rehabilitation Center","NPS","WT",0
+"656","Skagit County","Skagit Conservation Education Alliance","WT",0
+"657","WSUX Mason","Mason Conservation District","WT",0.5
+"658","USFWS","Nisqually Land Trust","WT",0.5
+"663","City of Everett","ESRP","WT",0
+"669","City of Everett","Snohomish Conservation District","WT",0
+"670","Skagit MRC","Washington Environmental Council","WT",0
+"671","South Sound LIO","Pierce County","WT",0
+"681","Jefferson County","WSUX","WT",0
+"682","NMFS","Washington Sea Grant","WT",1
+"683","NOAA","Puget Sound Restoration Fund","WT",0
+"689","USDA","USEPA","WT",1
+"696","Sierra Club","Puget Soundkeeper Alliance ","WT",0.5
+"697","San Juan County Water Resources Management Committee","San Juan County","WT",0
+"698","Stillaguamish Tribe","WDNR","WT",0
+"707","Skagit Conservation District","City of Mount Vernon","WT",1
+"708","NOAA","Feiro Marine Life Center","WT",0
+"709","Futurewise","Sierra Club","WT",0
+"714","Stillwaters Environmental Education Center","Kitsap County","WT",1
+"715","City of Bothell","Snohomish Conservation District","WT",1
+"722","Nisqually Land Trust","Nisqually Tribe","WT",0
+"723","The Nature Conservancy","WDFW","WT",0
+"729","WDOE","Northwest Region Conservation Districts","WT",1
+"730","Friends of the Issaquah Salmon Hatchery","Mountains to Sound Greenway","WT",0
+"731","SPU","OrcaNet","WT",0
+"738","Pierce County","NFWF","WT",0
+"739","Bainbridge Beach Naturalists","WSUX Kitsap","WT",0
+"740","Snohomish County","WDOH","WT",0
+"743","WDOE","City of Redmond","WT",1
+"744","Whatcom County","Nooksack Tribe","WT",1
+"745","Surfrider Foundation","Washington Environmental Council","WT",1
+"746","Northwest Straits Commission","SeaDoc Society","WT",0
+"755","Nisqually River Council","Nisqually Land Trust","WT",1
+"756","WSUX","Thurston County","WT",1
+"757","Nooksack Salmon Enhancement Association","Whatcom County","WT",1
+"758","City of Port Angeles","City of Port Angeles","WT",0
+"769","Citizens for a Healthy Bay","City of Tacoma","WT",1
+"770","USACOE","King County","WT",1
+"771","City of Kirkland","King County","WT",0.5
+"779","USFS","Seattle City Light","WT",0
+"788","Point No Point Treaty Council","HCCC","WT",0
+"789","Lummi Tribe","Whatcom County","WT",1
+"790","Hood Canal Salmon Enhancement","North Mason School District","WT",1
+"800","Whidbey Conservation District","WDOE","WT",1
+"801","Pierce County","Puyallup Watershed Council","WT",1
+"802","City of Redmond","WDOE","WT",1
+"808","WDOE","Chambers/Clover Watershed Council","WT",0
+"809","WDOE","Washington Water Trust","WT",0
+"810","WSUX Beachwatchers","Marine Mammal Stranding Network","WT",0
+"817","Snohomish County","WSUX","WT",0
+"818","Nisqually Land Trust","City of Eatonville","WT",0
+"824","City of Bellingham","WDFW","WT",0
+"825","Washington Environmental Council","Skagit MRC","WT",0
+"831","Resource Media","Stewardship Partners","WT",0
+"832","Snohomish County","Snohomish Conservation District","WT",0
+"833","Citizens of Orcas Island","WDFW","WT",0
+"842","San Juan County","WDFW","WT",0
+"843","WRIA 9","Washington Conservation Corps","WT",0
+"844","Chico Creek Task Force","Kitsap Stream Stewards","WT",0
+"850","UW","USEPA","WT",0
+"851","City of Seattle","Pierce County","WT",0
+"852","Snohomish MRC","Snohomish MRC","WT",0
+"860","Whatcom MRC","Northwest Straits Foundation","WT",0
+"868","LOTT Clean Water Alliance","Squaxin Tribe","WT",0
+"869","San Juan County Land Bank","San Juan ECO Net","WT",1
+"870","Kitsap Conservation District","Kitsap PUD","WT",0
+"871","Snoqualmie Watershed Forum","Snoqualmie Tribe","WT",0
+"872","Jamestown S'Klallam Tribe","NWIFC","WT",1
+"881","NPS","San Juan Island Preservation Trust","WT",0
+"882","Skagit Land Trust","WSUX Beachwatchers","WT",0
+"883","Northern Economics","WDFW","WT",0
+"891","Snohomish Conservation District","Stillaguamish Clean Water District","WT",1
+"892","Snohomish County","PS RITT","WT",0
+"897","Snohomish Conservation District","WDOE","WT",1
+"900","West Sound Watershed Council","South Puget Sound Salmon Enhancement","WT",1
+"901","Port Townsend Marine Science Center","OrcaNet","WT",0
+"908","Skagit Tribe","Skagit Climate Science Consortium","WT",1
+"909","Snohomish MRC","WSUX Shore Stewards","WT",0
+"910","Pierce Conservation District","City of Tacoma","WT",0
+"916","Skagit MRC","WDFW","WT",1
+"917","WSUX Kitsap","West Sound Watershed Council","WT",1
+"918","HCCC","Hood Canal Salmon Enhancement","WT",1
+"921","Jefferson County","Northwest Straits Commission","WT",0
+"929","Whidbey/Camano Land Trust","Northwest Straits Foundation","WT",0
+"930","NOSC","Jefferson Land Trust","WT",1
+"931","Sierra Club","10,000 Year Institute","WT",0
+"932","Suquamish Tribe","NWIFC","WT",0
+"938","Pierce Conservation District","Tacoma-Pierce County Health Department","WT",1
+"939","City of Bellingham","RE Sources","WT",1
+"940","PNNL","WDFW","WT",0
+"944","City of Oak Harbor","Whidbey ECO Net","WT",0
+"951","WDFW","Snohomish Forum","WT",0
+"952","Wild Fish Conservancy","King Conservation District","WT",0
+"953","Puget Soundkeeper Alliance ","City of Seattle","WT",1
+"957","City of Lacey","Water Conservation Coordinating Committee","WT",0
+"958","WDNR","WDFW","WT",0
+"959","Snohomish County","WSUX","WT",1
+"967","Mason Conservation District","Puget Sound Conservation District Caucus","WT",0
+"968","WDFW","Nisqually River Council","WT",1
+"969","City of Puyallup","Pierce County","WT",0
+"976","City of Bremerton","US Navy","WT",1
+"977","Pierce County","Pierce County Shellfish Partners","WT",1
+"978","WRIA 8","Green Shorelines Steering Committee","WT",0
+"985","City of Orting","Pierce County","WT",0
+"986","Stillaguamish Tribe","Snohomish County","WT",1
+"987","Taylor Shellfish Farms","Skagit Conservation Education Alliance","WT",1
+"992","Pierce Conservation District","Forterra","WT",1
+"993","Sound Experience","Evergreen State College","WT",0
+"994","WDFW","PSP","WT",0
+"1001","Skagit Fisheries Enhancement","Skagit Land Trust","WT",0
+"1002","WRIA 2","WRIA 2","WT",0
+"1003","Citizens for a Healthy Bay","Pierce Stream Team","WT",1
+"1004","WRIA 9","Watershed Leads","WT",1
+"1011","City of Newcastle","S.T.O.R.M.","WT",0
+"1012","Northwest Straits Commission","Island MRC","WT",NA
+"1013","NOSC","Jefferson Land Trust","WT",1
+"1019","Pierce County","Pierce County Shellfish Partners","WT",0
+"1025","Stillaguamish Tribe","Snohomish County","WT",0
+"1026","Stillaguamish Clean Water District","WSUX Shore Stewards","WT",0
+"1031","USEPA","DRCC","WT",0
+"1032","Snohomish County","Snohomish PUD","WT",1
+"1033","King County","Pierce County","WT",1
+"1036","Point Defiance Zoo & Aquarium","Harbor Wildwatch","WT",0
+"1037","UW","Washington Sea Grant","WT",0
+"1038","Pierce Conservation District","Forterra","WT",0
+"1039","NMFS","WDFW","WT",1
+"1045","Clallam County","Jamestown S'Klallam Tribe","WT",1
+"1046","Jefferson County","City of Port Townsend","WT",0
+"1052","Feiro Marine Life Center","NPS","WT",0
+"1053","WSUX Kitsap","Kitsap Public Health District","WT",0
+"1054","WDFW","PS RITT","WT",0
+"1055","Stewardship Partners","King County","WT",1
+"1067","Clallam County Streamkeepers","Lower Elwha Klallam Tribe","WT",1
+"1068","WSUX Beachwatchers","Whidbey ECO Net","WT",0
+"1075","City of Seattle","Puget Soundkeeper Alliance ","WT",0
+"1076","NWIFC","Nisqually Tribe","WT",NA
+"1080","Long Live the Kings","Salmon Recovery Funding Board","WT",1
+"1081","WRIA 10/12","Puyallup Tribe","WT",1
+"1082","WDFW","Wild Fish Conservancy","WT",1
+"1087","WDFW","Clallam Conservation District","WT",0
+"1088","Friends of the San Juans","San Juan County","WT",0
+"1094","Lower Hood Canal Watershed Coalition","WDOE","WT",0
+"1095","Skagit River System Cooperative","The Nature Conservancy","WT",0
+"1096","Feiro Marine Life Center","Clallam County Streamkeepers","WT",0
+"1101","City of Tumwater","Evergreen State College","WT",1
+"1102","WSUX Jefferson","WSUX Beachwatchers","WT",0
+"1104","WWU/Huxley College on the Peninsulas","Clallam County Streamkeepers","WT",1
+"1105","City of Seattle","PSP","WT",0
+"1106","South Puget Sound Salmon Enhancement","RFEGC","WT",1
+"1110","Port of Tacoma","Green Tacoma Partnership","WT",0
+"1111","Stillaguamish Tribe","USFS","WT",1
+"1112","Seattle Aquarium","NOAA","WT",1
+"1115","Feiro Marine Life Center","Clallam Conservation District","WT",0
+"1119","PSP","The Nature Conservancy","WT",0
+"1120","WDOH","APCC","WT",0
+"1121","Sound Salmon Solutions","King County","WT",0
+"1122","Thurston Conservation District","Capitol Land Trust","WT",1
+"1126","Suquamish Tribe","US Navy","WT",1
+"1136","WDFW","Puyallup Tribe","WT",NA
+"1137","Nooksack Tribe","Whatcom PCAT","WT",0
+"1142","Stewardship Partners","King County","WT",0
+"1143","Snohomish MRC","Port Susan Marine Stewardship Area","WT",0
+"1144","Nisqually Tribe","Nisqually River Council","WT",1
+"1148","WRIA 8","Snohomish County","WT",0
+"1149","Padilla Bay National Estuarine Research Reserve","Samish Tribe","WT",0
+"1153","US Navy","PNW SETAC","WT",1
+"1154","Nisqually River Foundation","Nisqually Reach Nature Center","WT",0
+"1162","Washington Environmental Council","Washington Conservation Voters","WT",0
+"1163","Whatcom County","Whatcom MRC","WT",1
+"1164","Nisqually Tribe","Nisqually River Foundation","WT",1
+"1170","WSUX Beachwatchers","WSUX Island","WT",NA
+"1174","Kitsap Public Health District","Kitsap Conservation District","WT",0
+"1175","City of Bothell","City of Shoreline","WT",0
+"1178","City of Arlington","Evergreen Flyfisher Club","WT",1
+"1186","WDOE","King Conservation District","WT",1
+"1187","King Conservation District","National Resource Conservation Service","WT",1
+"1188","WDFW","USEPA","WT",0
+"1193","Skokomish Tribe","Tacoma Public Utilities","WT",1
+"1194","Snohomish Conservation District","Island County","WT",0
+"1200","City of Bellingham","Whatcom Land Trust","WT",0
+"1202","Long Live the Kings","UW","WT",0
+"1203","UW Tacoma","NOAA","WT",0
+"1204","Point No Point Treaty Council","HCCC","WT",1
+"1209","South Puget Sound Salmon Enhancement","WDNR","WT",0
+"1210","USFWS","Capitol Land Trust","WT",0
+"1219","Skagit Conservation District","Northwest Straits Foundation","WT",1
+"1220","WDOE","Clallam County","WT",1
+"1221","Stanford","HCCC","WT",0
+"1222","City of Edmonds","Washington Environmental Council","WT",0
+"1230","Skagit County","Skagit County","WT",1
+"1231","WSUX Mason","WSUX Kitsap","WT",1
+"1232","USFWS","Nisqually Tribe","WT",1
+"1239","City of Everett","Snohomish Forum","WT",0
+"1240","City of Seattle","Seattle City Light","WT",1
+"1241","City of Lake Stevens","WDOE","WT",0.5
+"1251","Mason County Public Health","Mason Conservation District","WT",1
+"1252","City of Everett","Snohomish SOG","WT",0
+"1253","Skagit MRC","Northwest Straits Commission","WT",0
+"1254","South Sound LIO","South Sound LIO","WT",0
+"1262","Jefferson County","WDOE","WT",0
+"1263","Puget Sound Institute","PSP","WT",0
+"1264","NOAA","UW","WT",0
+"1275","USDA","USDA","WT",0
+"1282","Sierra Club","Sierra Club","WT",0
+"1283","Clallam County","WDOE","WT",0
+"1284","Stillaguamish Tribe","Stillaguamish Watershed Council","WT",0
+"1292","Skagit Conservation District","City of Anacortes","WT",0
+"1293","NOAA","Feiro Marine Life Center","WT",1
+"1294","Futurewise","RE Sources","WT",0
+"1301","WDOE","West Sound Watershed Council","WT",0
+"1302","Stillwaters Environmental Education Center","Kitsap County","WT",1
+"1303","City of Bothell","WDOE","WT",0
+"1304","San Juan County","San Juan County","WT",0
+"1310","Nisqually Land Trust","Nisqually Salmon Habitat Work Group","WT",0
+"1311","The Nature Conservancy","WDOE","WT",0
+"1312","Stillaguamish Tribe","Snohomish County","WT",1
+"1322","Nisqually River Council","Nisqually River Council","WT",0
+"1323","Friends of the Issaquah Salmon Hatchery","Salmon Education Alliance","WT",0
+"1324","SPU","Whidbey Audubon","WT",0
+"1331","Pierce County","WRIA 10/12","WT",1
+"1332","Bainbridge Beach Naturalists","WSUX Kitsap","WT",0
+"1333","WRIA 6","Island County","WT",1
+"1334","Snohomish County","Snohomish Conservation District","WT",0
+"1335","NMFS","PSP","WT",0
+"1344","WDOE","PSP","WT",0
+"1345","Whatcom County","Lummi Tribe","WT",1
+"1346","Surfrider Foundation","Surfrider Foundation","WT",1
+"1347","Northwest Straits Commission","PSP","WT",1
+"1358","Nisqually River Council","Nisqually River Council","WT",1
+"1359","WSUX","Mason County","WT",1
+"1360","San Juan MRC","San Juan MRC","WT",1
+"1361","Nooksack Salmon Enhancement Association","RFEGP","WT",1
+"1362","City of Port Angeles","Clallam County","WT",0
+"1371","Citizens for a Healthy Bay","USEPA","WT",1
+"1372","USACOE","USFWS","WT",1
+"1380","Pierce County","Pierce ECO Net","WT",0
+"1381","Clallam County","Strait ERN","WT",0
+"1382","USFS","Skagit Fisheries Enhancement","WT",0
+"1392","Point No Point Treaty Council","HCCC","WT",0
+"1393","Lummi Tribe","WDOE","WT",1
+"1394","Puget Soundkeeper Alliance ","Puget Soundkeeper Alliance ","WT",1
+"1395","Hood Canal Salmon Enhancement","Olympic ESD","WT",1
+"1405","Whidbey Conservation District","Washington CDs","WT",1
+"1406","City of Redmond","WRIA 8","WT",1
+"1407","Kitsap County","Kitsap County","WT",0
+"1408","King County","WRIA 8","WT",1
+"1416","WDOE","Henderson/Nisqually Shellfish District","WT",0
+"1417","WDOE","DRMT","WT",1
+"1418","WSUX Beachwatchers","Whidbey ECO Net","WT",1
+"1426","City of Poulsbo","Kitsap County","WT",NA
+"1427","Nisqually Land Trust","South Puget Sound Salmon Enhancement","WT",1
+"1428","UW","NOAA","WT",0
+"1429","Citizens for a Healthy Bay","Citizens for a Healthy Bay","WT",0
+"1436","City of Milton"," ","WT",0
+"1437","City of Bellingham","Whatcom County","WT",1
+"1438","Washington Environmental Council","Skagit MRC","WT",0
+"1445","Resource Media","Washington Environmental Council","WT",0
+"1446","Snohomish County","Stillaguamish Clean Water District","WT",0
+"1447","UW","Friday Harbor Labs","WT",1
+"1448","City of Gig Harbor","Pierce Conservation District","WT",0
+"1456","Environmental Science Associates","PSNERP","WT",0
+"1457","San Juan County","San Juan MRC","WT",0
+"1458","WRIA 9","WRIA 9","WT",0
+"1459","Chico Creek Task Force","Clear Creek Task Force","WT",0
+"1465","UW","USEPA","WT",0
+"1466","City of Seattle","City of Seattle","WT",1
+"1467","Snohomish MRC","Island County MRC","WT",0
+"1473","Association of Washington Cities","WRIA 8","WT",1
+"1474","Whatcom MRC","Whatcom ECO Net","WT",0
+"1483","LOTT Clean Water Alliance","Thurston County","WT",1
+"1484","San Juan County Land Bank","San Juan Preservation Trust","WT",1
+"1485","Kitsap Conservation District","Washington Conservation Corps","WT",0
+"1486","Snoqualmie Watershed Forum","Snohomish County","WT",0
+"1487","Jamestown S'Klallam Tribe","Clallam County","WT",1
+"1495","Mason County","WSUX Mason","WT",1
+"1504","Snohomish Conservation District","Stillaguamish Clean Water District","WT",1
+"1505","Snohomish County","King County","WT",0
+"1506","City of Bonney Lake","WDOE","WT",0
+"1512","City of Sammamish","North King SOG","WT",0
+"1513","Snohomish Conservation District","Puget Sound Conservation District Caucus","WT",0
+"1514","Skagit Tribe","Skagit River System Cooperative","WT",1
+"1522","WDFW","Whatcom Ag-Watershed Project","WT",0
+"1523","West Sound Watershed Council","South Puget Sound Salmon Enhancement","WT",0
+"1524","WDOE","Dungeness Clean Water Work Group","WT",0
+"1525","Port Townsend Marine Science Center","COSEE","WT",0
+"1532","Skagit Tribe","NOAA","WT",0
+"1533","Snohomish MRC","Snohomish MRC","WT",0
+"1534","City of Seattle","Association of Washington Cities","WT",0
+"1535","Pierce Conservation District","Pierce County","WT",1
+"1541","Skagit MRC","Northwest Straits Commission","WT",1
+"1542","WSUX Kitsap","Washington Sea Grant","WT",1
+"1543","UW","PSP","WT",0
+"1544","HCCC","PSP","WT",0.5
+"1549","Jefferson County","Northwest Straits Commission","WT",0
+"1550","City of Gig Harbor","Pierce Conservation District","WT",0
+"1551","Friends of North Creek Forest","Friends of North Creek Forest","WT",0
+"1558","Whidbey/Camano Land Trust","RFEGC","WT",0
+"1559","NOSC","WDFW","WT",1
+"1560","Sierra Club","Wild Fish Conservancy","WT",0
+"1561","Suquamish Tribe","NWFSC","WT",0
+"1567","Pierce Conservation District","Tacoma-Pierce County Health Department","WT",1
+"1568","PNNL","Skagit Watershed Council","WT",0
+"1569","King Conservation District","Puget Sound Conservation District Caucus","WT",0
+"1574","City of Oak Harbor","WSUX Island Waste Wise","WT",1
+"1579","WDFW","WRIA 1","WT",0
+"1580","Whatcom MRC","BBWARM District","WT",0
+"1581","Wild Fish Conservancy","Stillaguamish Tribe","WT",1
+"1587","San Juan ECO Net","San Juan ECO Net","WT",0
+"1588","WDNR","WDFW","WT",0
+"1589","Snohomish County","Snohomish/Camano ECO Net","WT",1
+"1597","Whatcom ECO Net","Whatcom MRC","WT",0
+"1598","San Juan County","San Juan County Land Bank","WT",1
+"1599","Salmon Recovery Funding Board","Governor's Salmon Recovery Office","WT",0
+"1606","Mason Conservation District","WRIA 14","WT",1
+"1607","WDOE","Governor's Monitoring Forum","WT",1
+"1608","Washington Sea Grant","Pacific Oil Spill Prevention Education Team","WT",0
+"1609","City of Puyallup","WDOE","WT",0
+"1617","Pierce County","Puyallup Watershed Council","WT",1
+"1618","Stillaguamish Clean Water District","Snohomish MRC","WT",0
+"1619","WRIA 8","PSSRC","WT",1
+"1626","City of Orting","NPDES Coordinators","WT",0
+"1627","Stillaguamish Tribe","Snohomish Conservation District","WT",1
+"1628","Taylor Shellfish Farms","Skagit Conservation Education Alliance","WT",1
+"1633","Pierce Conservation District","City of Tacoma","WT",0.5
+"1634","Sound Experience","Friday Harbor Labs","WT",0
+"1635","WDFW","WRIA 2","WT",0
+"1636","PSP Leadership Council","PSP Science Panel","WT",0
+"1637","Kitsap County","12,000 Rain Gardens","WT",0
+"1645","WRIA 2","PSSRC","WT",0
+"1646","Citizens for a Healthy Bay","Pierce County","WT",1
+"1647","San Juan MRC","WRIA 2","WT",0
+"1648","WRIA 9","Lead Entity Advisory Group","WT",1
+"1656","City of Newcastle","City of Renton","WT",1
+"1657","Northwest Straits Commission","Whatcom MRC","WT",0
+"1658","NOSC","Jefferson Conservation District","WT",1
+"1664","Clallam Conservation District","DRMT","WT",1
+"1665","Pierce County","Nisqually River Council","WT",NA
+"1666","Taylor Shellfish Farms","South Sound Estuary Association","WT",0
+"1672","Friends of Freeland","Whidbey General EMS","WT",1
+"1673","Stillaguamish Tribe","Snohomish Conservation District","WT",0
+"1674","Stillaguamish Clean Water District","Stillaguamish Clean Water District","WT",0
+"1679","Snohomish County","Snohomish SOG","WT",0
+"1680","King County","NPDES Phase II Municipalities","WT",1
+"1681","SeaDoc Society","WDFW","WT",1
+"1687","Point Defiance Zoo & Aquarium","Russell Foundation","WT",1
+"1688","UW","Skagitonians to Preserve Farmland","WT",0
+"1689","NMFS","USACOE","WT",1
+"1698","Clallam County","WDOE","WT",1
+"1705","City of Seattle","S.T.O.R.M.","WT",0
+"1706","Feiro Marine Life Center","NatureBridge","WT",0
+"1707","WSUX Kitsap","Kitsap Conservation District","WT",0
+"1708","WDFW","WRIA 9","WT",0
+"1709","Stewardship Partners","Snoqualmie Tribe","WT",0.5
+"1712","Kitsap PUD","Kitsap County","WT",1
+"1713","City of Bellingham","Whatcom County","WT",1
+"1722","Clallam County Streamkeepers","City of Port Angeles","WT",1
+"1723","WSUX Beachwatchers","Island County Beachwatchers","WT",0
+"1724","Stillaguamish Clean Water District","WSU Skagit County Beachwatchers","WT",0
+"1725","Greenfleet Monitoring Expeditions","Olympic Forest Coalition","WT",0
+"1729","City of Seattle","Stewardship Partners","WT",0
+"1730","NWIFC","Suquamish Tribe","WT",NA
+"1731","Kitsap County","WSUX Kitsap","WT",0
+"1732","Thurston County","WSUX Native Plant Salvage Project","WT",1
+"1738","Long Live the Kings","Skagit Watershed Council","WT",1
+"1739","WDFW","Snohomish County","WT",1
+"1743","Stillaguamish Clean Water District","WSUX Beachwatchers","WT",0
+"1744","WRIA 8","Friends of the Cedar River Watershed","WT",0
+"1745","WSUX Island Waste Wise","Island County","WT",0
+"1750","South Puget Sound LIO","South Sound Estuary Association","WT",0
+"1751","Friends of the San Juans","San Juan ECO Net","WT",0
+"1756","Lower Hood Canal Watershed Coalition","WRIA 16/14b","WT",1
+"1757","Skagit River System Cooperative","Skagit Watershed Council","WT",1
+"1758","Feiro Marine Life Center","National Marine Sanctuary Program","WT",1
+"1762","City of Tumwater","Thurston ECO Net","WT",0
+"1763","WSUX Jefferson","Jefferson MRC","WT",1
+"1767","Sierra Club","Washington Environmental Council","WT",0
+"1768","City of Seattle","WRIA 8","WT",0
+"1769","South Puget Sound Salmon Enhancement","WRIA 13","WT",NA
+"1774","Port of Tacoma","Citizens for a Healthy Bay","WT",0
+"1775","Stillaguamish Tribe","WDNR","WT",1
+"1782","Newcastle Weed Warriors","Sustainable Renton","WT",0
+"1783","Feiro Marine Life Center","Port Angeles School District","WT",0
+"1786","PSP","Puget Sound Local Integrating Organizations","WT",0
+"1787","Sound Salmon Solutions","Wild Fish Conservancy","WT",0
+"1788","Thurston Conservation District","City of Tumwater","WT",1
+"1793","Suquamish Tribe","US Navy","WT",1
+"1794","Seattle Audubon","WDOE","WT",0
+"1798","NOSC","Chumsortium","WT",1
+"1799","City of Seattle","SLS","WT",1
+"1804","NOAA","WDOE","WT",1
+"1805","NWIFC","Snohomish Forum","WT",1
+"1811","WDFW","Nisqually Tribe","WT",1
+"1812","UW","UW","WT",1
+"1813","Nooksack Tribe","BBAT","WT",0
+"1821","Stewardship Partners","WDOE","WT",0
+"1822","Snohomish MRC","NOAA","WT",0
+"1823","Nisqually Land Trust","Pierce County","WT",1
+"1829","WRIA 8","City of Redmond","WT",0
+"1830","Environmental Coaliton of South Seattle","Washington Environmental Council","WT",0
+"1835","US Navy","ENVVEST","WT",0
+"1836","Thurston County","S.T.O.R.M.","WT",0
+"1837","Nisqually River Foundation","Chehalis Basin Education Consortium","WT",0
+"1838","King County","Snoqualmie Watershed Forum","WT",1
+"1844","King County","USFS","WT",0
+"1845","Whatcom County","Lake Whatcom Water & Sewer District","WT",1
+"1846","Nisqually Tribe","WRCO","WT",1
+"1851","WDOE","NWAC","WT",0
+"1852","WSUX Beachwatchers","Jefferson County","WT",0
+"1853","USCG","Oregon DEQ","WT",0
+"1858","City of Bothell","City of Kirkland","WT",0
+"1859","Skokomish Tribe","WRIA 16/14b","WT",1
+"1863","City of Arlington","Snohomish County","WT",1
+"1864","City of Bainbridge Island","Bainbridge Island Watershed Council","WT",0
+"1870","Great Peninsula Conservancy","West Sound Watershed Council","WT",1
+"1876","WDOE","Stillaguamish Watershed Council","WT",1
+"1877","Washington Sea Grant","WSUX","WT",1
+"1878","King Conservation District","Puget Sound Conservation District Caucus","WT",0
+"1879","WDFW","WDOE","WT",1
+"1883","Snohomish Conservation District","WSUX Shore Stewards","WT",0
+"1884","NWFSC","NWIFC","WT",0
+"1892","Long Live the Kings","PSP","WT",0
+"1893","Washington Sea Grant","WSUX","WT",1
+"1894","UW Tacoma","King County","WT",0
+"1895","Point No Point Treaty Council","Strait ERN","WT",0
+"1896","Dumas & Associates, Inc.","WRIA 1","WT",1
+"1901","Citizens for a Healthy Bay","South Central Action Area LIO","WT",0
+"1902","South Puget Sound Salmon Enhancement","Nisqually River Council","WT",0
+"1908","WDOE","WDFW","WT",1
+"1913","Skagit County","WDOH","WT",1
+"1917","City of Everett","Salmon Recovery Funding Board","WT",0
+"1918","City of Lake Stevens","Tulalip Tribe","WT",0.5
+"1923","Mason County Public Health","WDOE","WT",1
+"1924","Skagit MRC","WWU SPMC","WT",0
+"1939","Skagit Conservation District","City of Sedro-Woolley","WT",0
+"1940","NOAA","NOAA B-WET","WT",1
+"1941","Futurewise","Citizens for a Healthy Bay","WT",0
+"1949","The Nature Conservancy","Seattle City Light","WT",1
+"1952","SPU","WSUX Beach Watchers","WT",0
+"1954","WRIA 6","Island County Water Resources Advisory Committee","WT",1
+"1955","Snohomish County","WDOE","WT",0
+"1956","NMFS","NWIFC","WT",0
+"1958","Whatcom County","Nooksack Salmon Enhancement Association","WT",1
+"1962","Nisqually River Council","Nisqually Tribe","WT",1
+"1963","WSUX","Thurston County","WT",1
+"1964","Nooksack Salmon Enhancement Association","Nooksack Tribe","WT",1
+"1965","City of Port Angeles","Clallam MRC","WT",0
+"1972","Citizens for a Healthy Bay","City of Tacoma","WT",1
+"1981","Lummi Tribe","Whatcom PUD","WT",1
+"1992","WDOE","Washington Water Trust","WT",0
+"1994","UW","WDOE","WT",1
+"1997","City of Bellingham","City of Lynden","WT",1
+"2007","WRIA 9","Miller-Walker Basin Stewardship Program","WT",0
+"2010","City of Seattle","King County","WT",1
+"2020","LOTT Clean Water Alliance","WDOE","WT",1
+"2021","Snoqualmie Watershed Forum","Snoqualmie Tribe","WT",0
+"2024","Mason County","HCCC","WT",1
+"2026","Snohomish Conservation District","NRCS","WT",1
+"2030","Snohomish Conservation District","WDOE","WT",1
+"2032","West Sound Watershed Council","West Sound Watershed Council","WT",1
+"2036","Pierce Conservation District","City of Tacoma","WT",1
+"2038","Skagit MRC","Puget Sound Restoration Fund","WT",1
+"2039","WSUX Kitsap","West Sound Watershed Council","WT",1
+"2043","Sierra Club","Coastal Watershed Institute","WT",0
+"2048","Pierce Conservation District","WDOE","WT",1
+"2051","City of Oak Harbor","Whidbey Conservation District","WT",0
+"2054","Wild Fish Conservancy","USFS","WT",0
+"2060","Mason Conservation District","Oakland Bay Clean Water Advisory Group","WT",0
+"2066","Pierce County","Pierce Conservation District","WT",1
+"2067","WRIA 8","PSP","WT",0
+"2071","Taylor Shellfish Farms","Pacific Shellfish Institute","WT",1
+"2077","WRIA 2","WRIA 2","WT",0
+"2078","Citizens for a Healthy Bay","Port of Tacoma","WT",1
+"2079","WRIA 9","PSNERP","WT",1
+"2082","Northwest Straits Commission","Snohomish MRC","WT",NA
+"2090","Snohomish County","Snohomish PUD","WT",1
+"2092","Point Defiance Zoo & Aquarium","Harbor Wildwatch","WT",0
+"2093","UW","UW","WT",0
+"2094","NMFS","King County","WT",1
+"2097","Clallam County","Clallam CWWG","WT",1
+"2099","Feiro Marine Life Center","National Marine Sanctuary Program","WT",0
+"2100","WDFW","PSSRC","WT",0
+"2105","Clallam County Streamkeepers","Lower Elwha Klallam Tribe","WT",1
+"2108","City of Puyallup","WDOE","WT",1
+"2109","City of Seattle","City of Seattle","WT",0
+"2110","NWIFC","NMFS","WT",1
+"2111","Kitsap County","Silverdale Water District","WT",1
+"2112","Thurston County","WDOH","WT",1
+"2119","Long Live the Kings","PSP","WT",0
+"2120","WDFW","Snohomish Conservation District","WT",1
+"2126","Stillaguamish Clean Water District","Clean Water Advisory Board","WT",0
+"2127","Whidbey ECO Net","Whidbey Environmental Action Network","WT",1
+"2128","WSUX Island Waste Wise","WSUX Island","WT",1
+"2134","Friends of the San Juans","WDFW","WT",0
+"2135","Chambers/Clover Watershed Council","Puyallup Tribe","WT",1
+"2141","Lower Hood Canal Watershed Coalition","Hood Canal Environmental Council","WT",1
+"2142","Skagit River System Cooperative","NWIFC","WT",1
+"2143","Washington Trollers Association","Nooksack Salmon Enhancement Association","WT",1
+"2144","Feiro Marine Life Center","Peninsula College","WT",1
+"2152","City of Tumwater","South Puget Sound Salmon Enhancement","WT",1
+"2153","WSUX Jefferson","12,000 Rain Gardens","WT",0
+"2154","Northwest Indian College","Lummi Tribe","WT",0
+"2161","Sierra Club","WDFW","WT",0
+"2162","WWU/Huxley College on the Peninsulas","Feiro Marine Life Center","WT",0
+"2163","City of Seattle","Seattle City Light","WT",1
+"2170","Port of Tacoma","Friends of Julia's Gulch","WT",0
+"2171","Stillaguamish Tribe","USACOE","WT",1
+"2172","Seattle Aquarium","NOAA","WT",1
+"2173","Thurston County","Salmon Recovery Task Force","WT",0
+"2180","Newcastle Weed Warriors","Friends of the Cedar River Watershed","WT",1
+"2181","Feiro Marine Life Center","National Marine Sanctuary Program","WT",0
+"2188","Sound Salmon Solutions","Trout Unlimited","WT",0
+"2195","WRIA 2","San Juan Preservation Trust","WT",0
+"2196","Pacific Denkmann Company","WDNR","WT",1
+"2202","City of Seattle","WALPA","WT",1
+"2210","Island County Water Resources Advisory Committee","Island County Public Health","WT",0
+"2211","UW","NANOOS","WT",1
+"2212","NOAA","USDOI","WT",1
+"2213","NWIFC","NWIFC","WT",1
+"2221","Island County","Island MRC","WT",0.5
+"2222","WRIA 2 TAG","Friends of the San Juans","WT",0
+"2223","Nooksack Tribe","WRIA 1","WT",1
+"2232","Stewardship Partners","Sustainable West Seattle","WT",0
+"2233","Snohomish MRC","WRCO","WT",0
+"2234","Taylor Shellfish Farms","Skagit Conservation Education Alliance","WT",1
+"2241","WRIA 8","PS RITT","WT",0
+"2242","Environmental Coaliton of South Seattle","City of Seattle","WT",0
+"2243","Padilla Bay National Estuarine Research Reserve","Skagit Conservation District","WT",1
+"2251","US Navy","PSP Science Panel","WT",0
+"2252","Nisqually River Foundation","E3 Washington","WT",0
+"2253","King County","Misc small cities within the WRIAs","WT",1
+"2262","King County","UW","WT",0
+"2263","Bainbridge Island Watershed Council","Suquamish Tribe","WT",1
+"2264","Whatcom County","WDOE","WT",1
+"2265","Nisqually Tribe","USFWS","WT",1
+"2271","WDOE","PSP Oil Spill Work Group","WT",0
+"2272","WSUX Beachwatchers","Port Townsend Marine Science Center","WT",0
+"2273","Whatcom County","LSC Partnership","WT",0
+"2274","Olympic Outdoor Center","Kitsap ECO Net","WT",1
+"2275","USCG","Makah Tribe","WT",0
+"2281","Kitsap Public Health District","WDOE","WT",0
+"2282","City of Bothell","King County","WT",0
+"2283","Skokomish Tribe","HCCC","WT",1
+"2289","USEPA","PSP","WT",0
+"2290","City of Bainbridge Island","WDOH","WT",0
+"2295","WDFW","USFWS","WT",0
+"2296","Great Peninsula Conservancy","Squaxin Tribe","WT",0
+"2304","WDOE","King County","WT",1
+"2305","Washington Sea Grant","PSP","WT",0
+"2306","King Conservation District","King County","WT",1
+"2307","City of Redmond","King County","WT",1
+"2308","WDFW","USEPA","WT",0
+"2316","OrcaNet","Puget Sound Environmental Caucus","WT",0
+"2317","Skokomish Tribe","Hood Canal Salmon Enhancement","WT",1
+"2318","Snohomish Conservation District","Snohomish County","WT",0
+"2319","NWFSC","Long Live the Kings","WT",0
+"2328","Puyallup Tribe","WDNR","WT",1
+"2329","Trout Unlimited","Long Live the Kings","WT",0
+"2337","Long Live the Kings","NWIFC","WT",0
+"2338","UW Tacoma","UW Tacoma","WT",0
+"2339","Point No Point Treaty Council","Long Live the Kings","WT",1
+"2349","WDFW","Wild Fish Conservancy","WT",1
+"2350","Citizens for a Healthy Bay","WDFW","WT",0
+"2351","South Puget Sound Salmon Enhancement","WDFW","WT",0
+"2352","WDOE","PSP","WT",0
+"2358","WDOE","Jefferson County","WT",1
+"2359","Stanford","Inmigrantes Unidos de Shelton","WT",0
+"2360","Wolf Hollow Wildlife Rehabilitation Center","SeaDoc Society","WT",1
+"2365","WSUX Mason","Mason County","WT",1
+"2366","USFWS","South Puget Sound Salmon Enhancement","WT",1
+"2372","City of Everett","WDOE","WT",0
+"2373","City of Seattle","Skagit Environmental Endowment Commission","WT",0
+"2374","Kitsap County","Kitsap County","WT",0
+"2379","Skagit MRC","Skagit River System Cooperative","WT",0
+"2386","Jefferson County","NMFS","WT",0
+"2387","NOAA","Pacific Shellfish Institute","WT",0
+"2395","Thurston County","City of Olympia","WT",1
+"2396","Water Tenders","USACOE","WT",0
+"2404","Sierra Club","Washington Environmental Council","WT",0.5
+"2405","Clallam County","Port Angeles School District","WT",1
+"2406","Stillaguamish Tribe","Nooksack Salmon Enhancement Association","WT",1
+"2413","NOAA","NAME","WT",1
+"2414","Futurewise","City of Seattle","WT",0
+"2420","WDOE","Skagit Fisheries Enhancement","WT",1
+"2421","Stillwaters Environmental Education Center","Kitsap Conservation District","WT",1
+"2427","Whidbey Environmental Action Network","Camano CARE","WT",1
+"2428","Stillaguamish Tribe","Tulalip Tribe","WT",1
+"2434","Urban Wilderness Project","Seattle Aquarium","WT",0
+"2437","Bainbridge Beach Naturalists","Bainbridge Island Land Trust","WT",0
+"2438","WRIA 6","Skagit River System Cooperative","WT",1
+"2439","Snohomish County","Stillaguamish River Flood Control District","WT",0
+"2440","NMFS","PNAMP","WT",0
+"2445","WDOE","City of Redmond","WT",1
+"2446","Whatcom County","Lummi Tribe","WT",1
+"2447","Surfrider Foundation","WDOE","WT",1
+"2448","Northwest Straits Commission","UW","WT",1
+"2453","Nisqually River Council","Chambers of Commerce","WT",1
+"2454","WSUX","Squaxin Tribe","WT",1
+"2455","San Juan MRC","WDFW","WT",1
+"2456","Nooksack Salmon Enhancement Association","Whatcom Land Trust","WT",1
+"2457","City of Port Angeles","Port Angeles Chamber of Commerce","WT",0
+"2464","Citizens for a Healthy Bay","Futurewise","WT",1
+"2470","Clallam County","PSP","WT",0
+"2471","USFS","American Rivers","WT",1
+"2478","Point No Point Treaty Council","PSSRC","WT",0
+"2479","Lummi Tribe","Nooksack Tribe","WT",1
+"2480","Hood Canal Salmon Enhancement","Mason County","WT",1
+"2488","City of Redmond","King County","WT",1
+"2493","WDOE","Chambers/Clover Watershed Council","WT",0
+"2494","WDOE","WDFW","WT",1
+"2495","WSUX Beachwatchers","South Whidbey School District","WT",0
+"2500","Nisqually Land Trust","South Puget Sound Salmon Enhancement","WT",1
+"2505","City of Milton","Pierce Conservation District","WT",0
+"2506","City of Bellingham","Nooksack Tribe","WT",1
+"2507","Washington Environmental Council","Skagit Fisheries Enhancement","WT",0
+"2511","City of Gig Harbor","WDOE","WT",1
+"2518","Environmental Science Associates","HCCC","WT",0
+"2519","San Juan County","WDOE","WT",0
+"2520","WRIA 9","City of Seattle","WT",0
+"2521","National Park Service","Feiro Marine Life Center","WT",0
+"2522","Chico Creek Task Force","Suquamish Tribe","WT",0
+"2527","UW","PSP Leadership Council","WT",0
+"2528","City of Seattle","Pierce County","WT",0
+"2534","Association of Washington Cities","Shoreline Solar","WT",0
+"2535","Whidbey Conservation District","Sustainable Development Task Force of Snohomish County","WT",0
+"2541","LOTT Clean Water Alliance","WSUX Native Plant Salvage Project","WT",0
+"2542","Kitsap Conservation District","Kitsap County","WT",0
+"2543","Snoqualmie Watershed Forum","Stewardship Partners","WT",0
+"2544","Jamestown S'Klallam Tribe","WDOH","WT",1
+"2553","Skagit Land Trust","Skagit MRC","WT",0
+"2558","Snohomish Conservation District","Stillaguamish Tribe","WT",1
+"2559","Snohomish County","NOAA","WT",0
+"2560","City of Bonney Lake","KPG Design","WT",0
+"2563","Snohomish Conservation District","Snohomish County","WT",1
+"2569","WDOE","Clallam County","WT",0
+"2570","Port Townsend Marine Science Center","UW","WT",1
+"2579","Skagit MRC","Skagit County","WT",1
+"2580","WSUX Kitsap","Washington State Nursery & Landscape Association","WT",1
+"2581","HCCC","Jefferson County","WT",1
+"2587","City of Everett","WDOT","WT",1
+"2588","Jefferson County","WDOE","WT",0
+"2589","Friends of North Creek Forest","Forterra","WT",0
+"2596","Sierra Club","Wild Fish Conservancy","WT",0
+"2597","Suquamish Tribe","NWIFC","WT",1
+"2602","Pierce Conservation District","PenMet Parks","WT",1
+"2603","PNNL","WDOE","WT",0
+"2604","King Conservation District","King County Forestry Commission","WT",0
+"2609","City of Oak Harbor","Oak Harbor School District","WT",0
+"2614","Wild Fish Conservancy","Tulalip Tribe","WT",1
+"2616","Snohomish County","Snohomish Health District","WT",1
+"2628","WDFW","Chambers/Clover Watershed Council","WT",1
+"2629","Washington Sea Grant","Washington Sea Grant","WT",0
+"2636","City of Bremerton","WDOE","WT",1
+"2637","Pierce County","Tacoma-Pierce County Health Department","WT",1
+"2638","Stillaguamish Clean Water District","Snohomish County","WT",0
+"2639","WRIA 8","WRIA 8","WT",1
+"2643","Seattle Aquarium","COSEE","WT",0
+"2648","PSP Leadership Council","PSP Performance Management Committee","WT",0
+"2649","Kitsap County","PSEMP","WT",0
+"2654","Skagit Fisheries Enhancement","NPS","WT",1
+"2655","WRIA 2","San Juan Water Resources Committee","WT",0
+"2656","Citizens for a Healthy Bay","USEPA","WT",1
+"2657","WRIA 9","Watershed Leads","WT",1
+"2661","City of Newcastle","City of Sammamish","WT",0
+"2662","NOSC","Jefferson Conservation District","WT",1
+"2667","Clallam Conservation District","CCA","WT",0
+"2671","Stillaguamish Clean Water District","Snohomish County","WT",0
+"2676","King County","NPDES Phase II Municipalities","WT",1
+"2678","UW","Swinomish Tribe","WT",1
+"2679","Skagit County","Skagit River System Cooperative","WT",0
+"2686","Clallam County","Clallam PUD","WT",1
+"2687","Jefferson County","Kitsap Public Health District","WT",0
+"2691","Feiro Marine Life Center","Port Angeles School District","WT",1
+"2692","WSUX Kitsap","WSUX Puyallup","WT",0
+"2693","WDFW","WRIA 10/12","WT",0
+"2694","Stewardship Partners","Tulalip Tribe","WT",1
+"2697","City of Gig Harbor","WDFW","WT",1
+"2698","City of Bellingham","WDOE","WT",1
+"2703","Clallam County Streamkeepers","WDOE","WT",1
+"2704","Stillaguamish Clean Water District","Stillaguamish Tribe","WT",1
+"2705","Greenfleet Monitoring Expeditions","Hood Canal Environmental Council","WT",0
+"2711","City of Puyallup","PSP","WT",0
+"2712","City of Seattle","Seattle City Light","WT",NA
+"2713","Kitsap County","Olympic ESD","WT",0
+"2718","Long Live the Kings","Lummi Tribe","WT",1
+"2720","Stillaguamish Clean Water District","Warm Beach Community Association","WT",0
+"2724","Friends of the San Juans","Coastal Geologic Services","WT",0
+"2725","Chambers/Clover Watershed Council","Chambers/Clover Watershed Council","WT",1
+"2727","Lower Hood Canal Watershed Coalition","North Mason Voice","WT",1
+"2728","Skagit River System Cooperative","Skagit Tribe","WT",1
+"2733","City of Tumwater","Thurston County","WT",1
+"2734","WSUX Jefferson","WSUX Beachwatchers","WT",1
+"2738","Sierra Club","Long Live the Kings","WT",0
+"2739","South Puget Sound Salmon Enhancement","Squaxin Tribe","WT",NA
+"2744","Stillaguamish Tribe","OHAP","WT",1
+"2748","Newcastle Weed Warriors","King Conservation District","WT",0
+"2752","Sound Salmon Solutions","Stewardship Partners","WT",1
+"2753","Thurston Conservation District","Pacific Education Institute","WT",1
+"2758","WRIA 2","San Juan MRC","WT",0
+"2766","Nooksack Tribe","NWICC","WT",0
+"2770","Stewardship Partners","Kitsap Conservation District","WT",0
+"2771","Snohomish MRC","Stillaguamish Tribe","WT",0
+"2773","WRIA 8","WDOE","WT",0
+"2774","Environmental Coaliton of South Seattle","USACOE","WT",0
+"2777","US Navy","PSMEM","WT",0
+"2778","King County","King Conservation District","WT",1
+"2782","Whatcom County","Whatcom County","WT",1
+"2783","Nisqually Tribe","South Puget Sound Salmon Enhancement","WT",1
+"2785","WDOE","NWRRT","WT",0
+"2787","City of Bothell","City of Redmond","WT",0
+"2790","Great Peninsula Conservancy","WRCO","WT",1
+"2793","King Conservation District","NRCS","WT",1
+"2794","WDFW","PSP","WT",1
+"2803","Puyallup Tribe","Washington Farm Forestry Association","WT",1
+"2807","UW Tacoma","Citizens for a Healthy Bay","WT",0
+"2813","Citizens for a Healthy Bay","NOAA","WT",0
+"2814","South Puget Sound Salmon Enhancement","Mason Lead Entity","WT",0
+"2815","WDOE","Office of Regulatory Assistance","WT",0
+"2816","WDOE","Dungeness LLWG","WT",0
+"2823","Skagit MRC","Skagit County","WT",0
+"2838","Stillwaters Environmental Education Center","Audubon Society","WT",1
+"2841","Stillaguamish Tribe","NWIFC","WT",1
+"2842","WRIA 6","Stillaguamish Tribe","WT",1
+"2843","Snohomish County","Snohomish Health District","WT",0
+"2844","Whatcom County","WDFW","WT",1
+"2845","Surfrider Foundation","WDFW","WT",1
+"2848","WSUX","Hood Canal Salmon Enhancement","WT",1
+"2849","City of Port Angeles","Port of Port Angeles","WT",0
+"2853","Citizens for a Healthy Bay","City of Tacoma","WT",1
+"2871","WRIA 9","WDOE","WT",1
+"2873","City of Seattle","UW","WT",1
+"2878","Association of Washington Cities","Washington Conservation Voters","WT",0
+"2880","LOTT Clean Water Alliance","City of Lacey","WT",1
+"2881","Snoqualmie Watershed Forum","Mountains to Sound Greenway","WT",0

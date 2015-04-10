@@ -1,0 +1,14 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi
+\doTocEntry\tocsection{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{\bf  \MakeUppercase  {Introduction}}}{1}\relax 
+\doTocEntry\tocsection{2}{\csname a:TocLink\endcsname{1}{x1-20002}{QQ2-1-2}{\bf  \MakeUppercase  {Background}}}{3}\relax 
+\doTocEntry\tocsection{3}{\csname a:TocLink\endcsname{1}{x1-30003}{QQ2-1-3}{\bf  \MakeUppercase  {Rationale}}}{5}\relax 
+\doTocEntry\tocsection{4}{\csname a:TocLink\endcsname{1}{x1-40004}{QQ2-1-4}{\bf  \MakeUppercase  {Model}}}{9}\relax 
+\doTocEntry\tocsection{5}{\csname a:TocLink\endcsname{1}{x1-50005}{QQ2-1-5}{\bf  \MakeUppercase  {Case Selection and Data}}}{14}\relax 
+\doTocEntry\tocsection{6}{\csname a:TocLink\endcsname{1}{x1-60006}{QQ2-1-6}{\bf  \MakeUppercase  {Analysis and Results}}}{16}\relax 
+\doTocEntry\tocsubsection{6.1}{\csname a:TocLink\endcsname{1}{x1-70006.1}{QQ2-1-7}{Model Fit}}{16}\relax 
+\doTocEntry\tocsubsection{6.2}{\csname a:TocLink\endcsname{1}{x1-80006.2}{QQ2-1-8}{Control Variables}}{20}\relax 
+\doTocEntry\tocsubsection{6.3}{\csname a:TocLink\endcsname{1}{x1-90006.3}{QQ2-1-9}{Group Participation}}{23}\relax 
+\doTocEntry\tocsubsection{6.4}{\csname a:TocLink\endcsname{1}{x1-100006.4}{QQ2-1-10}{Diminishing Returns}}{24}\relax 
+\doTocEntry\tocsubsection{6.5}{\csname a:TocLink\endcsname{1}{x1-110006.5}{QQ2-1-11}{Pre-existing Network Ties}}{29}\relax 
+\doTocEntry\tocsection{7}{\csname a:TocLink\endcsname{1}{x1-120007}{QQ2-1-12}{Discussion/Conclusion}}{32}\relax 
+\doTocEntry\tocsection{}{\csname a:TocLink\endcsname{1}{x1-130007}{QQ2-1-13}{References}}{35}\relax 

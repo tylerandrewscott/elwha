@@ -1,0 +1,63 @@
+% Table created by stargazer v.4.5.3 by Marek Hlavac, Harvard University. E-mail: hlavac at fas.harvard.edu
+% Date and time: Wed, Dec 11, 2013 - 14:35:33
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\Ginclude@eps}{"#1"}{#1}{}{}
+\makeatother
+\usepackage{geometry}
+\usepackage[backend=biber,sortlocale=de]{biblatex}
+\usepackage{array,booktabs}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{tabularx}
+\usepackage[hang,flushmargin]{footmisc}
+\title{ERGMs from Sim 4}
+\author{Tyler Scott}
+\date{12/8/2013}
+\begin{document}
+
+\begin{table}[!htbp] \centering 
+  \caption{} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lcccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{4}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-5} 
+\\[-1.8ex] & \multicolumn{4}{c}{net} \\ 
+\\[-1.8ex] & (1) & (2) & (3) & (4)\\ 
+\hline \\[-1.8ex] 
+ sum & 0.047 & $-$0.255$^{***}$ & $-$4.414$^{***}$ & $-$4.644$^{***}$ \\ 
+  & (0.051) & (0.043) & (0.053) & (0.119) \\ 
+  & & & & \\ 
+ nonzero & $-$4.438$^{***}$ & $-$4.231$^{***}$ &  &  \\ 
+  & (0.093) & (0.066) &  &  \\ 
+  & & & & \\ 
+ mutual.min &  & 2.084$^{***}$ & 2.308$^{***}$ & 2.300$^{***}$ \\ 
+  &  & (0.068) & (0.117) & (0.114) \\ 
+  & & & & \\ 
+ transitiveweights.min.max.min &  &  & 1.049$^{***}$ & 0.538$^{***}$ \\ 
+  &  &  & (0.048) & (0.060) \\ 
+  & & & & \\ 
+ cyclicalweights.min.max.min &  &  & $-$0.112$^{**}$ & $-$0.545$^{***}$ \\ 
+  &  &  & (0.045) & (0.048) \\ 
+  & & & & \\ 
+ nodecov.sum..NUMRESP &  &  &  & 0.199$^{***}$ \\ 
+  &  &  &  & (0.010) \\ 
+  & & & & \\ 
+\hline \\[-1.8ex] 
+Akaike Inf. Crit. & $-$15,465.170 & $-$83,744.790 & $-$14,252.500 & $-$15,045.850 \\ 
+Bayesian Inf. Crit. & $-$15,447.590 & $-$83,718.420 & $-$14,217.340 & $-$15,001.890 \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{4}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+\normalsize 
+\end{tabular} 
+\end{table} 
+
+\end{document}

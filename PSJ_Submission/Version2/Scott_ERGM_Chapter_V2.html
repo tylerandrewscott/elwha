@@ -1,0 +1,2084 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"  
+  "http://www.w3.org/TR/html4/loose.dtd">  
+<html > 
+<head><title></title> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="generator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.tug.org/tex4ht/)"> 
+<!-- html --> 
+<meta name="src" content="Scott_ERGM_Chapter_V2.tex"> 
+<meta name="date" content="2014-12-10 12:05:00"> 
+<link rel="stylesheet" type="text/css" href="Scott_ERGM_Chapter_V2.css"> 
+</head><body 
+>
+   <div class="maketitle">
+
+
+<h2 class="titleHead">Analyzing policy networks using valued exponential
+random graph models (ERGMs): To what extent do
+government-sponsored collaborative groups enhance
+organizational networks?</h2>
+ <div class="author" ></div><br />
+<div class="date" ><span 
+class="ecrm-1440">December 10, 2014</span></div>
+
+   </div>
+   <div 
+class="abstract" 
+>
+<!--l. 62--><p class="indent" >
+
+<div class="center" 
+>
+<!--l. 62--><p class="noindent" >
+<!--l. 62--><p class="noindent" ><span 
+class="ecbx-1200">Abstract</span></div>
+<!--l. 65--><p class="indent" >   This paper examines collaborative management groups from the perspective of policymakers
+seeking to increase coordination within a policy network. While governments often support
+collaborative groups as a tool to address perceived network failures such as a lack of
+coordination, the net impact groups have is unclear. I use valued exponential random graph
+models (ERGMs) to model relationships of varying strength amongst a regional network of
+organizations involved in 57 collaborative groups. This provides a unique opportunity to study
+the interplay between numerous groups and organizations within a large-scale network.
+Valued ERGMs are a recently developed extension of standard ERGMs that model
+binary ties; thus, this paper also makes a methodological contribution to the policy
+literature. Findings suggest that participation in collaborative groups does motivate
+stronger levels of coordination and cooperation amongst organizations network ties
+between individual organizations; however, this effect is strongest for: (a) organizations
+that are not already members of another group; and (b) organizations that do not
+have a pre-existing tie. These results support a transaction-cost based perspective of
+how government-sponsored collaborative groups can influence network coordination;
+further, they also provide an empirical example of the Ecology of Games, in which
+multiple collaborative institutions have interactive effects on one another within a policy
+network.<br 
+class="newline" />
+<!--l. 69--><p class="noindent" ><span 
+class="ecbx-1200">Keywords: Collaborative management, policy networks, ERGM, valued ties,</span>
+<span 
+class="ecbx-1200">network analysis, transaction costs</span>
+<!--l. 71--><p class="indent" >
+
+   </div>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-10001"></a><span 
+class="ecbx-1200">INTRODUCTION</span></h3>
+<!--l. 77--><p class="noindent" >This paper examines how government-sponsored collaborative environmental management
+groups influence the structure of inter-organizational networks. Collaborative groups continue
+to grow in popularity as a tool for increasing coordination amongst network actors (Margerum
+2011). In theory, government-sponsored groups lower the transaction costs organizations face
+with regards to forming and maintaining inter-organizational ties by subsidizing a degree of
+these costs. Thus, participants in groups which facilitate &#8216;principled engagement&#8217; and increase
+the &#8216;capacity for joint action&#8217; (Emerson et al. 2012) are much more likely to engage directly in
+consultation, planning, or policy implementation with one another as well (CITATION
+REDACTED).
+<!--l. 79--><p class="indent" >   In practice, when viewed at a larger scale it is unclear whether collaborative groups foster a
+net increase in cooperation and coordination amongst organizations (i.e., more and stronger
+inter-organizational ties) or whether they simply engender a different pattern of ties with no
+net change in overall collaborative behavior (Lubell et al. 2010; Lubell &amp; Lippert
+2011). Recent literature building upon the &#8220;Ecology of Games&#8221; framework (Berardo &amp;
+Scholz 2010; Lubell et al. 2010; Lubell &amp; Lippert 2011; Lubell et al. 2011; McAllister
+et al. 2014; Smaldino &amp; Lubell 2014; Niles &amp; Lubell 2012) shows that &#8220;any particular
+collaborative process may have positive or negative feedbacks on the performance of other
+policy decisions&#8217;&#8217; (Gerlak et al. 2012, p. 424). Accordingly, in light of the complex
+array of existing institutions (collaborative groups and other venues) organizations
+already operate within (see Lubell 2013; Lubell et al. 2011), the standard rationale for
+government initiation and support of new, additional collaborative groups deserves greater
+scrutiny.
+<!--l. 81--><p class="indent" >   This analysis is a companion piece to CITATION REDACTED, which also addresses
+government-sponsored collaborative management groups employed as network interventions.
+Both analyses leverage a unique dataset concerning a large scale regional network of
+
+organizations involved 57 different collaborative management groups involved in ecosystem
+restoration and recovery. However, CITATION REDACTED seeks to operationalize and test
+the framework for collaborative governance developed by Emerson et al. (2012),
+specifically examining the mechanisms of principled engagement and increased capacity for
+joint action that are theorized to be drivers of collaborative behavior. CITATION
+REDACTED tests these mechanisms using data concerning participant beliefs about
+group actions and outcomes, showing a positive and significant relationship between
+the extent to which a group is reported to facilitated principled engagement with
+other organizations and the prevalence of coordination and cooperation amongst
+group members. In contrast, this paper uses data concerning participation in group
+activities to test whether participation in a collaborative group is associated with
+a corresponding increase in information sharing, planning, and policy or program
+implementation with other organizations. Building upon this basic question, I use
+participation data from multiple groups to test whether participation in several groups
+diminishes the predicted marginal impact of participation, and further use data concerning
+whether a network tie existed prior to group membership to compare the extent
+to which group participation serves to strengthen existing ties versus foster new
+ones. The overarching goal of this paper is to examine whether there is a prima facie
+case supporting the use of collaborative management groups as a tool for increasing
+network coordination, particularly for complex policy networks in which organizations
+already have many network ties or are members of multiple collaborative groups. I
+also make a methodological contribution to the policy literature by providing an
+empirical example of statistical network analysis using values to reflect network ties
+of differing strengths instead of modeling a binary metric reflecting tie presence or
+absence.
+<!--l. 83--><p class="indent" >   In the section to follow, I provide the background and theoretical rationale for this research.
+Particularly, I define and distinguish between key terms such as networks and collaborative
+groups and embed my hypotheses within the extant literature. I then describe the research
+design and the recently developed method of valued-tie exponential random graph models
+
+(ERGMs) (Krivitsky 2012; Krivitsky &amp; Butts 2013; Cranmer &amp; Desmarais 2011;
+Desmarais &amp; Cranmer 2012b; Wyatt et al. 2009; Wyatt et al. 2010) I use to test my
+hypotheses. After describing the survey instrument and data collection process, I present
+model results. Finally, I conclude with a discussion of findings and their broader
+implications, both for empirical management and for the ongoing collaborative governance
+literature.
+<!--l. 85--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-20002"></a><span 
+class="ecbx-1200">BACKGROUND</span></h3>
+<!--l. 87--><p class="noindent" >The diffuse nature of networks<span class="footnote-mark"><sup class="textsuperscript">1</sup></span> <a 
+ id="x1-2001f1"></a><span class="footnote-mark"><a 
+ id="fn1x0"><sup class="textsuperscript">1</sup></a></span><span 
+class="ecrm-1000">Broadly, networks are simply defined as &#8220;collections of actors who pursue repeated, enduring exchange relations</span>
+   <span 
+class="ecrm-1000">with one another and, at the same time, lack a legitimate organizational authority to arbitrate and resolve</span>
+   <span 
+class="ecrm-1000">disputes that may arise during the exchange&#8221; (Podolny &amp; Page 1998, p. 59). By expanding the concept of</span>
+   <span 
+class="ecrm-1000">exchange, networks can be broadly defined as &#8220;sets of individuals [or organizations] bound by communication,</span>
+   <span 
+class="ecrm-1000">relationships, positions, or interest area&#8221; (Margerum 2011, p. 33). This definition can encompass social</span>
+   <span 
+class="ecrm-1000">networks (interpersonal relationships, Putnam 2000), inter-organizational networks (structures and processes in</span>
+   <span 
+class="ecrm-1000">which organizations interact, Alexander 1993), and political networks (power positions and configurations,</span>
+   <span 
+class="ecrm-1000">Knoke 1990).</span> 
+might at first seem to be completely at odds with the notion of direct government
+influence and strategic public policy interventions; however, the concept of
+governance<span class="footnote-mark"><sup class="textsuperscript">2</sup></span> <a 
+ id="x1-2002f2"></a><span class="footnote-mark"><a 
+ id="fn2x0"><sup class="textsuperscript">2</sup></a></span><span 
+class="ecrm-1000">"Governance" refers to a process in which public actors make policies, deliver services, or implement policies</span>
+   <span 
+class="ecrm-1000">within a network (or networks) of actors (Frederickson 2005; Rhodes 1997; Torfing &amp; Sorensen 2007).</span>
+   <span 
+class="ecrm-1000">Governance is characterized by a high degree of interdependency amongst actors and a complex</span>
+   <span 
+class="ecrm-1000">decision-making process (Klijn et al. 2010). Bressers (2009, p. 125) poses that "governance" is an enlargement</span>
+   <span 
+class="ecrm-1000">of the concept of public policy (also Bressers &amp; Kuks 2003). Thus, in keeping with the findings of Ostrom et al.</span>
+   <span 
+class="ecrm-1000">(1961), governance is not really a new state of affairs, but rather a basis for scientific variables that can be used</span>
+   <span 
+class="ecrm-1000">for empirical studies.</span> 
+implies that government cannot act autonomously. Public agents must instead engage in
+multi-actor processes in which it is only one of many relevant actors, as its "core purposes can
+only hope to be realized in such settings" (Bressers 2009, p. 130). In other words, public
+agencies still face the same problems of service delivery, but must employ different means to
+achieve their desired ends.
+
+<!--l. 89--><p class="indent" >   Within a network governance context, public policy makers often fulfill a role as network
+manager (Klijn &amp; Koppenjan 2000); instead of carrying out tasks directly, policy makers
+attempt to address collective action dilemmas indirectly by changing network rules and
+influencing network relationships (Klijn &amp; Koppenjan 2006). Interorganizational (or
+inter-stakeholder) collaborative groups are one of the most prominent (and well-documented)
+mechanisms by which environmental policy makers attempt to alter the structure and function
+of an organizational network (see Ansell &amp; Gash 2008; Emerson et al. 2012; Margerum
+2011, for recent discussions). Such groups represent "a governing arrangement where
+one or more public agencies directly engage non-state stakeholders in a collective
+decision-making process that is formal, consensus-oriented, and deliberative and that aims to
+make or implement public policy or manage public programs or assets" (Ansell &amp;
+Gash 2008, p. 544) (see also Emerson et al. 2012; Imperial 2005; Margerum 2011).
+Even though collaborative effort on the part of a public agency might be required
+by legislative mandate, a collaborative group represents a voluntary association of
+legally autonomous public, private, or non-profit organizations (Ansell &amp; Gash 2008;
+Schneider et al. 2003; Lubell et al. 2002); this serves to distinguish a collaborative group
+from an organization, defined in this analysis as a legally autonomous entity with a
+formal hierarchical structure. Thus, a "collaborative management group" refers to
+a management entity comprised of several independent organizations that uses a
+deliberative structure and seeks to encompass relevant stakeholders (Ansell &amp; Gash
+2008).<span class="footnote-mark"><sup class="textsuperscript">3</sup></span> <a 
+ id="x1-2003f3"></a><span class="footnote-mark"><a 
+ id="fn3x0"><sup class="textsuperscript">3</sup></a></span><span 
+class="ecrm-1000">Collaboration of course can also occur outside the auspices of a formal "collaborative group." Margerum (2011,</span>
+   <span 
+class="ecrm-1000">p. 6) defines collaboration as &#8220;an approach to solving complex problems in which a diverse group of</span>
+   <span 
+class="ecrm-1000">autonomous stakeholders deliberates to build consensus and develop networks for translating consensus into</span>
+   <span 
+class="ecrm-1000">results.&#8221;</span> 
+To avoid confusion, going forward this paper uses &#8220;coordination&#8221; and &#8220;cooperation&#8221; in reference
+to network ties between two organizations and reserves the term &#8220;collaboration&#8221; as a reference
+specifically to collaborative management groups.
+<!--l. 91--><p class="noindent" >
+
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-30003"></a><span 
+class="ecbx-1200">RATIONALE</span></h3>
+<!--l. 93--><p class="noindent" >If coordination and cooperation with other organizations is potentially advantageous, why
+do organizations not always elect to do so? Assuming that network organizations
+act rationally in pursuit of their interests, one might surmise then that the existing
+structure and function of an organizational network reflects the landscape of costs and
+benefits associated with network relationships. The benefits of inter-organizational
+coordination and cooperation include heightened information access, issue understanding,
+conflict reduction, and implementation support (Moreland et al. 1993; Gigone &amp; Hastie
+1993; Cragan &amp; Wright 1990; Hill &amp; Lynn 2003; Susskind et al. 1999; Sabatier et al.
+2005). Of course, collaboration is not always beneficial for organizations. Further,
+even in cases where collaboration might be advantageous, the time and resources
+required to initiate and maintain network relations can outweigh any potential benefits.
+Highly practical constraints such as travel time (Thomas 2003) or there being too
+many different meetings and activities for managers to attend each one (Margerum
+2011) constrain inter-organizational collaboration. Researchers also often discuss
+more intangible transaction costs associated with network relations, such as norms of
+reciprocity (Putnam 2000) or shared beliefs and preferences (Schneider et al. 2003;
+Sabatier &amp; Jenkins-Smith 1993), which also incentivize (or disincentivize) collaborative
+efforts.
+<!--l. 95--><p class="indent" >   Though the behavior of individual organizations ultimately depends on the particular
+incentives faced and motivations held by each organization, from a policy and management
+perspective existing policy network structures can prove suboptimal (i.e., &#8216;&#8217;network failure&#8221;
+(Schrank &amp; Whitford 2011) or &#8216;&#8217;system failure&#8221; (Carlsson &amp; Jacobsson 1997)) in the same way
+that existing market structures can lead to negative outcomes (for instance, classic market
+failures such as overfishing) (Weimer &amp; Vining 2010). In particular, Schneider et al. (2003)
+find that often network relations are under supplied because &#8217;the costs of creating
+and maintaining networks [network ties in the context of this analysis] are high and
+the benefits gained by the policy community&#x2026; are not reflected in the incentives of
+individual stakeholders" (Schneider et al. 2003, p. 144). By producing outputs such as
+
+meetings and providing administrative support for joint activities, a collaborative
+group can potentially address this under supply problem by altering the transaction
+cost landscape that each organization faces. The sponsoring agency is essentially
+hoping that subsidizing a degree of the transaction costs related to inter-organizational
+networking will engender increased collaboration. This type of intervention can create new
+network content (Koppenjan &amp; Klijn 2004), guide network interactions (Kickert et al.
+1997; Mandell 1990), and further inter-actor trust through facilitated interactions
+(Klijn et al. 2010). For instance, Schneider et al. (2003) find evidence that federal
+programs such as the National Estuary Program (which supports collaborative work with
+stakeholders) can help overcome "second-level" collective action problems (i.e., those
+related to coordination and cooperation) by providing funding, encouraging broader
+participation, establishing a focal policy arena, and increasing legitimacy amongst network
+organizations.
+<!--l. 97--><p class="indent" >   Nonetheless, altering the incentive structures organizations face does not necessarily alter
+the motivations and goals of said organizations (but might in the long run, as I discuss later).
+Thus, the extent to which government initiation and support of collaborative management
+groups increases actual inter-organizational cooperation and coordination remains an open
+question. The basic hypothesis (H1) for this analysis is that participation in a collaborative
+group is associated with an increase in direct coordination and cooperation with other
+organizations.
+<!--l. 100--><p class="indent" >
+      <dl class="description"><dt class="description">
+ </dt><dd 
+class="description">H1:  Participation  in  a  collaborative  group  is  associated  with  an  increase  in  direct
+      coordination and cooperation with other organizations</dd></dl>
+<!--l. 105--><p class="indent" >   While a positive association is expected, the relative strength&#8211;or tenuousness&#8211;of the
+relationship between collaborative group formation and increases in actual coordination and
+cooperation amongst individual organizations, which speaks to the impact that a
+government-sponsored network intervention can achieve, has not been systematically evaluated.
+Further, I extend this basic hypothesis to examine conditions that are more interesting in
+theory and practice. First, collaborative processes can have both positive and negative
+
+feedbacks within a policy network (Gerlak et al. 2012), The reality that network interventions
+can have both positive and negative impacts within a complex policy subsystem is one of the
+overarching messages of the growing Ecology of Games literature (Berardo &amp; Scholz 2010;
+Lubell et al. 2010; Lubell et al. 2011; McAllister et al. 2014; Smaldino &amp; Lubell 2014; Niles &amp;
+Lubell 2012). New collaborative groups do not operate in a vacuum. Especially in highly
+institutionalized settings such as the Puget Sound case I examine in this paper, organizations
+not only already possess various types of ties to other network organizations, but moreover are
+typically involved in a complex array of existing collaborative institutions as well (see
+Lubell 2013; Lubell et al. 2011). The Ecology of Games framework (developed by
+Long (1958) and reintroduced by Lubell et al. (2010)) emphasizes organizational
+constraints, namely that organizations have a finite capacity for networking and
+interaction with other organizations. While this capacity might change in the long
+run as a function of changing organizational goals, motivations, and beliefs (e.g.,
+Bingham &amp; O&#8217;Leary 2008; Innes &amp; Booher 2010; Leach &amp; Sabatier 2005; Lubell
+2005), in the short run organizational &#8220;demand&#8221; for collaboration is essentially fixed.
+Thus, a new collaborative group might change the existing pattern of network ties
+without engendering a net increase in overall coordination within a complex policy
+network (i.e., instead of keeping old ties and forming new ones, organizations drop
+old ties and form new ones, resulting in a zero-sum change). This analysis does not
+specifically examine organizational capacity, since my focus is on the general impacts of
+a government-sponsored network intervention. Nonetheless the implications of the
+Ecology of Games framework and related literature directly inform Hypothesis 2
+(H2):
+<!--l. 108--><p class="indent" >
+      <dl class="description"><dt class="description">
+ </dt><dd 
+class="description">H2:   Participation   in   multiple   collaborative   groups   diminishes   the   association
+      between group participation and direct coordination and cooperation with other
+      organizations</dd></dl>
+<!--l. 113--><p class="indent" >   Further, network ties are often conceptually dichotomized as either &#8220;bridging&#8221; or &#8220;bonding&#8221;
+ties (Berardo &amp; Scholz 2010; Berardo et al. 2014); bridging ties are &#8220;weak ties&#8221; (Granovetter
+
+1985) that maximize information flow and bonding ties are &#8220;strong ties&#8221; characterized by high
+levels of reciprocity and trust. The &#8220;information sharing&#8221; ties measured in my data are an
+example of a bridging tie, while a &#8220;joint implementation&#8221; tie more closely equates to a
+bonding tie (I assume that coordinated planning ties occupy a middle ground). Since
+respondents are asked to report whether a given tie existed prior to their involvement
+in a PSP-sponsored group (these data are discussed in greater detail below), this
+indicator can be used to compare the extent to which participation in a collaborative
+group serves to strengthen existing relationships versus foster new ones. Scholz et al.
+(2008) find that lack of information about potential partners significantly constrains
+inter-organizational coordination and cooperation in policy networks. Government-supported
+collaborative groups can reduce these search costs. For organizations that have an existing
+tie, however, search costs are presumably not a major barrier to having a stronger
+relationship; instead, the extent to which organizational goals and motivations do not
+overlap&#8211;or at least are not compatible&#8211;is likely a more prominent factor in explaining
+why two organizations do not have a stronger network tie. My analysis considers
+short-term network changes; while participation in a collaborative group can alter
+organizational goals and beliefs in the long run (e.g., Bingham &amp; O&#8217;Leary 2008;
+Leach &amp; Sabatier 2005; Lubell 2005), in the short run group participation likely
+does more to reduce search costs (i.e.., increase awareness of other organizations).
+Since lack of awareness better explains why two organizations have no network tie
+whatsoever than it explains why two organizations do not have a stronger network tie,
+my third hypothesis (H3) is that the predicted change in tie strength for any two
+collaborative group participants will be diminished if two organizations have a pre-existing
+tie:
+<!--l. 116--><p class="indent" >
+      <dl class="description"><dt class="description">
+ </dt><dd 
+class="description">H3: A pre-existing network tie diminishes the assocation between group participation
+      and predicted tie strength</dd></dl>
+<!--l. 121--><p class="noindent" >The following section describes the modeling approach I used to test these hypotheses.
+
+<!--l. 124--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-40004"></a><span 
+class="ecbx-1200">MODEL</span></h3>
+<!--l. 126--><p class="noindent" >While individual actor attributes affect network tie formation (Handcock et al. 2014b), the
+very presence or absence of other ties also affects whether other network ties are
+initiated, maintained, or destroyed (Lubell et al. 2012). This interdependence means
+that these data violate the standard statistical assumption that observations are
+independent of one another (Robins et al. 2012). Failing to account for this biases estimates
+(Kolaczyk 2009; Krackhardt 1988). Thus, I use exponential-family random graph
+models (ERGMs), which explicitly model tie interdependence (Lubell et al. 2012),
+to address these hypotheses. The application of ERGMs to policy research is well
+established in the literature (Feiock et al. 2010; Henry 2011; Lubell et al. 2012). The
+basic premise of ERGMs is that the observed network (the survey results) constitute
+one sample from a distribution of network graphs; I can simulate a distribution of
+similar graphs (i.e., ones that on average have the same number of organizations,
+inter-organizational ties, and other network structures as does the observed network) and
+then compare the observed network to this distribution. If the observed number of a
+specific network structure, for instance a triangle in which <span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ij</span></sub> <span 
+class="cmr-12">= 1</span>, <span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">jk</span></sub> <span 
+class="cmr-12">= 1</span>, and
+<span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ki</span></sub> <span 
+class="cmr-12">= 1</span>, is very high relative to the typical number of said structure present in the
+distribution of randomly simulated networks, then this would indicate that there is
+significant "transitivity" (i.e., &#8220;a friend of my friend is my friend&#8217;&#8217;) in the observed
+networks.
+<!--l. 128--><p class="indent" >   The primary consequence of assuming any type of
+dependence<span class="footnote-mark"><sup class="textsuperscript">4</sup></span> <a 
+ id="x1-4001f4"></a><span class="footnote-mark"><a 
+ id="fn4x0"><sup class="textsuperscript">4</sup></a></span><span 
+class="ecrm-1000">Transitivity is just one type of dependence. Others include &#8220;reciprocity,&#8217;&#8217; the tendency of ties to be</span>
+   <span 
+class="ecrm-1000">reciprocated, and &#8220;popularity,&#8217;&#8217; the tendency for popular network members to gain more network ties by virtue</span>
+   <span 
+class="ecrm-1000">of this popularity (see Lusher et al. 2013).</span> 
+amongst observations is that each and every tie variable must be modeled conditionally based
+upon all other ties observed in the network (Lusher et al. 2013). Because there is
+an extremely large number of possible network configurations, it is not feasible to
+analyze all possible graphs. Instead, the <span 
+class="ecti-1200">statnet </span>R package (Goodreau et al. 2008)
+implements a Markov chain Monte Carlo (MCMC) procedure that estimates model
+
+parameters using maximum likelihood estimation (Handcock 2003). The MCMC
+routine proposes a single change to the network (i.e., altering one potential tie
+between two nodes) and compares the probabilities of the previous and proposed
+networks.<span class="footnote-mark"><sup class="textsuperscript">5</sup></span> <a 
+ id="x1-4002f5"></a><span class="footnote-mark"><a 
+ id="fn5x0"><sup class="textsuperscript">5</sup></a></span><span 
+class="ecrm-1000">Lusher et al. (2013, p. 9) define the probability of network </span><span 
+class="cmmi-10">G </span><span 
+class="ecrm-1000">as </span><span 
+class="cmmi-10">P</span><sub><span 
+class="cmmi-7">&#x03B8;</span></sub><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">G</span><span 
+class="cmr-10">) = </span><span 
+class="cmmi-10">c </span><span 
+class="cmsy-10">*</span> <span 
+class="cmr-10">exp</span><sup><span 
+class="cmmi-7">&#x03B8;</span><sub><span 
+class="cmr-5">1</span></sub><span 
+class="cmmi-7">z</span><sub><span 
+class="cmr-5">1</span></sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">G</span><span 
+class="cmr-7">)+</span><span 
+class="cmmi-7">&#x03B8;</span><sub><span 
+class="cmr-5">1</span></sub><span 
+class="cmmi-7">z</span><sub><span 
+class="cmr-5">1</span></sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">G</span><span 
+class="cmr-7">)+</span><span 
+class="cmmi-7">...</span><span 
+class="cmr-7">+</span><span 
+class="cmmi-7">&#x03B8;</span><sub><span 
+class="cmmi-5">p</span></sub><span 
+class="cmmi-7">z</span><sub><span 
+class="cmmi-5">p</span></sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">G</span><span 
+class="cmr-7">)</span></sup><span 
+class="ecrm-1000">,</span>
+   <span 
+class="ecrm-1000">which means that the probability of a graph is given by the exponentiated sum of network statistics (</span><span 
+class="cmmi-10">z</span><sub><span 
+class="cmmi-7">p</span></sub><span 
+class="ecrm-1000">) each</span>
+   <span 
+class="ecrm-1000">weighted by the corresponding coefficient values </span><span 
+class="cmmi-10">&#x03B8;</span><sub><span 
+class="cmmi-7">p</span></sub><span 
+class="ecrm-1000">. Network statistics refer to the count of specific network</span>
+   <span 
+class="ecrm-1000">structures in </span><span 
+class="cmmi-10">G</span><span 
+class="ecrm-1000">, such as triangles.</span> 
+When the probability of the proposed network is greater than the current network, the MCMC
+routine chooses the proposed network and then repeats the same process; when the
+probability of the proposed network is less than the current network, the MCMC
+routine only chooses the proposed network a given percentage of the time (Lusher
+et al. 2013). By repeating this process over and over again, the MCMC sampling
+procedure converges on a stationary distribution of network graphs from which sample
+graphs can be drawn to generate a basis against which to compare the observed
+data.
+<!--l. 130--><p class="indent" >   Whereas CITATION REDACTED and most other statistical network analyses model
+binary network ties (either present or absent), this paper makes a methodological contribution
+by providing an empirical example of the valued ERGM method. &#8220;Valued networks,&#8217;&#8217;
+or networks with non-binary ties, are still very much an exploratory area within
+statistical network analysis. Applications of valued ERGMs to non-trivial empirical
+datasets are rare in the policy literature (Desmarais &amp; Cranmer 2012b; Krivitsky
+2012). The binary ERGM approach (as used in CITATION REDACTED) requires
+modeling each type of network tie as constituting a distinct network (e.g., a &#8220;joint
+implementation&#8217;&#8217; network and a &#8220;coordinated planning&#8217;&#8217; network). Modeling valued
+edges enables a more nuanced approach, specifically the ability to model one overall
+network consisting of inter-organizational relationships of differing intensity (e.g.,
+consultation vs. coordinated activity). This makes a great deal of empirical sense, since the
+different inter-organizational ties modeled in this paper (consultation, planning, and
+implementation) reflect relationships of differing intensity rather any sort of firm categorical
+boundaries. Valued ties are also helpful from an analytical perspective, as it allows for
+
+distinction between network structures consisting of more and less intensive ties. For
+instance, if Organization <span 
+class="ecti-1200">A </span>and Organization <span 
+class="ecti-1200">C </span>both engage in policy implementation
+with Organization <span 
+class="ecti-1200">B</span>, we might expect the fact that <span 
+class="ecti-1200">A </span>and <span 
+class="ecti-1200">C </span>each have a fairly
+intensive relationship with <span 
+class="ecti-1200">B </span>to increase the likelihood of <span 
+class="ecti-1200">A </span>and <span 
+class="ecti-1200">C </span>themselves sharing a
+direct tie relative to if <span 
+class="ecti-1200">A </span>and <span 
+class="ecti-1200">C </span>were to each have a less intensive relationship with
+<span 
+class="ecti-1200">B</span>.
+<!--l. 132--><p class="indent" >   I code inter-organizational ties ordinally by the level of interaction reported using a
+truncated, discrete geometric-reference ERGM. A consultative tie is coded as <span 
+class="cmr-12">1</span>, a planning tie
+as <span 
+class="cmr-12">2</span>, and a implementation tie as <span 
+class="cmr-12">3 </span>(all potential ties that are not observed are coded as <span 
+class="cmr-12">0</span>).
+From Krivitsky (2012), the valued ERGM (using discrete variables) is specified as
+follows:<span class="footnote-mark"><sup class="textsuperscript">6</sup></span> <a 
+ id="x1-4003f6"></a><span class="footnote-mark"><a 
+ id="fn6x0"><sup class="textsuperscript">6</sup></a></span><span 
+class="ecrm-1000">Note that the </span><span 
+class="ecti-1000">ergm.count </span><span 
+class="ecrm-1000">extension to the </span><span 
+class="ecti-1000">statnet </span><span 
+class="ecrm-1000">package is designed primarily for modeling count network</span>
+   <span 
+class="ecrm-1000">data (e.g., the number of communications sent from one node to another. However, since the terms included in</span>
+   <span 
+class="ecrm-1000">the </span><span 
+class="ecti-1000">ergm.count </span><span 
+class="ecrm-1000">package used in my model (described in the specification of the baseline model</span>
+   <span 
+class="ecrm-1000">below) do not place meaning on the sums or differences of network ties, but rather simply make</span>
+   <span 
+class="ecrm-1000">comparisons between tie values, it is feasible to apply these tools to rank-order categorical ties (personal</span>
+   <span 
+class="ecrm-1000">conversation with Dr. Pavel Krivitsky). For instance, the Mutual parameter (explained in detail</span>
+   <span 
+class="ecrm-1000">below) models reciprocity using the minimum observed tie value between two nodes </span><span 
+class="cmmi-10">i </span><span 
+class="ecrm-1000">and </span><span 
+class="cmmi-10">I</span><span 
+class="ecrm-1000">. This</span>
+   <span 
+class="ecrm-1000">metric behaves in precisely the same way whether for count data or ordinal categorical data, since</span>
+   <span 
+class="cmmi-10">Min</span><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmmi-7">i,j</span></sub> <span 
+class="cmr-10">= 2</span><span 
+class="cmmi-10">,y</span><sub><span 
+class="cmmi-7">j,i</span></sub> <span 
+class="cmr-10">= 1) = 1 </span><span 
+class="ecrm-1000">whether the tie values </span><span 
+class="cmr-10">1 </span><span 
+class="ecrm-1000">and </span><span 
+class="cmr-10">2 </span><span 
+class="ecrm-1000">refer to counts or an ordinal relationship</span>
+   <span 
+class="ecrm-1000">category.</span> 
+   <table 
+class="equation"><tr><td><a 
+ id="x1-4004r1"></a>
+   <center class="math-display" >
+<img 
+src="Scott_ERGM_Chapter_V20x.png" alt="                       exp (&#x03B8;T g(y))
+P rh,g(Y  = yi;&#x03B8;) = h(y)------------,y &#x2208; Y
+                          ch,g(&#x03B8;)
+" class="math-display" ></center></td><td class="equation-label">(1)</td></tr></table>
+<!--l. 137--><p class="nopar" >
+
+<!--l. 139--><p class="indent" >   with a normalizing constant represented by <span 
+class="cmmi-12">c </span>and the reference distribution represented by
+<span 
+class="cmmi-12">h</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><span 
+class="cmr-12">) </span>(Krivitsky &amp; Butts 2013). The normalizing constant simply ensures that all
+probabilities sum to one. The reference distribution specifies the the model prior to the
+addition of any model terms; thus it represents the observed baseline distribution of
+netowrk ties. For the discrete uniform geometric model, <span 
+class="cmmi-12">h</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><span 
+class="cmr-12">) = 1 </span>(Krivitsky 2012).
+Additional terms can then be added to the model to account for structural characteristics
+of the network, or for exogenous attributes of the nodes (organizations) or edges
+(collaborative ties). For instance, adding a basic summation term for the value of all
+observed network relations produces the following specification (Krivitsky &amp; Butts
+2013):
+   <table 
+class="equation"><tr><td><a 
+ id="x1-4005r2"></a>
+   <center class="math-display" >
+<img 
+src="Scott_ERGM_Chapter_V21x.png" alt="                              &#x2211;
+P rh,g(Y  = y;&#x03B8;) &#x221D; h (y )exp(&#x03B8;      yij)
+                             (i,j)&#x2208;Y
+" class="math-display" ></center></td><td class="equation-label">(2)</td></tr></table>
+<!--l. 144--><p class="nopar" >
+<!--l. 146--><p class="indent" >   which is similar to an intercept-only linear regression model. The summation term acts as
+an intercept because it makes the predicted value of <span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ij</span></sub> equal to the average observed density
+of the network (the total value of all ties divided by the total number of possible
+ties).
+<!--l. 148--><p class="indent" >   While the premise of using collaborative groups to increase inter-organizational coordination
+and cooperation seems intuitive, empirically there are several issues that make supporting this
+
+causal claim with rather difficult. Ideally, one would use either extensive longitudinal data or a
+randomized experiment to estimate the causal effect. However, time series data are
+difficult and costly to maintain. At this point there are not sufficient resources to
+facilitate long-term longitudinal data collection, and no comparable data currently
+exists. Even with sufficient resources to implement repeated surveys to such a large
+organizational network, feedback received from participants in the current survey
+indicates that many participants would be unwilling or unable to participate in a
+more extensive study. An experimental evaluation would also likely be unfeasible.
+Conducting a randomized controlled trial is simply not realistic for such a large scale policy
+network; it is difficult to envision successfully implementing a randomized experiment in
+which some organizations in a region are invited to participate in a management or
+decision-making process while others are not. Further, the dependent variable(s) in a
+network analysis are ties between units (organizations in this case), not characteristics
+of individual units. This quite obviously violates the Stable Unit Treatment Value
+Assumption (SUTVA) (Rubin 1986; Pearl 2000), as the network behavior of each
+organization (whether in the treatment or the control group) affects that of every other
+organization.
+<!--l. 150--><p class="indent" >   The model specified above is applied to observational data (described in detail below).
+Thus, any estimates of the association between collaborative group participation and
+increased consultation, planning, and implementation with other organizations are
+potentially biased upwards due to confounding. For instance, it is possible that unobserved
+characteristics, namely the motivation to form ties with other organizations, are
+positively correlated with both collaborative group participation (the &#8220;treatment&#8217;&#8217;
+variable) and the formation of network ties (the outcome variable) (i.e., confounding).
+This would bias estimates upwards because organizations who participate in groups
+would also be more likely to report inter-organizational ties in general regardless
+of their participation in a group. The inappropriateness of regression models for
+network data (Kolaczyk 2009; Krackhardt 1988) precludes the use of traditional
+regression-based methods, such as propensity score matching, used to control for omitted
+
+variable bias and estimate causal effects with observational data. Thus, I employ a
+deductive, stepwise modeling approach to address potential confounding, as well
+as the possibility of reverse causality (that organizations tied to one another join
+the same groups, rather than vice-versa). Further, I also account for the practical
+consideration of bandwidth limitations (that ties switch according to group membership
+without a net increase overall) in light of the large number of institutional venues
+that most organizations have access to (Berardo &amp; Scholz 2010; Lubell et al. 2010;
+Lubell et al. 2011; McAllister et al. 2014; Smaldino &amp; Lubell 2014; Niles &amp; Lubell
+2012; Gerlak et al. 2012). As these data concern a large number of organizations and
+collaborative groups active within the region, I am able to control for existing group
+membership patterns and thus avoid overstating the gains attributable to the focal network
+intervention.
+<!--l. 152--><p class="indent" >   Fitting a series of ERGMs with different specifications for group participation and past
+network ties allows me to triangulate a potential effect. While this method cannot eliminate
+potential bias, the estimates provided herein present prima facie evidence for the use of
+collaborative groups to enhance inter-organizational networks. Given the lack of more rigorous
+experimental designs, these data are the best available evidence for policymakers to date. I
+further discuss my empirical approach within the Analysis and Results sections. In
+the interim, the following section describes the case selection and data gathering
+process.
+<!--l. 154--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-50005"></a><span 
+class="ecbx-1200">CASE SELECTION AND DATA</span></h3>
+<!--l. 156--><p class="noindent" >The analyzed case is that of the Puget Sound Partnership (PSP), an agency in Washington
+state created in 2007 that is confusingly named because it is a public agency, not an
+inter-organizational partnership. The PSP is tasked with improving coordination and enhancing
+collaboration in Puget Sound ecosystem restoration and recovery efforts. As part of its efforts
+the PSP has initiated or significantly funded 34 different local and regional collaborative
+
+groups. What makes this particularly interesting is that the Puget Sound region already had
+numerous active collaborative groups prior to 2007 in which many organizations were involved
+(see CITATION REDACTED) . Thus, PSP-initiated groups exist within a broader
+context of organizational ties and other collaborative groups as well. This is likely
+emblematic of the type of environment encountered throughout the US and other highly
+institutionalized settings, where organizations have many opportunities for networking and
+must make trade-offs (e.g., which meeting to attend or which organizations to work
+with) due to time and resource constraints (Lubell et al. 2010). Thus, I also use data
+concerning membership in 23 local and regional collaborative groups that predate the
+PSP&#8217;s network intervention in order to account for existing group membership and
+participation. In particular, I am interested in whether this mitigates the predicted
+impact of membership and participation in a PSP group. In total, the sample frame
+encompasses the membership of 57 local and regional collaborative groups, which provides a
+comprehensive picture of the overall network inside and outside the sphere of PSP
+sponsorship.
+<!--l. 158--><p class="indent" >   The survey instrument uses a &#8220;hybrid name generator&#8221; technique (Henry et al. 2012; Lubell
+et al. 2011) in which each respondent is asked to list up to five organizations with which they
+regularly engage in: (1) joint projects or program implementation (given that many
+organizations are consulting, funding, or administrative support bodies, this includes activities
+such as permitting assistance); (2) coordinated planning or strategy development; and (3)
+informal consultation (e.g., information sharing) (CITATION REDACTED). Thus, each
+respondent could potentially list up to 15 organizations in total, 5 for each type of collaborative
+activity. The total number of responses for each category are limited to emphasize regular,
+substantive organizational ties (and make survey completion tractable). The survey
+instrument also produced data on whether or not each reported tie existed prior to
+the PSP&#8217;s intervention and each respondents&#8217; level of participation in collaborative
+groups.
+<!--l. 160--><p class="indent" >   As some group coordinators are unwilling to share their group email lists, the survey
+response rate must be estimated using published membership rosters. I estimate that the 57
+
+collaborative groups sampled encompass 1600 total members (see also CITATION
+REDACTED). However, many organizations maintain membership in multiple collaborative
+groups; thus, 902 unique individuals are identified. Further, there are 100 group positions
+without any published name attached (e.g., groups rosters list only positions, such
+as &#8220;municipal representative,&#8221; and no name or organization); to be conservative, I
+assume that each of these unnamed positions correspond to a unique individual, thus
+producing a total population estimate of 1002. Of these 1002 individuals, 498 accessed
+the survey instrument. Because 63 respondents did not identify the organization
+they represent, and 35 did not complete the portion of the survey in which they
+were asked to identify network ties, the sample used for this analysis comprises 400
+individuals (a response rate of around 40%). These 400 individuals represent 221 unique
+organizations.<span class="footnote-mark"><sup class="textsuperscript">7</sup></span> <a 
+ id="x1-5001f7"></a><span class="footnote-mark"><a 
+ id="fn7x0"><sup class="textsuperscript">7</sup></a></span><span 
+class="ecrm-1000">These 221 organizations are largely representative of the population of organizations that participate in</span>
+   <span 
+class="ecrm-1000">environmental restoration and recovery efforts in the Puget Sound region; as expected, many organizations in</span>
+   <span 
+class="ecrm-1000">the sample are themselves public entities. Out of the 221 unique organizations represented, 93 are local</span>
+   <span 
+class="ecrm-1000">government (municipalities, county governments, special districts, and local commissions), 23 are Federal or</span>
+   <span 
+class="ecrm-1000">state agencies or regional governance commissions, and 12 are tribal governments. Local or regional advocacy</span>
+   <span 
+class="ecrm-1000">and outreach groups constitute another 48 unique organizations in the sample. The remainder are</span>
+   <span 
+class="ecrm-1000">universities and research organizations (16), parks and reserves (7), natural resource extraction firms</span>
+   <span 
+class="ecrm-1000">(4), large non-governmental organizations (12), and consulting firms (6). What is important to</span>
+   <span 
+class="ecrm-1000">remember is that representativeness in this case does not refer to role organizations necessarily</span>
+   <span 
+class="ecrm-1000">play in environmental outcomes (or else organizations such as natural resource extraction firms</span>
+   <span 
+class="ecrm-1000">would seem to be highly underrepresented), but rather the degree to which different types of</span>
+   <span 
+class="ecrm-1000">organizations are involved in ongoing environmental management and restoration efforts in the</span>
+   <span 
+class="ecrm-1000">region.</span> 
+<!--l. 163--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-60006"></a><span 
+class="ecbx-1200">ANALYSIS AND RESULTS</span></h3>
+<!--l. 165--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.1   </span> <a 
+ id="x1-70006.1"></a>Model Fit</h4>
+
+<!--l. 167--><p class="noindent" >The basic premise of the ERGM approach that networks are not static and that an observed
+network configuration is a realization of an ongoing, dynamic process (Lusher et al. 2013).
+Accordingly, the observed structure is just one realization from amongst all of the possible
+structures that could be observed (e.g., imagine the observed network but with one more
+inter-organizational tie). An ERGM facilitates statistical inference on the processes that drive
+network structure by considering the set of all possible network configurations, and
+comparing the observed configuration (the network as revealed by the data) to this
+theoretical set (placing extra weight on possible configurations that bear increased
+similarity to the observed configuration). Whereas a standard regression model works&#8211;in
+theory&#8211;even in the absence of control variables, hypothesis testing using an exogenous
+(i.e., non-structural) variable in an ERGM model first requires inductively fitting a
+baseline model that adequately describes the observed network; the variable of interest
+can then be added to the baseline model to see if it also accounts for a significant
+portion of the observed variance (Kolaczyk 2009; Lusher et al. 2013). In other words,
+generating a baseline ERGM is a &#8220;trial-and-error process&#8221; (Lusher et al. 2013, p. 184)
+that requires a series of stepwise modeling fittings to develop an optimal baseline
+model to which terms testing the independent variable(s) of interest can then be
+added.
+<!--l. 169--><p class="indent" >   Snijders et al. (2006) and Lusher et al. (2013) provide a set of &#8220;structural&#8221; parameters
+that are recommended as a starting place for fitting ERGMs Structural parameters
+represent endogenous effects that result due to self-organization within the network
+independent of actor attributes or characteristics (Lusher et al. 2013). One might think of
+these structural parameters as capturing the &#8220;basic processes&#8221; of networking, such
+as the tendency for popular organizations to attract more ties simply by virtue of
+being popular, or for the propensity of group-like structures such as triangles to form
+amongst related organizations (Lusher et al. 2013). While specific types of drivers are of
+differing importance in different networks, one can model a network by starting with the
+recommended set of general structural terms (as well as any exogenous variables that are
+theorized to be relevant) and then removing terms that are not significant or that do not
+
+contribute to model fit (Snijders et al. 2006). Accordingly, the model presented in Table 1
+shows the &#8220;best-fit&#8221; baseline model produced via this process (without the variables of
+interest).
+<!--l. 171--><p class="indent" >   ERGMs are fit using a Markov-chain Monte Carlo (MCMC) procedure in which a possible
+network configuration is generated and then successively updated (e.g., change the value of one
+tie); the model then samples from the MCMC &#8220;chain&#8217;&#8217; (the ongoing sequence of perturbed
+configurations) to generate a distribution of configurations against which the observed network
+is compared. The primary challenge in developing a baseline model is ensuring that an ERGM
+does not become degenerate, a condition which occurs when the MCMC fitting processes
+cascades towards a completely empty (no ties) or a completely full (every possible tie)
+configuration and thus places most or all of the weighting on these unrealistic possibilities
+(Handcock 2003; Kolaczyk 2009). This basic explanation as to why this happens is that as the
+iterative fitting process changes one tie, it can simultaneously affect the likelihood associated
+with multiple network structures (such as triangles, multi-tie paths, etc.), and if this
+continually happens the model will head towards the empty or full network rather
+than fully exploring the parameter space. Of particular issue in non-binary (i.e.,
+valued-edge) ERGMs is that the parameter sample space is unbounded depending on
+the configuration of parameters used, and thus the simulated parameter values can
+simply keep decreasing or increasing across iterations (Krivitsky &amp; Butts 2013).
+By viewing trace plots of the MCMC process, one can verify whether the models
+&#8220;mix&#8221; adequately or whether they stray outside of the parameter space (Krivitsky
+2012).
+<!--l. 173--><p class="indent" >   Figure 1 shows traceplots for each parameter across iterations of the MCMC
+chains.<span class="footnote-mark"><sup class="textsuperscript">8</sup></span> <a 
+ id="x1-7001f8"></a><span class="footnote-mark"><a 
+ id="fn8x0"><sup class="textsuperscript">8</sup></a></span><span 
+class="ecrm-1000">The models were fit via parallel processing, thus 8 chains were used for each model. Each chain first proceeds</span>
+   <span 
+class="ecrm-1000">through a "burn-in" period (1875 samples are taken and thrown out), with the presumption being</span>
+   <span 
+class="ecrm-1000">that following the burn-in period subsequent draws are from a stable distribution. Each chain</span>
+   <span 
+class="ecrm-1000">then takes 6250 samples, with a thinning interval of 1500 (i.e., the chain proceeds through 1500</span>
+   <span 
+class="ecrm-1000">perturbations before recording a new sample&#8211;this ensures that samples are not all drawn from</span>
+   <span 
+class="ecrm-1000">the same area of the distribution, as would be the case if the chain simply recorded subsequent</span>
+   <span 
+class="ecrm-1000">draws).</span>  I
+discuss the interpretation of each parameter below. Each line in Figure 1 shows how the
+
+maximum likelihood estimate for each parameter changed as each chain progressed. The
+seemingly random, haphazard path of the chains for each parameter evidence that the model is
+searching throughout the parameter space and not converging to the full or empty network.
+This shows that the MCMC process is sampling from a stable distribution and is not
+degenerate.
+<!--l. 175--><p class="noindent" >[Figure&#x00A0;1&#x00A0;about here.]
+<!--l. 184--><p class="indent" >   Further, Figure 2 shows smoothed parameter density plots from each MCMC
+run. As shown, each chain produces a unimodal distribution and generally speaking,
+the 8 chains produce similar distributions for each parameter. The x-axis values in
+Figure 2 represent the difference between the observed network statistics and the
+network statistics for each iteration of the MCMC routine. One can verify model
+convergence by seeing that the density plot for each parameter (normalized by the
+observed statistic) has a mean near zero and is normally distributed; in other words,
+the model has converged to the observed network. In this case, one observes that
+most distributions are centered closely to zero and appear to be roughly normally
+distributed.<span class="footnote-mark"><sup class="textsuperscript">9</sup></span> <a 
+ id="x1-7002f9"></a><span class="footnote-mark"><a 
+ id="fn9x0"><sup class="textsuperscript">9</sup></a></span><span 
+class="ecrm-1000">Ideally, the distributions for each of the 8 chains would be completely congruent; in practice, however, this is</span>
+   <span 
+class="ecrm-1000">difficult to achieve for a large, non-trivial network. Each model shown in this paper takes approximately 30</span>
+   <span 
+class="ecrm-1000">hours to fit on a high-performance Linux server cluster. It is expected that were each chain run for a sufficient</span>
+   <span 
+class="ecrm-1000">amount of samples, the distributions would converge. This assumption was tested by comparing the model</span>
+   <span 
+class="ecrm-1000">fitting results presented in this paper to those of models with a smaller MCMC sample size; as the number of</span>
+   <span 
+class="ecrm-1000">samples per chain increases from 2250 to 6250 (i.e., from 10,000 total samples to 50,000 total samples), the</span>
+   <span 
+class="ecrm-1000">parameter distributions for each chain become more congruent. Further, it is important to note that many</span>
+   <span 
+class="ecrm-1000">published ERGMs do not fit MCMC chains in parallel, and instead simply examine whether the single</span>
+   <span 
+class="ecrm-1000">distribution for each parameter is normally distributed and centered on zero. Even though the</span>
+   <span 
+class="ecrm-1000">distributions in Figure 2 do not completely overlap, the fact that they show relatively consistent</span>
+   <span 
+class="ecrm-1000">shapes and centerings across all 8 chains still serves to demonstrate more consistent, robust model</span>
+   <span 
+class="ecrm-1000">behavior than does a single distribution for each parameter as produced by a standard single-chain</span>
+   <span 
+class="ecrm-1000">model.</span> 
+
+Most importantly, the overall mean in each case appears to be centered near zero as
+well, which demonstrates that the fitted model nicely approximates the observed
+data.
+<!--l. 186--><p class="noindent" >[Figure&#x00A0;2&#x00A0;about here.]
+<!--l. 195--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.2   </span> <a 
+ id="x1-80006.2"></a>Control Variables</h4>
+<!--l. 197--><p class="noindent" >Table 1 presents the restricted model with only structural and actor-related control variables. It
+is helpful to interpret these parameters because it helps reveal how the model actually works.
+First, the model includes three &#8220;structural&#8221; parameters, &#8220;Sum,&#8221; &#8220;Mutual,&#8221; and &#8220;Transitive
+Weights.&#8221; Each coefficient is interpreted as an additive effect on the natural log of the expected
+tie value (which can thus be exponentiated to produce a more easily interpretable
+multiplicative effect). The Sum parameter is a measure of network density, as it
+reflects the total sum of tie values observed in the network. For instance, a network
+with more joint implementation ties (each having a value of 3) will have a higher
+density than a network with more informal consultation ties (each having a value
+of 1). The strongly negative Sum parameters in Table 1 show the network is very
+sparse. Specifically, the parameter can be exponentiated to show that the expected
+tie value between two randomly selected organizations is <span 
+class="cmr-12">0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">015 </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">4</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">18</span></sup> <span 
+class="cmr-12">= 0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">015</span>)
+(Krivitsky 2012). Whereas in a binary ERGM this value would refer to an odds ratio
+(<span 
+class="cmmi-12">p</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ij</span></sub> <span 
+class="cmr-12">= 1)</span><span 
+class="cmmi-12">&#x2215;p</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ij</span></sub> <span 
+class="cmr-12">= 0)</span>), for a valued ERGM this statistic refers to the expected value of
+the tie (<span 
+class="cmmi-12">E</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">ij</span></sub><span 
+class="cmr-12">) = 0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">015</span>). It is expected that the expected value is quite low in this
+case, simply because most organizations in the network do not have any type of
+tie to most other organizations (with 221 organizations there are 48,620 potential
+ties).
+
+   <div class="table">
+<div class="center" 
+>
+<!--l. 4--><p class="noindent" >
+<!--l. 4--><p class="noindent" >[Table&#x00A0;1&#x00A0;about here.]</div>
+</div>
+<!--l. 202--><p class="indent" >   Each of the remaining parameters can similarly be exponentiated and
+then interpreted as acting multiplicatively on the sum term. The Mutual
+parameter<span class="footnote-mark"><sup class="textsuperscript">10</sup></span>   <a 
+ id="x1-8001f10"></a><span class="footnote-mark"><a 
+ id="fn10x0"><sup class="textsuperscript">10</sup></a></span><span 
+class="ecrm-1000">Which takes the general form </span><span 
+class="cmmi-10">g</span><sub><span 
+class="cmsy-7">&#x2194;</span></sub> <span 
+class="cmr-10">=</span> <span 
+class="cmex-10">&#x2211;</span>
+  <sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">i,j</span><span 
+class="cmr-7">)</span><span 
+class="cmsy-7">&#x2208;</span><span 
+class="cmmi-7">Y</span> </sub> <span 
+class="cmr-10">min</span><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">i,j</span><span 
+class="cmr-7">)</span></sub><span 
+class="cmmi-10">y</span><sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">j,i</span><span 
+class="cmr-7">)</span></sub><span 
+class="cmr-10">)</span> 
+represents the change in probability of observing a tie between two organizations, for instance a
+tie from A to B, given an observed tie from B to A. The observed values for &#8220;mutuality&#8221; in
+the data are taken to be the minimum value or count of the two reciprocal dyads
+(<span 
+class="cmmi-12">min</span><span 
+class="cmr-12">(</span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">i,j</span></sub><span 
+class="cmmi-12">,y</span><sub><span 
+class="cmmi-8">j,i</span></sub>). As expected, this shows a strong and significant correlation between both the
+tie counts associated with a network dyad. In other words, I would expect A to be
+much more likely to report a tie to B given that B has already reported a tie to A
+(consider the informational jump in this case from the basic probability associated
+with two randomly selected organizations). The expected value of a tie from one
+organization to another increases by <span 
+class="cmr-12">417% </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">70</span></sup> <span 
+class="cmr-12">= 5</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">47</span>) for each tie observed in the
+opposite direction. Given that there are many potential network partners in this
+network, it seems reasonable to presume that defection risk is relatively high; this
+result then appears to be in keeping the Berardo &amp; Scholz (2010) Risk Hypothesis,
+which predicts that reciprocity (i.e., mutual ties) will be favored over bridging ties in
+networks where defection risk is high. The avoidance of asymmetrical ties (i.e., high
+levels of reciprocity) has already been shown specifically in estuary networks very
+similar to those analyzed in this paper by Berardo &amp; Scholz (2010) and Desmarais &amp;
+Cranmer (2012a) (and Puget Sound generally is one of the sub-cases considered in both
+analyses).
+
+<!--l. 204--><p class="indent" >   The Transitive Weights parameter<span class="footnote-mark"><sup class="textsuperscript">11</sup></span>   <a 
+ id="x1-8002f11"></a><span class="footnote-mark"><a 
+ id="fn11x0"><sup class="textsuperscript">11</sup></a></span><span 
+class="ecrm-1000">Which takes the general form </span><span 
+class="cmmi-10">g</span><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">y</span><span 
+class="cmr-10">) =</span> <span 
+class="cmex-10">&#x2211;</span>
+  <sub><span 
+class="cmr-7">(</span><span 
+class="cmmi-7">i,j</span><span 
+class="cmr-7">)</span><span 
+class="cmsy-7">&#x2208;</span><span 
+class="cmmi-7">Y</span> </sub> <span 
+class="cmr-10">min</span><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmmi-7">i,j</span></sub><span 
+class="cmmi-10">,</span><span 
+class="cmr-10">max</span><sub><span 
+class="cmmi-7">k</span><span 
+class="cmsy-7">&#x2208;</span><span 
+class="cmmi-7">N</span></sub><span 
+class="cmr-10">(</span><span 
+class="cmr-10">min</span><span 
+class="cmr-10">(</span><span 
+class="cmmi-10">y</span><sub><span 
+class="cmmi-7">i,k</span></sub><span 
+class="cmmi-10">,y</span><sub><span 
+class="cmmi-7">k,j</span></sub><span 
+class="cmr-10">))) </span><span 
+class="ecrm-1000">in which the strength of a</span>
+       <span 
+class="ecrm-1000">two-path from </span><span 
+class="cmmi-10">i </span><span 
+class="ecrm-1000">to </span><span 
+class="cmmi-10">j </span><span 
+class="ecrm-1000">is defined by the minimum value along said path, and the statistic then reflects the sum</span>
+       <span 
+class="ecrm-1000">of minimums over all dyads (</span><span 
+class="cmmi-10">i,j</span><span 
+class="ecrm-1000">) and the value of the strongest two-path in between each </span><span 
+class="cmmi-10">i </span><span 
+class="ecrm-1000">and </span><span 
+class="cmmi-10">j</span>
+      <span 
+class="ecrm-1000">combination.</span> 
+is interpreted in a similar way as that of the Mutual parameter, but
+in this case refers to the degree to which presence and strength of a
+two-path<span class="footnote-mark"><sup class="textsuperscript">12</sup></span>   <a 
+ id="x1-8003f12"></a><span class="footnote-mark"><a 
+ id="fn12x0"><sup class="textsuperscript">12</sup></a></span><span 
+class="ecrm-1000">If there is an edge from A to C and from C to B, A and B are said to be connected via a two-path</span> 
+between two organizations affects the expected value of a direct tie between the same two
+organizations. Table 1 shows that for each unit by which the highest value two-path between
+two organizations increases in value (for instance, if <span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">i,j</span></sub> <span 
+class="cmr-12">= </span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">j,k</span></sub> <span 
+class="cmr-12">= 2 </span>instead of <span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">i,j</span></sub> <span 
+class="cmr-12">= </span><span 
+class="cmmi-12">y</span><sub><span 
+class="cmmi-8">j,k</span></sub> <span 
+class="cmr-12">= 1</span>),
+the expected tie value between the organizations increases by <span 
+class="cmr-12">12% </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">11</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">12</span>). This
+result is also in keeping the Berardo &amp; Scholz (2010) hypothesis, since transitivity
+(wherein closure tends to occur such that two-paths become triangles in which all
+three nodes are linked) is also assumed to be more prominent when defection risk is
+greater.
+<!--l. 206--><p class="indent" >   The baseline model also fits four node-specific variables that are predicted to
+affect the probability of observing ties associated with a given node. The Number of
+Respondents (Num. Resp.) parameter reflects the predicted impact on the expected value
+of a tie associated with an organization that has an additional respondent in the
+survey. This parameter should be positive, since having an additional respondent
+increases the number of ties that can possibly be reported by an organization. As
+expected, this parameter is significant and positive, predicting a <span 
+class="cmr-12">17% </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">16</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">17</span>)
+increase in the expected value of a tie between the focal organization and each other
+organization. Interestingly, the parameter reflecting the suggested effect of each additional
+group an organization participates in is statistically significant and negative; however,
+the magnitude of this suggested relationship is minimal (only a <span 
+class="cmr-12">1% </span>decrease in the
+probability of observing a tie between the focal organization and another organization
+[<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">01</span></sup> <span 
+class="cmr-12">= 0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">99</span>]). The &#8216;Years&#8217; parameter models the predicted association between the
+number of years a respondent has been at their position and the value of a network tie.
+This parameter is small, but positive, with each year predicting a 1% increase in
+
+the value of a tie (<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">01</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">01</span>). Finally, the &#8216;Org. Type&#8217; variable compares the
+expected tie value to similar organizations. Specifically, organizations are coded as
+15 different types of organizations, including state agencies, consulting firms, and
+tribes.<span class="footnote-mark"><sup class="textsuperscript">13</sup></span>   <a 
+ id="x1-8004f13"></a><span class="footnote-mark"><a 
+ id="fn13x0"><sup class="textsuperscript">13</sup></a></span><span 
+class="ecrm-1000">The full list includes: environmental NGOs, city governments, local advocacy groups, local commissions,</span>
+       <span 
+class="ecrm-1000">special districts, county governments, local outreach and education organizations, consulting firms, regional</span>
+       <span 
+class="ecrm-1000">advocacy groups, tribes, federal agencies, parks and reserves, natural resource extraction firms, universities</span>
+       <span 
+class="ecrm-1000">and research organizations, regional commissions, and state agencies.</span> 
+The predicted value of a tie (i.e., the strength of a collaborative tie) to a similar organization is
+30% greater than that of a dissimilar organization (<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">26</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">30</span>); this is consistent with
+the commonly observed network phenomenon of homophily, in which actors with
+common characteristics are more likely to be linked in a network (Prell 2012; Kolaczyk
+2009).
+<!--l. 209--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.3   </span> <a 
+ id="x1-90006.3"></a>Group Participation</h4>
+<!--l. 211--><p class="noindent" >The second column (Group Participation) of Table 1 adds a generic collaborative group
+participation metric to the restricted baseline model shown in Column 1 (Baseline Model). Of
+course, simply being a member of a group does not necessarily speak to the degree to which an
+organization actually participates. Instead one would expect that inter-organizational
+transaction costs are reduced in proportion to the degree of participation, and further that the
+strength of the association between group membership and tie formation should
+be commensurate with the degree to which organizations actually participate in
+collaborative groups. In order to test this, group participation is measured in terms reported
+engagement in seven different group activities for each group in which a respondent reports
+membership: (1) send or respond to group emails; (2) attend group meetings; (3)
+attend other group events; (4) participate in group projects or programs; (5) read or
+review group reports and documents; (6) produce group reports or documents; and (7)
+other types of participation. This value is then divided by 7 to produce a fractional
+measure of participation in a given group. This per-group participation measure
+
+is then summed to produce an overall measure of group participation for a given
+organization.<span class="footnote-mark"><sup class="textsuperscript">14</sup></span>   <a 
+ id="x1-9001f14"></a><span class="footnote-mark"><a 
+ id="fn14x0"><sup class="textsuperscript">14</sup></a></span><span 
+class="ecrm-1000">This measure is obviously a coarse metric of group participation. Ideally, group participation would be</span>
+       <span 
+class="ecrm-1000">measured using a scalable metric such as hours per month so as to convert different forms of participation</span>
+       <span 
+class="ecrm-1000">into a common metric while accounting for the different time commitments associated with different</span>
+       <span 
+class="ecrm-1000">activities. While these data cannot be obtained for this analysis, a time-based effort measure would be a</span>
+       <span 
+class="ecrm-1000">valuable contribution of future studies. Because there is no way to rule out individual heterogeneity for</span>
+       <span 
+class="ecrm-1000">specific group activities in these data (e.g., group projects could represent something very different&#8211;and</span>
+       <span 
+class="ecrm-1000">potentially a very different expenditure of time and effort&#8211;even for different individuals in the very same</span>
+       <span 
+class="ecrm-1000">group), I use the basic summation approach to avoid layering additional&#8211;possibly unfounded&#8211;assumptions on</span>
+       <span 
+class="ecrm-1000">this variable.</span> 
+The Group Participation model (Column 2) in Table 1 supports H1, suggesting that
+participation in a collaborative group does increase direct coordination and cooperation with
+other group members. However, while this parameter is shown to be positive and significantly
+different from zero, it appears to be of limited practical significance: a one-unit increase in
+group participation increases the expected value of a tie involving the focal organization by <span 
+class="cmr-12">3%</span>
+(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">03</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">03</span>).
+<!--l. 214--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.4   </span> <a 
+ id="x1-100006.4"></a>Diminishing Returns</h4>
+<!--l. 216--><p class="noindent" >One likely reason that the predicted impact of group participation is small in magnitude is that
+a linear participation metric does not account for potential that, as predicted by H2, there are
+likely to be diminishing returns associated with a marginal increase in group membership and
+participation (Lubell et al. 2010). Recent policy literature discussing how organizations
+operate within complex institutional environments (e.g., Lubell 2013; Berardo &amp;
+Scholz 2010), along with empirical findings regarding the practical limitations most
+managers and officials face (Thomas 2003; Margerum 2011), both demonstrate that
+organizations have a limited capacity for collaborative activities (Lubell et al. 2010). Thus,
+a government-sponsored collaborative group intended to further enhance network
+coordination might actually motivate organizations to reallocate their existing efforts across
+these multiple arenas without a net increase. As a basic test, the third column of
+
+Table 1 (Group Participation<sup><span 
+class="cmr-8">2</span></sup>) shows a model with an additional quadratic term for
+group participation. In this model, the predicted linear association between group
+participation and tie occurrence becomes much stronger, predicted a <span 
+class="cmr-12">12% </span>increase in
+expected tie value (<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">11</span></sup> <span 
+class="cmr-12">= 1</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">12</span>), and the quadratic term is very small in magnitude
+but negative. In other words, participation in a collaborative group does strongly
+predict an increase in tie values associated with the participating organization, but this
+predicted increase diminishes as the number of groups the organization participates in
+increases.
+<!--l. 218--><p class="indent" >   Whereas the quadratic term in Table 1 tests this phenomenon generally (by examining
+overall participation in Puget Sound area collaborative groups regardless of origin), I examine
+the PSP&#8217;s intervention specifically by dividing the Group Participation variable shown in Table
+1 into two categories: participation in non-PSP affiliated groups (i.e., those in existence prior to
+the network intervention) and participation in PSP sponsored groups. Because these data are
+observational, I am unable to eliminate the possibility that group participation and
+inter-organizational collaboration are both products of unobserved organizational
+characteristics such as motivation to engage with other organizations. There are
+certainly organizations for whom both participation in collaborative groups and direct
+coordination/cooperation with other organizations is more beneficial, and organizations for
+whom both of these activities are less beneficial. What I seek to examine in this analysis,
+however, is whether there is an observable impact of government-sponsored collaborative
+groups net of these inherent characteristics. In other words, regardless of organizational
+&#8220;demand&#8221; for collaboration, does the the predicted strength of an inter-organizational
+relationship change in association with a marginal change in collaborative group
+participation? Using a series of additional model specifications, this relationship is
+triangulated using a series of progressively stricter coding schemes and comparing the
+coefficients.
+<!--l. 220--><p class="indent" >   Table 2 shows the results of three models. Column 1 (Generic Participation) in Table 2
+presents a model fitting participation (coded using the same process as described above) in
+non-PSP groups, participation in PSP groups, and a term interacting participation in each
+
+group type (the base parameters are omitted in these and subsequent tables, but are included
+in all models). These results support H2, showing that participation in either type
+of group (measured simply in terms of the level of reported engagement in group
+activities) is positively associated with the expected value of an inter-organizational tie,
+but that there are diminishing returns to participation in both types of groups. In
+other words, the association between group participation and the expected value of a
+network tie diminishes to the extent that the organizations involved in PSP-sponsored
+groups already participated in non-PSP groups. This indicates that the PSP&#8217;s network
+intervention had the greatest impact on organizations that were not already heavily
+involved in collaborative groups. Pragmatically, this makes a great deal of sense;
+organizations more heavily involved in collaborative groups prior to the network intervention
+presumably already had greater opportunity to engage with and initiate ties to other
+organizations.
+   <div class="table">
+<div class="center" 
+>
+<!--l. 4--><p class="noindent" >
+<!--l. 4--><p class="noindent" >[Table&#x00A0;2&#x00A0;about here.]</div>
+</div>
+<!--l. 229--><p class="indent" >   The next two models in Table 2 present increasingly stringent ways of coding for group
+participation. If participation in collaborative groups is a driver of inter-organizational
+networking, then the impact of a collaborative group should primarily be experienced with
+regards to organizations that are actually members of the same group. In other words, while
+collaborative groups might certainly increase awareness of and access even to other
+organizations that are not in the same group, it stands to reason that the association between
+participation and network ties should be concentrated amongst organizations who actually are
+members of the same group. Thus, I create a &#8216;&#8217;Direct Participation&#8217;&#8217; measure, by
+conditioning total participation on group membership. Each organization is given a
+distinct Direct Participation score to every other organization. This score is zero if
+
+the organizations do not share a group. If two organizations do share at least one
+group, then the Direct Participation score from Organization A to Organization
+B reflects group participation reported by Organization A within groups of which
+Organization B is also a member. If group participation and inter-organizational
+networking are confounded by a common cause, then the predicted association between the
+general metric &#8216;&#8217;Group Participation&#8221; and the occurrence of network ties (column
+one) should not be meaningfully different than the predicted association between
+&#8220;Direct Participation&#8221; and the occurrence of network ties (column two). However,
+what I observe in Table 2 is that the coefficients become much stronger. A one unit
+increase in general Group Participation in a PSP-affiliated group increases the predicted
+value of a network tie by <span 
+class="cmr-12">13% </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">12</span></sup> <span 
+class="cmr-12">= 0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">13</span>), whereas as one unit increase in Direct
+Participation in a PSP-affiliated group increase the predicted value of a network tie by <span 
+class="cmr-12">136%</span>
+(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">86</span></sup> <span 
+class="cmr-12">= 2</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">36</span>).
+<!--l. 231--><p class="indent" >   While Direct Participation focuses on organizations that actually share group membership,
+the theoretical mechanisms by which collaborative groups are hypothesized to reduce
+transaction costs (and thus engender increased inter-organizational collaboration) holds that
+collaboration is motivated by &#8216;&#8217;principled engagement&#8217;&#8217; and &#8216;&#8217;increased capacity for joint
+action&#8217;&#8217; (Emerson et al. 2012). In other words, by engaging directly with one another,
+organizations build trust and learn more about one another&#8217;s needs, interests, and capabilities,
+thereby decreasing the costs associated with searching for, initiating, and maintaining network
+ties. Practically speaking, this can only occur if both organizations &#8220;show up&#8221; and actually
+encounter one another in group activities. Thus, I code a third metric, &#8216;&#8217;Co-Participation,&#8217;&#8217; in
+which the covariate associated with each possible pair of organizations is the minimum
+combined Direct Participation measure shared by the two organizations (column
+three). For instance, if Organization A and Organization B are both members of
+one group, in which A participates in five of seven activities and B participates in
+three of seven, then the Co-Participation score for dyad AB (and for dyad BA) is
+
+three.<span class="footnote-mark"><sup class="textsuperscript">15</sup></span>   <a 
+ id="x1-10001f15"></a><span class="footnote-mark"><a 
+ id="fn15x0"><sup class="textsuperscript">15</sup></a></span><span 
+class="ecrm-1000">Note that I purposefully do not match on specific activities, as doing so would inject a great deal of</span>
+       <span 
+class="ecrm-1000">false specificity into the model. For instance, when two organizations both report that they</span>
+       <span 
+class="ecrm-1000">participate in group events or help write group documents, there is no way to verify whether</span>
+       <span 
+class="ecrm-1000">these organizations participated in the same events or have helped write the same documents.</span>
+       <span 
+class="ecrm-1000">Accordingly, I take the conservative approach of not matching on specific activities; this approach is</span>
+       <span 
+class="ecrm-1000">conservative because if collaborative ties are in fact strongly associated with participation in</span>
+       <span 
+class="ecrm-1000">the same group activities, then the strength of this association will be underestimated in my</span>
+       <span 
+class="ecrm-1000">model.</span> 
+The coefficients in column three of Table 2 are even stronger than those in column two. A one
+unit increase in Co-Participation increases the predicted value of a network tie by <span 
+class="cmr-12">390%</span>
+(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmr-8">1</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">59</span></sup> <span 
+class="cmr-12">= 4</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">90</span>).
+<!--l. 233--><p class="indent" >   As with the generic participation metric tested in column one of Table 2, the stricter
+participation metrics fit in columns two and three also speak to the diminishing returns
+associated with greater levels of participation. Specifically, the negative interaction terms shows
+a lessened participation effect when an organization participates in both kinds of groups. It
+seems reasonable to expect, for instance, that if two organizations both participate in all
+possible activities for the same two collaborative groups, then shared participation in a new
+additional group is unlikely to make as much of a difference in terms of increasing familiarity
+between the two organizations. One note of caution, however, is that the negative
+interaction parameters imply that at very high levels, participation can have the perverse
+effect of decreasing predicted tie strength; conceptually, while it seems reasonable to
+assume to assume that participation in too many groups can diminish the predicted
+impact on tie strength to the point that the predicted impact of a marginal increase
+in participation is zero, it is difficult to come up with a rationale for high levels of
+shared participation predicting lower tie strength than exists between two randomly
+selected organizations in the network (excepting some sort of interpersonal conflict
+engendered by too much interaction, which is not addressed by these data). Thus,
+it is likely that these results reflect a somewhat localized marginal effect estimate
+and not a wholly linear relationship in which too much participation has a perverse
+effect.
+<!--l. 235--><p class="indent" >   While these observational data cannot eliminate the role of selection bias (namely, that
+
+organizations that are more willing to participate in collaborative groups tend to also be more
+willing to engage in direct collaboration with other organizations), by modeling increasingly
+strict conceptions of group participation I am able to establish that the predicted relationship
+between group participation and the level of inter-organizational collaboration is strongest
+among organizations that both participate to a similar extent in the same group(s). This
+suggests that the collaborative group itself has some role in driving network structure,
+net of intrinsic organizational characteristics. While this is by no means conclusive
+evidence about the causal effect of sponsoring collaborative management groups, these
+results are what one would expect to observe if providing increased opportunities for
+organizations to engage with one another does in fact engender increased inter-organizational
+collaboration. Realistically, it is likely both that this occurs and that some confounding is
+present.
+<!--l. 238--><p class="noindent" >
+   <h4 class="subsectionHead"><span class="titlemark">6.5   </span> <a 
+ id="x1-110006.5"></a>Pre-existing Network Ties</h4>
+<!--l. 240--><p class="noindent" >One potential contributor to the overall magnitude of the Direct Participation and
+Co-Participation parameters is the combined sparsity of the overall network and the
+informational value these parameters provide about the network proximity of any two
+organizations. Specifically, it is plausible that instead of forming relationships within
+collaborative groups, organizations invite other organizations with whom they already engage
+to participate in groups. In one sense, this would represents reverse causality, in which network
+relationships drive collaborative group participation, rather than the other way around.
+However, the possibility that existing network relationships drive group participation does not
+rule out the possibility that group participation alters the strength of these existing
+relationships. In other words, an organization might join a group because it already coordinates
+or cooperates with other group members, but group participation might still serve to deepen
+these relationships. Strengthening existing patterns of coordination and cooperation
+might even be the goal of a network intervention. For this reason, H3 contrasts the
+
+predicted effect of group participation on tie strength between two members who share a
+pre-existing tie with the predicted effect on two members who do not share a pre-existing
+tie.
+   <div class="table">
+<div class="center" 
+>
+<!--l. 4--><p class="noindent" >
+<!--l. 4--><p class="noindent" >[Table&#x00A0;3&#x00A0;about here.]</div>
+</div>
+<!--l. 246--><p class="indent" >   In order to test this, the survey instrument asked each respondent to report whether each
+reported inter-organizational tie had existed prior to the PSP&#8217;s network intervention (i.e., more
+than five years ago). This provides a rough approximation as to whether a network tie predates
+the intervention (the exception being in cases where the tie was initiated within the
+last five years, but prior to the organization becoming a group member). While this
+does not provide as robust a picture as would a true longitudinal analysis, it does
+provide a general gauge of the extent to which reverse causality might be at play by
+comparing how the association between group participation and inter-organizational ties
+differs between ties that existed prior to the PSP&#8217;s intervention and those that did
+not.
+<!--l. 248--><p class="indent" >   Table 3 presents results from a model that includes all of the covariates specified
+in the baseline model and adds four additional parameters. First, the model fits a
+binary term for each potential dyad (pair of organizations) that reflects whether
+the tie reported from Organization A to Organization B was reported to exist prior
+to the PSP&#8217;s network intervention. For a binary network, it would not be feasible
+to use this metric, since the metric would be a perfect predictor of the affirmative
+presence of a tie (but not tie absence, since more newly formed ties are reported as
+well)<span class="footnote-mark"><sup class="textsuperscript">16</sup></span>   <a 
+ id="x1-11001f16"></a><span class="footnote-mark"><a 
+ id="fn16x0"><sup class="textsuperscript">16</sup></a></span><span 
+class="ecrm-1000">Of the 1045 ties observed in the data, 581 are reported to be ties that predate the network intervention.</span> .
+However, since this analysis models valued network ties, it can examine how the fact that a tie
+was also reported to exist before the network intervention impacts the expected value of the tie
+
+after the intervention. Given the self-reinforcing nature of network relations (Desmarais &amp;
+Cranmer 2012b), one might also expect that on average, ties that existed five years ago should
+be stronger than ties that did not. As expected, this parameter is positive and very strong in
+magnitude; this result is not substantively interesting, however, since past ties reported
+in the survey instrument are restricted to currently existing ties. Table 3 then fits
+both a linear and a quadratic term for Co-Participation in both PSP and non-PSP
+groups. This metric is calculated in the exact same way as the metrics in column
+three of Table 2, but in this case combines participation in both types of group.
+As in Table 2, the linear parameter is positive and strong in magnitude, and the
+quadratic parameter is negative, again demonstrating a diminishing marginal predicted
+association.
+<!--l. 250--><p class="indent" >   The primary parameter of interest in Table 3 is the fourth parameter, an interaction
+term between co-participation in collaborative groups and the fact that a tie was
+reported to have existed prior to the PSP&#8217;s network intervention. This parameter is
+negative and large in magnitude; that a tie of any value existed prior to the network
+intervention decreases the association between co-participation in a collaborative group
+and the value of a network tie by <span 
+class="cmr-12">69% </span>(<span 
+class="cmmi-12">exp</span><sup><span 
+class="cmsy-8">-</span><span 
+class="cmr-8">0</span><span 
+class="cmmi-8">.</span><span 
+class="cmr-8">89</span></sup> <span 
+class="cmr-12">= 0</span><span 
+class="cmmi-12">.</span><span 
+class="cmr-12">41</span>). In other words, shared
+participation in a collaborative group has much less impact on the strength of a
+relationship between two organizations who already engaged in some level of coordination
+or cooperation prior to joining the group. Note however that the strong positive
+relationship between co-participation and tie strength amongst organizations that did not
+have a tie prior to the network intervention remains. This supports the conceptual
+expectation of H3: in the short term collaborative groups are more likely to foster
+new bridging ties (or &#8220;weak ties&#8221;) amongst participants than to increase the level of
+coordination and cooperation amongst existing network partners (e.g., transition from a
+bridging tie to a bonding tie). In a practical sense, these results also indicate that the
+relationship between collaborative group participation and network ties works in
+both direction; organizations that share a network tie are more likely to join and
+participate in the same collaborative group, and organizations that join and participate in
+
+the same collaborative group are likely to increase the strength of their network
+relationship.
+<!--l. 253--><p class="noindent" >
+   <h3 class="sectionHead"><span class="titlemark">7   </span> <a 
+ id="x1-120007"></a>Discussion/Conclusion</h3>
+<!--l. 255--><p class="noindent" >While it is clear that governments are beginning to intervene to address perceived network
+failures just as they seek to remedy market failures and other institutional shortcomings, there
+is not yet a large body of knowledge built up surrounding the use of various policy tools for
+network interventions. This analysis builds on the work of Schneider et al. (2003), who
+demonstrate the overall change in network conditions associated with a network intervention by
+government actors (e.g., denser networks), and Henry (2011), who model the role of
+social capital as a driver of policy network structure, by examining the relationship
+between government network interventions and the network behavior of individual
+organizations. These results advance the growing body of network-related policy theory by
+developing a transaction cost-based perspective of government network interventions.
+Specifically, I find a strong positive association between participation in collaborative
+groups and the number&#8211;and intensity&#8211;of inter-organizational ties an organization has.
+This evidences how government intervention in a policy network is associated with
+changes in network structure and function and complement the findings of CITATION
+REDACTED, which examines the specific mechanisms by which collaborative groups
+are hypothesized to reduce the transaction costs organizations face with regards to
+networking (and thus motivate the formation and maintenance of network ties). By
+modeling the comparative intensity of an inter-organizational relationship (consultation,
+planning, or implementation), this analysis is able to model this relationship in a
+more nuanced fashion than does the policy network literature using binary ERGMs
+(e.g., CITATION REDACTED, Lubell et al. 2012; Gerber et al. 2013; Schneider
+et al. 2003). Thus, I make a methodological contribution to the policy literature by
+providing one of the first empirical demonstrations of valued ERGM analysis in policy
+
+research.
+<!--l. 257--><p class="indent" >   Second, discussions of policy networks often overlook the fact that&#8211;particularly in highly
+institutionalized contexts&#8211;organizations are faced with numerous networking opportunities and
+are limited in their ability both to engage in collaborative groups and to maintain ties with
+individual organizations Lubell et al. (2010) and Lubell et al. (2011). that In spite of the
+rapacious growth of collaborative institutions in practice, organizations do in fact have a finite
+capacity for networking. The Ecology of Games literature (e.g., Berardo &amp; Scholz 2010; Lubell
+et al. 2010; Lubell &amp; Lippert 2011; Lubell et al. 2011; McAllister et al. 2014; Smaldino &amp; Lubell
+2014; Niles &amp; Lubell 2012) thus predicts that in some contexts, a network intervention might
+simply induce organizations to switch the decision-making venue(s) in which they
+participate or change network partners without engendering an net increase in network
+coordination. This analysis provides a real-world example supporting this theoretical
+contention, showing that the predicted effect of group participation on tie strength
+diminishes with each additional group in which an organization participates. For
+policymakers, this reveals a need to fashion context-appropriate network interventions
+in order to have the greatest possible impact and avoid just shuffling the deck. It
+is important to recognize instances where there are already numerous&#8211;if not too
+many&#8211;collaborative venues, and thus a new network intervention is likely to have diminished
+returns.
+<!--l. 259--><p class="indent" >   Third, I find that in the short run, collaborative group participation is a stronger predictor
+of new tie formation than it is of strengthened existing ties. I argue that this is because the
+short term impacts of collaborative group participation do more to alleviate search costs than
+to align organizational goals and beliefs. Lack of information about potential network partners
+is shown to greatly constrain network coordination and cooperation (Scholz et al. 2008);
+participation in a collaborative group can increase awareness of other organizations (actions,
+goals, capabilities, etc.) and directly reduce search costs. If two organizations are highly
+compatible but previously unaware of this compatibility, shared group participation might
+lead to the formation of a new, strong network tie (e.g., joint policy or program
+implementation in this model). For organizations who share an existing tie prior to
+
+participating in the same collaborative group, however, search costs would not seem to be a
+major barrier to a stronger relationship. One might expect then that the reason two
+organizations with an existing tie engage in informal consultation rather than coordinated
+planning is due to other factors, such as a lack of commonality. Collaborative group
+participation likely does little to address something such as lack of commonality,
+at least in the short term. Accordingly, these results suggest that in the short run,
+government sponsored collaborative groups do more to influence the formation of
+new network ties than they do to strengthen existing patterns of coordination and
+cooperation.
+<!--l. 261--><p class="indent" >   Going forward, longitudinal network data that track the formation and maintenance
+collaborative ties over time are likely critical for fully understanding these issues. Though it is
+expensive and difficult to collect repeated measures network data (even in collecting these
+cross-sectional data, the author encountered many practitioners who were too busy to
+participate and had too many competing demands on their time), a longitudinal perspective is
+required to better understand network dynamics over time and trace the long-term impact of
+public policy interventions. As stated, this analysis examines only the short run effect of a
+network intervention; that is, I assume that a publicly sponsored collaborative group subsidizes
+transaction costs&#8211;making network ties &#8220;cheaper&#8221; in a general sense&#8211;and then test whether
+this theoretical cost reduction motivates increased inter-organizational networking.
+However, there is evidence that interaction and dialogue with other organizations also
+influences goals and beliefs (Bingham &amp; O&#8217;Leary 2008; Innes &amp; Booher 2010; Leach
+&amp; Sabatier 2005; Lubell 2005); in other words, a network intervention might alter
+the demand for network ties in the long run by changing organizational goals and
+motivations. While this analysis finds that collaborative groups do more to foster new
+ties rather than strengthen old ones in the short term (H3), it is possible that the
+long term impacts are different. Accordingly, longitudinal data tracking network ties
+over a longer time period by sampling at multiple points might speak more fully to
+the extent to which government can motivate inter-organizational coordination and
+cooperation.
+
+<!--l. 263--><p class="indent" >   In a similar fashion, more detailed network metrics, such as time spent working in concert
+or resource transfers between organizations, would also contribute further to our understanding
+of the role that publicly sponsored collaborative groups play in policy networks&#8211;and whether
+such network interventions achieve their intended purposes. One element of particular relevance
+in this regard are the interpersonal ties that exist alongside&#8211;and potentially interact
+with&#8211;inter-organizational ties. Within a given policy network, we might expect that individuals
+have shared interests, similar training, and other commonalities; especially in instances where
+individuals move from one network organization to another (e.g., a public manager joining a
+consulting firm), individual-level factors might play a large role in inter-organizational
+networking.
+<!--l. 268--><p class="noindent" >
+   <h3 class="sectionHead"><a 
+ id="x1-130007"></a>References</h3>
+<!--l. 268--><p class="noindent" >
+   <dl class="thebibliography"><dt id="X0-alexander1993" class="thebibliography">
+</dt><dd 
+id="bib-1" class="thebibliography">
+   <!--l. 268--><p class="noindent" ><a id="page.35"></a><a 
+\relax  id="X0-" ></a>Alexander, Ernest R. (1993). &#8220;Interorganizational coordination: Theory and practice.&#8221;
+   In: <span 
+class="ecti-1200">Journal of Planning Literature </span>7.4, pp. 328&#8211;343.
+   </dd><dt id="X0-analytics2014" class="thebibliography">
+</dt><dd 
+id="bib-2" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Analytics, Revolution &amp; Steve Weston (2014). <span 
+class="ecti-1200">doParallel: Foreach parallel adaptor for</span>
+   <span 
+class="ecti-1200">the parallel package</span>. R package version 1.0.7.
+   </dd><dt id="X0-ansell2008" class="thebibliography">
+</dt><dd 
+id="bib-3" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Ansell, C. &amp; A. Gash (2008). &#8220;Collaborative governance in theory and practice.&#8221; In:
+   <span 
+class="ecti-1200">Journal of Public Administration Research and Theory </span>18.4, pp. 543&#8211;571.
+   </dd><dt id="X0-berardo2014" class="thebibliography">
+</dt><dd 
+id="bib-4" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Berardo, Ramiro, Tanya Heikkila &amp; Andrea K. Gerlak (2014). &#8220;Interorganizational
+   Engagement in Collaborative Environmental Management: Evidence from the South
+   Florida  Ecosystem  Restoration  Task  Force.&#8221;  In:  <span 
+class="ecti-1200">Journal of Public Administration</span>
+   <span 
+class="ecti-1200">Research and Theory</span>, muu003.
+   </dd><dt id="X0-berardo2010" class="thebibliography">
+</dt><dd 
+id="bib-5" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Berardo, Ramiro &amp; John T. Scholz (2010). &#8220;Self-Organizing Policy Networks: Risk,
+   Partner Selection, and Cooperation in Estuaries.&#8221; In: <span 
+class="ecti-1200">American Journal of Political</span>
+   <span 
+class="ecti-1200">Science </span>54.3, pp. 632&#8211;649.
+   </dd><dt id="X0-bingham2008" class="thebibliography">
+</dt><dd 
+id="bib-6" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Bingham, Lisa Blomgren &amp; Rosemary O&#8217;Leary (2008). <span 
+class="ecti-1200">Big Ideas in Collaborative</span>
+   <span 
+class="ecti-1200">Public Management</span>. Armonk, NY: M.E. Sharpe.
+   </dd><dt id="X0-bressers2009" class="thebibliography">
+</dt><dd 
+id="bib-7" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Bressers,  H.  (2009).  &#8220;From  public  administration  to  policy  networks:  Contextual
+   interaction  analysis.&#8221;  In:  <span 
+class="ecti-1200">Rediscovering  public  law  and  public  administration  in</span>
+   <span 
+class="ecti-1200">comparative policy analysis: tribute to Peter Knoepfel</span>, pp. 123&#8211;142.
+   </dd><dt id="X0-bressers2003" class="thebibliography">
+</dt><dd 
+id="bib-8" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Bressers, J. T. A. &amp; S. M. M. Kuks (2003). &#8220;Managing water resources in Florida and
+   the Netherlands.&#8221; In:
+   </dd><dt id="X0-butts2014" class="thebibliography">
+</dt><dd 
+id="bib-9" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Butts, Carter T., Mark S. Handcock &amp; David R. Hunter (2014). <span 
+class="ecti-1200">network: Classes for</span>
+   <span 
+class="ecti-1200">Relational Data</span>. R package version 1.9.0. Irvine, CA.
+   </dd><dt id="X0-carlsson1997" class="thebibliography">
+</dt><dd 
+id="bib-10" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Carlsson, Bo &amp; Staffan Jacobsson (1997). &#8220;In Search of Useful Public Policies &#8212;
+   Key Lessons and Issues for Policy Makers.&#8221; In: <span 
+class="ecti-1200">Technological Systems and Industrial</span>
+   <span 
+class="ecti-1200">Dynamics</span>.  Ed.  by  Bo  Carlsson.  Vol.&#x00A0;10.  Economics  of  Science,  Technology  and
+   Innovation. Springer US, pp. 299&#8211;315.
+   </dd><dt id="X0-cragan1990" class="thebibliography">
+</dt><dd 
+id="bib-11" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Cragan, J. F &amp; D. W Wright (1990). &#8220;Small group communication research of the
+   1980s: A synthesis and critique.&#8221; In: <span 
+class="ecti-1200">Communication Studies </span>41.3, pp. 212&#8211;236.
+   </dd><dt id="X0-cranmer2011" class="thebibliography">
+</dt><dd 
+id="bib-12" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Cranmer, Skyler J. &amp; Bruce A. Desmarais (2011). &#8220;Inferential network analysis with
+   exponential random graph models.&#8221; In: <span 
+class="ecti-1200">Political Analysis </span>19.1, pp. 66&#8211;86.
+   </dd><dt id="X0-desmarais2012" class="thebibliography">
+</dt><dd 
+id="bib-13" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Desmarais, Bruce A. &amp; Skyler J. Cranmer (2012a). &#8220;Micro-Level Interpretation of
+   Exponential  Random  Graph  Models  with  Application  to  Estuary  Networks.&#8221;  In:
+   <span 
+class="ecti-1200">Policy Studies Journal </span>40.3, pp. 402&#8211;434.
+   </dd><dt id="X0-desmarais2012-a" class="thebibliography">
+</dt><dd 
+id="bib-14" class="thebibliography">
+   <!--l. 268--><p class="noindent" >&#8212;  (2012b).   &#8220;Statistical   inference   for   valued-edge   networks:   the   generalized
+   exponential random graph model.&#8221; In: <span 
+class="ecti-1200">PloS one </span>7.1, e30136.
+   </dd><dt id="X0-emerson2012" class="thebibliography">
+</dt><dd 
+id="bib-15" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Emerson,  K.,  T.  Nabatchi  &amp;  S.  Balogh  (2012).  &#8220;An  integrative  framework  for
+   collaborative governance.&#8221; In: <span 
+class="ecti-1200">Journal of Public Administration Research and Theory</span>
+   22.1, pp. 1&#8211;29.
+   </dd><dt id="X0-feiock2010" class="thebibliography">
+</dt><dd 
+id="bib-16" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Feiock,  Richard,  In  Won  Lee,  Hyung  Jun  Park  &amp;  Keon-Hyung  Lee  (2010).
+   &#8220;Collaboration Networks Among Local Elected Officials: Information, Commitment,
+   and Risk Aversion.&#8221; In: <span 
+class="ecti-1200">Urban Affairs Review </span>46.2, pp. 241&#8211;262.
+   </dd><dt id="X0-frederickson2005" class="thebibliography">
+</dt><dd 
+id="bib-17" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Frederickson, H. G (2005). &#8220;Governance, Governance Everywhere.&#8221;  In: <span 
+class="ecti-1200">The Oxford</span>
+   <span 
+class="ecti-1200">Handbook Of Public Management</span>. Ed. by E. Ferlie, L. E. Lynn &amp; C. Pollitt. Oxford
+   Handbooks Online. New York, NY: Oxford University Press, pp. 282&#8211;304.
+   </dd><dt id="X0-gerber2013" class="thebibliography">
+</dt><dd 
+id="bib-18" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Gerber,  Elisabeth  R.,  Adam  Douglas  Henry  &amp;  Mark  Lubell  (2013).  &#8220;Political
+   Homophily and Collaboration in Regional Planning Networks.&#8221; In: <span 
+class="ecti-1200">American Journal</span>
+   <span 
+class="ecti-1200">of Political Science </span>57.3, pp. 598&#8211;610.
+   </dd><dt id="X0-gerlak2012" class="thebibliography">
+</dt><dd 
+id="bib-19" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Gerlak,  Andrea  K.,  Mark  Lubell  &amp;  Tanya  Heikkila  (2012).  &#8220;The  Promise  and
+   Performance of Collaborative Governance.&#8221; In: <span 
+class="ecti-1200">Oxford Handbook of US Environmental</span>
+   <span 
+class="ecti-1200">Policy</span>.  Ed.  by  Sheldon  Kamieniecki  &amp;  Michael  E.  Kraft.  Oxford,  UK:  Oxford
+   University Press, pp. 413&#8211;434.
+   </dd><dt id="X0-gigone1993" class="thebibliography">
+</dt><dd 
+id="bib-20" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Gigone, D. &amp; R. Hastie (1993). &#8220;The common knowledge effect: Information sharing
+   and  group  judgment.&#8221;  In:  <span 
+class="ecti-1200">Journal  of  Personality  and  Social  Psychology  </span>65.5,
+   pp. 959&#8211;974.
+   </dd><dt id="X0-goodreau2008" class="thebibliography">
+</dt><dd 
+id="bib-21" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Goodreau, Steven M., Mark S. Handcock, David R. Hunter, Carter T. Butts &amp; Martina
+   Morris (2008). &#8220;A statnet Tutorial.&#8221; In: <span 
+class="ecti-1200">Journal of statistical software </span>24.9, pp. 1&#8211;27.
+
+   </dd><dt id="X0-granovetter1985" class="thebibliography">
+</dt><dd 
+id="bib-22" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Granovetter,  M.  (1985).  &#8220;Economic  action  and  social  structure:  the  problem  of
+   embeddedness.&#8221; In: <span 
+class="ecti-1200">American Journal of sociology</span>, pp. 481&#8211;510.
+   </dd><dt id="X0-handcock2003" class="thebibliography">
+</dt><dd 
+id="bib-23" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Handcock,  Mark  (2003).  &#8220;Assessing  Degeneracy  in  Statistical  Models  of  Social
+   Networks.&#8221;
+   </dd><dt id="X0-handcock2014-a" class="thebibliography">
+</dt><dd 
+id="bib-24" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Handcock, Mark S., David R. Hunter, Carter T. Butts, Steven M. Goodreau, Pavel N.
+   Krivitsky, Skye Bender-deMoll &amp; Martina Morris (2014a). <span 
+class="ecti-1200">statnet: Software tools for</span>
+   <span 
+class="ecti-1200">the Statistical Analysis of Network Data</span>. R package version 2014.2.0. The Statnet
+   Project (http://www.statnet.org).
+   </dd><dt id="X0-handcock2014" class="thebibliography">
+</dt><dd 
+id="bib-25" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Handcock,  Mark  S.,  David  R.  Hunter,  Carter  T.  Butts,  Steven  M.  Goodreau,
+   Pavel N. Krivitsky &amp; Martina Morris (2014b). <span 
+class="ecti-1200">ergm: Fit, Simulate and Diagnose</span>
+   <span 
+class="ecti-1200">Exponential-Family Models for Networks</span>. R package version 3.1.2. The Statnet Project
+   (http://www.statnet.org).
+   </dd><dt id="X0-henry2011" class="thebibliography">
+</dt><dd 
+id="bib-26" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Henry, A. D (2011). &#8220;Ideology, Power, and the Structure of Policy Networks.&#8221;  In:
+   <span 
+class="ecti-1200">Policy Studies Journal </span>39.3, pp. 361&#8211;383.
+   </dd><dt id="X0-henry2012" class="thebibliography">
+</dt><dd 
+id="bib-27" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Henry, A. D, M. Lubell &amp; M. McCoy (2012). &#8220;Survey-Based Measurement of Public
+   Management and Policy Networks.&#8221; In: <span 
+class="ecti-1200">Journal of Policy Analysis and Management</span>
+   31.2, pp. 432&#8211;452.
+
+   </dd><dt id="X0-hill2003" class="thebibliography">
+</dt><dd 
+id="bib-28" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Hill, C. &amp; L. Lynn (2003). &#8220;Producing human services: Why do agencies collaborate?&#8221;
+   In: <span 
+class="ecti-1200">Public Management Review </span>5.1, pp. 63&#8211;81.
+   </dd><dt id="X0-imperial2005" class="thebibliography">
+</dt><dd 
+id="bib-29" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Imperial, M. T (2005). &#8220;Using collaboration as a governance strategy lessons from six
+   watershed management programs.&#8221; In: <span 
+class="ecti-1200">Administration &amp; Society </span>37.3, pp. 281&#8211;320.
+   </dd><dt id="X0-innes2010" class="thebibliography">
+</dt><dd 
+id="bib-30" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Innes,  Judith  E.  &amp;  David  E.  Booher  (2010).  <span 
+class="ecti-1200">Planning  with  Complexity:  An</span>
+   <span 
+class="ecti-1200">introduction to collaborative rationality for public policy</span>. New York, NY: Routledge.
+   </dd><dt id="X0-kickert1997" class="thebibliography">
+</dt><dd 
+id="bib-31" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Kickert, W. J.M, E. H Klijn &amp; J. F.M Koppenjan (1997). &#8220;Managing networks in the
+   public sector: Findings and reflections.&#8221; In: <span 
+class="ecti-1200">Managing Complex Networks. Strategies</span>
+   <span 
+class="ecti-1200">for the Public Sector</span>, pp. 166&#8211;191.
+   </dd><dt id="X0-klijn2010" class="thebibliography">
+</dt><dd 
+id="bib-32" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Klijn, E. H, J. Edelenbos &amp; B. Steijn (2010). &#8220;Trust in Governance Networks Its
+   Impacts on Outcomes.&#8221; In: <span 
+class="ecti-1200">Administration &amp; Society </span>42.2, pp. 193&#8211;221.
+   </dd><dt id="X0-klijn2000" class="thebibliography">
+</dt><dd 
+id="bib-33" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Klijn, E. H &amp; J. F.M Koppenjan (2000). &#8220;Public management and policy networks.&#8221;
+   In:  <span 
+class="ecti-1200">Public  Management  an  International  Journal  of  Research  and  Theory  </span>2.2,
+   pp. 135&#8211;158.
+   </dd><dt id="X0-klijn2006" class="thebibliography">
+</dt><dd 
+id="bib-34" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Klijn,  Erik-Hans  &amp;  Joop  Koppenjan  (2006).  &#8220;Institutional  design.&#8221;  In:  <span 
+class="ecti-1200">Public</span>
+   <span 
+class="ecti-1200">Management Review </span>8.1, pp. 141&#8211;160.
+   </dd><dt id="X0-knoke1990" class="thebibliography">
+</dt><dd 
+id="bib-35" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Knoke, D. (1990). &#8220;Networks of political action: Toward theory construction.&#8221;  In:
+   <span 
+class="ecti-1200">Social forces </span>68.4, pp. 1041&#8211;1063.
+   </dd><dt id="X0-kolaczyk2009" class="thebibliography">
+</dt><dd 
+id="bib-36" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Kolaczyk, Eric D (2009). <span 
+class="ecti-1200">Statistical analysis of network data: methods and models</span>.
+   New York, NY: Springer.
+   </dd><dt id="X0-koppenjan2004" class="thebibliography">
+</dt><dd 
+id="bib-37" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Koppenjan, J. F.M &amp; E. H Klijn (2004). <span 
+class="ecti-1200">Managing uncertainty in networks; a network</span>
+   <span 
+class="ecti-1200">approach to problem solving and decision making</span>. London: Routledge.
+   </dd><dt id="X0-krackhardt1988" class="thebibliography">
+</dt><dd 
+id="bib-38" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Krackhardt,  David  (1988).  &#8220;Predicting  with  networks:  Nonparametric  multiple
+   regression analysis of dyadic data.&#8221; In: <span 
+class="ecti-1200">Social networks </span>10.4, pp. 359&#8211;381.
+   </dd><dt id="X0-krivitsky2012" class="thebibliography">
+</dt><dd 
+id="bib-39" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Krivitsky,  Pavel  N.  (2012).  &#8220;Exponential-family  random  graph  models  for  valued
+   networks.&#8221; In: <span 
+class="ecti-1200">Electronic Journal of Statistics </span>6, pp. 1100&#8211;1128.
+   </dd><dt id="X0-krivitsky2013" class="thebibliography">
+</dt><dd 
+id="bib-40" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Krivitsky, Pavel N. &amp; Carter T. Butts (2013). <span 
+class="ecti-1200">Modeling valued networks with statnet</span>.
+   Tech. rep. The Statnet Development Team.
+   </dd><dt id="X0-leach2005" class="thebibliography">
+</dt><dd 
+id="bib-41" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Leach, William D. &amp; Paul A. Sabatier (2005). &#8220;Are trust and social capital the keys
+   to success? Watershed partnerships in California and Washington.&#8221;  In: <span 
+class="ecti-1200">Swimming</span>
+   <span 
+class="ecti-1200">Upstream:  Collaborative  approaches  to  watershed  management</span>.  Ed.  by  Paul.  A.
+   Sabatier,  Will  Focht,  Mark  Lubell,  Zev  Trachtenberg,  Arnold  Vedlitz  &amp;  Marty
+   Matlock. Cambridge, MA: MIT Press, pp. 233&#8211;258.
+   </dd><dt id="X0-long1958" class="thebibliography">
+</dt><dd 
+id="bib-42" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Long, N. E (1958). &#8220;The local community as an ecology of games.&#8221;  In: <span 
+class="ecti-1200">American</span>
+   <span 
+class="ecti-1200">Journal of Sociology</span>, pp. 251&#8211;261.
+   </dd><dt id="X0-lubell2005" class="thebibliography">
+</dt><dd 
+id="bib-43" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell, M. (2005). &#8220;Political Institutions and Conservation by Local Governments.&#8221;
+   In: <span 
+class="ecti-1200">Urban Affairs Review </span>40.6, pp. 706&#8211;729.
+   </dd><dt id="X0-lubell2010" class="thebibliography">
+</dt><dd 
+id="bib-44" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell, M., A. D Henry &amp; M. McCoy (2010). &#8220;Collaborative institutions in an ecology
+   of games.&#8221; In: <span 
+class="ecti-1200">American Journal of Political Science </span>54.2, pp. 287&#8211;300.
+   </dd><dt id="X0-lubell2011" class="thebibliography">
+</dt><dd 
+id="bib-45" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell, M. &amp; L. Lippert (2011). &#8220;Integrated regional water management: a study of
+   collaboration or water politics-as-usual in California, USA.&#8221; In: <span 
+class="ecti-1200">International Review</span>
+   <span 
+class="ecti-1200">of Administrative Sciences </span>77.1, pp. 76&#8211;100.
+   </dd><dt id="X0-lubell2002" class="thebibliography">
+</dt><dd 
+id="bib-46" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell, M., M. Schneider, J. T. Scholz &amp; M. Mete (2002). &#8220;Watershed partnerships
+   and the emergence of collective action institutions.&#8221; In: <span 
+class="ecti-1200">American Journal of Political</span>
+   <span 
+class="ecti-1200">Science </span>46.1, pp. 148&#8211;163.
+   </dd><dt id="X0-lubell2012" class="thebibliography">
+</dt><dd 
+id="bib-47" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Lubell, M., J. Scholz, R. Berardo &amp; G. Robins (2012). &#8220;Testing Policy Theory with
+   Statistical Models of Networks.&#8221; In: <span 
+class="ecti-1200">Policy Studies Journal </span>40.3, pp. 351&#8211;374.
+   </dd><dt id="X0-lubell2013" class="thebibliography">
+</dt><dd 
+id="bib-48" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell,  Mark  (2013).  &#8220;Governing  institutional  complexity:  The  ecology  of  games
+   framework.&#8221; In: <span 
+class="ecti-1200">Policy Studies Journal </span>41.3, pp. 537&#8211;559.
+   </dd><dt id="X0-lubell2011-a" class="thebibliography">
+</dt><dd 
+id="bib-49" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lubell, Mark N., Garry Robins &amp; Peng Wang (2011). &#8220;Policy coordination in an
+   ecology of water management games.&#8221; In:
+   </dd><dt id="X0-lusher2013-a" class="thebibliography">
+</dt><dd 
+id="bib-50" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Lusher, Dean, Johan Koskinen &amp; Garry Robins (2013). <span 
+class="ecti-1200">Exponential Random Graph</span>
+   <span 
+class="ecti-1200">Models  for  Social  Networks:  Theory,  Methods,  and  Applications</span>.  New  York,  NY:
+   Cambridge University Press.
+   </dd><dt id="X0-mandell1990" class="thebibliography">
+</dt><dd 
+id="bib-51" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Mandell, M. P. (1990). &#8220;Network management: Strategic behavior in the public sector.&#8221;
+   In: <span 
+class="ecti-1200">Strategies for Managing Intergovernmental Policies and Network. </span>Ed. by R. W
+   Gage &amp; M. P. Mandell. New York, NY: Praeger.
+   </dd><dt id="X0-margerum2011" class="thebibliography">
+</dt><dd 
+id="bib-52" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Margerum, R. D (2011). <span 
+class="ecti-1200">Beyond Consensus: Improving collaborative planning and</span>
+   <span 
+class="ecti-1200">management</span>. Cambridge, MA: MIT Press.
+   </dd><dt id="X0-mcallister2014" class="thebibliography">
+</dt><dd 
+id="bib-53" class="thebibliography">
+   <!--l. 268--><p class="noindent" >McAllister,  Ryan  RJ,  Rod  McCrea  &amp;  Mark  N.  Lubell  (2014).  &#8220;Policy  networks,
+   stakeholder  interactions  and  climate  adaptation  in  the  region  of  South  East
+   Queensland, Australia.&#8221; In: <span 
+class="ecti-1200">Regional Environmental Change </span>14.2, pp. 527&#8211;539.
+
+   </dd><dt id="X0-moreland1993" class="thebibliography">
+</dt><dd 
+id="bib-54" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Moreland, R. L, J. M Levine &amp; M. A Cini (1993). &#8220;Group socialization: The role of
+   commitment.&#8221; In: <span 
+class="ecti-1200">Group Motivation: Social Psychological Perspectives</span>. Ed. by M. A.
+   Hogg &amp; D. Abrams. London: Harvester Wheatsheaf, pp. 105&#8211;129.
+   </dd><dt id="X0-niles2012" class="thebibliography">
+</dt><dd 
+id="bib-55" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Niles, M. T &amp; M. Lubell (2012). &#8220;Integrative Frontiers in Environmental Policy Theory
+   and Research.&#8221; In: <span 
+class="ecti-1200">Policy Studies Journal </span>40, pp. 41&#8211;64.
+   </dd><dt id="X0-ostrom2000" class="thebibliography">
+</dt><dd 
+id="bib-56" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Ostrom,  Elinor  (2000).  &#8220;Collective  action  and  the  evolution  of  social  norms.&#8221;  In:
+   <span 
+class="ecti-1200">Journal of Economic Perspectives </span>14.3, pp. 137&#8211;158.
+   </dd><dt id="X0-ostrom1961" class="thebibliography">
+</dt><dd 
+id="bib-57" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Ostrom, V., C. M Tiebout &amp; R. Warren (1961). &#8220;The organization of government in
+   metropolitan areas: a theoretical inquiry.&#8221; In: <span 
+class="ecti-1200">The American Political Science Review</span>
+   55.4, pp. 831&#8211;842.
+   </dd><dt id="X0-pearl2000" class="thebibliography">
+</dt><dd 
+id="bib-58" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Pearl, Judea (2000). <span 
+class="ecti-1200">Causality: models, reasoning and inference</span>. Vol.&#x00A0;29. Cambridge
+   Univ Press.
+   </dd><dt id="X0-podolny1998" class="thebibliography">
+</dt><dd 
+id="bib-59" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Podolny, J. M &amp; K. L Page (1998). &#8220;Network forms of organization.&#8221; In: <span 
+class="ecti-1200">Annual review</span>
+   <span 
+class="ecti-1200">of sociology</span>, pp. 57&#8211;76.
+   </dd><dt id="X0-prell2012" class="thebibliography">
+</dt><dd 
+id="bib-60" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Prell, C. (2012). <span 
+class="ecti-1200">Social Network Analysis: History, Theory and Methodology</span>. Sage.
+
+   </dd><dt id="X0-putnam2000" class="thebibliography">
+</dt><dd 
+id="bib-61" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Putnam, R. D (2000). <span 
+class="ecti-1200">Bowling Alone</span>. New York, NY: Simon &amp; Schuster.
+   </dd><dt id="X0-rhodes1997" class="thebibliography">
+</dt><dd 
+id="bib-62" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Rhodes, R.  A.W (1997).  <span 
+class="ecti-1200">Understanding governance: Policy networks, governance,</span>
+   <span 
+class="ecti-1200">reflexivity and accountability</span>. Open University Press.
+   </dd><dt id="X0-robins2012" class="thebibliography">
+</dt><dd 
+id="bib-63" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Robins, Garry, Jenny M. Lewis &amp; Peng Wang (2012). &#8220;Statistical Network Analysis
+   for Analyzing Policy Networks.&#8221; In: <span 
+class="ecti-1200">Policy Studies Journal </span>40.3, pp. 375&#8211;401.
+   </dd><dt id="X0-rubin1986" class="thebibliography">
+</dt><dd 
+id="bib-64" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Rubin, Donald B. (1986). &#8220;Comment: Which ifs have causal answers.&#8221; In: <span 
+class="ecti-1200">Journal of</span>
+   <span 
+class="ecti-1200">the American Statistical Association </span>81.396, pp. 961&#8211;962.
+   </dd><dt id="X0-sabatier1993" class="thebibliography">
+</dt><dd 
+id="bib-65" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Sabatier, P. A &amp; H. C Jenkins-Smith (1993). <span 
+class="ecti-1200">Policy Change and Learning: An advocacy</span>
+   <span 
+class="ecti-1200">coalition framework</span>. Boulder, CO: Westview.
+   </dd><dt id="X0-sabatier2005" class="thebibliography">
+</dt><dd 
+id="bib-66" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Sabatier, P. A, W. D Leach, M. Lubell &amp; N. W Pelkey (2005). &#8220;Theoretical frameworks
+   explaining partnership success.&#8221; In: <span 
+class="ecti-1200">Swimming Upstream: Collaborative approaches to</span>
+   <span 
+class="ecti-1200">watershed management</span>. Ed. by P. Sabatier, W. Focht, M. Lubell, Z. Trachtenberg,
+   A. Vedlitz &amp; M. Matlock. Cambridge, MA: MIT Press, pp. 173&#8211;200.
+   </dd><dt id="X0-schneider2003" class="thebibliography">
+</dt><dd 
+id="bib-67" class="thebibliography">
+
+   <!--l. 268--><p class="noindent" >Schneider, M., J. Scholz, M. Lubell, D. Mindruta &amp; M. Edwardsen (2003). &#8220;Building
+   consensual institutions: Networks and the National Estuary Program.&#8221; In: <span 
+class="ecti-1200">American</span>
+   <span 
+class="ecti-1200">Journal of Political Science </span>47.1, pp. 143&#8211;158.
+   </dd><dt id="X0-scholz2008" class="thebibliography">
+</dt><dd 
+id="bib-68" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Scholz,  J.  T,  R.  Berardo  &amp;  B.  Kile  (2008).  &#8220;Do  networks  solve  collective  action
+   problems?  Credibility,  search,  and  collaboration.&#8221;  In:  <span 
+class="ecti-1200">Journal  of  Politics  </span>70.2,
+   pp. 393&#8211;406.
+   </dd><dt id="X0-schrank2011" class="thebibliography">
+</dt><dd 
+id="bib-69" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Schrank,  A.  &amp;  J.  Whitford  (2011).  &#8220;The  Anatomy  of  Network  Failure*.&#8221;  In:
+   <span 
+class="ecti-1200">Sociological Theory </span>29.3, pp. 151&#8211;177.
+   </dd><dt id="X0-smaldino2014" class="thebibliography">
+</dt><dd 
+id="bib-70" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Smaldino, Paul E. &amp; Mark Lubell (2014). &#8220;Institutions and Cooperation in an Ecology
+   of Games.&#8221; In: <span 
+class="ecti-1200">Artificial Life </span>20.2, pp. 207&#8211;221. <span 
+class="eccc-1200"><span 
+class="small-caps">D</span><span 
+class="small-caps">O</span><span 
+class="small-caps">I</span></span>: 10.1162/ARTL_a_00126.
+   </dd><dt id="X0-snijders2006" class="thebibliography">
+</dt><dd 
+id="bib-71" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Snijders,  Tom  AB,  Philippa  E.  Pattison,  Garry  L.  Robins  &amp;  Mark  S.  Handcock
+   (2006). &#8220;New specifications for exponential random graph models.&#8221;  In: <span 
+class="ecti-1200">Sociological</span>
+   <span 
+class="ecti-1200">Methodology </span>36.1, pp. 99&#8211;153.
+   </dd><dt id="X0-susskind1999" class="thebibliography">
+</dt><dd 
+id="bib-72" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Susskind, L. E, J. Thomas-Lamar &amp; S. McKearnen (1999). <span 
+class="ecti-1200">The Consensus Building</span>
+   <span 
+class="ecti-1200">Handbook: A comprehensive guide to reaching agreement</span>. Thousand Oaks, CA: Sage.
+   </dd><dt id="X0-thomas2003" class="thebibliography">
+</dt><dd 
+id="bib-73" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Thomas, Craig W. (2003). <span 
+class="ecti-1200">Bureaucratic landscapes : interagency cooperation and the</span>
+   <span 
+class="ecti-1200">preservation of biodiversity</span>. Cambridge, MA: MIT Press.
+
+   </dd><dt id="X0-torfing2007" class="thebibliography">
+</dt><dd 
+id="bib-74" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Torfing,  J.  &amp;  E.  Sorensen  (2007).  <span 
+class="ecti-1200">Theories  of  democratic  network  governance</span>.
+   Basingstoke: Palgrave Macmillian.
+   </dd><dt id="X0-weimer2010" class="thebibliography">
+</dt><dd 
+id="bib-75" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Weimer, D. L &amp; A. R Vining (2010). <span 
+class="ecti-1200">Policy Analysis: Concepts and Practice, 5th</span>
+   <span 
+class="ecti-1200">edition. </span>Upper Saddle River, NJ: Prentice Hall.
+   </dd><dt id="X0-wyatt2009" class="thebibliography">
+</dt><dd 
+id="bib-76" class="thebibliography">
+   <!--l. 268--><p class="noindent" >Wyatt, Danny, Tanzeem Choudhury &amp; Jeff Bilmes (2009). &#8220;Dynamic multi-valued
+   network  models  for  predicting  face-to-face  conversations.&#8221;  In:  <span 
+class="ecti-1200">NIPS  workshop  on</span>
+   <span 
+class="ecti-1200">Analyzing Networks and Learning with Graphs</span>.
+   </dd><dt id="X0-wyatt2010" class="thebibliography">
+</dt><dd 
+id="bib-77" class="thebibliography">
+   <!--l. 268--><p class="noindent" >&#8212;  (2010). &#8220;Discovering long range properties of social networks with multi-valued
+   time-inhomogeneous models.&#8221; In: <span 
+class="ecti-1200">AAAI</span>.</dd></dl>
+
+
+
+<!--l. 1--><p class="indent" >   <hr class="float"><div class="float" 
+>
+
+

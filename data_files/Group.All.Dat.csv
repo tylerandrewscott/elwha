@@ -1,0 +1,1757 @@
+"","ID","GroupID","email","meet","event","proj","read","write","other","ORG","Detail","face.to.face","values","language","scientific","human.resources","financial.resources"
+"1","006a558bad564f95a483d151fb8648a4","G.ECB",1,1,0,0,1,0,0,"Mason County","Public Health",5,5,5,5,2,3
+"2","006a558bad564f95a483d151fb8648a4","G.ECO.HOOD",1,0,0,0,0,0,0,"Mason County","Public Health",3,4,4,4,2,3
+"3","006a558bad564f95a483d151fb8648a4","G.ECO.MASON",1,1,0,0,0,0,0,"Mason County","Public Health",3,4,4,4,2,3
+"4","006a558bad564f95a483d151fb8648a4","G.LIO.HOOD",1,1,0,0,1,0,0,"Mason County","Public Health",5,4,4,4,2,4
+"5","006a558bad564f95a483d151fb8648a4","G.LIO.SOUTHSOUND",1,1,0,0,1,0,0,"Mason County","Public Health",5,4,5,4,2,4
+"6","006a558bad564f95a483d151fb8648a4","G.LOC.HOOD",1,1,0,0,0,0,0,"Mason County","Public Health",4,4,4,3,2,4
+"7","006a558bad564f95a483d151fb8648a4","G.OTHER.1",1,1,1,1,1,1,1,"Mason County","Public Health",NA,NA,NA,NA,NA,NA
+"8","009ec89ea5b0427d892cd9878eaa9eee","G.ENVIRO",1,1,0,0,1,0,0,"Surfrider Foundation","",4,5,4,4,4,2
+"9","009ec89ea5b0427d892cd9878eaa9eee","G.OTHER.1",1,1,1,1,1,1,1,"Surfrider Foundation","",NA,NA,NA,NA,NA,NA
+"10","00ab64d810b149b084e9fb7d7299e17d","G.ECO.SJ",1,1,0,1,1,0,0,"NPS","San Juan Island National Historic Park",5,5,4,4,3,3
+"11","0120571cfc1c4ba4aa286b52d0d05a70","G.ECO.SKAGIT",1,0,0,1,1,0,1,"Skagit Land Trust","",2,4,2,2,2,4
+"12","0120571cfc1c4ba4aa286b52d0d05a70","G.LOC.SKAGIT",1,0,1,1,0,0,0,"Skagit Land Trust","",1,4,5,5,-77,-99
+"13","0120571cfc1c4ba4aa286b52d0d05a70","G.MRC.SKAGIT",1,1,1,1,1,0,0,"Skagit Land Trust","",1,4,4,4,4,4
+"14","0120571cfc1c4ba4aa286b52d0d05a70","G.OTHER.1",1,1,1,1,1,1,1,"Skagit Land Trust","",NA,NA,NA,NA,NA,NA
+"15","0120571cfc1c4ba4aa286b52d0d05a70","G.OTHER.2",1,0,1,1,1,1,0,"Skagit Land Trust","",1,5,4,5,4,4
+"16","0120571cfc1c4ba4aa286b52d0d05a70","G.OTHER.3",1,0,1,1,0,0,0,"Skagit Land Trust","",1,4,4,4,-77,-99
+"17","015a9498b1ff426c99eee515e267bd86","G.LIO.HOOD",1,0,0,1,1,0,0,"Northern Economics","",4,4,3,4,4,3
+"18","015a9498b1ff426c99eee515e267bd86","G.PSI",1,0,0,1,1,1,0,"Northern Economics","",4,3,5,5,4,4
+"19","015a9498b1ff426c99eee515e267bd86","G.PSNERP",0,0,0,0,0,0,1,"Northern Economics","",4,3,5,4,2,2
+"20","015a9498b1ff426c99eee515e267bd86","G.SCIENCE",1,1,1,1,1,1,1,"Northern Economics","",5,5,5,5,5,1
+"21","015a9498b1ff426c99eee515e267bd86","G.SOCSCI",1,1,1,1,1,1,1,"Northern Economics","",5,5,5,5,4,1
+"22","01eb38b631f741e2b24a01311a12e1ed","G.ECO.PIERCE",1,1,0,1,0,0,0,"City of Puyallup","",4,4,4,3,2,3
+"23","02003cc464604500accd642e65bb983e","G.ECO.KING",1,1,1,1,1,0,1,"City of Seattle","Restore Our Waters Program",5,5,3,4,3,3
+"24","02003cc464604500accd642e65bb983e","G.OTHER.1",1,1,0,0,0,0,0,"City of Seattle","Restore Our Waters Program",NA,NA,NA,NA,NA,NA
+"25","02003cc464604500accd642e65bb983e","G.OTHER.2",1,1,0,1,1,1,1,"City of Seattle","Restore Our Waters Program",4,5,3,4,3,3
+"26","02003cc464604500accd642e65bb983e","G.OTHER.3",1,1,0,1,1,0,1,"City of Seattle","Restore Our Waters Program",5,5,3,5,3,5
+"27","026fbc983d1d412192bb4743d4407803","G.ECB",1,1,0,0,0,0,0,"NWIFC","",4,5,3,3,3,2
+"28","026fbc983d1d412192bb4743d4407803","G.ECM.SALM",1,1,1,1,1,1,1,"NWIFC","",4,4,5,4,4,4
+"29","026fbc983d1d412192bb4743d4407803","G.LC",1,1,0,0,0,0,0,"NWIFC","",3,4,3,3,2,2
+"30","026fbc983d1d412192bb4743d4407803","G.OTHER.1",1,1,1,0,0,0,0,"NWIFC","",NA,NA,NA,NA,NA,NA
+"31","026fbc983d1d412192bb4743d4407803","G.OTHER.2",1,1,1,1,1,1,1,"NWIFC","",3,5,5,3,3,4
+"32","026fbc983d1d412192bb4743d4407803","G.OTHER.3",1,1,1,1,1,1,1,"NWIFC","",5,4,5,5,5,5
+"33","026fbc983d1d412192bb4743d4407803","G.PSEMP",1,1,1,1,1,1,1,"NWIFC","",4,4,5,5,4,4
+"34","026fbc983d1d412192bb4743d4407803","G.PSI",0,0,1,1,1,1,1,"NWIFC","",5,4,5,5,5,5
+"35","026fbc983d1d412192bb4743d4407803","G.RITT",1,1,1,1,1,1,1,"NWIFC","",3,3,5,3,4,3
+"36","026fbc983d1d412192bb4743d4407803","G.SCIENCE",1,1,1,1,1,1,0,"NWIFC","",4,3,5,5,4,3
+"37","026fbc983d1d412192bb4743d4407803","G.SRC",1,1,1,0,0,0,0,"NWIFC","",4,5,5,3,3,3
+"38","034d469bc8f34aa387f640a82401fd4f","G.ECO.KITSAP",1,1,1,1,1,1,0,"Kitsap County","Public Works Surface and Stormwater Management Program",5,5,5,5,3,4
+"39","034d469bc8f34aa387f640a82401fd4f","G.OTHER.1",1,1,1,1,1,1,0,"Kitsap County","Public Works Surface and Stormwater Management Program",NA,NA,NA,NA,NA,NA
+"40","034d469bc8f34aa387f640a82401fd4f","G.OTHER.2",1,0,1,0,1,0,0,"Kitsap County","Public Works Surface and Stormwater Management Program",5,5,5,5,3,4
+"41","03d30968591c4af0bc1ceabd66dfb59d","G.ECO.THURST",1,1,1,1,1,1,1,"Thurston County","Public Health",5,5,3,5,4,4
+"42","03d30968591c4af0bc1ceabd66dfb59d","G.OTHER.1",1,1,1,1,1,1,1,"Thurston County","Public Health",NA,NA,NA,NA,NA,NA
+"43","04d1ae8fcdd744b09ff7622c2dbf7681","G.LOC.SKAGIT",1,0,0,0,1,0,0,"Skagit Conservation District","",5,4,5,5,-99,4
+"44","04d1ae8fcdd744b09ff7622c2dbf7681","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Skagit Conservation District","",5,5,5,5,4,5
+"45","04d1ae8fcdd744b09ff7622c2dbf7681","G.OTHER.1",1,0,0,1,1,0,0,"Skagit Conservation District","",NA,NA,NA,NA,NA,NA
+"46","04d1ae8fcdd744b09ff7622c2dbf7681","G.OTHER.2",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,5,5,-99,3
+"47","04d1ae8fcdd744b09ff7622c2dbf7681","G.OTHER.3",1,1,0,1,1,0,1,"Skagit Conservation District","",5,5,5,5,5,4
+"48","04d1ae8fcdd744b09ff7622c2dbf7681","G.OTHER.4",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,4,4,-99,4
+"49","04d1ae8fcdd744b09ff7622c2dbf7681","G.PSNERP",0,0,0,1,1,0,0,"Skagit Conservation District","",4,5,5,5,-99,5
+"50","0719d2b6693149f09c94cb04b9e38767","G.LIO.STRAIT",1,1,0,1,1,0,0,"WDOE","",5,5,4,5,3,3
+"51","0719d2b6693149f09c94cb04b9e38767","G.LOC.HOOD",0,0,0,0,1,0,0,"WDOE","",2,4,4,4,2,3
+"52","0719d2b6693149f09c94cb04b9e38767","G.LOC.NOLY",0,0,0,1,1,0,1,"WDOE","",4,5,4,5,3,3
+"53","0719d2b6693149f09c94cb04b9e38767","G.OTHER.1",1,1,1,1,1,1,1,"WDOE","",NA,NA,NA,NA,NA,NA
+"54","0719d2b6693149f09c94cb04b9e38767","G.OTHER.2",1,1,0,1,1,0,0,"WDOE","",5,5,5,5,4,3
+"55","0719d2b6693149f09c94cb04b9e38767","G.OTHER.3",0,1,0,0,0,0,0,"WDOE","",5,5,4,5,3,3
+"56","0719d2b6693149f09c94cb04b9e38767","G.OTHER.4",1,1,0,1,1,0,0,"WDOE","",4,5,4,5,2,3
+"57","0719d2b6693149f09c94cb04b9e38767","G.OTHER.5",1,1,0,1,1,1,0,"WDOE","",3,5,4,4,2,3
+"58","076de75e52be4644a3e67429a0db3802","G.PSI",1,1,0,1,1,1,1,"Stanford","",5,5,4,5,5,4
+"59","076de75e52be4644a3e67429a0db3802","G.SOCSCI",1,1,0,0,1,0,0,"Stanford","",4,5,3,4,2,3
+"60","078e64c0fe714d9085b22099b5224715","G.OTHER.1",1,1,1,1,1,0,1,"City of Edmonds","",NA,NA,NA,NA,NA,NA
+"61","078e64c0fe714d9085b22099b5224715","G.OTHER.2",1,1,1,1,1,0,1,"City of Edmonds","",5,4,4,5,2,5
+"62","078e64c0fe714d9085b22099b5224715","G.OTHER.3",1,1,0,0,1,0,0,"City of Edmonds","",5,4,4,5,2,5
+"63","0799627615404272acf49ee610bccd8a","G.ECO.SJ",1,1,1,1,1,0,0,"Wolf Hollow Wildlife Rehabilitation Center","",5,4,4,4,4,2
+"64","0a00f0761a5b437282e917e02a9bff47","G.LOC.SNOHO",0,1,0,0,1,0,0,"Snohomish Conservation District","",4,5,4,4,3,4
+"65","0a00f0761a5b437282e917e02a9bff47","G.LOC.STILL",1,1,0,1,1,1,1,"Snohomish Conservation District","",1,19,1,5,NA,5
+"66","0aa65695e6044b6c82cf0bb99180b321","G.LOC.SNOHO",1,1,1,1,1,1,1,"Snohomish County","",5,4,4,5,2,4
+"67","0aa65695e6044b6c82cf0bb99180b321","G.LOC.STILL",0,0,0,1,1,1,0,"Snohomish County","",1,13,1,4,NA,4
+"68","0b7d3b0400464a048622ef9ba86e7a06","G.LIO.STRAIT",1,1,0,0,1,0,0,"Clallam County","",4,4,4,4,2,4
+"69","0b7d3b0400464a048622ef9ba86e7a06","G.LOC.NOLY",1,1,0,0,1,0,0,"Clallam County","",4,4,4,4,2,4
+"70","0b981d0690044e46bf1913b6c28e03bc","G.LOC.NISQ",0,1,0,0,0,0,0,"Thurston County","",5,5,5,5,3,4
+"71","0b981d0690044e46bf1913b6c28e03bc","G.SRC",0,1,0,0,0,0,0,"Thurston County","",5,5,5,5,3,3
+"72","0b981d0690044e46bf1913b6c28e03bc","G.WLEADS",0,1,0,0,0,0,0,"Thurston County","",4,5,5,5,3,3
+"73","0d49706b5ed04c0ba5f8039ef4da0479","G.SCIENCE",1,1,1,1,1,1,1,"WWU","",3,4,4,5,1,1
+"74","0d52d688cb5949f392533440b71c7a0d","G.ECO.HOOD",0,1,0,0,1,0,0,"Still Hope Productions","",5,5,5,4,2,4
+"75","0d52d688cb5949f392533440b71c7a0d","G.ECO.KITSAP",1,1,1,1,1,1,0,"Still Hope Productions","",5,5,5,5,2,4
+"76","0d52d688cb5949f392533440b71c7a0d","G.ECO.MASON",0,1,0,0,1,0,0,"Still Hope Productions","",5,5,5,4,2,4
+"77","0d52d688cb5949f392533440b71c7a0d","G.OTHER.1",0,1,0,0,1,0,0,"Still Hope Productions","",NA,NA,NA,NA,NA,NA
+"78","0d52d688cb5949f392533440b71c7a0d","G.OTHER.2",0,1,1,1,1,1,0,"Still Hope Productions","",5,5,5,5,2,3
+"79","0d52d688cb5949f392533440b71c7a0d","G.OTHER.3",0,1,1,1,1,0,0,"Still Hope Productions","",5,5,5,4,2,4
+"80","0d52d688cb5949f392533440b71c7a0d","G.OTHER.4",0,0,0,1,1,0,0,"Still Hope Productions","",5,5,5,5,2,3
+"81","0d52d688cb5949f392533440b71c7a0d","G.OTHER.5",1,1,1,1,1,1,0,"Still Hope Productions","",5,5,5,5,2,4
+"82","0e0e804c7aeb41e88fb5d35aae663d30","G.ECB",0,0,0,1,1,0,0,"Long Live the Kings","",5,5,4,4,4,5
+"83","0e0e804c7aeb41e88fb5d35aae663d30","G.ENVIRO",1,0,0,1,1,1,0,"Long Live the Kings","",5,5,3,4,4,3
+"84","0e0e804c7aeb41e88fb5d35aae663d30","G.LC",0,1,0,0,1,0,0,"Long Live the Kings","",4,4,3,3,4,5
+"85","0e0e804c7aeb41e88fb5d35aae663d30","G.LIO.HOOD",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,4,4,4,4
+"86","0e0e804c7aeb41e88fb5d35aae663d30","G.LIO.SJWATER",0,0,1,0,1,0,1,"Long Live the Kings","",-77,-77,4,4,4,3
+"87","0e0e804c7aeb41e88fb5d35aae663d30","G.LOC.HOOD",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,4,4,4,5
+"88","0e0e804c7aeb41e88fb5d35aae663d30","G.LOC.SJ",0,0,1,0,1,0,1,"Long Live the Kings","",5,5,4,4,4,3
+"89","0e0e804c7aeb41e88fb5d35aae663d30","G.LOC.SKAGIT",0,0,1,0,1,0,1,"Long Live the Kings","",5,5,4,4,4,5
+"90","0e0e804c7aeb41e88fb5d35aae663d30","G.LOC.STILL",0,0,0,0,1,0,1,"Long Live the Kings","",1,11,1,-77,NA,5
+"91","0e0e804c7aeb41e88fb5d35aae663d30","G.MRC.SJ",0,0,1,0,1,0,1,"Long Live the Kings","",5,5,4,4,4,3
+"92","0e0e804c7aeb41e88fb5d35aae663d30","G.OTHER.1",0,0,0,0,1,0,0,"Long Live the Kings","",NA,NA,NA,NA,NA,NA
+"93","0e0e804c7aeb41e88fb5d35aae663d30","G.OTHER.2",1,1,1,1,1,1,1,"Long Live the Kings","",5,-99,4,4,4,5
+"94","0e0e804c7aeb41e88fb5d35aae663d30","G.OTHER.3",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,5,4,5
+"95","0e0e804c7aeb41e88fb5d35aae663d30","G.OTHER.4",1,1,1,1,1,1,1,"Long Live the Kings","",4,5,5,5,4,5
+"96","0e0e804c7aeb41e88fb5d35aae663d30","G.PSI",0,0,0,0,1,0,0,"Long Live the Kings","",3,3,4,5,4,2
+"97","0e0e804c7aeb41e88fb5d35aae663d30","G.PSNERP",0,0,0,0,1,0,0,"Long Live the Kings","",4,4,5,5,4,4
+"98","0e0e804c7aeb41e88fb5d35aae663d30","G.RITT",0,1,0,0,1,0,0,"Long Live the Kings","",4,4,5,5,4,4
+"99","0e0e804c7aeb41e88fb5d35aae663d30","G.SCIENCE",0,1,0,0,1,0,0,"Long Live the Kings","",4,3,4,5,3,2
+"100","0e0e804c7aeb41e88fb5d35aae663d30","G.SOCSCI",0,0,0,0,1,0,0,"Long Live the Kings","",4,4,4,5,3,3
+"101","0e0e804c7aeb41e88fb5d35aae663d30","G.SRC",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,4,5,5
+"102","0e37c143455046cea0b7db5134d197a0","G.LOC.PUY",1,1,1,1,1,1,0,"WRIA 10/12","Lead Entity",5,5,4,4,2,4
+"103","0e37c143455046cea0b7db5134d197a0","G.WLEADS",1,1,1,1,1,0,0,"WRIA 10/12","Lead Entity",4,5,4,4,2,4
+"104","0f1e7781e8984fa78a01c0f3f951c175","G.LIO.SNOHOSTILL",0,1,0,0,0,0,0,"WDFW","",4,4,3,3,3,3
+"105","0f1e7781e8984fa78a01c0f3f951c175","G.LOC.ISLAND",0,1,0,0,0,0,0,"WDFW","",4,5,4,5,3,3
+"106","0f1e7781e8984fa78a01c0f3f951c175","G.LOC.SNOHO",0,1,0,0,0,0,0,"WDFW","",5,5,5,5,4,5
+"107","0f1e7781e8984fa78a01c0f3f951c175","G.LOC.STILL",0,1,0,0,0,0,0,"WDFW","",3,5,2,5,4,5
+"108","0f1e7781e8984fa78a01c0f3f951c175","G.OTHER.1",0,1,0,0,0,0,0,"WDFW","",NA,NA,NA,NA,NA,NA
+"109","0f1e7781e8984fa78a01c0f3f951c175","G.OTHER.2",0,1,0,0,0,0,0,"WDFW","",4,4,4,3,3,4
+"110","0f1e7781e8984fa78a01c0f3f951c175","G.OTHER.3",0,0,1,0,0,0,0,"WDFW","",4,4,4,4,4,4
+"111","0f1e7781e8984fa78a01c0f3f951c175","G.PSNERP",0,0,0,1,0,0,0,"WDFW","",3,5,3,4,3,4
+"112","0f1e7781e8984fa78a01c0f3f951c175","G.WLEADS",0,1,0,0,0,0,0,"WDFW","",3,5,3,4,3,3
+"113","0ff449bec166421c9126d6616bd6cf63","G.ECO.WHID",0,0,0,0,1,0,0,"Skagit County","Public Health",2,2,2,3,1,1
+"114","0ff449bec166421c9126d6616bd6cf63","G.LOC.SKAGIT",1,1,1,1,1,1,0,"Skagit County","Public Health",4,4,4,4,3,3
+"115","0ff449bec166421c9126d6616bd6cf63","G.OTHER.1",1,1,1,1,1,1,1,"Skagit County","Public Health",NA,NA,NA,NA,NA,NA
+"116","0ff449bec166421c9126d6616bd6cf63","G.OTHER.2",1,1,1,1,1,1,1,"Skagit County","Public Health",5,5,5,5,5,5
+"117","0ff449bec166421c9126d6616bd6cf63","G.OTHER.3",1,1,1,1,1,1,1,"Skagit County","Public Health",5,5,5,5,2,5
+"118","109926330a0941caabeda24a538419ff","G.ECO.SNOHO",1,0,0,0,1,0,0,"Stillaguamish Tribe","",3,4,-99,-99,-99,-99
+"119","109926330a0941caabeda24a538419ff","G.LOC.STILL",0,1,1,0,0,0,0,"Stillaguamish Tribe","",1,2,1,4,NA,4
+"120","109926330a0941caabeda24a538419ff","G.MRC.SNOHO",0,1,1,1,0,0,0,"Stillaguamish Tribe","",4,4,4,4,-99,-99
+"121","109926330a0941caabeda24a538419ff","G.OTHER.1",0,1,0,0,1,0,0,"Stillaguamish Tribe","",NA,NA,NA,NA,NA,NA
+"122","10bdef03a14048748b8862f71442c044","G.ECO.HOOD",1,1,1,1,1,1,0,"WSUX Mason","",5,5,5,5,2,5
+"123","10bdef03a14048748b8862f71442c044","G.ECO.KITSAP",0,1,0,0,0,0,0,"WSUX Mason","",4,4,3,3,2,3
+"124","10bdef03a14048748b8862f71442c044","G.ECO.MASON",1,1,1,1,1,1,0,"WSUX Mason","",5,5,5,5,2,5
+"125","10bdef03a14048748b8862f71442c044","G.LIO.HOOD",1,1,0,0,1,0,0,"WSUX Mason","",4,4,4,5,2,4
+"126","1262d10fdc34455c8c14780480f68264","G.LOC.CEDAR",1,1,0,0,1,0,1,"King County","",2,4,4,4,2,4
+"127","1262d10fdc34455c8c14780480f68264","G.OTHER.1",0,0,0,0,0,0,1,"King County","",NA,NA,NA,NA,NA,NA
+"128","1262d10fdc34455c8c14780480f68264","G.OTHER.2",1,1,0,1,1,1,1,"King County","",4,4,4,4,2,4
+"129","129ee0087af040678a739017652f057e","G.LOC.NISQ",1,1,0,0,1,0,0,"USFWS","Nisqually NWR/Ducks Unlimited",5,4,3,4,2,5
+"130","12d0787b2d114157b72cdd6532c68dea","G.LIO.SOUTHCENTRAL",0,1,0,0,1,0,0,"City of Sammamish","",5,5,5,5,-99,-99
+"131","12d0787b2d114157b72cdd6532c68dea","G.OTHER.1",1,1,1,1,1,0,0,"City of Sammamish","",NA,NA,NA,NA,NA,NA
+"132","1522081210eb4717b656c20e459ee928","G.ECO.SNOHO",1,1,0,0,1,0,0,"Snohomish Conservation District","",4,5,3,4,3,5
+"133","1522081210eb4717b656c20e459ee928","G.LIO.ISLANDWATER",1,0,0,0,0,0,0,"Snohomish Conservation District","",3,5,3,4,3,5
+"134","1522081210eb4717b656c20e459ee928","G.LIO.SNOHOSTILL",1,1,1,1,1,0,0,"Snohomish Conservation District","",5,5,3,4,4,5
+"135","1522081210eb4717b656c20e459ee928","G.LOC.ISLAND",1,0,0,0,1,0,0,"Snohomish Conservation District","",3,5,3,4,3,5
+"136","1522081210eb4717b656c20e459ee928","G.LOC.SNOHO",1,1,1,1,1,0,0,"Snohomish Conservation District","",5,5,3,4,3,5
+"137","1522081210eb4717b656c20e459ee928","G.LOC.STILL",1,1,1,1,1,0,0,"Snohomish Conservation District","",3,3,4,5,5,5
+"138","1522081210eb4717b656c20e459ee928","G.MRC.SNOHO",1,0,0,1,0,0,0,"Snohomish Conservation District","",4,5,3,4,3,5
+"139","1522081210eb4717b656c20e459ee928","G.OTHER.1",1,1,1,1,1,1,0,"Snohomish Conservation District","",NA,NA,NA,NA,NA,NA
+"140","1522081210eb4717b656c20e459ee928","G.OTHER.2",1,1,0,1,1,0,0,"Snohomish Conservation District","",5,5,3,5,5,5
+"141","1522081210eb4717b656c20e459ee928","G.OTHER.3",1,0,0,0,1,0,0,"Snohomish Conservation District","",3,5,3,4,3,5
+"142","1522081210eb4717b656c20e459ee928","G.OTHER.4",1,1,1,1,1,0,0,"Snohomish Conservation District","",3,5,3,3,3,5
+"143","1522081210eb4717b656c20e459ee928","G.OTHER.5",1,1,1,1,1,1,0,"Snohomish Conservation District","",5,5,3,5,4,5
+"144","15316204ef9645fb9c738baecd3a611f","G.OTHER.1",1,1,0,1,1,1,1,"Skagit Tribe","",NA,NA,NA,NA,NA,NA
+"145","16389a4305ef42ad9cd9473d0618876a","G.MRC.SNOHO",1,0,0,0,1,0,0,"Stillaguamish Clean Water District","",4,4,5,5,3,3
+"146","16389a4305ef42ad9cd9473d0618876a","G.OTHER.1",1,1,1,1,1,0,0,"Stillaguamish Clean Water District","",NA,NA,NA,NA,NA,NA
+"147","16389a4305ef42ad9cd9473d0618876a","G.OTHER.2",1,1,1,0,1,0,0,"Stillaguamish Clean Water District","",5,5,5,5,5,5
+"148","16389a4305ef42ad9cd9473d0618876a","G.OTHER.3",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,5,5,4,3
+"149","16389a4305ef42ad9cd9473d0618876a","G.WLEADS",1,0,0,0,1,0,0,"Stillaguamish Clean Water District","",3,5,5,4,3,3
+"150","16b04188dbe44e22b7b90570e1d316e5","G.ECO.WHID",1,1,1,1,1,1,1,"Whidbey ECO Net","",5,5,4,2,4,5
+"151","16b04188dbe44e22b7b90570e1d316e5","G.ENVIRO",1,1,0,0,1,0,0,"Whidbey ECO Net","",2,4,4,5,1,2
+"152","16b04188dbe44e22b7b90570e1d316e5","G.LIO.ISLANDWATER",1,1,1,1,1,0,0,"Whidbey ECO Net","",5,5,4,5,1,4
+"153","16b04188dbe44e22b7b90570e1d316e5","G.LOC.ISLAND",1,1,0,0,1,0,0,"Whidbey ECO Net","",5,5,4,5,1,4
+"154","16b04188dbe44e22b7b90570e1d316e5","G.MRC.ISLAND",0,1,1,0,1,0,0,"Whidbey ECO Net","",5,5,4,4,1,2
+"155","16d52f81007544c5b957baa29b9d0ae1","G.LIO.SOUTHCENTRAL",1,1,1,1,1,0,0,"WRIA 8","PSSRC",5,5,5,5,4,4
+"156","16d52f81007544c5b957baa29b9d0ae1","G.LOC.CEDAR",1,1,0,0,0,0,0,"WRIA 8","PSSRC",3,4,4,4,3,4
+"157","16d52f81007544c5b957baa29b9d0ae1","G.OTHER.1",1,1,1,1,1,1,0,"WRIA 8","PSSRC",NA,NA,NA,NA,NA,NA
+"158","16d52f81007544c5b957baa29b9d0ae1","G.OTHER.2",1,1,1,1,1,1,0,"WRIA 8","PSSRC",5,5,4,4,3,5
+"159","16d52f81007544c5b957baa29b9d0ae1","G.OTHER.3",1,1,0,1,1,0,0,"WRIA 8","PSSRC",5,5,4,4,5,5
+"160","16d52f81007544c5b957baa29b9d0ae1","G.OTHER.4",1,1,1,1,1,0,0,"WRIA 8","PSSRC",4,5,5,4,4,4
+"161","16d52f81007544c5b957baa29b9d0ae1","G.OTHER.5",1,1,1,1,1,1,0,"WRIA 8","PSSRC",5,5,5,5,5,5
+"162","16f1df8aa7664f9290a4b8a98261b846","G.ECO.WHID",1,1,1,1,1,0,0,"WSUX Island Waste Wise","",4,4,2,4,2,4
+"163","17995cc5ae3741df8a1d6d21b316a79c","G.ECO.THURST",1,1,0,0,0,0,0,"WDOE","Hazardous Waste & Toxics Reduction Program",4,4,4,3,3,3
+"164","18d2fc16fa61417087f9ad15ed0fffb7","G.ECM.SALM",1,1,0,1,1,0,0,"City of Everett","",3,4,5,5,2,4
+"165","18d2fc16fa61417087f9ad15ed0fffb7","G.ECO.SNOHO",1,1,0,1,1,0,0,"City of Everett","",3,4,5,5,2,4
+"166","18d2fc16fa61417087f9ad15ed0fffb7","G.LIO.SNOHOSTILL",1,1,0,1,1,0,0,"City of Everett","",3,4,5,5,2,4
+"167","18d2fc16fa61417087f9ad15ed0fffb7","G.LOC.SNOHO",1,1,1,1,1,1,0,"City of Everett","",3,4,5,5,2,4
+"168","18d2fc16fa61417087f9ad15ed0fffb7","G.OTHER.1",1,1,1,1,1,1,0,"City of Everett","",NA,NA,NA,NA,NA,NA
+"169","18d2fc16fa61417087f9ad15ed0fffb7","G.OTHER.2",1,1,1,1,1,1,0,"City of Everett","",3,4,5,5,2,4
+"170","18d2fc16fa61417087f9ad15ed0fffb7","G.OTHER.3",1,1,1,1,1,1,0,"City of Everett","",3,4,5,5,2,4
+"171","18d2fc16fa61417087f9ad15ed0fffb7","G.PSNERP",1,1,0,1,1,0,0,"City of Everett","",3,4,5,5,2,4
+"172","18d2fc16fa61417087f9ad15ed0fffb7","G.WLEADS",1,1,0,1,1,0,0,"City of Everett","",3,4,5,5,2,4
+"173","19655e19c0904d82969b44f35e5ba332","G.ECM.FRESH",1,1,0,1,1,0,0,"City of Seattle","",5,5,5,5,3,3
+"174","19655e19c0904d82969b44f35e5ba332","G.ECM.SALM",1,1,0,1,1,0,0,"City of Seattle","",5,5,5,5,3,3
+"175","19655e19c0904d82969b44f35e5ba332","G.LOC.SNOHO",1,1,0,1,1,0,0,"City of Seattle","",5,5,5,5,3,3
+"176","19655e19c0904d82969b44f35e5ba332","G.OTHER.1",1,1,0,1,1,0,0,"City of Seattle","",NA,NA,NA,NA,NA,NA
+"177","19655e19c0904d82969b44f35e5ba332","G.OTHER.2",1,1,0,0,0,0,0,"City of Seattle","",5,5,5,5,3,3
+"178","19655e19c0904d82969b44f35e5ba332","G.OTHER.3",1,1,0,0,0,0,0,"City of Seattle","",3,4,5,4,3,3
+"179","19655e19c0904d82969b44f35e5ba332","G.OTHER.4",1,1,1,1,1,1,1,"City of Seattle","",3,4,5,4,3,3
+"180","19655e19c0904d82969b44f35e5ba332","G.PSEMP",1,1,0,1,1,0,0,"City of Seattle","",5,5,5,5,3,3
+"181","19655e19c0904d82969b44f35e5ba332","G.SRC",1,1,1,0,1,0,0,"City of Seattle","",5,5,5,5,3,3
+"182","19655e19c0904d82969b44f35e5ba332","G.WLEADS",0,0,0,0,1,0,0,"City of Seattle","",4,5,5,5,3,3
+"183","1a9ecd8bb99d4d338438f1ee3fac189c","G.ECO.WHID",1,1,1,1,1,0,0,"South Whidbey Tilth","",4,4,4,4,4,4
+"184","1b76867eb9864aaa9cf23dae24624c96","G.ECO.KITSAP",1,1,1,1,1,0,1,"Kitsap County","Solid Waste Division",5,4,4,4,3,3
+"185","1c32eedc206d42698f5020f99b3ca17f","G.LOC.SNOHO",1,1,0,0,1,0,0,"City of Lake Stevens","",3,5,4,5,2,3
+"186","1c32eedc206d42698f5020f99b3ca17f","G.LOC.STILL",1,1,0,0,1,0,0,"City of Lake Stevens","",1,23,1,3,NA,5
+"187","1cbed7d0544548f090bfc7a9b751ec67","G.LIO.NOOKWATER",1,1,1,1,1,1,1,"WDFW","",2,2,2,2,2,2
+"188","1cbed7d0544548f090bfc7a9b751ec67","G.OTHER.1",1,1,1,1,1,0,0,"WDFW","",NA,NA,NA,NA,NA,NA
+"189","1cbed7d0544548f090bfc7a9b751ec67","G.OTHER.2",1,1,1,1,1,1,0,"WDFW","",4,4,2,2,2,2
+"190","1cbed7d0544548f090bfc7a9b751ec67","G.OTHER.3",1,1,1,1,1,0,0,"WDFW","",4,4,2,2,2,2
+"191","1cbed7d0544548f090bfc7a9b751ec67","G.OTHER.4",1,1,1,1,1,0,1,"WDFW","",4,4,2,4,2,2
+"192","20ed328ecd7d4c6aba8e767830fd18de","G.LIO.NORTHCENTRAL",0,1,0,1,1,0,1,"West Sound Watershed Council","",4,-77,3,4,1,2
+"193","20ed328ecd7d4c6aba8e767830fd18de","G.LIO.SOUTHSOUND",0,1,0,1,1,0,0,"West Sound Watershed Council","",3,3,2,2,1,2
+"194","20ed328ecd7d4c6aba8e767830fd18de","G.LOC.WEST",1,1,1,1,1,1,1,"West Sound Watershed Council","",5,5,2,5,1,1
+"195","20ed328ecd7d4c6aba8e767830fd18de","G.SRC",0,1,0,0,1,0,0,"West Sound Watershed Council","",5,4,2,4,1,4
+"196","20ed328ecd7d4c6aba8e767830fd18de","G.WLEADS",1,1,1,1,1,0,0,"West Sound Watershed Council","",5,5,3,5,4,4
+"197","210460515db2490fb96c80d7a7f38594","G.MRC.SJ",1,1,0,1,1,0,0,"San Juan MRC","",4,5,5,5,5,4
+"198","2161b48101824822b710db677f520eda","G.ECO.MASON",1,1,0,0,1,0,0,"WDOE","",3,4,4,4,-99,-99
+"199","216c057acd9d4cb0bae416cd558f2f27","G.MRC.JEFF",0,1,1,1,1,1,1,"Port Townsend Marine Science Center","",4,4,4,1,2,3
+"200","21a0801bf3ef422facd7814003bd4354","G.ECO.SNOHO",1,1,0,0,0,0,0,"City of Mill Creek","",5,5,5,5,3,4
+"201","21a0801bf3ef422facd7814003bd4354","G.LOC.CEDAR",1,1,0,1,1,0,0,"City of Mill Creek","",5,5,5,5,3,4
+"202","21a0801bf3ef422facd7814003bd4354","G.LOC.SNOHO",1,0,0,0,0,0,0,"City of Mill Creek","",5,5,5,5,3,2
+"203","21a0801bf3ef422facd7814003bd4354","G.SRC",1,0,0,1,1,0,0,"City of Mill Creek","",5,5,5,5,3,4
+"204","21e4e359ddb4451285e51aa8a29c0a6f","G.LIO.HOOD",1,1,0,0,0,0,0,"WDFW","",3,3,5,3,2,4
+"205","21e4e359ddb4451285e51aa8a29c0a6f","G.LIO.STRAIT",1,1,0,0,0,0,0,"WDFW","",5,5,5,4,2,4
+"206","21e4e359ddb4451285e51aa8a29c0a6f","G.LOC.HOOD",1,1,0,1,1,0,0,"WDFW","",3,5,5,4,2,3
+"207","21e4e359ddb4451285e51aa8a29c0a6f","G.LOC.NOLY",1,1,0,1,1,0,0,"WDFW","",5,5,5,4,2,4
+"208","21e4e359ddb4451285e51aa8a29c0a6f","G.MRC.CLALLAM",1,1,0,0,1,0,0,"WDFW","",5,5,5,4,2,3
+"209","21e4e359ddb4451285e51aa8a29c0a6f","G.MRC.JEFF",1,1,0,0,1,0,0,"WDFW","",5,5,5,4,2,3
+"210","21e4e359ddb4451285e51aa8a29c0a6f","G.OTHER.1",1,1,0,0,0,0,0,"WDFW","",NA,NA,NA,NA,NA,NA
+"211","21e4e359ddb4451285e51aa8a29c0a6f","G.OTHER.2",1,1,0,1,1,0,0,"WDFW","",3,5,5,3,2,3
+"212","21e4e359ddb4451285e51aa8a29c0a6f","G.OTHER.3",1,1,0,0,1,0,0,"WDFW","",3,5,5,4,2,4
+"213","21e4e359ddb4451285e51aa8a29c0a6f","G.PSNERP",1,0,0,0,0,0,0,"WDFW","",3,3,5,4,2,4
+"214","21e4e359ddb4451285e51aa8a29c0a6f","G.RITT",1,1,0,1,1,1,0,"WDFW","",5,5,5,5,2,3
+"215","21e4e359ddb4451285e51aa8a29c0a6f","G.WLEADS",1,1,0,1,1,1,0,"WDFW","",5,5,5,5,2,4
+"216","225a310f01014ae4a7615538ec4ab979","G.ECO.THURST",0,1,0,0,0,0,0,"South Puget Sound LIO","",4,3,3,3,3,3
+"217","225a310f01014ae4a7615538ec4ab979","G.OTHER.1",1,1,0,1,1,0,0,"South Puget Sound LIO","",NA,NA,NA,NA,NA,NA
+"218","22d72fe724144ef7bd3ea52436632ed2","G.ECO.SJ",1,1,1,1,1,1,1,"Friends of the San Juans","",4,3,3,4,4,4
+"219","22d72fe724144ef7bd3ea52436632ed2","G.ENVIRO",0,1,0,0,1,0,0,"Friends of the San Juans","",4,3,3,4,4,4
+"220","22d72fe724144ef7bd3ea52436632ed2","G.LIO.SJWATER",1,1,1,1,1,1,1,"Friends of the San Juans","",4,3,3,4,4,4
+"221","22d72fe724144ef7bd3ea52436632ed2","G.MRC.SJ",1,1,1,1,1,1,1,"Friends of the San Juans","",4,3,3,4,4,4
+"222","22d72fe724144ef7bd3ea52436632ed2","G.OTHER.1",0,0,0,1,1,0,0,"Friends of the San Juans","",NA,NA,NA,NA,NA,NA
+"223","22d72fe724144ef7bd3ea52436632ed2","G.PSNERP",0,0,0,0,1,0,0,"Friends of the San Juans","",3,3,3,5,4,4
+"224","23553fcf6a8346bf99f6e3ba98150550","G.ECO.PIERCE",1,0,0,0,0,0,0,"Chambers/Clover Watershed Council","",1,-77,4,-77,-77,-77
+"225","23553fcf6a8346bf99f6e3ba98150550","G.LIO.SOUTHSOUND",1,1,1,1,1,1,0,"Chambers/Clover Watershed Council","",4,5,4,5,3,3
+"226","23553fcf6a8346bf99f6e3ba98150550","G.LOC.PUY",1,1,1,1,1,1,1,"Chambers/Clover Watershed Council","",5,5,4,4,5,1
+"227","23553fcf6a8346bf99f6e3ba98150550","G.OTHER.1",1,1,1,1,1,1,0,"Chambers/Clover Watershed Council","",NA,NA,NA,NA,NA,NA
+"228","23553fcf6a8346bf99f6e3ba98150550","G.OTHER.2",1,1,1,1,1,1,1,"Chambers/Clover Watershed Council","",4,5,4,5,3,3
+"229","23553fcf6a8346bf99f6e3ba98150550","G.OTHER.3",1,1,0,1,1,0,1,"Chambers/Clover Watershed Council","",5,5,4,4,4,1
+"230","23553fcf6a8346bf99f6e3ba98150550","G.OTHER.4",1,1,0,1,0,0,1,"Chambers/Clover Watershed Council","",4,4,4,5,2,1
+"231","23553fcf6a8346bf99f6e3ba98150550","G.PSNERP",0,0,0,0,1,0,0,"Chambers/Clover Watershed Council","",4,5,4,5,1,3
+"232","23553fcf6a8346bf99f6e3ba98150550","G.WLEADS",0,1,0,0,1,0,0,"Chambers/Clover Watershed Council","",3,5,4,5,2,1
+"233","23773979301749b4a3ed4850a3c196db","G.ECO.MASON",1,1,1,1,1,0,0,"Mason County Public Health","",4,4,4,4,2,4
+"234","23773979301749b4a3ed4850a3c196db","G.OTHER.1",1,1,1,1,1,1,1,"Mason County Public Health","",NA,NA,NA,NA,NA,NA
+"235","23773979301749b4a3ed4850a3c196db","G.OTHER.2",1,1,1,1,1,0,0,"Mason County Public Health","",4,5,4,4,2,4
+"236","24142ad46a224fd7ac0b5319dff69e76","G.ECO.KING",0,1,1,0,0,0,0,"City of Everett","Public Works",4,5,3,3,2,4
+"237","24142ad46a224fd7ac0b5319dff69e76","G.ECO.SNOHO",0,1,1,0,1,0,0,"City of Everett","Public Works",4,5,3,3,2,4
+"238","24142ad46a224fd7ac0b5319dff69e76","G.OTHER.1",1,1,1,0,0,0,0,"City of Everett","Public Works",NA,NA,NA,NA,NA,NA
+"239","24142ad46a224fd7ac0b5319dff69e76","G.OTHER.2",1,1,1,1,1,0,0,"City of Everett","Public Works",4,5,3,5,2,4
+"240","2428038134d14ee4ac900a9661d437f0","G.ECO.SKAGIT",1,0,0,0,0,0,0,"Skagit MRC","",-99,4,4,3,2,5
+"241","2428038134d14ee4ac900a9661d437f0","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Skagit MRC","",5,5,5,5,5,5
+"242","245a69315d80437e95c64dae3a45367d","G.ECB",0,1,0,0,0,0,0,"South Sound LIO","",4,4,4,4,2,2
+"243","245a69315d80437e95c64dae3a45367d","G.ECO.THURST",0,1,0,0,0,0,0,"South Sound LIO","",4,4,4,4,2,2
+"244","245a69315d80437e95c64dae3a45367d","G.LC",0,1,0,0,0,0,0,"South Sound LIO","",3,4,4,4,2,2
+"245","245a69315d80437e95c64dae3a45367d","G.LIO.SOUTHSOUND",1,1,1,1,1,1,1,"South Sound LIO","",5,4,3,4,2,2
+"246","245a69315d80437e95c64dae3a45367d","G.SRC",0,1,0,0,0,0,0,"South Sound LIO","",3,4,4,4,2,2
+"247","2612023ea1c94a61a83a651b23233729","G.LOC.NOOK",1,1,1,1,1,0,0,"LakeWhatcom.org","",1,10,1,5,NA,4
+"248","2612023ea1c94a61a83a651b23233729","G.OTHER.1",1,0,0,0,1,1,0,"LakeWhatcom.org","",NA,NA,NA,NA,NA,NA
+"249","271051e725f04b8c941630617ed26024","G.ECM.SALM",0,1,0,0,1,0,0,"Skagit Tribe","",4,4,4,4,3,3
+"250","271051e725f04b8c941630617ed26024","G.WLEADS",0,1,0,0,1,0,0,"Skagit Tribe","",4,4,4,4,3,3
+"251","29340a31cc844be980fa7761844d4fba","G.LIO.SNOHOSTILL",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,4,4,4,4
+"252","29340a31cc844be980fa7761844d4fba","G.LOC.ISLAND",0,0,0,1,0,0,1,"Snohomish MRC","",5,5,4,4,3,3
+"253","29340a31cc844be980fa7761844d4fba","G.LOC.SNOHO",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,4,4,3,3
+"254","29340a31cc844be980fa7761844d4fba","G.LOC.STILL",1,1,1,1,1,1,1,"Snohomish MRC","",3,9,8,5,5,5
+"255","29340a31cc844be980fa7761844d4fba","G.MRC.SNOHO",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,5
+"256","29340a31cc844be980fa7761844d4fba","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish MRC","",NA,NA,NA,NA,NA,NA
+"257","29340a31cc844be980fa7761844d4fba","G.OTHER.2",0,1,0,1,1,0,0,"Snohomish MRC","",5,5,5,5,5,5
+"258","29340a31cc844be980fa7761844d4fba","G.OTHER.3",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,4,4,3,3
+"259","29340a31cc844be980fa7761844d4fba","G.OTHER.4",1,1,1,1,1,1,0,"Snohomish MRC","",5,5,5,5,5,4
+"260","29340a31cc844be980fa7761844d4fba","G.OTHER.5",0,0,1,0,0,0,1,"Snohomish MRC","",5,5,5,5,5,5
+"261","29340a31cc844be980fa7761844d4fba","G.PSNERP",1,0,1,1,1,0,1,"Snohomish MRC","",5,5,4,4,3,3
+"262","2a18be3ea8be4afeb987f5d546f7a7b0","G.ECB",1,1,0,0,1,0,0,"City of Seattle","",4,4,4,4,3,2
+"263","2a18be3ea8be4afeb987f5d546f7a7b0","G.LIO.SOUTHCENTRAL",1,1,1,0,1,0,0,"City of Seattle","",5,4,3,4,4,2
+"264","2a18be3ea8be4afeb987f5d546f7a7b0","G.LOC.GREEN",1,1,0,0,1,0,0,"City of Seattle","",5,4,5,5,4,4
+"265","2a18be3ea8be4afeb987f5d546f7a7b0","G.OTHER.1",1,1,0,0,1,0,0,"City of Seattle","",NA,NA,NA,NA,NA,NA
+"266","2a1a4dd550dd4231b561a7ecc36d5672","G.LOC.NISQ",0,1,0,1,1,0,1,"Pierce Conservation District","",4,4,4,5,3,5
+"267","2a1a4dd550dd4231b561a7ecc36d5672","G.LOC.PUY",0,1,0,1,1,0,1,"Pierce Conservation District","",4,4,4,5,3,5
+"268","2a1a4dd550dd4231b561a7ecc36d5672","G.OTHER.1",0,1,1,1,1,1,1,"Pierce Conservation District","",NA,NA,NA,NA,NA,NA
+"269","2a1a4dd550dd4231b561a7ecc36d5672","G.OTHER.2",0,1,1,1,1,1,1,"Pierce Conservation District","",5,4,4,4,3,4
+"270","2aa15af507f349c3b834c98e3c731813","G.ECM.SALM",0,1,0,0,0,0,0,"ENVIRON","",4,5,4,4,3,3
+"271","2aa15af507f349c3b834c98e3c731813","G.LOC.HOOD",0,1,0,0,1,0,0,"ENVIRON","",3,5,3,3,3,3
+"272","2aa15af507f349c3b834c98e3c731813","G.LOC.NOLY",1,1,0,0,1,1,1,"ENVIRON","",5,5,4,5,3,4
+"273","2aa15af507f349c3b834c98e3c731813","G.LOC.PUY",0,0,0,0,1,0,0,"ENVIRON","",5,5,4,4,3,3
+"274","2aa15af507f349c3b834c98e3c731813","G.LOC.SOUTH",1,1,0,0,1,1,1,"ENVIRON","",5,5,4,5,3,4
+"275","2aa15af507f349c3b834c98e3c731813","G.LOC.WEST",1,1,0,0,1,1,1,"ENVIRON","",5,5,4,5,3,4
+"276","2aa15af507f349c3b834c98e3c731813","G.RITT",1,1,1,1,1,1,1,"ENVIRON","",5,5,5,5,4,3
+"277","2aa15af507f349c3b834c98e3c731813","G.SRC",0,1,0,0,0,0,1,"ENVIRON","",5,5,4,4,2,3
+"278","2aa5a359537348cf9d38c0eab63eeea2","G.OTHER.1",1,1,1,1,1,1,1,"Lower Hood Canal Watershed Coalition","",NA,NA,NA,NA,NA,NA
+"279","2aa5a359537348cf9d38c0eab63eeea2","G.OTHER.2",1,1,1,1,1,1,1,"Lower Hood Canal Watershed Coalition","",4,5,5,5,3,-99
+"280","2af5352e4b28408494d511f043d251a2","G.LOC.ISLAND",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,4,4,3,4
+"281","2af5352e4b28408494d511f043d251a2","G.LOC.NOOK",0,0,0,0,1,0,0,"Skagit River System Cooperative","",1,14,1,3,NA,4
+"282","2af5352e4b28408494d511f043d251a2","G.LOC.SJ",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,4,4,4,4
+"283","2af5352e4b28408494d511f043d251a2","G.LOC.SKAGIT",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,4,4,4,4
+"284","2af5352e4b28408494d511f043d251a2","G.MRC.ISLAND",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,-77,4,3,3
+"285","2af5352e4b28408494d511f043d251a2","G.MRC.SJ",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,-77,4,3,3
+"286","2af5352e4b28408494d511f043d251a2","G.MRC.SKAGIT",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,-77,4,3,3
+"287","2af5352e4b28408494d511f043d251a2","G.OTHER.1",1,1,0,1,1,1,0,"Skagit River System Cooperative","",NA,NA,NA,NA,NA,NA
+"288","2af5352e4b28408494d511f043d251a2","G.OTHER.2",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,3,4,4,4,3
+"289","2af5352e4b28408494d511f043d251a2","G.PSNERP",0,0,0,0,1,1,0,"Skagit River System Cooperative","",3,4,4,5,3,3
+"290","2af5352e4b28408494d511f043d251a2","G.RITT",1,1,1,1,1,1,1,"Skagit River System Cooperative","",4,4,4,5,4,-77
+"291","2b40407916ac49d89227961038dfada9","G.FED",0,0,0,0,0,0,1,"NWFSC","",4,4,3,4,2,2
+"292","2b40407916ac49d89227961038dfada9","G.OTHER.1",1,1,0,1,1,1,0,"NWFSC","",NA,NA,NA,NA,NA,NA
+"293","2b40407916ac49d89227961038dfada9","G.SCIENCE",0,1,0,0,1,0,1,"NWFSC","",4,4,3,4,2,2
+"294","2c382e332ca04e88bc48e15953bf3fa1","G.LOC.NOOK",1,1,1,1,1,1,1,"Washington Trollers Association","",1,19,1,4,NA,4
+"295","2c382e332ca04e88bc48e15953bf3fa1","G.MRC.WHAT",1,1,0,1,1,1,0,"Washington Trollers Association","",4,4,4,4,4,4
+"296","2c85060e28174a73b4dd190d6e9b0de4","G.ECO.STRAIT",1,1,0,1,0,0,0,"Feiro Marine Life Center","",4,4,4,-77,-77,5
+"297","2c85060e28174a73b4dd190d6e9b0de4","G.MRC.CLALLAM",1,1,0,0,0,0,0,"Feiro Marine Life Center","",4,4,4,-77,-77,5
+"298","2ccd9d0d76d54a20a878991c725d3373","G.LIO.STRAIT",1,1,0,0,1,0,0,"Jefferson County","Department of Community Development",4,4,4,4,3,4
+"299","2ccd9d0d76d54a20a878991c725d3373","G.OTHER.1",1,1,0,0,1,0,0,"Jefferson County","Department of Community Development",NA,NA,NA,NA,NA,NA
+"300","2ccd9d0d76d54a20a878991c725d3373","G.OTHER.2",1,1,0,0,1,0,0,"Jefferson County","Department of Community Development",2,4,4,5,3,3
+"301","2defc3bbab504d4ea262def7c46dad75","G.PSI",1,1,1,1,1,1,1,"Puget Sound Institute","",4,4,4,5,5,5
+"302","2defc3bbab504d4ea262def7c46dad75","G.RITT",0,1,0,1,1,1,0,"Puget Sound Institute","",4,4,4,4,3,3
+"303","2defc3bbab504d4ea262def7c46dad75","G.SCIENCE",0,1,0,1,1,1,0,"Puget Sound Institute","",2,4,4,4,3,4
+"304","2e1b07c00355444c8cded03503f836a9","G.ECO.KING",1,1,1,1,1,1,0,"NMFS","",4,4,3,4,2,3
+"305","2e46cfe40b3a4ebebcbfd99e59adfb4f","G.ECM.MARINE",0,1,0,1,0,0,0,"NOAA","",5,4,4,4,2,3
+"306","2e84a2db13af434a95f2e5735f9b1fc4","G.ECB",1,1,1,1,1,1,1,"WA State Association of Counties","",5,4,3,3,2,-99
+"307","2e84a2db13af434a95f2e5735f9b1fc4","G.LC",1,1,0,0,1,1,0,"WA State Association of Counties","",5,5,3,3,2,-99
+"308","2e84a2db13af434a95f2e5735f9b1fc4","G.OTHER.1",1,1,1,1,1,1,0,"WA State Association of Counties","",NA,NA,NA,NA,NA,NA
+"309","2eb866f2d78044098948620c82e0a3b6","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Skagit MRC","",5,5,4,5,5,5
+"310","2eb866f2d78044098948620c82e0a3b6","G.OTHER.1",1,1,1,1,1,0,0,"Skagit MRC","",NA,NA,NA,NA,NA,NA
+"311","2eb866f2d78044098948620c82e0a3b6","G.OTHER.2",1,1,0,1,1,1,0,"Skagit MRC","",5,5,4,5,5,5
+"312","2eb866f2d78044098948620c82e0a3b6","G.OTHER.3",1,1,0,1,1,0,0,"Skagit MRC","",4,4,4,5,5,5
+"313","2eb866f2d78044098948620c82e0a3b6","G.OTHER.4",1,1,1,1,1,1,0,"Skagit MRC","",4,4,3,3,3,2
+"314","2eb866f2d78044098948620c82e0a3b6","G.OTHER.5",1,1,1,1,1,1,0,"Skagit MRC","",4,4,3,4,4,4
+"315","2eda21d9e7d746d8a01887282f0c0faf","G.OTHER.1",1,1,1,1,0,0,0,"Trout Unlimited","",NA,NA,NA,NA,NA,NA
+"316","2eda21d9e7d746d8a01887282f0c0faf","G.OTHER.2",1,1,1,1,0,0,0,"Trout Unlimited","",1,1,1,1,3,1
+"317","2eda21d9e7d746d8a01887282f0c0faf","G.OTHER.3",1,1,1,1,1,1,1,"Trout Unlimited","",1,1,1,1,3,1
+"318","2eda21d9e7d746d8a01887282f0c0faf","G.WLEADS",1,1,1,1,0,0,0,"Trout Unlimited","",1,1,1,1,3,1
+"319","2f1c263587574e2ca7fb95481090b7d2","G.ECO.HOOD",1,1,1,1,1,0,1,"WSUX Kitsap","",5,4,3,4,2,3
+"320","2f1c263587574e2ca7fb95481090b7d2","G.ECO.KITSAP",1,1,1,1,1,0,1,"WSUX Kitsap","",5,3,3,4,2,3
+"321","2f1c263587574e2ca7fb95481090b7d2","G.LIO.HOOD",1,1,1,1,1,0,1,"WSUX Kitsap","",5,4,3,4,2,3
+"322","2f1c263587574e2ca7fb95481090b7d2","G.LIO.NORTHCENTRAL",1,1,0,0,0,0,0,"WSUX Kitsap","",5,3,3,4,2,3
+"323","2f1c263587574e2ca7fb95481090b7d2","G.LOC.HOOD",1,1,1,1,1,0,1,"WSUX Kitsap","",5,4,3,4,2,3
+"324","2f1c263587574e2ca7fb95481090b7d2","G.LOC.SOUTH",1,1,1,1,1,0,1,"WSUX Kitsap","",5,3,3,4,2,3
+"325","2f1c263587574e2ca7fb95481090b7d2","G.LOC.WEST",1,1,1,1,1,0,1,"WSUX Kitsap","",5,4,3,4,2,3
+"326","2f1c263587574e2ca7fb95481090b7d2","G.OTHER.1",1,1,0,1,1,1,1,"WSUX Kitsap","",NA,NA,NA,NA,NA,NA
+"327","2f1c263587574e2ca7fb95481090b7d2","G.OTHER.2",1,1,0,1,1,1,1,"WSUX Kitsap","",4,4,3,4,2,3
+"328","2f1c263587574e2ca7fb95481090b7d2","G.OTHER.3",1,1,0,1,1,1,1,"WSUX Kitsap","",5,4,3,4,2,3
+"329","2f4db3f67d3e453dbff91af814774c99","G.SOCSCI",1,1,0,0,0,0,0,"UW","",4,4,3,3,4,4
+"330","308b96b6fdc2403f9a1bc2a7d2381051","G.ECO.HOOD",0,1,0,0,1,0,0,"HCCC","",5,5,4,4,4,4
+"331","308b96b6fdc2403f9a1bc2a7d2381051","G.LIO.HOOD",1,1,1,1,1,1,1,"HCCC","",4,5,4,4,-77,4
+"332","308b96b6fdc2403f9a1bc2a7d2381051","G.LOC.HOOD",1,1,1,1,1,1,1,"HCCC","",5,5,4,4,-77,4
+"333","308b96b6fdc2403f9a1bc2a7d2381051","G.LOC.NOLY",0,0,0,0,0,0,1,"HCCC","",5,5,4,-99,3,3
+"334","30930f60863e4cf49271516c6b254c07","G.OTHER.1",1,1,1,1,1,1,1,"USCG","",NA,NA,NA,NA,NA,NA
+"335","30930f60863e4cf49271516c6b254c07","G.OTHER.2",1,1,1,1,1,1,1,"USCG","",5,5,1,1,-99,-99
+"336","31b173cd978049cabaa6867e7a529fc4","G.ECO.THURST",1,1,1,1,1,0,0,"City of Tumwater","",4,4,4,4,3,4
+"337","31b173cd978049cabaa6867e7a529fc4","G.LOC.SOUTH",1,0,0,0,1,0,1,"City of Tumwater","",4,4,4,4,3,4
+"338","31b173cd978049cabaa6867e7a529fc4","G.OTHER.1",1,1,0,1,1,1,0,"City of Tumwater","",NA,NA,NA,NA,NA,NA
+"339","31b173cd978049cabaa6867e7a529fc4","G.OTHER.2",1,1,1,1,1,1,0,"City of Tumwater","",5,5,5,5,4,4
+"340","327fee2bed21495b937089552d8d4014","G.LIO.STRAIT",0,1,0,1,0,0,0,"City of Sequim","",4,4,4,4,3,4
+"341","3281f5ed59084bd7af73653473c9a6af","G.ECO.HOOD",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,5,5,4,4
+"342","3281f5ed59084bd7af73653473c9a6af","G.ECO.KITSAP",1,1,0,0,1,0,0,"WSUX Jefferson","",5,4,3,4,3,3
+"343","3281f5ed59084bd7af73653473c9a6af","G.ECO.STRAIT",1,1,0,1,1,0,0,"WSUX Jefferson","",4,4,3,4,3,3
+"344","3281f5ed59084bd7af73653473c9a6af","G.LIO.HOOD",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,4,5,3,4
+"345","3281f5ed59084bd7af73653473c9a6af","G.LIO.STRAIT",1,1,1,1,1,0,0,"WSUX Jefferson","",5,4,4,5,3,3
+"346","3281f5ed59084bd7af73653473c9a6af","G.LOC.HOOD",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,4,4,3,3
+"347","3281f5ed59084bd7af73653473c9a6af","G.MRC.CLALLAM",0,1,1,0,0,0,0,"WSUX Jefferson","",4,4,4,4,3,3
+"348","3281f5ed59084bd7af73653473c9a6af","G.MRC.ISLAND",0,1,1,0,1,0,0,"WSUX Jefferson","",4,4,4,4,3,3
+"349","3281f5ed59084bd7af73653473c9a6af","G.MRC.JEFF",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,5,5,4,5
+"350","3281f5ed59084bd7af73653473c9a6af","G.OTHER.1",1,1,1,1,1,0,1,"WSUX Jefferson","",NA,NA,NA,NA,NA,NA
+"351","3281f5ed59084bd7af73653473c9a6af","G.OTHER.2",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,4,5,4,3
+"352","3281f5ed59084bd7af73653473c9a6af","G.OTHER.3",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,4,5,3,4
+"353","3281f5ed59084bd7af73653473c9a6af","G.OTHER.4",1,1,1,1,1,1,1,"WSUX Jefferson","",5,5,4,5,4,4
+"354","32847695bff14a41856499bd4e78c785","G.ECO.WHAT",1,1,0,0,0,0,0,"Northwest Indian College","",4,4,4,4,-99,-77
+"355","32e9127ccc3340d1a13dfa480216de16","G.FED",1,1,1,1,1,1,1,"USDA","",5,4,4,4,3,-99
+"356","32e9127ccc3340d1a13dfa480216de16","G.LC",1,1,1,1,1,1,1,"USDA","",4,4,4,4,3,-99
+"357","32e9127ccc3340d1a13dfa480216de16","G.SRC",1,1,1,1,1,1,1,"USDA","",5,4,4,4,3,-99
+"358","338b0861ffcd4009a3eab9879a609c7b","G.MRC.JEFF",1,1,1,1,1,0,1,"Jefferson MRC","",4,5,5,5,4,3
+"359","338b0861ffcd4009a3eab9879a609c7b","G.OTHER.1",1,1,0,0,1,0,1,"Jefferson MRC","",NA,NA,NA,NA,NA,NA
+"360","338b0861ffcd4009a3eab9879a609c7b","G.OTHER.2",1,1,1,1,1,0,1,"Jefferson MRC","",3,5,5,5,3,3
+"361","343e7326e6314a00ba9e13b4d43299c6","G.ECO.HOOD",1,1,0,1,1,0,0,"WSUX Mason","",4,4,4,2,2,3
+"362","343e7326e6314a00ba9e13b4d43299c6","G.ECO.MASON",1,1,0,1,1,0,0,"WSUX Mason","",4,4,4,2,2,4
+"363","343e7326e6314a00ba9e13b4d43299c6","G.ECO.THURST",0,1,0,0,1,0,0,"WSUX Mason","",4,4,4,2,2,3
+"364","34e64c60d6f840178521c02d11ff99e3","G.OTHER.1",1,0,0,0,0,0,0,"Thurston County","",NA,NA,NA,NA,NA,NA
+"365","34e64c60d6f840178521c02d11ff99e3","G.OTHER.2",1,1,0,0,1,0,0,"Thurston County","",3,4,4,3,3,3
+"366","34e64c60d6f840178521c02d11ff99e3","G.OTHER.3",1,1,0,0,0,0,0,"Thurston County","",4,4,4,5,3,3
+"367","357615ce586d4488a9d6dbef3bbaa8e6","G.ECO.KING",1,0,1,1,0,0,0,"Water Tenders","",2,4,3,4,3,2
+"368","357615ce586d4488a9d6dbef3bbaa8e6","G.OTHER.1",1,1,1,1,0,0,0,"Water Tenders","",NA,NA,NA,NA,NA,NA
+"369","357615ce586d4488a9d6dbef3bbaa8e6","G.OTHER.2",1,1,1,1,1,1,0,"Water Tenders","",5,5,5,5,4,3
+"370","357615ce586d4488a9d6dbef3bbaa8e6","G.OTHER.3",1,1,1,1,0,1,0,"Water Tenders","",3,3,4,4,3,4
+"371","357615ce586d4488a9d6dbef3bbaa8e6","G.OTHER.4",1,1,0,0,0,0,0,"Water Tenders","",4,4,4,4,4,5
+"372","358468f99c304494ae973bfe6a73833c","G.LIO.SNOHOSTILL",0,1,0,0,1,0,0,"City of Everett","",4,4,4,4,2,1
+"373","358468f99c304494ae973bfe6a73833c","G.MRC.SNOHO",0,0,0,0,0,0,1,"City of Everett","",-99,4,4,4,2,1
+"374","358468f99c304494ae973bfe6a73833c","G.PSNERP",0,0,0,0,1,0,0,"City of Everett","",2,4,4,4,2,1
+"375","3592ac6792014bee961f42830a9bd7e4","G.MRC.JEFF",1,1,1,1,1,1,1,"Goff Consulting","",5,5,5,5,3,3
+"376","3592ac6792014bee961f42830a9bd7e4","G.OTHER.1",1,1,1,1,1,1,1,"Goff Consulting","",NA,NA,NA,NA,NA,NA
+"377","363fcfe1e21544da847bc05e83951925","G.LOC.SJ",1,1,0,0,0,0,0,"Jefferson County","",5,5,5,5,4,5
+"378","363fcfe1e21544da847bc05e83951925","G.MRC.JEFF",1,1,1,1,1,0,1,"Jefferson County","",5,5,5,5,4,2
+"379","363fcfe1e21544da847bc05e83951925","G.MRC.SJ",0,1,0,1,1,0,1,"Jefferson County","",5,5,5,5,3,3
+"380","363fcfe1e21544da847bc05e83951925","G.OTHER.1",1,1,1,1,1,0,1,"Jefferson County","",NA,NA,NA,NA,NA,NA
+"381","364d05d9b49144c29dd84578e3363697","G.ECO.PIERCE",0,0,0,1,0,0,0,"City of Gig Harbor","",4,4,4,3,3,4
+"382","364d05d9b49144c29dd84578e3363697","G.OTHER.1",1,1,0,1,1,1,1,"City of Gig Harbor","",NA,NA,NA,NA,NA,NA
+"383","364d05d9b49144c29dd84578e3363697","G.OTHER.2",1,1,0,0,0,0,1,"City of Gig Harbor","",5,5,5,5,5,5
+"384","364d05d9b49144c29dd84578e3363697","G.OTHER.3",1,0,0,1,1,0,0,"City of Gig Harbor","",5,5,5,5,4,4
+"385","364d05d9b49144c29dd84578e3363697","G.OTHER.4",1,0,0,1,1,0,0,"City of Gig Harbor","",5,5,4,4,5,5
+"386","364d05d9b49144c29dd84578e3363697","G.OTHER.5",1,0,0,0,1,0,0,"City of Gig Harbor","",5,5,4,4,4,5
+"387","373ce528c68d4cd2a64cde8f1f1f7f03","G.LOC.CEDAR",1,0,0,0,0,0,0,"Friends of North Creek Forest","",4,4,4,4,4,4
+"388","373ce528c68d4cd2a64cde8f1f1f7f03","G.OTHER.1",1,1,1,1,1,0,1,"Friends of North Creek Forest","",NA,NA,NA,NA,NA,NA
+"389","373ce528c68d4cd2a64cde8f1f1f7f03","G.OTHER.2",1,0,0,1,0,1,1,"Friends of North Creek Forest","",5,5,5,5,5,4
+"390","373ce528c68d4cd2a64cde8f1f1f7f03","G.OTHER.3",1,0,0,1,0,0,0,"Friends of North Creek Forest","",5,5,4,4,4,3
+"391","373ce528c68d4cd2a64cde8f1f1f7f03","G.OTHER.4",1,0,0,0,0,0,1,"Friends of North Creek Forest","",4,5,3,3,5,5
+"392","373ce528c68d4cd2a64cde8f1f1f7f03","G.OTHER.5",1,1,1,1,1,1,1,"Friends of North Creek Forest","",4,5,3,4,4,4
+"393","37f9541070f4490486d44cd4b0c351f6","G.MRC.CLALLAM",0,1,0,0,0,0,0,"Sierra Club","North Olympic Group",4,4,5,5,4,3
+"394","37f9541070f4490486d44cd4b0c351f6","G.OTHER.1",0,0,0,0,0,1,0,"Sierra Club","North Olympic Group",NA,NA,NA,NA,NA,NA
+"395","37f9541070f4490486d44cd4b0c351f6","G.OTHER.2",0,0,0,0,1,0,0,"Sierra Club","North Olympic Group",5,5,5,5,5,4
+"396","37f9541070f4490486d44cd4b0c351f6","G.OTHER.3",0,0,0,0,1,0,0,"Sierra Club","North Olympic Group",5,5,5,5,4,3
+"397","37f9541070f4490486d44cd4b0c351f6","G.OTHER.4",0,0,0,1,0,0,0,"Sierra Club","North Olympic Group",5,5,5,5,4,3
+"398","38afa8a728ab41e9a833d25789af4ed0","G.ECO.STRAIT",1,1,1,1,1,1,0,"WWU/Huxley College on the Peninsulas","",4,5,3,2,2,2
+"399","396b737966e24d67b35368e3700e5148","G.LOC.HOOD",0,0,0,0,1,0,0,"Kitsap County","Dept. of Community Development, Natural Resources Division",2,4,4,4,3,3
+"400","396b737966e24d67b35368e3700e5148","G.LOC.WEST",0,1,0,0,0,0,0,"Kitsap County","Dept. of Community Development, Natural Resources Division",2,4,4,4,3,4
+"401","3a1fe933bdbb4724b435b3ff37c84d65","G.LIO.SOUTHCENTRAL",0,1,0,1,1,1,1,"City of Seattle","",5,4,3,4,-99,4
+"402","3a1fe933bdbb4724b435b3ff37c84d65","G.LOC.CEDAR",0,1,1,1,1,1,1,"City of Seattle","",5,5,4,4,-99,4
+"403","3a1fe933bdbb4724b435b3ff37c84d65","G.LOC.GREEN",0,1,1,1,1,1,1,"City of Seattle","",5,5,4,4,-99,4
+"404","3a1fe933bdbb4724b435b3ff37c84d65","G.OTHER.1",1,1,1,1,1,1,1,"City of Seattle","",NA,NA,NA,NA,NA,NA
+"405","3a1fe933bdbb4724b435b3ff37c84d65","G.OTHER.2",1,1,1,1,1,1,1,"City of Seattle","",5,5,4,4,-99,4
+"406","3a1fe933bdbb4724b435b3ff37c84d65","G.OTHER.3",0,1,0,1,1,0,0,"City of Seattle","",5,5,4,4,-99,-99
+"407","3a1fe933bdbb4724b435b3ff37c84d65","G.OTHER.4",0,1,0,0,1,0,1,"City of Seattle","",4,4,3,3,-99,-99
+"408","3a1fe933bdbb4724b435b3ff37c84d65","G.OTHER.5",1,1,1,1,1,0,1,"City of Seattle","",4,4,3,3,-99,3
+"409","3a5525c950e341fba31fd1bbfc09a3db","G.ECO.MASON",0,1,0,0,0,0,0,"South Puget Sound Salmon Enhancement","",4,4,4,4,-77,4
+"410","3a5525c950e341fba31fd1bbfc09a3db","G.ECO.THURST",0,1,0,0,0,0,0,"South Puget Sound Salmon Enhancement","",4,4,4,4,-77,4
+"411","3a5525c950e341fba31fd1bbfc09a3db","G.LIO.SOUTHSOUND",0,1,0,0,0,0,0,"South Puget Sound Salmon Enhancement","",4,4,4,4,-77,3
+"412","3a5525c950e341fba31fd1bbfc09a3db","G.LOC.NISQ",0,0,0,1,0,0,0,"South Puget Sound Salmon Enhancement","",5,4,4,4,-77,5
+"413","3a5525c950e341fba31fd1bbfc09a3db","G.LOC.PUY",0,0,0,1,0,0,0,"South Puget Sound Salmon Enhancement","",5,4,4,4,-77,5
+"414","3a5525c950e341fba31fd1bbfc09a3db","G.LOC.SOUTH",0,0,0,1,0,0,0,"South Puget Sound Salmon Enhancement","",5,4,4,4,-77,5
+"415","3a5525c950e341fba31fd1bbfc09a3db","G.LOC.WEST",0,0,0,1,0,0,0,"South Puget Sound Salmon Enhancement","",5,4,4,4,-77,5
+"416","3a5525c950e341fba31fd1bbfc09a3db","G.OTHER.1",0,0,1,0,0,0,0,"South Puget Sound Salmon Enhancement","",NA,NA,NA,NA,NA,NA
+"417","3a5525c950e341fba31fd1bbfc09a3db","G.PSNERP",0,0,0,0,0,0,1,"South Puget Sound Salmon Enhancement","",4,4,4,4,-77,4
+"418","3c4eb38d1090426f9167f50ac1f564dd","G.ENVIRO",1,1,1,0,0,0,1,"Sierra Club","",5,5,5,4,-77,-77
+"419","3cb26b37b52f41cd93c8931369b7518b","G.ECO.WHAT",0,1,0,1,0,0,0,"Sudden Valley Community Association","WWIN",4,5,5,4,3,4
+"420","3cb26b37b52f41cd93c8931369b7518b","G.LIO.NOOKWATER",0,0,0,1,0,0,0,"Sudden Valley Community Association","WWIN",4,5,5,4,3,4
+"421","3d8b366e5652424ea08e9849a35ee30e","G.OTHER.1",1,1,1,1,1,1,1,"San Juan County Water Resources Management Committee","",NA,NA,NA,NA,NA,NA
+"422","3d8b366e5652424ea08e9849a35ee30e","G.OTHER.2",1,1,1,1,1,1,1,"San Juan County Water Resources Management Committee","",5,5,5,5,5,5
+"423","3d98a77b104c4f208523cf3d4cb4afd8","G.ECO.STRAIT",1,1,0,0,0,0,0,"Clallam County","",5,4,4,4,3,3
+"424","3da5568e1d0a457691b1b87a08ac80c1","G.LOC.NOOK",1,1,1,1,1,1,1,"Stillaguamish Tribe","",1,8,1,5,NA,5
+"425","3da5568e1d0a457691b1b87a08ac80c1","G.LOC.SJ",0,0,0,0,1,0,1,"Stillaguamish Tribe","",3,3,5,5,3,3
+"426","3da5568e1d0a457691b1b87a08ac80c1","G.LOC.SKAGIT",0,0,0,0,1,0,1,"Stillaguamish Tribe","",4,4,5,5,5,4
+"427","3da5568e1d0a457691b1b87a08ac80c1","G.LOC.SNOHO",0,0,0,0,1,0,1,"Stillaguamish Tribe","",3,4,5,5,3,3
+"428","3da5568e1d0a457691b1b87a08ac80c1","G.LOC.STILL",1,1,1,1,1,1,1,"Stillaguamish Tribe","",1,16,1,5,NA,5
+"429","3da5568e1d0a457691b1b87a08ac80c1","G.OTHER.1",0,0,0,0,1,1,1,"Stillaguamish Tribe","",NA,NA,NA,NA,NA,NA
+"430","3da5568e1d0a457691b1b87a08ac80c1","G.OTHER.2",0,1,1,1,1,0,1,"Stillaguamish Tribe","",4,4,5,5,5,5
+"431","3da5568e1d0a457691b1b87a08ac80c1","G.OTHER.3",1,1,1,1,1,0,1,"Stillaguamish Tribe","",3,4,5,5,5,5
+"432","3da5568e1d0a457691b1b87a08ac80c1","G.OTHER.4",1,1,1,1,1,1,1,"Stillaguamish Tribe","",5,5,5,5,5,5
+"433","3e58f1bae2ce46e9b47d8b396a990d85","G.MRC.ISLAND",1,1,1,1,1,0,0,"Whidbey/Camano Land Trust","",5,5,4,4,4,4
+"434","3e58f1bae2ce46e9b47d8b396a990d85","G.OTHER.1",1,1,1,1,1,0,0,"Whidbey/Camano Land Trust","",NA,NA,NA,NA,NA,NA
+"435","3e58f1bae2ce46e9b47d8b396a990d85","G.OTHER.2",1,1,1,1,1,0,0,"Whidbey/Camano Land Trust","",5,5,4,4,4,4
+"436","3e58f1bae2ce46e9b47d8b396a990d85","G.OTHER.3",1,1,1,1,1,1,1,"Whidbey/Camano Land Trust","",5,5,4,4,4,5
+"437","3e58f1bae2ce46e9b47d8b396a990d85","G.OTHER.4",1,1,0,1,1,1,0,"Whidbey/Camano Land Trust","",5,5,4,4,3,5
+"438","3e8c595db5d841cda346873c470d0cf3","G.ECO.STRAIT",1,1,0,0,1,0,0,"NOSC","",5,5,5,4,4,4
+"439","3e8c595db5d841cda346873c470d0cf3","G.LIO.STRAIT",1,1,1,1,1,0,0,"NOSC","",5,5,5,4,4,4
+"440","3e8c595db5d841cda346873c470d0cf3","G.LOC.NOLY",1,1,0,0,1,0,0,"NOSC","",5,5,5,4,3,4
+"441","3e8c595db5d841cda346873c470d0cf3","G.OTHER.1",1,1,1,1,1,0,0,"NOSC","",NA,NA,NA,NA,NA,NA
+"442","40be1256f7f54dca83d23d151a1745ad","G.ECO.STRAIT",1,1,0,0,0,0,0,"Sierra Club","",5,5,5,5,4,2
+"443","40be1256f7f54dca83d23d151a1745ad","G.LIO.STRAIT",1,1,0,0,0,0,0,"Sierra Club","",5,5,5,5,3,2
+"444","40be1256f7f54dca83d23d151a1745ad","G.OTHER.1",1,1,1,1,1,1,1,"Sierra Club","",NA,NA,NA,NA,NA,NA
+"445","40be1256f7f54dca83d23d151a1745ad","G.OTHER.2",1,1,1,1,1,1,0,"Sierra Club","",5,5,5,5,5,3
+"446","40be1256f7f54dca83d23d151a1745ad","G.OTHER.3",1,1,0,1,0,0,0,"Sierra Club","",5,5,5,5,4,2
+"447","40be1256f7f54dca83d23d151a1745ad","G.OTHER.4",1,1,1,1,1,0,0,"Sierra Club","",4,5,5,5,4,2
+"448","40be1256f7f54dca83d23d151a1745ad","G.OTHER.5",1,1,0,0,0,0,0,"Sierra Club","",5,5,5,5,5,2
+"449","4115051222c046ea84538a31dea5d082","G.ECM.MARINE",1,1,1,1,1,1,0,"Suquamish Tribe","",4,4,5,5,3,3
+"450","41577a81c3a44475bf31bbe7501a73de","G.ECO.MASON",1,1,0,0,1,0,0,"Mason County","",4,4,4,4,4,5
+"451","41a8c12ffdcf430fabafcc6f6c708bec","G.ENVIRO",1,1,0,1,1,0,0,"Port of Tacoma","",5,5,5,4,3,2
+"452","41a8c12ffdcf430fabafcc6f6c708bec","G.OTHER.1",1,1,1,1,1,1,0,"Port of Tacoma","",NA,NA,NA,NA,NA,NA
+"453","41a8c12ffdcf430fabafcc6f6c708bec","G.OTHER.2",1,1,1,1,1,1,0,"Port of Tacoma","",5,5,5,4,3,2
+"454","41a8c12ffdcf430fabafcc6f6c708bec","G.OTHER.3",1,1,1,1,0,1,0,"Port of Tacoma","",5,5,5,4,3,2
+"455","423f2d13f03141b9ad0345f4df6ea1fe","G.LIO.SNOHOSTILL",1,1,0,0,1,0,0,"Stillaguamish Tribe","",4,4,4,3,4,3
+"456","423f2d13f03141b9ad0345f4df6ea1fe","G.LOC.SKAGIT",0,0,0,0,0,0,1,"Stillaguamish Tribe","",4,4,4,4,4,3
+"457","423f2d13f03141b9ad0345f4df6ea1fe","G.LOC.STILL",1,1,1,1,1,1,1,"Stillaguamish Tribe","",3,15,7,5,4,4
+"458","423f2d13f03141b9ad0345f4df6ea1fe","G.OTHER.1",1,1,1,0,1,1,0,"Stillaguamish Tribe","",NA,NA,NA,NA,NA,NA
+"459","423f2d13f03141b9ad0345f4df6ea1fe","G.OTHER.2",1,1,0,0,1,0,0,"Stillaguamish Tribe","",4,4,4,4,4,3
+"460","423f2d13f03141b9ad0345f4df6ea1fe","G.SRC",1,1,1,0,1,0,0,"Stillaguamish Tribe","",5,4,4,3,4,4
+"461","423f2d13f03141b9ad0345f4df6ea1fe","G.WLEADS",1,1,0,0,1,0,0,"Stillaguamish Tribe","",4,4,4,3,4,4
+"462","4298a21a130743d194b6e44218e4f915","G.ECO.KING",1,1,1,1,1,0,0,"Seattle Aquarium","",4,4,4,3,2,4
+"463","42e991f6bc674802ac12ca8c378bf5c3","G.LIO.SOUTHSOUND",1,1,1,0,1,1,0,"Thurston County","Board of Commissioners",5,5,5,4,4,4
+"464","42e991f6bc674802ac12ca8c378bf5c3","G.OTHER.1",1,1,0,0,1,0,0,"Thurston County","Board of Commissioners",NA,NA,NA,NA,NA,NA
+"465","42e991f6bc674802ac12ca8c378bf5c3","G.SRC",0,1,0,0,1,0,0,"Thurston County","Board of Commissioners",5,5,5,4,3,4
+"466","43647a2d7df4414eb6bc3c74f21d08ca","G.ECB",0,1,0,0,1,0,0,"South Sound LIO","",4,4,4,4,2,2
+"467","43647a2d7df4414eb6bc3c74f21d08ca","G.ECO.THURST",0,1,0,0,1,0,0,"South Sound LIO","",4,4,3,3,2,3
+"468","43647a2d7df4414eb6bc3c74f21d08ca","G.LC",0,1,0,0,1,0,0,"South Sound LIO","",3,4,4,4,2,2
+"469","43647a2d7df4414eb6bc3c74f21d08ca","G.LIO.SOUTHSOUND",1,1,1,1,1,1,1,"South Sound LIO","",5,5,4,4,3,3
+"470","43647a2d7df4414eb6bc3c74f21d08ca","G.SRC",0,1,0,0,1,0,0,"South Sound LIO","",3,4,4,4,2,2
+"471","447d638ca5614dc4bb1193fa6040676d","G.ECO.SKAGIT",1,1,1,1,1,0,1,"Skagit Conservation District","",4,4,2,2,2,4
+"472","447d638ca5614dc4bb1193fa6040676d","G.LOC.SKAGIT",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,2,4,2,4
+"473","447d638ca5614dc4bb1193fa6040676d","G.OTHER.1",1,1,1,1,1,1,1,"Skagit Conservation District","",NA,NA,NA,NA,NA,NA
+"474","447d638ca5614dc4bb1193fa6040676d","G.OTHER.2",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,2,4,2,4
+"475","447d638ca5614dc4bb1193fa6040676d","G.OTHER.3",1,1,0,1,1,0,1,"Skagit Conservation District","",4,4,2,4,2,4
+"476","447d638ca5614dc4bb1193fa6040676d","G.OTHER.4",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,2,4,2,4
+"477","447d638ca5614dc4bb1193fa6040676d","G.OTHER.5",1,1,1,1,1,1,1,"Skagit Conservation District","",4,4,2,4,2,4
+"478","4486f46ddad74f0bba58b4da5a166710","G.ECM.SALM",0,1,0,0,1,0,0,"NOAA","",3,5,3,3,2,2
+"479","45b25a0d126f42469ba5abda73b992f1","G.ECO.STRAIT",1,0,0,0,0,0,0,"NOAA","B-WET/Olympic Coast NMS",4,4,2,4,4,4
+"480","45b25a0d126f42469ba5abda73b992f1","G.LOC.CEDAR",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"481","45b25a0d126f42469ba5abda73b992f1","G.LOC.NOLY",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"482","45b25a0d126f42469ba5abda73b992f1","G.LOC.NOOK",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",1,7,1,4,NA,4
+"483","45b25a0d126f42469ba5abda73b992f1","G.LOC.STILL",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",1,8,1,4,NA,4
+"484","45b25a0d126f42469ba5abda73b992f1","G.MRC.CLALLAM",1,0,0,0,0,0,0,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"485","45b25a0d126f42469ba5abda73b992f1","G.MRC.ISLAND",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"486","45b25a0d126f42469ba5abda73b992f1","G.MRC.SJ",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"487","45b25a0d126f42469ba5abda73b992f1","G.MRC.SNOHO",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"488","45b25a0d126f42469ba5abda73b992f1","G.MRC.WHAT",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",2,4,2,4,4,4
+"489","45b25a0d126f42469ba5abda73b992f1","G.OTHER.1",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",NA,NA,NA,NA,NA,NA
+"490","45b25a0d126f42469ba5abda73b992f1","G.OTHER.2",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",4,4,2,4,4,4
+"491","45b25a0d126f42469ba5abda73b992f1","G.OTHER.3",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",4,4,2,4,4,4
+"492","45b25a0d126f42469ba5abda73b992f1","G.OTHER.4",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",4,4,2,4,4,4
+"493","45b25a0d126f42469ba5abda73b992f1","G.OTHER.5",0,0,0,0,0,0,1,"NOAA","B-WET/Olympic Coast NMS",4,4,2,4,4,4
+"494","46433dfb43334e399f74255f96f6d015","G.ECM.STORM",1,1,1,1,1,0,0,"Futurewise","",5,4,4,4,3,3
+"495","46433dfb43334e399f74255f96f6d015","G.ECM.TOXIC",1,1,1,1,1,0,0,"Futurewise","",5,4,3,3,3,3
+"496","46433dfb43334e399f74255f96f6d015","G.ECO.KING",1,1,1,1,1,1,1,"Futurewise","",5,5,3,3,4,5
+"497","46433dfb43334e399f74255f96f6d015","G.ECO.SNOHO",1,0,0,1,0,0,0,"Futurewise","",5,5,3,3,3,5
+"498","46433dfb43334e399f74255f96f6d015","G.ENVIRO",1,1,1,1,1,1,0,"Futurewise","",5,5,3,3,3,4
+"499","46433dfb43334e399f74255f96f6d015","G.LIO.SOUTHCENTRAL",1,1,0,0,0,0,0,"Futurewise","",5,4,3,3,3,3
+"500","46433dfb43334e399f74255f96f6d015","G.OTHER.1",1,1,1,1,1,1,0,"Futurewise","",NA,NA,NA,NA,NA,NA
+"501","46433dfb43334e399f74255f96f6d015","G.OTHER.2",0,1,0,0,0,0,0,"Futurewise","",4,4,3,3,3,4
+"502","46433dfb43334e399f74255f96f6d015","G.PSEMP",1,1,1,1,1,1,0,"Futurewise","",5,4,3,4,3,3
+"503","474716c43df24e0981894e7b59a76c1a","G.ECO.PIERCE",1,1,1,1,1,1,1,"Pierce Conservation District","",4,4,3,2,5,3
+"504","474716c43df24e0981894e7b59a76c1a","G.LOC.PUY",0,0,0,0,1,0,0,"Pierce Conservation District","",2,4,3,3,2,2
+"505","474716c43df24e0981894e7b59a76c1a","G.LOC.SOUTH",0,0,0,0,1,0,0,"Pierce Conservation District","",2,4,3,4,2,2
+"506","474716c43df24e0981894e7b59a76c1a","G.LOC.WEST",0,0,0,0,1,0,0,"Pierce Conservation District","",2,4,3,4,2,2
+"507","474716c43df24e0981894e7b59a76c1a","G.OTHER.1",1,1,1,1,1,1,1,"Pierce Conservation District","",NA,NA,NA,NA,NA,NA
+"508","474716c43df24e0981894e7b59a76c1a","G.OTHER.2",1,1,1,1,1,1,1,"Pierce Conservation District","",5,5,3,5,4,5
+"509","474716c43df24e0981894e7b59a76c1a","G.OTHER.3",1,1,1,1,1,1,1,"Pierce Conservation District","",5,5,3,5,3,5
+"510","474716c43df24e0981894e7b59a76c1a","G.OTHER.4",1,1,1,1,1,1,1,"Pierce Conservation District","",5,5,3,5,3,5
+"511","474716c43df24e0981894e7b59a76c1a","G.OTHER.5",1,1,0,1,1,1,0,"Pierce Conservation District","",5,5,3,5,3,2
+"512","479eed14945a43fc8d9f01c5c1ccb96f","G.MRC.JEFF",1,1,1,1,1,0,0,"Jefferson CWDAC","",4,4,4,3,2,2
+"513","479eed14945a43fc8d9f01c5c1ccb96f","G.OTHER.1",1,1,0,0,1,0,0,"Jefferson CWDAC","",NA,NA,NA,NA,NA,NA
+"514","47f510fd175e4fbab162ff7b578d5fd8","G.ECO.WHAT",1,1,1,1,1,0,0,"City of Bellingham","",5,4,4,4,2,5
+"515","47f510fd175e4fbab162ff7b578d5fd8","G.OTHER.1",1,1,1,1,1,0,0,"City of Bellingham","",NA,NA,NA,NA,NA,NA
+"516","488ebe1c136548a9b0fd3b9a2a037f58","G.ECM.MODEL",1,1,0,1,1,1,0,"PNNL","",5,5,5,5,2,4
+"517","488ebe1c136548a9b0fd3b9a2a037f58","G.OTHER.1",1,1,0,1,1,1,0,"PNNL","",NA,NA,NA,NA,NA,NA
+"518","488ebe1c136548a9b0fd3b9a2a037f58","G.OTHER.2",1,1,0,1,1,1,0,"PNNL","",5,5,5,5,2,4
+"519","488ebe1c136548a9b0fd3b9a2a037f58","G.OTHER.3",1,1,0,1,1,1,0,"PNNL","",4,5,4,5,2,4
+"520","488ebe1c136548a9b0fd3b9a2a037f58","G.OTHER.4",1,1,0,1,1,1,0,"PNNL","",4,5,4,5,2,4
+"521","488ebe1c136548a9b0fd3b9a2a037f58","G.PSEMP",1,1,0,1,1,1,0,"PNNL","",5,5,5,5,2,4
+"522","488ebe1c136548a9b0fd3b9a2a037f58","G.WLEADS",1,1,0,1,1,1,0,"PNNL","",3,5,4,5,2,3
+"523","4951b4e0d0564707a662ab84ba83ad76","G.LIO.SNOHOSTILL",0,1,0,0,0,0,0,"King Conservation District","",5,4,3,4,4,4
+"524","4951b4e0d0564707a662ab84ba83ad76","G.LOC.CEDAR",0,1,0,0,1,0,0,"King Conservation District","",4,4,3,4,4,3
+"525","4951b4e0d0564707a662ab84ba83ad76","G.LOC.GREEN",0,1,0,0,1,0,0,"King Conservation District","",4,4,3,4,5,3
+"526","4951b4e0d0564707a662ab84ba83ad76","G.LOC.SNOHO",1,1,1,0,1,0,0,"King Conservation District","",5,5,4,4,5,3
+"527","4951b4e0d0564707a662ab84ba83ad76","G.OTHER.1",1,1,1,1,1,0,0,"King Conservation District","",NA,NA,NA,NA,NA,NA
+"528","4951b4e0d0564707a662ab84ba83ad76","G.OTHER.2",0,1,0,0,0,0,0,"King Conservation District","",5,5,5,4,5,5
+"529","4951b4e0d0564707a662ab84ba83ad76","G.OTHER.3",1,1,1,0,1,0,0,"King Conservation District","",3,5,3,4,4,4
+"530","49e3358851654c0395fdf86be8335054","G.ECO.STRAIT",1,1,1,1,1,1,1,"NatureBridge","",4,4,3,3,2,3
+"531","4a25f7ac155d471dab399c1ced9c2669","G.ECO.KING",0,1,0,1,1,0,0,"Newcastle Weed Warriors","",4,4,4,4,3,3
+"532","4a25f7ac155d471dab399c1ced9c2669","G.SOCSCI",0,1,0,1,1,0,0,"Newcastle Weed Warriors","",4,4,4,4,3,3
+"533","4a2e446a2862453b870e4a5a792ade40","G.ECO.STRAIT",1,1,1,1,1,1,0,"Feiro Marine Life Center","",5,5,5,4,4,4
+"534","4a2e446a2862453b870e4a5a792ade40","G.LIO.STRAIT",1,0,0,0,1,0,0,"Feiro Marine Life Center","",4,4,4,4,4,3
+"535","4a81ff18e43d4be4a17afc750b7f70fe","G.ECO.STRAIT",1,0,0,0,0,0,1,"WSUX","",2,4,4,4,4,3
+"536","4a81ff18e43d4be4a17afc750b7f70fe","G.LOC.NOLY",1,0,0,0,1,0,0,"WSUX","",-77,4,4,4,4,3
+"537","4a81ff18e43d4be4a17afc750b7f70fe","G.MRC.CLALLAM",0,0,0,1,0,0,0,"WSUX","",-77,4,4,4,4,3
+"538","4a81ff18e43d4be4a17afc750b7f70fe","G.OTHER.1",1,1,1,1,1,0,0,"WSUX","",NA,NA,NA,NA,NA,NA
+"539","4a81ff18e43d4be4a17afc750b7f70fe","G.OTHER.2",1,1,0,0,0,0,0,"WSUX","",5,4,4,4,4,3
+"540","4b2119336c3e4d6fbb071a9e1f262d3d","G.MRC.SKAGIT",1,1,1,1,1,0,0,"Skagit MRC","",3,4,4,4,4,-99
+"541","4be9b7141f17415fabe5e365c8e5c318","G.LOC.SKAGIT",1,1,0,0,1,0,0,"WDOE","",4,5,4,4,2,4
+"542","4be9b7141f17415fabe5e365c8e5c318","G.LOC.WEST",1,1,0,0,0,0,0,"WDOE","",5,5,4,4,2,4
+"543","4be9b7141f17415fabe5e365c8e5c318","G.OTHER.1",1,1,0,0,1,0,1,"WDOE","",NA,NA,NA,NA,NA,NA
+"544","4be9b7141f17415fabe5e365c8e5c318","G.OTHER.2",1,1,1,1,1,1,1,"WDOE","",4,5,4,2,2,4
+"545","4be9b7141f17415fabe5e365c8e5c318","G.OTHER.3",1,1,0,1,1,1,0,"WDOE","",-99,-99,-99,-99,-99,-99
+"546","4c9c7e1c29334eadb87a400e4feb3829","G.ECO.HOOD",0,1,0,0,0,0,0,"Stillwaters Environmental Education Center","",-99,3,3,4,2,-99
+"547","4c9c7e1c29334eadb87a400e4feb3829","G.ECO.KITSAP",1,1,1,1,1,1,1,"Stillwaters Environmental Education Center","",4,5,4,3,4,4
+"548","4c9c7e1c29334eadb87a400e4feb3829","G.ECO.MASON",0,0,0,1,0,0,1,"Stillwaters Environmental Education Center","",-99,3,3,3,2,-99
+"549","4c9c7e1c29334eadb87a400e4feb3829","G.LIO.NORTHCENTRAL",0,1,0,0,1,0,0,"Stillwaters Environmental Education Center","",4,3,3,3,2,-99
+"550","4c9c7e1c29334eadb87a400e4feb3829","G.LOC.WEST",0,1,1,1,1,0,1,"Stillwaters Environmental Education Center","",5,5,4,5,4,5
+"551","4c9c7e1c29334eadb87a400e4feb3829","G.OTHER.1",0,1,1,1,1,0,0,"Stillwaters Environmental Education Center","",NA,NA,NA,NA,NA,NA
+"552","4dc4010e16ca470ba45d9787864ce010","G.LOC.CEDAR",1,1,0,0,1,0,0,"City of Bothell","",4,5,4,5,2,4
+"553","4dc4010e16ca470ba45d9787864ce010","G.LOC.SNOHO",0,0,0,1,0,0,0,"City of Bothell","",-99,-99,-99,-99,-99,-99
+"554","4dc4010e16ca470ba45d9787864ce010","G.OTHER.1",1,1,0,1,1,0,1,"City of Bothell","",NA,NA,NA,NA,NA,NA
+"555","4dc4010e16ca470ba45d9787864ce010","G.OTHER.2",1,1,0,0,0,0,0,"City of Bothell","",5,5,5,4,2,4
+"556","4dc4010e16ca470ba45d9787864ce010","G.OTHER.3",1,1,0,0,0,0,0,"City of Bothell","",2,4,4,4,2,3
+"557","4e76b37e6218461fa1cc62753a91f411","G.LOC.SJ",1,0,0,0,1,0,0,"San Juan County","",3,5,4,4,2,2
+"558","4e76b37e6218461fa1cc62753a91f411","G.MRC.SJ",1,0,0,0,1,0,0,"San Juan County","",3,5,4,4,2,2
+"559","4f575c5002cc4cae8b305e16a9189115","G.ECO.KING",1,1,0,0,0,0,0,"Adopt-a-Stream Foundation","",3,4,4,4,-99,-99
+"560","4f575c5002cc4cae8b305e16a9189115","G.ECO.SNOHO",1,1,0,0,0,0,0,"Adopt-a-Stream Foundation","",3,4,4,4,-99,-99
+"561","4f575c5002cc4cae8b305e16a9189115","G.LOC.CEDAR",1,1,0,0,0,0,0,"Adopt-a-Stream Foundation","",3,4,4,4,-99,-99
+"562","4f575c5002cc4cae8b305e16a9189115","G.OTHER.1",1,0,0,0,0,0,0,"Adopt-a-Stream Foundation","",NA,NA,NA,NA,NA,NA
+"563","50e471b451b14e7cbc81b6bacfd11729","G.ECB",1,1,0,0,1,0,0,"PSP Leadership Council","",4,5,5,5,3,-99
+"564","50e471b451b14e7cbc81b6bacfd11729","G.LC",1,1,1,1,1,0,0,"PSP Leadership Council","",5,5,5,5,3,-99
+"565","50e471b451b14e7cbc81b6bacfd11729","G.LIO.NOOKWATER",0,1,0,0,1,0,0,"PSP Leadership Council","",3,4,3,3,3,-99
+"566","50e471b451b14e7cbc81b6bacfd11729","G.LIO.SJWATER",1,1,0,0,1,0,0,"PSP Leadership Council","",4,5,5,5,3,-99
+"567","50e471b451b14e7cbc81b6bacfd11729","G.OTHER.1",0,0,1,0,0,0,0,"PSP Leadership Council","",NA,NA,NA,NA,NA,NA
+"568","50e471b451b14e7cbc81b6bacfd11729","G.OTHER.2",0,0,1,0,0,0,0,"PSP Leadership Council","",3,3,3,3,3,-99
+"569","50e471b451b14e7cbc81b6bacfd11729","G.SCIENCE",1,1,0,0,1,0,0,"PSP Leadership Council","",4,5,5,5,3,-99
+"570","50e471b451b14e7cbc81b6bacfd11729","G.WLEADS",0,0,0,0,1,0,0,"PSP Leadership Council","",3,4,3,3,3,-99
+"571","52a55cd5a949408cb39541a786bcfa9b","G.ECO.WHID",1,1,1,1,1,1,1,"City of Oak Harbor","",5,4,4,4,4,4
+"572","52a55cd5a949408cb39541a786bcfa9b","G.MRC.ISLAND",1,1,0,1,1,0,0,"City of Oak Harbor","",4,4,4,4,3,3
+"573","52a55cd5a949408cb39541a786bcfa9b","G.OTHER.1",1,1,1,0,0,0,0,"City of Oak Harbor","",NA,NA,NA,NA,NA,NA
+"574","52a55cd5a949408cb39541a786bcfa9b","G.OTHER.2",1,1,0,0,1,0,0,"City of Oak Harbor","",4,4,4,4,4,4
+"575","52a55cd5a949408cb39541a786bcfa9b","G.OTHER.3",1,0,1,1,1,0,0,"City of Oak Harbor","",4,4,4,4,3,4
+"576","52a55cd5a949408cb39541a786bcfa9b","G.OTHER.4",1,1,0,1,1,1,1,"City of Oak Harbor","",4,4,4,4,3,3
+"577","52a55cd5a949408cb39541a786bcfa9b","G.OTHER.5",1,0,0,1,0,0,0,"City of Oak Harbor","",4,4,4,4,4,4
+"578","546ec1911f1a4060ae23581b60ac5767","G.ECM.TOXIC",1,1,0,1,1,0,0,"WWU","",5,5,2,5,3,5
+"579","546ec1911f1a4060ae23581b60ac5767","G.ECO.WHAT",1,0,0,0,1,0,0,"WWU","",4,5,2,5,4,5
+"580","546ec1911f1a4060ae23581b60ac5767","G.MRC.WHAT",1,1,1,1,1,1,0,"WWU","",5,5,2,5,4,5
+"581","546ec1911f1a4060ae23581b60ac5767","G.OTHER.1",1,1,0,0,1,0,0,"WWU","",NA,NA,NA,NA,NA,NA
+"582","5492ad5579eb4508a1f0b13ab904ccd0","G.LOC.NISQ",0,1,1,1,1,0,0,"PSP","",5,5,3,3,3,4
+"583","5492ad5579eb4508a1f0b13ab904ccd0","G.SRC",1,1,1,1,1,1,1,"PSP","",5,5,4,5,3,5
+"584","5492ad5579eb4508a1f0b13ab904ccd0","G.WLEADS",1,1,1,1,1,1,1,"PSP","",5,5,4,4,3,5
+"585","557117c87bce49dfb936df5e44f3c9c8","G.MRC.ISLAND",1,1,0,1,1,1,0,"Island MRC","",3,5,4,4,2,2
+"586","5656184287c84bf29ad5bd10211cbc67","G.ECO.KING",1,0,1,0,1,0,1,"WDOH","",4,4,4,4,-99,4
+"587","5656184287c84bf29ad5bd10211cbc67","G.ECO.MASON",1,0,1,0,1,0,1,"WDOH","",4,4,4,4,-99,4
+"588","5656184287c84bf29ad5bd10211cbc67","G.ECO.THURST",1,0,1,0,1,0,1,"WDOH","",4,4,4,4,-99,4
+"589","56d5f9107ca141aaa0e97b7a584178d8","G.ECO.SNOHO",1,1,1,1,1,1,0,"Sound Salmon Solutions","",5,5,3,4,4,5
+"590","56d5f9107ca141aaa0e97b7a584178d8","G.ECO.WHID",1,0,0,0,0,0,0,"Sound Salmon Solutions","",-99,-99,-99,-99,-99,-99
+"591","56d5f9107ca141aaa0e97b7a584178d8","G.LOC.ISLAND",1,1,0,0,1,0,0,"Sound Salmon Solutions","",4,4,3,3,4,4
+"592","56d5f9107ca141aaa0e97b7a584178d8","G.LOC.SNOHO",1,1,1,1,1,1,1,"Sound Salmon Solutions","",5,5,3,5,5,5
+"593","56d5f9107ca141aaa0e97b7a584178d8","G.LOC.STILL",1,1,1,1,1,1,1,"Sound Salmon Solutions","",1,10,1,5,NA,5
+"594","56d5f9107ca141aaa0e97b7a584178d8","G.MRC.SNOHO",1,1,1,1,1,0,0,"Sound Salmon Solutions","",4,4,3,3,4,4
+"595","57f1460b76f247fab92126b6e0cda83e","G.ECO.HOOD",1,1,1,1,1,1,1,"Thurston Conservation District","",5,5,4,4,3,4
+"596","57f1460b76f247fab92126b6e0cda83e","G.ECO.MASON",1,1,1,1,1,1,1,"Thurston Conservation District","",5,5,4,4,3,4
+"597","57f1460b76f247fab92126b6e0cda83e","G.ECO.THURST",1,1,1,1,1,1,1,"Thurston Conservation District","",5,5,4,4,3,3
+"598","57f1460b76f247fab92126b6e0cda83e","G.LOC.SOUTH",1,1,0,0,0,1,0,"Thurston Conservation District","",5,4,4,4,3,3
+"599","5816a183215b4b26b0c595f3173b08c2","G.OTHER.1",1,1,1,1,1,1,1,"Whidbey Environmental Action Network","",NA,NA,NA,NA,NA,NA
+"600","581a776d0c7649ce941551d48be9b3a0","G.LIO.SOUTHSOUND",0,0,0,0,0,0,1,"Nisqually Land Trust","",3,3,3,3,2,2
+"601","581a776d0c7649ce941551d48be9b3a0","G.LOC.NISQ",1,1,1,1,1,1,1,"Nisqually Land Trust","",5,5,5,4,2,5
+"602","581a776d0c7649ce941551d48be9b3a0","G.OTHER.1",0,0,0,0,0,0,1,"Nisqually Land Trust","",NA,NA,NA,NA,NA,NA
+"603","5977bf01be94473eaba78ca4be3eef5a","G.ENVIRO",0,0,0,0,1,0,0,"The Nature Conservancy","",4,4,3,4,1,1
+"604","5977bf01be94473eaba78ca4be3eef5a","G.LOC.SKAGIT",1,1,1,0,1,1,0,"The Nature Conservancy","",4,4,3,4,2,4
+"605","5977bf01be94473eaba78ca4be3eef5a","G.OTHER.1",1,1,1,1,1,1,0,"The Nature Conservancy","",NA,NA,NA,NA,NA,NA
+"606","5977bf01be94473eaba78ca4be3eef5a","G.OTHER.2",1,1,0,1,1,0,0,"The Nature Conservancy","",5,5,4,4,1,5
+"607","5977bf01be94473eaba78ca4be3eef5a","G.PSNERP",1,1,0,0,1,1,0,"The Nature Conservancy","",5,4,4,5,1,2
+"608","5af2c15b834047df93bc9e29a6fcd3ca","G.LOC.STILL",1,1,1,1,1,1,0,"Stillaguamish Tribe","",1,14,1,5,NA,5
+"609","5af2c15b834047df93bc9e29a6fcd3ca","G.OTHER.1",1,1,1,1,1,1,0,"Stillaguamish Tribe","",NA,NA,NA,NA,NA,NA
+"610","5af2c15b834047df93bc9e29a6fcd3ca","G.OTHER.2",1,1,1,1,1,1,0,"Stillaguamish Tribe","",3,5,5,5,1,-99
+"611","5af2c15b834047df93bc9e29a6fcd3ca","G.OTHER.3",1,1,1,1,1,1,0,"Stillaguamish Tribe","",5,5,5,5,1,4
+"612","5af2c15b834047df93bc9e29a6fcd3ca","G.WLEADS",1,1,0,0,0,0,0,"Stillaguamish Tribe","",2,3,3,4,1,4
+"613","5bd09b00c71e40fda3c03fa4c9cfa493","G.OTHER.1",1,1,0,0,1,0,0,"City of Mukilteo","",NA,NA,NA,NA,NA,NA
+"614","5d1f798eefe24b9395ea6f80730d6ecf","G.LIO.NOOKWATER",1,1,1,1,1,1,1,"WDFW","",3,5,2,5,2,2
+"615","5d1f798eefe24b9395ea6f80730d6ecf","G.LIO.SNOHOSTILL",1,1,1,1,1,1,1,"WDFW","",3,3,2,3,2,2
+"616","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.CEDAR",1,1,0,0,1,0,1,"WDFW","",4,4,2,4,2,2
+"617","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.GREEN",1,1,0,0,1,0,1,"WDFW","",2,4,2,4,2,2
+"618","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.ISLAND",1,0,0,0,1,0,1,"WDFW","",2,4,2,3,2,2
+"619","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.NOOK",1,1,1,1,1,1,1,"WDFW","",3,11,8,5,3,5
+"620","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.SJ",1,0,0,0,1,0,1,"WDFW","",2,4,2,3,2,2
+"621","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.SKAGIT",1,1,1,1,1,1,1,"WDFW","",5,5,2,5,1,2
+"622","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.SNOHO",1,1,1,1,1,1,1,"WDFW","",5,5,2,5,1,2
+"623","5d1f798eefe24b9395ea6f80730d6ecf","G.LOC.STILL",1,1,0,0,1,0,1,"WDFW","",3,27,14,4,3,4
+"624","5d1f798eefe24b9395ea6f80730d6ecf","G.MRC.SJ",0,1,0,0,0,0,1,"WDFW","",3,4,2,3,2,2
+"625","5d1f798eefe24b9395ea6f80730d6ecf","G.MRC.SKAGIT",0,1,0,0,0,0,1,"WDFW","",3,4,2,3,2,2
+"626","5d1f798eefe24b9395ea6f80730d6ecf","G.MRC.SNOHO",0,1,0,0,0,0,1,"WDFW","",3,4,2,3,2,2
+"627","5d1f798eefe24b9395ea6f80730d6ecf","G.MRC.WHAT",0,1,0,0,0,0,1,"WDFW","",3,4,2,3,2,2
+"628","5d1f798eefe24b9395ea6f80730d6ecf","G.OTHER.1",1,1,0,1,1,1,1,"WDFW","",NA,NA,NA,NA,NA,NA
+"629","5d1f798eefe24b9395ea6f80730d6ecf","G.PSNERP",0,0,0,1,1,0,1,"WDFW","",4,3,4,4,1,4
+"630","5d1f798eefe24b9395ea6f80730d6ecf","G.SRC",1,1,1,1,1,1,1,"WDFW","",5,5,4,5,2,3
+"631","5d46e482660a4f168a154bb068492257","G.MRC.WHAT",1,1,1,1,1,1,0,"Whatcom MRC","",4,5,4,5,4,4
+"632","5d46e482660a4f168a154bb068492257","G.OTHER.1",1,1,1,0,1,0,0,"Whatcom MRC","",NA,NA,NA,NA,NA,NA
+"633","5d46e482660a4f168a154bb068492257","G.OTHER.2",1,1,0,0,1,0,0,"Whatcom MRC","",5,5,5,5,5,5
+"634","5d60d97b064c409e8c14a4c68db88fa5","G.ECO.SJ",1,1,0,1,1,0,0,"San Juan MRC","",5,5,4,5,4,2
+"635","5d60d97b064c409e8c14a4c68db88fa5","G.LOC.SJ",0,1,1,0,0,0,0,"San Juan MRC","",3,3,4,5,4,2
+"636","5d60d97b064c409e8c14a4c68db88fa5","G.MRC.SJ",1,1,1,1,0,0,0,"San Juan MRC","",5,4,5,5,4,2
+"637","5dc68801b9b9419db58d59f1b1670b67","G.MRC.SJ",0,0,0,0,0,1,0,"Wild Fish Conservancy","",4,4,4,5,4,4
+"638","5dc68801b9b9419db58d59f1b1670b67","G.OTHER.1",0,1,0,0,1,0,0,"Wild Fish Conservancy","",NA,NA,NA,NA,NA,NA
+"639","5dc68801b9b9419db58d59f1b1670b67","G.OTHER.2",0,1,0,0,0,0,0,"Wild Fish Conservancy","",5,5,4,5,5,5
+"640","5dc68801b9b9419db58d59f1b1670b67","G.OTHER.3",0,1,0,0,0,0,0,"Wild Fish Conservancy","",5,5,4,5,5,4
+"641","60115526a17a4abbb50820883884d23e","G.ECO.KING",1,0,1,0,1,0,0,"Puget Soundkeeper Alliance ","",2,4,2,5,1,3
+"642","60115526a17a4abbb50820883884d23e","G.ECO.SNOHO",1,1,0,1,1,0,0,"Puget Soundkeeper Alliance ","",4,5,2,4,1,2
+"643","60115526a17a4abbb50820883884d23e","G.ENVIRO",1,1,0,0,0,0,0,"Puget Soundkeeper Alliance ","",2,4,2,4,1,2
+"644","60681408dde041b786e446b5eeb26cec","G.ECO.SJ",0,0,0,0,1,0,0,"WRIA 2","",3,3,4,4,3,3
+"645","60681408dde041b786e446b5eeb26cec","G.LIO.SJWATER",0,0,0,0,1,0,0,"WRIA 2","",3,3,4,3,3,3
+"646","60681408dde041b786e446b5eeb26cec","G.LOC.SJ",1,1,1,1,1,1,1,"WRIA 2","",5,5,4,5,5,4
+"647","60681408dde041b786e446b5eeb26cec","G.LOC.SKAGIT",0,0,0,1,0,0,0,"WRIA 2","",3,4,4,4,3,3
+"648","60681408dde041b786e446b5eeb26cec","G.MRC.SJ",1,1,0,1,1,0,0,"WRIA 2","",4,4,4,5,4,3
+"649","60681408dde041b786e446b5eeb26cec","G.OTHER.1",1,1,1,1,0,0,0,"WRIA 2","",NA,NA,NA,NA,NA,NA
+"650","60681408dde041b786e446b5eeb26cec","G.OTHER.2",0,1,1,1,1,0,1,"WRIA 2","",4,4,4,4,4,4
+"651","60681408dde041b786e446b5eeb26cec","G.OTHER.3",0,0,1,0,1,0,1,"WRIA 2","",4,4,4,4,3,4
+"652","60681408dde041b786e446b5eeb26cec","G.PSNERP",0,0,0,0,1,0,0,"WRIA 2","",3,3,4,3,3,3
+"653","60681408dde041b786e446b5eeb26cec","G.RITT",0,1,0,1,1,0,0,"WRIA 2","",3,4,4,5,3,3
+"654","60681408dde041b786e446b5eeb26cec","G.SRC",1,0,0,1,1,0,0,"WRIA 2","",3,3,4,3,3,3
+"655","60681408dde041b786e446b5eeb26cec","G.WLEADS",0,0,0,1,1,0,0,"WRIA 2","",3,4,4,4,3,3
+"656","61147dbc7b3f4543b4712f84add897c2","G.OTHER.1",0,1,0,0,1,0,0,"Pacific Denkmann Company","",NA,NA,NA,NA,NA,NA
+"657","61147dbc7b3f4543b4712f84add897c2","G.OTHER.2",0,1,0,0,1,0,0,"Pacific Denkmann Company","",5,5,5,5,3,3
+"658","62bc783d901d43d4914d5b8897d6e070","G.LOC.NOOK",0,0,0,0,0,0,1,"WSUX CarbonMasters","",1,7,1,3,NA,4
+"659","62bc783d901d43d4914d5b8897d6e070","G.MRC.WHAT",0,1,0,0,0,0,0,"WSUX CarbonMasters","",3,4,4,4,4,-77
+"660","62bc783d901d43d4914d5b8897d6e070","G.OTHER.1",0,0,0,0,0,0,1,"WSUX CarbonMasters","",NA,NA,NA,NA,NA,NA
+"661","62bc783d901d43d4914d5b8897d6e070","G.OTHER.2",0,0,1,1,0,0,0,"WSUX CarbonMasters","",4,4,4,4,4,-77
+"662","638956b0380c4806ba439b0a5f8b1c32","G.ECB",0,1,0,0,1,0,1,"Suquamish Tribe","",-77,2,1,2,1,3
+"663","638956b0380c4806ba439b0a5f8b1c32","G.LIO.NORTHCENTRAL",1,1,1,1,1,1,1,"Suquamish Tribe","",5,5,3,3,2,5
+"664","638956b0380c4806ba439b0a5f8b1c32","G.LOC.WEST",1,1,1,1,1,1,1,"Suquamish Tribe","",5,5,3,4,2,5
+"665","638956b0380c4806ba439b0a5f8b1c32","G.SRC",1,1,1,1,1,0,1,"Suquamish Tribe","",4,4,3,4,2,3
+"666","6451ede0d2b74455a7074f746b0c21c0","G.ECB",0,1,0,0,1,0,0,"Seattle Audubon","",3,3,4,4,3,2
+"667","6451ede0d2b74455a7074f746b0c21c0","G.ECM.BIRD",1,1,1,1,1,1,1,"Seattle Audubon","",5,4,3,4,5,4
+"668","6451ede0d2b74455a7074f746b0c21c0","G.ENVIRO",1,1,0,1,1,1,0,"Seattle Audubon","",5,4,3,4,2,2
+"669","6451ede0d2b74455a7074f746b0c21c0","G.OTHER.1",1,1,1,1,1,0,0,"Seattle Audubon","",NA,NA,NA,NA,NA,NA
+"670","6451ede0d2b74455a7074f746b0c21c0","G.PSEMP",1,1,0,0,1,0,0,"Seattle Audubon","",5,5,4,5,4,2
+"671","646431c6146f4cd8a92b47736b08acc3","G.ECO.KING",1,1,0,0,1,0,0,"Urban Wilderness Project","",-77,4,3,2,2,3
+"672","646431c6146f4cd8a92b47736b08acc3","G.OTHER.1",1,1,0,1,1,0,1,"Urban Wilderness Project","",NA,NA,NA,NA,NA,NA
+"673","646431c6146f4cd8a92b47736b08acc3","G.OTHER.2",1,1,1,1,1,1,1,"Urban Wilderness Project","",-77,5,4,2,2,2
+"674","64cf417992464ad785ea0295e16e82a7","G.ECO.HOOD",1,1,1,1,1,1,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"675","64cf417992464ad785ea0295e16e82a7","G.ECO.KING",1,1,1,1,1,1,0,"WDOE","Water Quality Program",5,5,5,5,3,1
+"676","64cf417992464ad785ea0295e16e82a7","G.ECO.KITSAP",1,1,1,1,1,0,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"677","64cf417992464ad785ea0295e16e82a7","G.ECO.SKAGIT",1,1,1,1,1,1,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"678","64cf417992464ad785ea0295e16e82a7","G.ECO.SNOHO",1,1,1,1,1,0,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"679","64cf417992464ad785ea0295e16e82a7","G.OTHER.1",1,1,1,1,1,0,1,"WDOE","Water Quality Program",NA,NA,NA,NA,NA,NA
+"680","64cf417992464ad785ea0295e16e82a7","G.OTHER.2",1,1,1,1,1,0,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"681","64cf417992464ad785ea0295e16e82a7","G.OTHER.3",1,1,1,1,1,1,1,"WDOE","Water Quality Program",5,5,5,5,3,1
+"682","64cf417992464ad785ea0295e16e82a7","G.OTHER.4",1,1,1,1,1,1,1,"WDOE","Water Quality Program",5,5,5,5,3,4
+"683","65c539aad21c4dc2a4356b5028d3b811","G.OTHER.1",1,1,0,1,1,0,1,"Nisqually River Council","",NA,NA,NA,NA,NA,NA
+"684","65c539aad21c4dc2a4356b5028d3b811","G.OTHER.2",1,1,0,1,1,1,1,"Nisqually River Council","",-77,5,4,5,3,-99
+"685","66093cd2b6744d009cd38a2eef998ff6","G.OTHER.1",1,1,1,1,1,1,0,"Friends of the Issaquah Salmon Hatchery","",NA,NA,NA,NA,NA,NA
+"686","66093cd2b6744d009cd38a2eef998ff6","G.OTHER.2",1,0,0,1,1,0,0,"Friends of the Issaquah Salmon Hatchery","",5,4,5,3,-99,5
+"687","66093cd2b6744d009cd38a2eef998ff6","G.OTHER.3",1,0,1,1,0,0,0,"Friends of the Issaquah Salmon Hatchery","",3,3,4,3,-99,-99
+"688","6668ef11b394490b86af3fe6000257f2","G.ECO.WHID",1,0,1,0,1,0,0,"SPU","Camp Casey",3,5,5,4,3,4
+"689","66f3314924f24d118d2a83d593d56e72","G.ECO.SJ",1,1,1,1,1,1,1,"San Juan ECO Net","",5,5,4,5,5,5
+"690","66f3314924f24d118d2a83d593d56e72","G.LIO.SJWATER",1,1,1,1,1,0,1,"San Juan ECO Net","",5,4,4,5,4,4
+"691","66f3314924f24d118d2a83d593d56e72","G.OTHER.1",1,1,1,1,1,1,1,"San Juan ECO Net","",NA,NA,NA,NA,NA,NA
+"692","66f3314924f24d118d2a83d593d56e72","G.OTHER.2",1,1,0,0,0,0,1,"San Juan ECO Net","",5,5,4,5,4,2
+"693","67e9699f3b62479f9b2a08612e999689","G.ECO.KITSAP",0,0,0,1,1,0,1,"City of Lacey","",3,4,3,4,1,4
+"694","67e9699f3b62479f9b2a08612e999689","G.ECO.THURST",1,1,1,1,1,1,0,"City of Lacey","",4,4,3,4,1,5
+"695","67e9699f3b62479f9b2a08612e999689","G.LOC.NISQ",1,1,0,1,1,0,0,"City of Lacey","",4,4,4,4,1,2
+"696","67e9699f3b62479f9b2a08612e999689","G.LOC.SOUTH",1,1,0,1,1,0,0,"City of Lacey","",4,4,4,4,1,2
+"697","67e9699f3b62479f9b2a08612e999689","G.OTHER.1",1,1,1,1,1,1,0,"City of Lacey","",NA,NA,NA,NA,NA,NA
+"698","67e9699f3b62479f9b2a08612e999689","G.OTHER.2",1,1,1,1,1,1,0,"City of Lacey","",4,4,3,3,1,5
+"699","67e9699f3b62479f9b2a08612e999689","G.OTHER.3",1,1,0,0,1,1,0,"City of Lacey","",5,4,3,4,1,5
+"700","6821f92f7dd34f63ba739c21d3d768e5","G.OTHER.1",1,1,1,1,1,0,0,"WDNR","",NA,NA,NA,NA,NA,NA
+"701","6821f92f7dd34f63ba739c21d3d768e5","G.OTHER.2",1,1,1,0,1,1,0,"WDNR","",4,5,4,4,3,3
+"702","6821f92f7dd34f63ba739c21d3d768e5","G.OTHER.3",1,1,1,0,1,1,0,"WDNR","",4,4,5,3,3,3
+"703","6821f92f7dd34f63ba739c21d3d768e5","G.OTHER.4",0,1,0,0,0,0,0,"WDNR","",3,4,4,3,3,3
+"704","6828437757d54e0c9f36cd94f7dcc3f6","G.ECO.HOOD",0,0,0,0,1,0,0,"Mason County","Public Health",4,3,3,3,3,4
+"705","6828437757d54e0c9f36cd94f7dcc3f6","G.OTHER.1",0,1,0,0,0,0,0,"Mason County","Public Health",NA,NA,NA,NA,NA,NA
+"706","6867db0aa4b5452d880da94a4cdddfee","G.ECO.SNOHO",1,1,1,1,1,1,0,"Snohomish County","Surface Water Management",5,4,3,3,3,4
+"707","6867db0aa4b5452d880da94a4cdddfee","G.MRC.SNOHO",0,1,0,1,1,1,0,"Snohomish County","Surface Water Management",5,4,4,3,3,4
+"708","6867db0aa4b5452d880da94a4cdddfee","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"709","686f39a0f3174ab7a6f7eb3ded4be3cf","G.ECO.SJ",1,1,0,1,0,0,1,"San Juan County","Community Development and Planning",5,4,-99,4,2,3
+"710","686f39a0f3174ab7a6f7eb3ded4be3cf","G.LIO.SJWATER",1,1,1,1,1,1,1,"San Juan County","Community Development and Planning",5,5,-99,5,2,4
+"711","686f39a0f3174ab7a6f7eb3ded4be3cf","G.LOC.ISLAND",1,1,1,1,1,1,1,"San Juan County","Community Development and Planning",5,5,-99,5,2,3
+"712","686f39a0f3174ab7a6f7eb3ded4be3cf","G.LOC.SJ",1,1,0,0,1,0,0,"San Juan County","Community Development and Planning",4,4,-99,5,2,3
+"713","686f39a0f3174ab7a6f7eb3ded4be3cf","G.MRC.SJ",1,1,1,1,1,1,1,"San Juan County","Community Development and Planning",5,5,-99,5,2,4
+"714","686f39a0f3174ab7a6f7eb3ded4be3cf","G.OTHER.1",0,1,0,1,1,0,1,"San Juan County","Community Development and Planning",NA,NA,NA,NA,NA,NA
+"715","689c98847bac465baee40701ec92f598","G.ECO.HOOD",1,1,1,1,1,0,0,"NOSC","",4,4,-99,3,2,4
+"716","689c98847bac465baee40701ec92f598","G.ECO.STRAIT",1,1,1,1,1,0,0,"NOSC","",5,4,-99,3,2,4
+"717","689c98847bac465baee40701ec92f598","G.LIO.HOOD",1,1,0,1,1,0,0,"NOSC","",2,4,-99,3,2,2
+"718","689c98847bac465baee40701ec92f598","G.LIO.STRAIT",1,1,0,0,1,0,0,"NOSC","",3,4,-99,3,2,3
+"719","689c98847bac465baee40701ec92f598","G.LOC.HOOD",1,1,1,0,0,0,0,"NOSC","",2,4,-99,3,4,5
+"720","689c98847bac465baee40701ec92f598","G.LOC.NOLY",1,1,0,1,1,0,0,"NOSC","",5,4,-99,3,2,5
+"721","689c98847bac465baee40701ec92f598","G.OTHER.1",1,1,0,0,0,0,0,"NOSC","",NA,NA,NA,NA,NA,NA
+"722","689c98847bac465baee40701ec92f598","G.OTHER.2",1,1,0,0,0,0,0,"NOSC","",5,4,-99,3,2,3
+"723","68abba867d674bc19f48f59960ff1deb","G.ECM.FRESH",1,1,0,0,0,0,0,"City of Seattle","Public Utilities",3,4,4,4,3,2
+"724","68abba867d674bc19f48f59960ff1deb","G.ECM.MARINE",0,1,0,0,0,0,0,"City of Seattle","Public Utilities",4,4,4,4,3,2
+"725","68abba867d674bc19f48f59960ff1deb","G.ECM.STORM",1,1,0,1,1,1,0,"City of Seattle","Public Utilities",5,5,4,5,3,2
+"726","68abba867d674bc19f48f59960ff1deb","G.ECO.KING",0,0,0,0,1,0,0,"City of Seattle","Public Utilities",-99,4,4,3,3,2
+"727","68abba867d674bc19f48f59960ff1deb","G.OTHER.1",0,0,0,0,1,0,1,"City of Seattle","Public Utilities",NA,NA,NA,NA,NA,NA
+"728","68abba867d674bc19f48f59960ff1deb","G.OTHER.2",0,0,0,0,1,0,1,"City of Seattle","Public Utilities",5,5,4,5,3,3
+"729","6b702831b99c40efa6af5bc12805bc44","G.LOC.SOUTH",1,0,0,0,0,0,0,"Vashon Beach Naturalists","",-99,-99,-99,-99,3,-99
+"730","6b702831b99c40efa6af5bc12805bc44","G.OTHER.1",1,1,1,1,1,1,1,"Vashon Beach Naturalists","",NA,NA,NA,NA,NA,NA
+"731","6b702831b99c40efa6af5bc12805bc44","G.OTHER.2",1,1,0,0,1,0,0,"Vashon Beach Naturalists","",4,5,4,4,3,3
+"732","6d36e37be8f044d8ad571c2b5f91a021","G.LOC.NISQ",0,1,0,0,0,0,0,"Pierce County","",3,4,4,4,2,3
+"733","6d36e37be8f044d8ad571c2b5f91a021","G.LOC.PUY",1,1,0,1,1,1,0,"Pierce County","",4,4,4,4,2,4
+"734","6d36e37be8f044d8ad571c2b5f91a021","G.LOC.WEST",0,1,0,0,0,0,0,"Pierce County","",3,4,4,4,2,3
+"735","6d59d0654ee642d89b5530cdbb7c657d","G.LOC.WEST",0,0,0,1,0,0,0,"Bainbridge Beach Naturalists","",4,4,4,4,3,2
+"736","6d59d0654ee642d89b5530cdbb7c657d","G.OTHER.1",0,0,0,1,0,0,0,"Bainbridge Beach Naturalists","",NA,NA,NA,NA,NA,NA
+"737","6d59d0654ee642d89b5530cdbb7c657d","G.OTHER.2",1,1,1,1,1,1,1,"Bainbridge Beach Naturalists","",4,4,4,3,3,2
+"738","6d59d0654ee642d89b5530cdbb7c657d","G.PSNERP",1,0,0,0,0,0,0,"Bainbridge Beach Naturalists","",3,3,3,4,3,2
+"739","6d8d3c2f21fc4ad99210ead1fe22c995","G.ECO.WHID",0,0,0,0,1,0,0,"WRIA 6","",-77,5,4,5,3,4
+"740","6d8d3c2f21fc4ad99210ead1fe22c995","G.LIO.ISLANDWATER",1,1,1,1,1,0,0,"WRIA 6","",5,5,4,5,3,4
+"741","6d8d3c2f21fc4ad99210ead1fe22c995","G.LOC.ISLAND",1,1,1,1,1,1,1,"WRIA 6","",5,5,5,5,4,4
+"742","6d8d3c2f21fc4ad99210ead1fe22c995","G.MRC.ISLAND",0,1,0,0,1,0,1,"WRIA 6","",5,5,5,5,3,4
+"743","6d8d3c2f21fc4ad99210ead1fe22c995","G.OTHER.1",1,1,1,1,1,1,0,"WRIA 6","",NA,NA,NA,NA,NA,NA
+"744","6d8d3c2f21fc4ad99210ead1fe22c995","G.OTHER.2",1,1,1,1,1,1,1,"WRIA 6","",5,5,4,5,3,4
+"745","6d8d3c2f21fc4ad99210ead1fe22c995","G.SRC",0,1,1,0,1,0,0,"WRIA 6","",4,5,4,5,3,4
+"746","6d8d3c2f21fc4ad99210ead1fe22c995","G.WLEADS",1,1,1,1,1,0,0,"WRIA 6","",5,5,4,5,3,4
+"747","6def882e4ba24c02bfad540501b4225c","G.LIO.SNOHOSTILL",0,1,0,0,1,0,0,"Snohomish County","Surface Water Management",4,4,3,-77,-77,-77
+"748","6def882e4ba24c02bfad540501b4225c","G.LOC.STILL",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",3,18,9,4,4,4
+"749","6def882e4ba24c02bfad540501b4225c","G.MRC.SNOHO",0,0,1,1,1,1,0,"Snohomish County","Surface Water Management",4,4,4,4,4,2
+"750","6def882e4ba24c02bfad540501b4225c","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"751","6def882e4ba24c02bfad540501b4225c","G.RITT",1,1,0,0,1,1,0,"Snohomish County","Surface Water Management",2,3,4,5,2,3
+"752","6def882e4ba24c02bfad540501b4225c","G.WLEADS",1,1,0,0,1,0,0,"Snohomish County","Surface Water Management",3,4,4,4,4,4
+"753","6ed159a7b9a14a469184283b0efb987b","G.ECM.MARINE",1,0,0,0,1,0,0,"NMFS","",4,4,4,5,-99,2
+"754","6ed159a7b9a14a469184283b0efb987b","G.ECM.SALM",1,1,1,1,1,1,1,"NMFS","",5,5,5,5,4,5
+"755","6ed159a7b9a14a469184283b0efb987b","G.ECM.STORM",0,0,0,0,0,0,1,"NMFS","",4,5,5,5,-99,2
+"756","6ed159a7b9a14a469184283b0efb987b","G.FED",0,0,0,0,0,1,0,"NMFS","",3,3,2,4,-99,5
+"757","6ed159a7b9a14a469184283b0efb987b","G.LOC.CEDAR",0,0,0,0,1,0,1,"NMFS","",5,5,4,4,-99,2
+"758","6ed159a7b9a14a469184283b0efb987b","G.LOC.GREEN",0,0,0,0,1,0,1,"NMFS","",5,5,4,4,-99,2
+"759","6ed159a7b9a14a469184283b0efb987b","G.LOC.HOOD",0,0,0,0,1,0,1,"NMFS","",5,5,3,4,-99,2
+"760","6ed159a7b9a14a469184283b0efb987b","G.LOC.NISQ",0,0,0,0,1,0,1,"NMFS","",5,5,4,4,-99,2
+"761","6ed159a7b9a14a469184283b0efb987b","G.LOC.NOLY",0,0,0,0,1,0,1,"NMFS","",5,5,3,4,-99,2
+"762","6ed159a7b9a14a469184283b0efb987b","G.LOC.NOOK",0,0,0,0,1,0,1,"NMFS","",1,16,1,5,NA,5
+"763","6ed159a7b9a14a469184283b0efb987b","G.LOC.PUY",0,0,0,0,1,0,1,"NMFS","",5,5,3,4,-99,2
+"764","6ed159a7b9a14a469184283b0efb987b","G.LOC.SKAGIT",0,0,0,0,1,0,1,"NMFS","",5,5,4,4,-99,2
+"765","6ed159a7b9a14a469184283b0efb987b","G.LOC.SNOHO",0,0,0,0,1,0,1,"NMFS","",5,5,4,4,-99,2
+"766","6ed159a7b9a14a469184283b0efb987b","G.LOC.SOUTH",0,0,0,0,1,0,1,"NMFS","",5,5,3,4,-99,2
+"767","6ed159a7b9a14a469184283b0efb987b","G.LOC.STILL",0,0,0,0,1,0,1,"NMFS","",1,22,1,5,NA,5
+"768","6ed159a7b9a14a469184283b0efb987b","G.LOC.WEST",0,0,0,0,1,0,1,"NMFS","",5,5,3,4,-99,2
+"769","6ed159a7b9a14a469184283b0efb987b","G.PSEMP",1,1,1,1,1,1,1,"NMFS","",5,5,5,5,4,5
+"770","6ed159a7b9a14a469184283b0efb987b","G.RITT",0,1,0,0,1,0,0,"NMFS","",4,4,4,5,-99,2
+"771","70e0b3990abb4b4892c4f3eb64972063","G.ECO.WHID",0,0,0,0,1,0,0,"Whidbey Environmental Action Network","",3,3,2,2,1,1
+"772","70e0b3990abb4b4892c4f3eb64972063","G.OTHER.1",0,1,0,1,1,0,1,"Whidbey Environmental Action Network","",NA,NA,NA,NA,NA,NA
+"773","70e0b3990abb4b4892c4f3eb64972063","G.OTHER.2",1,1,0,1,1,1,1,"Whidbey Environmental Action Network","",4,4,2,3,1,1
+"774","7141639f33dc46778c5cb32645520442","G.ECM.FRESH",1,1,0,1,1,0,0,"City of Everett","",3,3,3,3,2,2
+"775","7141639f33dc46778c5cb32645520442","G.ECM.STORM",1,1,1,1,1,1,1,"City of Everett","",4,4,3,4,2,2
+"776","7141639f33dc46778c5cb32645520442","G.PSEMP",0,1,0,1,1,1,0,"City of Everett","",3,4,4,4,2,2
+"777","7162440e0cd24ea1a4df3c26dd4deb52","G.ECO.WHAT",1,1,0,0,0,0,0,"Whatcom ECO Net","WWIN",3,3,4,2,2,2
+"778","7162440e0cd24ea1a4df3c26dd4deb52","G.MRC.WHAT",1,1,1,1,1,1,1,"Whatcom ECO Net","WWIN",5,5,5,5,4,2
+"779","7162440e0cd24ea1a4df3c26dd4deb52","G.OTHER.1",1,1,1,1,1,1,1,"Whatcom ECO Net","WWIN",NA,NA,NA,NA,NA,NA
+"780","7162440e0cd24ea1a4df3c26dd4deb52","G.OTHER.2",0,0,0,1,0,0,0,"Whatcom ECO Net","WWIN",5,5,5,5,4,2
+"781","7162440e0cd24ea1a4df3c26dd4deb52","G.OTHER.3",0,1,1,1,1,0,1,"Whatcom ECO Net","WWIN",5,5,4,5,3,2
+"782","71ad0b52c5214389a3297f65de1526f2","G.ECO.SJ",1,1,0,1,1,0,1,"San Juan County","WSP",4,4,4,4,3,3
+"783","71ad0b52c5214389a3297f65de1526f2","G.MRC.SJ",1,0,0,0,0,0,1,"San Juan County","WSP",3,4,4,4,3,3
+"784","71ca16f1ba0547e982f8460deab2ccc2","G.ECM.SALM",1,1,0,0,1,0,0,"Salmon Recovery Funding Board","",5,5,5,5,2,2
+"785","71ca16f1ba0547e982f8460deab2ccc2","G.LOC.NOOK",1,1,0,0,1,0,0,"Salmon Recovery Funding Board","",1,15,1,2,NA,4
+"786","72006669f95548d7ba237868ae623bb3","G.LIO.SOUTHCENTRAL",1,1,1,1,1,1,1,"Washington Environmental Council","",5,5,4,5,4,4
+"787","72006669f95548d7ba237868ae623bb3","G.OTHER.1",0,0,0,1,0,0,0,"Washington Environmental Council","",NA,NA,NA,NA,NA,NA
+"788","73dbdfc17f894f4393e627541f88eafd","G.LIO.ISLANDWATER",1,1,1,0,1,0,0,"Island County Water Resources Advisory Committee","",4,5,4,5,-99,-99
+"789","73dbdfc17f894f4393e627541f88eafd","G.LOC.ISLAND",1,0,0,0,0,0,0,"Island County Water Resources Advisory Committee","",-99,-99,-99,-99,-99,-99
+"790","74849571ff5b44589dbbc1077efbcced","G.ECM.MARINE",1,1,0,1,1,1,1,"UW","",4,4,4,5,2,2
+"791","74849571ff5b44589dbbc1077efbcced","G.PSEMP",1,1,0,0,1,1,0,"UW","",4,4,4,3,2,2
+"792","74849571ff5b44589dbbc1077efbcced","G.PSNERP",1,1,1,1,1,1,0,"UW","",4,4,4,5,2,3
+"793","74849571ff5b44589dbbc1077efbcced","G.SCIENCE",1,1,1,0,1,1,1,"UW","",4,4,4,4,2,2
+"794","7569d58d7acd47b8ba49745d4020b444","G.OTHER.1",0,0,0,0,1,0,0,"NOAA","",NA,NA,NA,NA,NA,NA
+"795","756df718cbf445eea21c9a47e31b5c95","G.ECB",1,1,0,0,1,0,0,"NWIFC","",3,4,4,4,4,4
+"796","756df718cbf445eea21c9a47e31b5c95","G.FED",1,1,1,1,1,0,0,"NWIFC","",4,4,4,4,4,4
+"797","756df718cbf445eea21c9a47e31b5c95","G.LIO.ISLANDWATER",1,1,0,0,1,0,0,"NWIFC","",4,4,4,4,4,4
+"798","756df718cbf445eea21c9a47e31b5c95","G.LIO.SJWATER",1,1,1,1,1,1,0,"NWIFC","",4,4,4,4,4,4
+"799","756df718cbf445eea21c9a47e31b5c95","G.LIO.SNOHOSTILL",1,1,1,1,1,1,0,"NWIFC","",4,4,4,4,4,4
+"800","756df718cbf445eea21c9a47e31b5c95","G.LOC.SNOHO",1,1,1,1,1,0,0,"NWIFC","",4,4,4,4,4,4
+"801","756df718cbf445eea21c9a47e31b5c95","G.OTHER.1",1,1,1,1,1,1,1,"NWIFC","",NA,NA,NA,NA,NA,NA
+"802","756df718cbf445eea21c9a47e31b5c95","G.OTHER.2",1,1,1,1,1,1,1,"NWIFC","",4,4,4,4,4,4
+"803","756df718cbf445eea21c9a47e31b5c95","G.OTHER.3",1,1,1,1,1,1,1,"NWIFC","",4,4,4,4,4,4
+"804","756df718cbf445eea21c9a47e31b5c95","G.OTHER.4",1,1,0,0,1,1,1,"NWIFC","",4,4,4,4,4,4
+"805","756df718cbf445eea21c9a47e31b5c95","G.OTHER.5",1,1,1,1,1,1,1,"NWIFC","",4,4,4,4,4,4
+"806","75b52ef918e64c2ea8dc9c3b849ea79f","G.OTHER.1",1,1,1,0,1,0,0,"WDOE","",NA,NA,NA,NA,NA,NA
+"807","75b52ef918e64c2ea8dc9c3b849ea79f","G.OTHER.2",0,1,0,0,1,0,0,"WDOE","",5,5,5,5,3,-99
+"808","75b52ef918e64c2ea8dc9c3b849ea79f","G.OTHER.3",1,1,0,0,0,0,0,"WDOE","",3,4,5,3,3,-99
+"809","7633bc55abb4456f9dd873cd774f4cb7","G.LIO.NOOKWATER",1,1,1,1,1,1,0,"Whatcom County","Public Works",5,4,4,4,3,3
+"810","7633bc55abb4456f9dd873cd774f4cb7","G.LOC.NOOK",1,1,1,1,1,1,0,"Whatcom County","Public Works",3,12,2,5,5,4
+"811","7633bc55abb4456f9dd873cd774f4cb7","G.OTHER.1",1,1,1,1,1,1,1,"Whatcom County","Public Works",NA,NA,NA,NA,NA,NA
+"812","7633bc55abb4456f9dd873cd774f4cb7","G.OTHER.2",0,1,0,0,1,0,1,"Whatcom County","Public Works",4,4,4,3,3,3
+"813","7633bc55abb4456f9dd873cd774f4cb7","G.OTHER.3",0,1,0,0,1,0,1,"Whatcom County","Public Works",5,4,4,3,3,3
+"814","7633bc55abb4456f9dd873cd774f4cb7","G.WLEADS",0,0,0,0,1,0,0,"Whatcom County","Public Works",2,3,2,2,2,4
+"815","7652502cc553499e8a2d6adef0266c54","G.ECO.KING",0,0,1,0,1,0,0,"Surfrider Foundation","",4,4,4,3,5,4
+"816","7652502cc553499e8a2d6adef0266c54","G.ENVIRO",1,1,0,0,1,0,0,"Surfrider Foundation","",5,5,5,4,4,3
+"817","7652502cc553499e8a2d6adef0266c54","G.MRC.CLALLAM",0,0,0,0,1,0,0,"Surfrider Foundation","",4,5,5,5,5,4
+"818","7652502cc553499e8a2d6adef0266c54","G.MRC.SJ",0,0,0,1,1,0,0,"Surfrider Foundation","",4,5,5,5,5,4
+"819","7652502cc553499e8a2d6adef0266c54","G.OTHER.1",1,1,1,1,1,1,1,"Surfrider Foundation","",NA,NA,NA,NA,NA,NA
+"820","7854337f9cbf430e99ab2dae47cc6f16","G.MRC.SJ",1,1,1,1,1,1,1,"SeaDoc Society","",5,5,3,4,3,3
+"821","7854337f9cbf430e99ab2dae47cc6f16","G.OTHER.1",0,0,0,1,0,0,0,"SeaDoc Society","",NA,NA,NA,NA,NA,NA
+"822","7854337f9cbf430e99ab2dae47cc6f16","G.OTHER.2",0,0,0,0,0,1,0,"SeaDoc Society","",4,3,3,4,3,3
+"823","78b926cd64424aea8cf22eaad80c04ac","G.ECB",1,1,1,0,1,0,0,"Northwest Straits Commission","",4,4,2,4,2,2
+"824","78b926cd64424aea8cf22eaad80c04ac","G.ECO.WHAT",1,0,0,0,0,0,0,"Northwest Straits Commission","",2,3,3,3,2,2
+"825","78b926cd64424aea8cf22eaad80c04ac","G.MRC.CLALLAM",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"826","78b926cd64424aea8cf22eaad80c04ac","G.MRC.ISLAND",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"827","78b926cd64424aea8cf22eaad80c04ac","G.MRC.JEFF",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"828","78b926cd64424aea8cf22eaad80c04ac","G.MRC.SJ",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"829","78b926cd64424aea8cf22eaad80c04ac","G.MRC.SKAGIT",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"830","78b926cd64424aea8cf22eaad80c04ac","G.MRC.SNOHO",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"831","78b926cd64424aea8cf22eaad80c04ac","G.MRC.WHAT",1,0,0,1,1,0,0,"Northwest Straits Commission","",4,5,3,4,2,2
+"832","78b926cd64424aea8cf22eaad80c04ac","G.OTHER.1",1,1,1,1,1,1,1,"Northwest Straits Commission","",NA,NA,NA,NA,NA,NA
+"833","78b926cd64424aea8cf22eaad80c04ac","G.OTHER.2",1,1,1,1,1,0,0,"Northwest Straits Commission","",-99,5,3,4,2,2
+"834","78b926cd64424aea8cf22eaad80c04ac","G.PSNERP",1,1,1,0,0,0,0,"Northwest Straits Commission","",4,3,3,4,2,2
+"835","7a57088b5b2441b1b60982aea6688763","G.ECO.HOOD",1,1,0,1,1,1,0,"Mason Conservation District","",4,5,3,2,1,2
+"836","7a57088b5b2441b1b60982aea6688763","G.ECO.MASON",1,1,0,1,1,1,0,"Mason Conservation District","",4,5,3,2,1,2
+"837","7a57088b5b2441b1b60982aea6688763","G.LIO.HOOD",1,1,1,1,1,1,1,"Mason Conservation District","",5,5,3,3,1,3
+"838","7a57088b5b2441b1b60982aea6688763","G.LIO.SOUTHSOUND",1,1,1,1,1,1,1,"Mason Conservation District","",5,5,3,3,1,2
+"839","7a57088b5b2441b1b60982aea6688763","G.LOC.HOOD",1,1,1,1,1,1,0,"Mason Conservation District","",5,5,3,3,1,4
+"840","7a57088b5b2441b1b60982aea6688763","G.LOC.SOUTH",1,1,1,1,1,1,0,"Mason Conservation District","",5,5,3,3,1,3
+"841","7a57088b5b2441b1b60982aea6688763","G.OTHER.1",1,1,1,1,1,1,1,"Mason Conservation District","",NA,NA,NA,NA,NA,NA
+"842","7a57088b5b2441b1b60982aea6688763","G.OTHER.2",1,1,0,1,1,1,0,"Mason Conservation District","",5,5,3,5,5,4
+"843","7a57088b5b2441b1b60982aea6688763","G.OTHER.3",1,1,1,1,1,1,1,"Mason Conservation District","",5,5,3,4,1,3
+"844","7a57088b5b2441b1b60982aea6688763","G.OTHER.4",1,1,0,1,1,1,0,"Mason Conservation District","",5,5,3,4,1,4
+"845","7a57088b5b2441b1b60982aea6688763","G.OTHER.5",1,1,0,1,1,1,0,"Mason Conservation District","",5,5,3,3,1,2
+"846","7a57088b5b2441b1b60982aea6688763","G.PSNERP",1,0,0,1,1,0,0,"Mason Conservation District","",4,5,3,4,1,5
+"847","7a57088b5b2441b1b60982aea6688763","G.SRC",0,1,1,0,1,0,0,"Mason Conservation District","",4,5,3,4,1,2
+"848","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.ECM.FRESH",1,1,0,1,1,1,0,"WDOE","",5,5,5,5,3,2
+"849","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.ECM.SALM",1,1,0,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"850","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.ECM.STORM",1,1,0,0,1,1,0,"WDOE","",5,5,5,5,5,5
+"851","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.OTHER.1",1,1,0,1,1,1,0,"WDOE","",NA,NA,NA,NA,NA,NA
+"852","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.OTHER.2",1,1,0,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"853","7a5e85bc36a44ffe9c95dd3e1b8f2750","G.SCIENCE",1,1,0,0,1,0,0,"WDOE","",3,3,2,1,1,1
+"854","7ab70a968c274afda8b1fba41024ff11","G.LOC.HOOD",1,0,0,0,0,0,0,"WDFW","",5,5,5,5,2,2
+"855","7ab70a968c274afda8b1fba41024ff11","G.LOC.NISQ",1,1,0,0,1,0,0,"WDFW","",5,5,5,5,2,2
+"856","7ab70a968c274afda8b1fba41024ff11","G.LOC.PUY",1,1,1,1,1,1,1,"WDFW","",5,5,5,5,2,2
+"857","7ab70a968c274afda8b1fba41024ff11","G.LOC.SOUTH",1,0,0,0,0,0,0,"WDFW","",5,5,5,5,2,2
+"858","7b0a7ba00de1484fb5e13cd1b0f00572","G.ECO.WHID",0,0,1,0,0,0,0,"Washington Sea Grant","",4,4,4,-77,-99,-99
+"859","7b0a7ba00de1484fb5e13cd1b0f00572","G.LIO.SJWATER",0,0,1,0,0,0,0,"Washington Sea Grant","",4,4,4,-77,-99,-99
+"860","7b0a7ba00de1484fb5e13cd1b0f00572","G.MRC.ISLAND",0,1,0,0,0,0,0,"Washington Sea Grant","",4,4,4,-77,-99,-99
+"861","7b0a7ba00de1484fb5e13cd1b0f00572","G.MRC.SJ",0,0,1,0,0,0,0,"Washington Sea Grant","",4,4,4,-77,-99,-99
+"862","7b0a7ba00de1484fb5e13cd1b0f00572","G.OTHER.1",1,1,0,1,1,1,1,"Washington Sea Grant","",NA,NA,NA,NA,NA,NA
+"863","7b0a7ba00de1484fb5e13cd1b0f00572","G.OTHER.2",1,1,1,1,1,1,1,"Washington Sea Grant","",5,5,5,5,5,4
+"864","7b0a7ba00de1484fb5e13cd1b0f00572","G.OTHER.3",1,1,1,1,1,1,1,"Washington Sea Grant","",5,5,5,5,5,4
+"865","7b2234113f0c4560acee76067435543a","G.ECO.PIERCE",1,1,0,1,0,0,0,"City of Puyallup","",5,5,5,5,5,5
+"866","7b2234113f0c4560acee76067435543a","G.LOC.PUY",1,1,0,1,0,0,0,"City of Puyallup","",5,5,5,5,5,5
+"867","7b2234113f0c4560acee76067435543a","G.OTHER.1",1,1,1,1,1,0,0,"City of Puyallup","",NA,NA,NA,NA,NA,NA
+"868","7b2234113f0c4560acee76067435543a","G.SRC",1,1,0,1,0,0,0,"City of Puyallup","",5,5,5,5,5,5
+"869","7b4b8e47af714bca86a5323d0cb8c33f","G.ECO.SNOHO",1,1,1,1,1,0,0,"Island County","",5,5,4,4,-77,4
+"870","7b4b8e47af714bca86a5323d0cb8c33f","G.ECO.WHID",1,1,1,1,1,1,1,"Island County","",5,5,4,4,-77,4
+"871","7b4b8e47af714bca86a5323d0cb8c33f","G.LIO.ISLANDWATER",1,1,0,1,1,1,1,"Island County","",5,4,4,4,-77,5
+"872","7b4b8e47af714bca86a5323d0cb8c33f","G.LOC.ISLAND",1,1,0,0,0,0,1,"Island County","",-99,-99,-99,-99,-77,-77
+"873","7b4b8e47af714bca86a5323d0cb8c33f","G.LOC.SNOHO",1,0,0,1,0,0,1,"Island County","",-99,-99,-99,-99,-77,-77
+"874","7b4b8e47af714bca86a5323d0cb8c33f","G.LOC.STILL",0,0,0,0,1,0,1,"Island County","",1,22,1,-99,NA,-99
+"875","7b4b8e47af714bca86a5323d0cb8c33f","G.MRC.ISLAND",1,1,1,1,1,0,1,"Island County","",5,5,5,5,-77,4
+"876","7b4b8e47af714bca86a5323d0cb8c33f","G.MRC.SNOHO",1,1,1,0,1,0,1,"Island County","",5,5,5,5,-77,4
+"877","7b4b8e47af714bca86a5323d0cb8c33f","G.OTHER.1",1,0,0,1,1,0,1,"Island County","",NA,NA,NA,NA,NA,NA
+"878","7b4b8e47af714bca86a5323d0cb8c33f","G.OTHER.2",1,1,0,1,1,1,1,"Island County","",4,5,4,4,-77,4
+"879","7b4b8e47af714bca86a5323d0cb8c33f","G.OTHER.3",0,0,1,1,1,1,1,"Island County","",5,5,5,5,-77,-99
+"880","7b4b8e47af714bca86a5323d0cb8c33f","G.OTHER.4",0,0,1,1,1,1,1,"Island County","",4,5,4,4,-77,-77
+"881","7bdaca8b10694e4aab20b15f0f11bef4","G.LOC.NISQ",1,1,0,1,1,1,0,"WDFW","",4,4,4,4,3,4
+"882","7bdaca8b10694e4aab20b15f0f11bef4","G.LOC.PUY",1,1,0,1,1,1,0,"WDFW","",4,4,4,4,3,4
+"883","7bdaca8b10694e4aab20b15f0f11bef4","G.LOC.SOUTH",1,1,0,0,0,0,0,"WDFW","",4,4,4,4,3,4
+"884","7bdaca8b10694e4aab20b15f0f11bef4","G.LOC.WEST",1,1,0,0,0,0,0,"WDFW","",4,4,4,4,3,4
+"885","7c5079f90fec444e82439b62b147f656","G.OTHER.1",1,1,1,1,1,1,1,"UW","",NA,NA,NA,NA,NA,NA
+"886","7c5079f90fec444e82439b62b147f656","G.SCIENCE",0,1,0,0,1,1,0,"UW","",3,5,4,5,2,4
+"887","7c5079f90fec444e82439b62b147f656","G.SOCSCI",1,1,1,1,1,1,0,"UW","",4,5,4,5,2,3
+"888","7c8c4dec2ffe49368c9304669397bd70","G.LOC.SJ",1,1,1,0,1,0,0,"WRIA 2 TAG","",-99,-99,-99,-99,-99,-99
+"889","7c8c4dec2ffe49368c9304669397bd70","G.OTHER.1",1,1,0,0,1,1,0,"WRIA 2 TAG","",NA,NA,NA,NA,NA,NA
+"890","7c8c4dec2ffe49368c9304669397bd70","G.OTHER.2",1,1,1,0,1,0,0,"WRIA 2 TAG","",2,4,4,5,-99,-99
+"891","7c8c4dec2ffe49368c9304669397bd70","G.OTHER.3",1,1,1,1,1,0,0,"WRIA 2 TAG","",5,5,4,5,-99,-99
+"892","7c9fb67c714944eaa2dcc59718fc75f3","G.LIO.NOOKWATER",1,1,1,1,1,1,1,"Nooksack Tribe","Natural Resources",5,4,4,4,4,4
+"893","7c9fb67c714944eaa2dcc59718fc75f3","G.MRC.SJ",0,0,0,0,1,0,1,"Nooksack Tribe","Natural Resources",3,4,4,4,4,2
+"894","7c9fb67c714944eaa2dcc59718fc75f3","G.MRC.WHAT",0,1,1,1,1,0,1,"Nooksack Tribe","Natural Resources",4,4,4,4,4,4
+"895","7c9fb67c714944eaa2dcc59718fc75f3","G.OTHER.1",1,1,0,1,0,0,0,"Nooksack Tribe","Natural Resources",NA,NA,NA,NA,NA,NA
+"896","7c9fb67c714944eaa2dcc59718fc75f3","G.OTHER.2",1,1,1,1,1,1,1,"Nooksack Tribe","Natural Resources",4,4,4,4,4,3
+"897","7c9fb67c714944eaa2dcc59718fc75f3","G.OTHER.3",1,1,1,1,1,1,1,"Nooksack Tribe","Natural Resources",5,4,4,4,4,4
+"898","7c9fb67c714944eaa2dcc59718fc75f3","G.OTHER.4",1,1,1,1,1,1,1,"Nooksack Tribe","Natural Resources",5,4,4,4,4,3
+"899","7c9fb67c714944eaa2dcc59718fc75f3","G.OTHER.5",1,1,1,1,1,1,1,"Nooksack Tribe","Natural Resources",5,4,4,4,4,4
+"900","7c9fb67c714944eaa2dcc59718fc75f3","G.RITT",1,1,1,1,1,0,1,"Nooksack Tribe","Natural Resources",4,4,4,4,4,3
+"901","7d224d9afdd74301b5befff886feed02","G.ECO.THURST",0,0,0,0,1,0,0,"Nisqually River Council","",3,4,5,2,2,4
+"902","7d224d9afdd74301b5befff886feed02","G.LIO.SOUTHSOUND",1,1,1,1,1,1,1,"Nisqually River Council","",5,5,5,5,2,4
+"903","7d224d9afdd74301b5befff886feed02","G.LOC.NISQ",1,1,1,1,1,1,1,"Nisqually River Council","",5,5,5,5,2,5
+"904","7d224d9afdd74301b5befff886feed02","G.OTHER.1",1,1,1,1,1,1,1,"Nisqually River Council","",NA,NA,NA,NA,NA,NA
+"905","7d224d9afdd74301b5befff886feed02","G.OTHER.2",1,1,1,1,1,1,1,"Nisqually River Council","",5,5,5,5,2,5
+"906","7d224d9afdd74301b5befff886feed02","G.OTHER.3",0,0,0,1,0,0,0,"Nisqually River Council","",5,3,5,2,5,5
+"907","7d224d9afdd74301b5befff886feed02","G.SRC",0,0,0,0,1,0,0,"Nisqually River Council","",4,5,5,5,2,4
+"908","7d31bd9c8acb43f1847dc10844cdf024","G.ECO.HOOD",1,1,1,1,1,1,0,"WSUX","",5,5,4,4,4,5
+"909","7d31bd9c8acb43f1847dc10844cdf024","G.ECO.MASON",1,1,1,1,1,1,0,"WSUX","",5,5,4,4,4,5
+"910","7d31bd9c8acb43f1847dc10844cdf024","G.ECO.THURST",1,1,1,1,1,1,0,"WSUX","",5,5,4,4,4,5
+"911","7d31bd9c8acb43f1847dc10844cdf024","G.LIO.HOOD",1,0,0,0,0,0,0,"WSUX","",4,4,4,4,3,3
+"912","7d31bd9c8acb43f1847dc10844cdf024","G.LIO.SOUTHSOUND",1,1,1,1,1,1,0,"WSUX","",5,5,4,5,4,4
+"913","7d31bd9c8acb43f1847dc10844cdf024","G.OTHER.1",1,1,1,1,1,1,1,"WSUX","",NA,NA,NA,NA,NA,NA
+"914","7d31bd9c8acb43f1847dc10844cdf024","G.OTHER.2",1,1,0,0,0,0,0,"WSUX","",5,5,4,5,4,4
+"915","7d31bd9c8acb43f1847dc10844cdf024","G.OTHER.3",1,1,1,1,1,0,0,"WSUX","",5,5,4,5,4,3
+"916","7d31bd9c8acb43f1847dc10844cdf024","G.OTHER.4",1,1,1,1,1,1,0,"WSUX","",5,5,4,5,4,4
+"917","7d31bd9c8acb43f1847dc10844cdf024","G.OTHER.5",1,1,1,1,1,1,0,"WSUX","",5,5,4,4,4,4
+"918","7e9aad5856df4e62919cc4432a17d544","G.ECO.SJ",0,0,0,0,1,0,0,"San Juan MRC","",3,4,4,3,2,1
+"919","7e9aad5856df4e62919cc4432a17d544","G.LOC.SJ",1,1,1,1,1,1,1,"San Juan MRC","",4,4,3,4,2,1
+"920","7e9aad5856df4e62919cc4432a17d544","G.MRC.SJ",1,1,1,1,1,1,1,"San Juan MRC","",4,4,4,5,2,1
+"921","7e9aad5856df4e62919cc4432a17d544","G.OTHER.1",0,0,0,0,0,1,0,"San Juan MRC","",NA,NA,NA,NA,NA,NA
+"922","7ec7ecbd23b94bb1a1d007f1f2b30b53","G.ECO.WHAT",1,0,1,1,0,0,1,"Nooksack Salmon Enhancement Association","",-99,-99,-99,-99,2,2
+"923","7ec7ecbd23b94bb1a1d007f1f2b30b53","G.LOC.NOOK",1,1,1,1,1,1,1,"Nooksack Salmon Enhancement Association","",1,13,1,5,NA,5
+"924","7ec7ecbd23b94bb1a1d007f1f2b30b53","G.OTHER.1",1,1,1,1,1,1,1,"Nooksack Salmon Enhancement Association","",NA,NA,NA,NA,NA,NA
+"925","7ec7ecbd23b94bb1a1d007f1f2b30b53","G.RITT",0,0,0,0,1,0,0,"Nooksack Salmon Enhancement Association","",-99,-99,-99,-99,2,-99
+"926","7f05df094e024dc39b64942eaa618351","G.ECO.STRAIT",1,1,1,1,1,1,1,"City of Port Angeles","",4,4,4,5,2,2
+"927","7f05df094e024dc39b64942eaa618351","G.MRC.CLALLAM",1,1,1,1,1,1,1,"City of Port Angeles","",4,4,4,5,2,2
+"928","7f489020cd2a41ebbaa93761218b6c51","G.LIO.SJWATER",1,1,1,1,1,0,1,"San Juan County","",5,5,5,5,4,4
+"929","7f489020cd2a41ebbaa93761218b6c51","G.OTHER.1",1,1,1,1,1,1,1,"San Juan County","",NA,NA,NA,NA,NA,NA
+"930","7f489020cd2a41ebbaa93761218b6c51","G.OTHER.2",1,1,0,1,1,0,1,"San Juan County","",5,5,5,5,5,4
+"931","7f634f4a0a9c42a7af708afa0598b9a1","G.ECO.KITSAP",1,0,0,1,1,0,0,"City of Bremerton","",4,5,5,4,4,4
+"932","7f634f4a0a9c42a7af708afa0598b9a1","G.LOC.WEST",1,1,0,1,1,0,0,"City of Bremerton","",4,5,5,5,3,4
+"933","7f634f4a0a9c42a7af708afa0598b9a1","G.OTHER.1",1,1,1,1,1,0,0,"City of Bremerton","",NA,NA,NA,NA,NA,NA
+"934","7f634f4a0a9c42a7af708afa0598b9a1","G.OTHER.2",1,1,0,0,1,0,0,"City of Bremerton","",5,5,5,5,5,4
+"935","7f634f4a0a9c42a7af708afa0598b9a1","G.OTHER.3",1,1,0,1,1,0,0,"City of Bremerton","",4,5,5,4,2,2
+"936","800cc3d5fab04d57a5c0688ef0cdb081","G.ECB",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,1,1
+"937","800cc3d5fab04d57a5c0688ef0cdb081","G.LC",0,1,0,0,0,0,0,"Pierce County","Surface Water Management",3,2,2,2,1,1
+"938","800cc3d5fab04d57a5c0688ef0cdb081","G.LIO.NORTHCENTRAL",1,0,0,0,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,1
+"939","800cc3d5fab04d57a5c0688ef0cdb081","G.LIO.SOUTHCENTRAL",1,0,0,0,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,3
+"940","800cc3d5fab04d57a5c0688ef0cdb081","G.LIO.SOUTHSOUND",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,1
+"941","800cc3d5fab04d57a5c0688ef0cdb081","G.LOC.GREEN",1,0,0,0,0,0,0,"Pierce County","Surface Water Management",3,2,2,2,3,2
+"942","800cc3d5fab04d57a5c0688ef0cdb081","G.LOC.PUY",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,4
+"943","800cc3d5fab04d57a5c0688ef0cdb081","G.LOC.SOUTH",0,1,0,0,0,0,0,"Pierce County","Surface Water Management",3,2,2,2,1,1
+"944","800cc3d5fab04d57a5c0688ef0cdb081","G.LOC.WEST",1,0,0,0,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,4
+"945","800cc3d5fab04d57a5c0688ef0cdb081","G.OTHER.1",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"946","800cc3d5fab04d57a5c0688ef0cdb081","G.OTHER.2",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,1,3
+"947","800cc3d5fab04d57a5c0688ef0cdb081","G.OTHER.3",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,1,3
+"948","800cc3d5fab04d57a5c0688ef0cdb081","G.OTHER.4",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,1,3
+"949","800cc3d5fab04d57a5c0688ef0cdb081","G.OTHER.5",1,0,0,0,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,1,4
+"950","800cc3d5fab04d57a5c0688ef0cdb081","G.SRC",0,0,0,1,0,0,0,"Pierce County","Surface Water Management",1,2,2,2,3,3
+"951","81356f77b3644d7ea32006aa782609f9","G.ECO.SKAGIT",1,1,0,1,1,0,0,"Stillaguamish Clean Water District","",4,3,2,2,3,2
+"952","81356f77b3644d7ea32006aa782609f9","G.LOC.SKAGIT",0,0,0,0,0,0,1,"Stillaguamish Clean Water District","",3,3,2,3,3,3
+"953","81356f77b3644d7ea32006aa782609f9","G.LOC.STILL",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",1,7,1,5,NA,5
+"954","81356f77b3644d7ea32006aa782609f9","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,4,3,5,5,5
+"955","81356f77b3644d7ea32006aa782609f9","G.MRC.SNOHO",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,4,5,5,5
+"956","81356f77b3644d7ea32006aa782609f9","G.OTHER.1",0,1,1,1,1,1,1,"Stillaguamish Clean Water District","",NA,NA,NA,NA,NA,NA
+"957","81356f77b3644d7ea32006aa782609f9","G.OTHER.2",1,1,1,1,0,1,1,"Stillaguamish Clean Water District","",4,4,4,4,4,5
+"958","81356f77b3644d7ea32006aa782609f9","G.OTHER.3",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,5,5,5,3
+"959","81356f77b3644d7ea32006aa782609f9","G.OTHER.4",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,3,5,5,5
+"960","818ec546015e417dba021099ae0d2176","G.ECO.KING",0,1,1,0,0,0,0,"WRIA 8","",4,4,3,4,2,4
+"961","818ec546015e417dba021099ae0d2176","G.LIO.SOUTHCENTRAL",0,1,0,0,1,0,0,"WRIA 8","",4,4,4,5,2,4
+"962","818ec546015e417dba021099ae0d2176","G.LOC.CEDAR",1,1,1,1,1,1,1,"WRIA 8","",5,5,4,5,3,5
+"963","818ec546015e417dba021099ae0d2176","G.OTHER.1",1,1,0,1,1,1,0,"WRIA 8","",NA,NA,NA,NA,NA,NA
+"964","818ec546015e417dba021099ae0d2176","G.SRC",0,1,1,0,1,0,1,"WRIA 8","",5,5,4,5,3,5
+"965","818ec546015e417dba021099ae0d2176","G.WLEADS",0,1,1,1,1,0,1,"WRIA 8","",5,5,4,5,3,4
+"966","8243be9409dc4dc595bddabde835fcd1","G.ECO.KING",1,1,1,1,1,1,0,"Stewardship Partners","",4,5,5,4,3,5
+"967","8243be9409dc4dc595bddabde835fcd1","G.OTHER.1",1,1,1,1,1,1,1,"Stewardship Partners","",NA,NA,NA,NA,NA,NA
+"968","8243be9409dc4dc595bddabde835fcd1","G.OTHER.2",1,1,1,1,1,1,1,"Stewardship Partners","",5,5,5,4,4,4
+"969","831c19c8556643ceb46a3f78fb0c4eaa","G.LIO.SNOHOSTILL",1,1,0,0,0,0,1,"Snohomish MRC","",4,4,-99,4,5,3
+"970","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.CLALLAM",1,0,0,0,0,0,1,"Snohomish MRC","",3,4,-99,4,4,3
+"971","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.ISLAND",1,1,1,1,1,1,0,"Snohomish MRC","",4,4,4,4,4,4
+"972","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.JEFF",1,0,0,0,0,0,1,"Snohomish MRC","",3,4,-99,4,4,3
+"973","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.SJ",1,1,1,1,0,0,0,"Snohomish MRC","",4,4,-99,4,4,4
+"974","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.SKAGIT",1,0,0,0,0,0,0,"Snohomish MRC","",3,4,-99,4,4,3
+"975","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.SNOHO",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,5
+"976","831c19c8556643ceb46a3f78fb0c4eaa","G.MRC.WHAT",1,0,0,0,0,0,0,"Snohomish MRC","",3,4,-99,4,4,3
+"977","831c19c8556643ceb46a3f78fb0c4eaa","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish MRC","",NA,NA,NA,NA,NA,NA
+"978","831c19c8556643ceb46a3f78fb0c4eaa","G.OTHER.2",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,5
+"979","831c19c8556643ceb46a3f78fb0c4eaa","G.OTHER.3",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,5
+"980","8341b241481f41b083e9dba184feced3","G.ECO.SKAGIT",1,1,1,1,1,0,0,"Taylor Shellfish Farms","",4,5,4,3,4,3
+"981","8341b241481f41b083e9dba184feced3","G.ECO.WHAT",1,1,1,1,1,0,1,"Taylor Shellfish Farms","",4,5,4,4,4,3
+"982","8341b241481f41b083e9dba184feced3","G.OTHER.1",1,1,1,1,1,0,0,"Taylor Shellfish Farms","",NA,NA,NA,NA,NA,NA
+"983","8407439ce1084b8db34b749116b1c985","G.LOC.NISQ",1,1,0,1,1,0,0,"Nisqually Tribe","",5,5,4,4,2,3
+"984","8407439ce1084b8db34b749116b1c985","G.LOC.SOUTH",1,1,0,0,0,0,0,"Nisqually Tribe","",5,5,4,4,2,3
+"985","8462dc91c6b146f0952ec831ce9953b2","G.LOC.NISQ",1,1,0,1,1,0,0,"Nisqually Land Trust","",4,4,3,4,2,4
+"986","8608cd85d5de4df68c4982b92397a71a","G.ECO.PIERCE",1,1,1,1,1,0,1,"Citizens for a Healthy Bay","",3,3,2,5,2,1
+"987","8608cd85d5de4df68c4982b92397a71a","G.ENVIRO",1,1,1,1,1,1,1,"Citizens for a Healthy Bay","",5,4,2,5,2,1
+"988","8608cd85d5de4df68c4982b92397a71a","G.LIO.SOUTHCENTRAL",1,1,1,1,1,1,1,"Citizens for a Healthy Bay","",5,5,2,5,2,1
+"989","8608cd85d5de4df68c4982b92397a71a","G.LOC.PUY",1,1,1,1,1,1,1,"Citizens for a Healthy Bay","",3,4,2,5,2,1
+"990","860edaaa7e3b42efb1abb77320956142","G.ECB",1,1,0,1,0,0,0,"USACOE","",5,5,3,4,2,3
+"991","860edaaa7e3b42efb1abb77320956142","G.FED",1,1,0,1,1,1,0,"USACOE","",4,4,3,4,2,3
+"992","860edaaa7e3b42efb1abb77320956142","G.PSNERP",0,0,0,0,1,1,0,"USACOE","",3,3,3,4,2,3
+"993","86bc8bd13b004d7f88106805d0c5fdb3","G.ECO.KING",1,1,1,0,0,0,0,"City of Kirkland","",4,4,3,3,3,4
+"994","86bc8bd13b004d7f88106805d0c5fdb3","G.OTHER.1",1,1,0,1,0,0,0,"City of Kirkland","",NA,NA,NA,NA,NA,NA
+"995","86bc8bd13b004d7f88106805d0c5fdb3","G.OTHER.2",1,1,0,1,0,0,0,"City of Kirkland","",5,5,4,4,3,5
+"996","86dc5fdd8708426f949ceff3ef095c28","G.ECO.KING",0,1,0,0,0,0,1,"City of Bellevue","",3,4,3,3,2,3
+"997","86dc5fdd8708426f949ceff3ef095c28","G.OTHER.1",1,0,0,0,0,0,0,"City of Bellevue","",NA,NA,NA,NA,NA,NA
+"998","86dc5fdd8708426f949ceff3ef095c28","G.OTHER.2",0,1,1,1,0,0,1,"City of Bellevue","",3,3,3,3,2,3
+"999","86dc5fdd8708426f949ceff3ef095c28","G.OTHER.3",0,1,0,1,0,0,1,"City of Bellevue","",5,4,3,4,2,4
+"1000","8717b6aaa4b743419aead5642257f8b4","G.OTHER.1",1,1,1,1,1,1,1,"Feet First","",NA,NA,NA,NA,NA,NA
+"1001","8806d9190022455da245e09b3839210b","G.ECO.PIERCE",0,1,0,0,0,0,0,"City of Orting","",5,5,5,3,3,2
+"1002","8806d9190022455da245e09b3839210b","G.LOC.PUY",1,1,1,1,1,0,0,"City of Orting","",5,5,5,5,5,4
+"1003","8806d9190022455da245e09b3839210b","G.OTHER.1",1,1,1,1,1,1,0,"City of Orting","",NA,NA,NA,NA,NA,NA
+"1004","8806d9190022455da245e09b3839210b","G.OTHER.2",1,1,1,1,1,1,0,"City of Orting","",5,5,5,5,1,1
+"1005","8806d9190022455da245e09b3839210b","G.OTHER.3",1,1,0,1,1,1,0,"City of Orting","",5,5,5,5,5,5
+"1006","8806d9190022455da245e09b3839210b","G.OTHER.4",1,1,1,1,1,1,1,"City of Orting","",5,5,5,5,5,4
+"1007","8806d9190022455da245e09b3839210b","G.OTHER.5",1,1,1,1,1,1,1,"City of Orting","",5,5,5,5,4,5
+"1008","8806d9190022455da245e09b3839210b","G.SRC",1,1,1,1,1,1,0,"City of Orting","",5,5,5,5,5,5
+"1009","8806d9190022455da245e09b3839210b","G.WLEADS",1,1,1,1,1,0,0,"City of Orting","",5,5,5,5,5,4
+"1010","882323c8ac2044d2a161e0a41a70d6bd","G.LOC.ISLAND",0,1,0,0,1,0,0,"Stillaguamish Tribe","",-77,4,5,5,2,5
+"1011","882323c8ac2044d2a161e0a41a70d6bd","G.LOC.SNOHO",0,1,0,0,1,0,0,"Stillaguamish Tribe","",-77,4,5,5,2,5
+"1012","882323c8ac2044d2a161e0a41a70d6bd","G.LOC.STILL",0,1,0,0,1,0,0,"Stillaguamish Tribe","",1,21,1,-77,NA,4
+"1013","88ff62d64dc54cfe8f41307579b138e8","G.ECB",1,1,0,0,1,1,0,"Taylor Shellfish Farms","",5,5,4,5,3,3
+"1014","88ff62d64dc54cfe8f41307579b138e8","G.OTHER.1",1,1,1,1,1,0,0,"Taylor Shellfish Farms","",NA,NA,NA,NA,NA,NA
+"1015","88ff62d64dc54cfe8f41307579b138e8","G.OTHER.2",1,1,1,1,1,1,0,"Taylor Shellfish Farms","",5,5,4,3,3,3
+"1016","88ff62d64dc54cfe8f41307579b138e8","G.OTHER.3",1,1,1,1,1,1,1,"Taylor Shellfish Farms","",5,5,4,5,3,3
+"1017","88ff62d64dc54cfe8f41307579b138e8","G.OTHER.4",1,1,1,1,1,1,1,"Taylor Shellfish Farms","",5,5,5,5,5,3
+"1018","88ff62d64dc54cfe8f41307579b138e8","G.OTHER.5",1,1,0,0,1,0,0,"Taylor Shellfish Farms","",5,5,5,5,3,4
+"1019","893e4d292260425eb69f8a85e6174864","G.ECO.KING",0,1,1,0,1,0,0,"Seattle Aquarium","",5,5,4,5,3,3
+"1020","893e4d292260425eb69f8a85e6174864","G.LOC.CEDAR",0,0,0,1,0,0,0,"Seattle Aquarium","",5,4,4,4,3,2
+"1021","893e4d292260425eb69f8a85e6174864","G.LOC.GREEN",0,0,0,1,0,0,0,"Seattle Aquarium","",3,3,4,4,3,2
+"1022","893e4d292260425eb69f8a85e6174864","G.LOC.SOUTH",0,0,0,0,0,0,1,"Seattle Aquarium","",4,4,4,5,3,2
+"1023","893e4d292260425eb69f8a85e6174864","G.OTHER.1",0,1,0,0,1,0,0,"Seattle Aquarium","",NA,NA,NA,NA,NA,NA
+"1024","893e4d292260425eb69f8a85e6174864","G.OTHER.2",1,0,0,1,0,0,0,"Seattle Aquarium","",5,5,4,5,3,2
+"1025","8a0e8a0542394d29b318bd717d9986f1","G.LOC.HOOD",1,1,0,0,1,0,0,"UW","",5,5,4,4,3,4
+"1026","8a0e8a0542394d29b318bd717d9986f1","G.OTHER.1",1,1,0,1,1,0,0,"UW","",NA,NA,NA,NA,NA,NA
+"1027","8a7e93b0c1c94833b3f3aa56b23380e4","G.ECO.STRAIT",1,0,0,0,0,0,0,"WSUX Clallam","",4,3,4,4,2,1
+"1028","8a7e93b0c1c94833b3f3aa56b23380e4","G.LIO.STRAIT",1,0,0,0,0,0,0,"WSUX Clallam","",5,4,4,4,2,1
+"1029","8a7e93b0c1c94833b3f3aa56b23380e4","G.MRC.CLALLAM",1,0,0,0,0,0,0,"WSUX Clallam","",5,4,4,4,2,1
+"1030","8a7e93b0c1c94833b3f3aa56b23380e4","G.OTHER.1",1,0,0,0,0,0,0,"WSUX Clallam","",NA,NA,NA,NA,NA,NA
+"1031","8acb035f43164b9baf62e428ea6c018a","G.LOC.CEDAR",1,1,1,1,1,1,1,"WRIA 8","",5,5,5,5,5,5
+"1032","8ae6449fbe1f47149f3e0b6555f23c94","G.OTHER.1",1,1,0,0,1,0,1,"Long Live the Kings","",NA,NA,NA,NA,NA,NA
+"1033","8bf02573fb3e48b7bcd3edab2656f2f6","G.LIO.SOUTHCENTRAL",1,1,0,1,1,0,0,"Environmental Coaliton of South Seattle","",4,4,5,3,1,2
+"1034","8bf02573fb3e48b7bcd3edab2656f2f6","G.LOC.CEDAR",0,1,0,0,0,0,0,"Environmental Coaliton of South Seattle","",3,3,5,4,1,3
+"1035","8bf02573fb3e48b7bcd3edab2656f2f6","G.LOC.GREEN",1,1,1,1,1,0,0,"Environmental Coaliton of South Seattle","",4,4,5,4,1,4
+"1036","8bf02573fb3e48b7bcd3edab2656f2f6","G.OTHER.2",1,1,1,1,1,1,1,"Environmental Coaliton of South Seattle","",NA,NA,NA,NA,NA,NA
+"1037","8bf02573fb3e48b7bcd3edab2656f2f6","G.OTHER.3",1,1,1,1,1,1,1,"Environmental Coaliton of South Seattle","",5,5,5,5,2,5
+"1038","8bf02573fb3e48b7bcd3edab2656f2f6","G.OTHER.4",1,1,1,1,1,1,1,"Environmental Coaliton of South Seattle","",5,4,5,4,1,4
+"1039","8bf02573fb3e48b7bcd3edab2656f2f6","G.OTHER.5",1,1,1,0,1,0,0,"Environmental Coaliton of South Seattle","",5,4,5,4,1,2
+"1040","8bf02573fb3e48b7bcd3edab2656f2f6","G.PSNERP",1,1,0,1,1,0,0,"Environmental Coaliton of South Seattle","",2,4,5,4,1,4
+"1041","8bf02573fb3e48b7bcd3edab2656f2f6","G.RITT",1,1,0,1,1,0,0,"Environmental Coaliton of South Seattle","",2,4,5,3,1,2
+"1042","8c4bc87e5eab487890174aa0038211ad","G.ECO.SKAGIT",1,1,1,1,1,0,0,"Padilla Bay National Estuarine Research Reserve","",5,4,5,4,3,4
+"1043","8c4bc87e5eab487890174aa0038211ad","G.LOC.NOOK",0,0,1,1,0,0,0,"Padilla Bay National Estuarine Research Reserve","",1,9,1,3,NA,3
+"1044","8c4bc87e5eab487890174aa0038211ad","G.LOC.SKAGIT",0,0,1,1,0,0,0,"Padilla Bay National Estuarine Research Reserve","",4,3,4,4,5,2
+"1045","8c4bc87e5eab487890174aa0038211ad","G.MRC.SKAGIT",0,0,1,1,0,0,0,"Padilla Bay National Estuarine Research Reserve","",4,3,4,5,3,2
+"1046","8cee0406d86744df85695fb2c7275e93","G.ECO.PIERCE",1,1,1,1,1,1,1,"Pierce County","Surface Water Management",5,5,3,4,2,4
+"1047","8cee0406d86744df85695fb2c7275e93","G.LOC.PUY",1,1,1,1,1,0,0,"Pierce County","Surface Water Management",4,4,3,3,2,3
+"1048","8cee0406d86744df85695fb2c7275e93","G.OTHER.1",1,1,1,1,1,1,1,"Pierce County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"1049","8d1bbef821c840b79b3d946842fbac6e","G.OTHER.1",0,1,0,1,1,0,0,"San Juan County","",NA,NA,NA,NA,NA,NA
+"1050","8e5b0b7eb13f45eeb8609cf4aa98d9f7","G.LOC.SKAGIT",1,1,1,1,1,1,1,"USFS","",5,5,4,5,2,5
+"1051","8e5b0b7eb13f45eeb8609cf4aa98d9f7","G.OTHER.1",1,1,1,1,1,1,1,"USFS","",NA,NA,NA,NA,NA,NA
+"1052","8e6b5e12a6314d90bfecc54c5153d27a","G.ECM.FOOD",1,0,0,0,0,0,0,"WSP","Deception Pass",4,5,4,4,3,3
+"1053","8e6b5e12a6314d90bfecc54c5153d27a","G.ECO.WHID",1,0,0,0,0,0,0,"WSP","Deception Pass",3,5,4,4,3,3
+"1054","8e6b5e12a6314d90bfecc54c5153d27a","G.LOC.SKAGIT",1,0,0,0,0,0,0,"WSP","Deception Pass",4,5,4,4,3,4
+"1055","8e6b5e12a6314d90bfecc54c5153d27a","G.MRC.ISLAND",1,0,0,1,0,0,0,"WSP","Deception Pass",4,5,4,4,3,4
+"1056","8e96843f10c54a74afcb3841a776ce94","G.ECO.PIERCE",1,1,1,1,1,1,1,"Pierce Conservation District","",5,5,5,4,3,4
+"1057","8f7217ec73be43c5955f4189bbce58f6","G.ECO.KING",0,0,0,0,1,0,0,"Sound Experience","",2,4,4,4,2,2
+"1058","8f7217ec73be43c5955f4189bbce58f6","G.ECO.THURST",0,0,0,0,1,0,0,"Sound Experience","",2,4,4,4,2,2
+"1059","8f7217ec73be43c5955f4189bbce58f6","G.LOC.NOLY",0,0,0,0,1,0,0,"Sound Experience","",2,3,4,3,2,2
+"1060","8f7217ec73be43c5955f4189bbce58f6","G.LOC.SJ",0,0,0,0,1,0,0,"Sound Experience","",2,3,4,3,2,2
+"1061","8f7217ec73be43c5955f4189bbce58f6","G.OTHER.1",0,0,0,1,0,0,0,"Sound Experience","",NA,NA,NA,NA,NA,NA
+"1062","900befdefe9f4fdc90879ba87df394e0","G.LOC.SJ",1,1,1,1,1,1,1,"WDFW","",4,5,4,5,3,4
+"1063","900befdefe9f4fdc90879ba87df394e0","G.LOC.SKAGIT",1,1,1,1,1,1,1,"WDFW","",5,5,5,5,4,5
+"1064","900befdefe9f4fdc90879ba87df394e0","G.PSNERP",0,0,0,1,1,0,0,"WDFW","",4,3,4,5,2,4
+"1065","900befdefe9f4fdc90879ba87df394e0","G.SRC",0,1,0,0,0,0,0,"WDFW","",5,3,3,4,2,2
+"1066","900befdefe9f4fdc90879ba87df394e0","G.WLEADS",0,1,0,0,0,0,0,"WDFW","",5,4,3,3,2,2
+"1067","903e398938f04dc5a09447bad88da079","G.ECB",1,1,0,0,1,0,0,"PSP Leadership Council","",4,4,4,4,4,4
+"1068","903e398938f04dc5a09447bad88da079","G.ECO.SKAGIT",1,1,0,0,0,0,0,"PSP Leadership Council","",4,-99,4,4,4,-99
+"1069","903e398938f04dc5a09447bad88da079","G.LC",1,1,1,1,1,1,1,"PSP Leadership Council","",5,5,5,5,4,4
+"1070","903e398938f04dc5a09447bad88da079","G.SCIENCE",1,1,0,0,0,0,0,"PSP Leadership Council","",4,4,4,4,4,4
+"1071","903e398938f04dc5a09447bad88da079","G.SOCSCI",1,1,0,0,0,1,0,"PSP Leadership Council","",4,4,4,4,4,-99
+"1072","907d1eb0ef5848a5a305e7991ef2dde3","G.ECO.HOOD",1,1,1,1,1,0,0,"Kitsap County","Surface and Stormwater Management",4,4,2,3,3,2
+"1073","907d1eb0ef5848a5a305e7991ef2dde3","G.ECO.KITSAP",0,0,0,0,1,0,0,"Kitsap County","Surface and Stormwater Management",2,2,2,3,3,4
+"1074","907d1eb0ef5848a5a305e7991ef2dde3","G.LIO.NORTHCENTRAL",0,1,1,1,1,0,0,"Kitsap County","Surface and Stormwater Management",3,3,2,4,3,3
+"1075","907d1eb0ef5848a5a305e7991ef2dde3","G.LOC.WEST",0,1,0,0,1,0,0,"Kitsap County","Surface and Stormwater Management",3,3,3,4,2,3
+"1076","907d1eb0ef5848a5a305e7991ef2dde3","G.OTHER.1",1,1,1,1,1,1,1,"Kitsap County","Surface and Stormwater Management",NA,NA,NA,NA,NA,NA
+"1077","907d1eb0ef5848a5a305e7991ef2dde3","G.OTHER.2",1,1,0,1,1,0,0,"Kitsap County","Surface and Stormwater Management",5,5,4,5,2,4
+"1078","907d1eb0ef5848a5a305e7991ef2dde3","G.OTHER.3",1,1,0,0,0,0,0,"Kitsap County","Surface and Stormwater Management",4,4,3,4,3,4
+"1079","907d1eb0ef5848a5a305e7991ef2dde3","G.OTHER.4",1,1,0,0,0,0,0,"Kitsap County","Surface and Stormwater Management",4,3,3,2,2,3
+"1080","907d1eb0ef5848a5a305e7991ef2dde3","G.OTHER.5",1,1,0,1,1,1,0,"Kitsap County","Surface and Stormwater Management",3,3,3,3,2,3
+"1081","907d1eb0ef5848a5a305e7991ef2dde3","G.PSEMP",0,1,0,0,1,0,0,"Kitsap County","Surface and Stormwater Management",2,5,1,2,1,1
+"1082","91f3147c752c45c3b1e1c48f8a124f66","G.ECB",0,1,0,0,0,0,0,"US Navy","",4,4,-99,4,2,1
+"1083","91f3147c752c45c3b1e1c48f8a124f66","G.ECM.MARINE",0,1,0,1,1,0,0,"US Navy","",4,4,-99,4,2,2
+"1084","91f3147c752c45c3b1e1c48f8a124f66","G.ECM.MODEL",0,1,0,1,1,0,0,"US Navy","",4,4,-99,4,2,2
+"1085","91f3147c752c45c3b1e1c48f8a124f66","G.ECM.TOXIC",0,1,0,1,1,1,0,"US Navy","",4,4,-99,4,2,2
+"1086","91f3147c752c45c3b1e1c48f8a124f66","G.LC",0,1,0,1,0,0,0,"US Navy","",4,4,-99,4,2,1
+"1087","91f3147c752c45c3b1e1c48f8a124f66","G.LIO.NORTHCENTRAL",0,0,0,1,0,0,0,"US Navy","",4,4,-99,4,3,3
+"1088","91f3147c752c45c3b1e1c48f8a124f66","G.MRC.SNOHO",0,0,0,1,0,0,0,"US Navy","",3,4,-99,4,3,3
+"1089","91f3147c752c45c3b1e1c48f8a124f66","G.OTHER.1",1,1,1,1,1,1,1,"US Navy","",NA,NA,NA,NA,NA,NA
+"1090","91f3147c752c45c3b1e1c48f8a124f66","G.OTHER.2",1,1,1,1,1,1,1,"US Navy","",5,5,-99,5,5,5
+"1091","91f3147c752c45c3b1e1c48f8a124f66","G.OTHER.3",1,1,0,1,1,1,0,"US Navy","",5,5,-99,5,5,4
+"1092","91f3147c752c45c3b1e1c48f8a124f66","G.OTHER.4",0,1,0,0,0,0,1,"US Navy","",4,4,-99,4,3,3
+"1093","91f3147c752c45c3b1e1c48f8a124f66","G.OTHER.5",0,1,0,0,0,0,1,"US Navy","",3,3,-99,4,3,3
+"1094","91f3147c752c45c3b1e1c48f8a124f66","G.PSEMP",1,1,1,1,1,1,1,"US Navy","",5,5,-99,5,2,1
+"1095","91f3147c752c45c3b1e1c48f8a124f66","G.PSI",0,1,0,1,1,0,0,"US Navy","",3,3,-99,3,1,1
+"1096","91f3147c752c45c3b1e1c48f8a124f66","G.SCIENCE",1,1,1,1,1,1,1,"US Navy","",5,5,-99,5,1,1
+"1097","926ffdd05fc1490f8ae9a277cd698305","G.ECO.THURST",1,1,1,1,0,0,0,"Thurston County","",1,1,4,4,-77,1
+"1098","926ffdd05fc1490f8ae9a277cd698305","G.OTHER.1",1,1,1,1,1,1,1,"Thurston County","",NA,NA,NA,NA,NA,NA
+"1099","926ffdd05fc1490f8ae9a277cd698305","G.OTHER.2",1,1,1,1,0,0,1,"Thurston County","",1,1,4,1,4,4
+"1100","92e8318132544c858fbc8248c1ed1e46","G.ECO.THURST",1,1,0,1,1,0,0,"Nisqually River Foundation","",5,5,5,4,4,4
+"1101","92e8318132544c858fbc8248c1ed1e46","G.LOC.NISQ",1,1,1,1,1,1,1,"Nisqually River Foundation","",5,4,5,5,4,5
+"1102","939ad86e4c4e43b7840f9bd9c085311b","G.LOC.CEDAR",1,0,0,1,1,1,0,"King County","DNR",4,5,5,4,2,4
+"1103","939ad86e4c4e43b7840f9bd9c085311b","G.LOC.GREEN",1,1,1,1,1,1,1,"King County","DNR",5,5,5,5,2,5
+"1104","939ad86e4c4e43b7840f9bd9c085311b","G.LOC.SNOHO",1,1,1,1,1,1,1,"King County","DNR",5,5,5,5,2,5
+"1105","939ad86e4c4e43b7840f9bd9c085311b","G.MRC.SNOHO",1,0,0,0,0,0,0,"King County","DNR",5,4,4,4,2,4
+"1106","939ad86e4c4e43b7840f9bd9c085311b","G.PSNERP",0,1,1,1,0,0,0,"King County","DNR",5,5,5,5,2,4
+"1107","939ad86e4c4e43b7840f9bd9c085311b","G.RITT",0,1,0,0,0,0,0,"King County","DNR",4,4,5,4,2,2
+"1108","94e2ce97f60a4710ad119f3c0d962352","G.LIO.HOOD",0,1,0,0,1,0,0,"Jefferson County","",2,2,-99,4,-99,3
+"1109","94e2ce97f60a4710ad119f3c0d962352","G.LIO.STRAIT",1,1,0,0,1,0,0,"Jefferson County","",4,4,-99,4,-99,5
+"1110","94e2ce97f60a4710ad119f3c0d962352","G.LOC.HOOD",0,1,0,0,1,0,0,"Jefferson County","",3,3,-99,4,-99,2
+"1111","94e2ce97f60a4710ad119f3c0d962352","G.LOC.NOLY",1,1,0,1,1,1,1,"Jefferson County","",5,5,-99,4,-99,2
+"1112","94f4389f76a148789adcebd6f59ea471","G.ECO.WHID",1,1,0,0,1,0,0,"Island Salmon Recovery Lead Entity","",-77,3,-77,2,-77,-77
+"1113","94f4389f76a148789adcebd6f59ea471","G.LIO.ISLANDWATER",1,1,1,1,1,1,0,"Island Salmon Recovery Lead Entity","",-77,5,-77,4,-77,-77
+"1114","94f4389f76a148789adcebd6f59ea471","G.LOC.ISLAND",1,1,1,1,1,1,1,"Island Salmon Recovery Lead Entity","",-77,5,-77,3,-77,-77
+"1115","94f4389f76a148789adcebd6f59ea471","G.MRC.ISLAND",0,1,0,0,1,0,1,"Island Salmon Recovery Lead Entity","",-77,5,-77,5,-77,-77
+"1116","94f4389f76a148789adcebd6f59ea471","G.SRC",0,1,0,0,1,0,1,"Island Salmon Recovery Lead Entity","",-77,5,-77,4,-77,4
+"1117","94f4389f76a148789adcebd6f59ea471","G.WLEADS",1,1,0,0,1,0,0,"Island Salmon Recovery Lead Entity","",-77,5,-77,5,-77,-77
+"1118","95788804aa2e4b148f3882eb18d425c3","G.LIO.HOOD",1,1,0,1,1,0,0,"Point No Point Treaty Council","",4,4,3,4,3,4
+"1119","95788804aa2e4b148f3882eb18d425c3","G.LIO.STRAIT",1,1,0,1,1,0,0,"Point No Point Treaty Council","",4,4,3,4,3,4
+"1120","95788804aa2e4b148f3882eb18d425c3","G.LOC.HOOD",1,1,0,1,1,1,0,"Point No Point Treaty Council","",4,4,3,4,3,4
+"1121","95788804aa2e4b148f3882eb18d425c3","G.LOC.NOLY",1,1,0,1,1,0,0,"Point No Point Treaty Council","",4,4,3,4,3,4
+"1122","95788804aa2e4b148f3882eb18d425c3","G.OTHER.1",1,1,0,1,1,1,0,"Point No Point Treaty Council","",NA,NA,NA,NA,NA,NA
+"1123","95788804aa2e4b148f3882eb18d425c3","G.RITT",0,0,0,0,1,0,0,"Point No Point Treaty Council","",4,3,3,4,3,3
+"1124","95788804aa2e4b148f3882eb18d425c3","G.SRC",1,1,0,1,1,0,0,"Point No Point Treaty Council","",4,4,4,4,3,4
+"1125","959c7834bb2d4d60889449b8ab480a8e","G.LIO.NOOKWATER",0,1,0,0,1,0,0,"Lummi Tribe","Natural Resources Department",4,4,4,4,3,3
+"1126","959c7834bb2d4d60889449b8ab480a8e","G.LOC.NOOK",1,1,0,1,1,0,0,"Lummi Tribe","Natural Resources Department",3,4,5,4,4,4
+"1127","959c7834bb2d4d60889449b8ab480a8e","G.OTHER.1",1,1,1,1,1,1,0,"Lummi Tribe","Natural Resources Department",NA,NA,NA,NA,NA,NA
+"1128","963621c845d148f08a1ba06d2f55d58d","G.ECM.STORM",1,1,1,1,1,1,0,"Puget Soundkeeper Alliance ","",5,5,4,5,2,2
+"1129","963621c845d148f08a1ba06d2f55d58d","G.ENVIRO",1,1,1,1,1,0,0,"Puget Soundkeeper Alliance ","",5,5,3,4,2,2
+"1130","963621c845d148f08a1ba06d2f55d58d","G.OTHER.1",1,1,1,1,1,1,1,"Puget Soundkeeper Alliance ","",NA,NA,NA,NA,NA,NA
+"1131","963621c845d148f08a1ba06d2f55d58d","G.OTHER.2",1,1,0,0,1,0,0,"Puget Soundkeeper Alliance ","",5,5,4,5,3,3
+"1132","96ea6c64ecf64967aab4450244023410","G.ECB",1,0,1,0,0,0,0,"Hood Canal Salmon Enhancement","",4,4,3,4,3,3
+"1133","96ea6c64ecf64967aab4450244023410","G.ECO.HOOD",1,1,1,1,1,1,0,"Hood Canal Salmon Enhancement","",4,4,3,4,4,4
+"1134","96ea6c64ecf64967aab4450244023410","G.ECO.MASON",1,1,1,1,1,1,0,"Hood Canal Salmon Enhancement","",4,4,3,4,4,4
+"1135","96ea6c64ecf64967aab4450244023410","G.LIO.HOOD",1,0,0,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1136","96ea6c64ecf64967aab4450244023410","G.LIO.NORTHCENTRAL",1,0,0,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1137","96ea6c64ecf64967aab4450244023410","G.LIO.SOUTHSOUND",1,0,0,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1138","96ea6c64ecf64967aab4450244023410","G.LOC.HOOD",1,1,0,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,4,4
+"1139","96ea6c64ecf64967aab4450244023410","G.LOC.NOLY",1,0,0,1,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1140","96ea6c64ecf64967aab4450244023410","G.LOC.SOUTH",1,0,1,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1141","96ea6c64ecf64967aab4450244023410","G.LOC.WEST",1,0,1,0,0,0,0,"Hood Canal Salmon Enhancement","",3,4,3,4,3,3
+"1142","96ea6c64ecf64967aab4450244023410","G.OTHER.1",1,1,1,1,1,1,0,"Hood Canal Salmon Enhancement","",NA,NA,NA,NA,NA,NA
+"1143","96ea6c64ecf64967aab4450244023410","G.OTHER.2",1,1,0,0,0,0,0,"Hood Canal Salmon Enhancement","",4,4,3,4,4,4
+"1144","96ea6c64ecf64967aab4450244023410","G.OTHER.3",1,1,1,1,1,1,0,"Hood Canal Salmon Enhancement","",4,4,3,4,3,4
+"1145","978d3a43c23345208e6a26e424c422a0","G.LOC.ISLAND",1,1,0,1,0,0,0,"Skagit Fisheries Enhancement","",4,5,4,4,4,5
+"1146","978d3a43c23345208e6a26e424c422a0","G.LOC.SJ",1,0,0,1,0,0,0,"Skagit Fisheries Enhancement","",4,5,4,4,4,5
+"1147","978d3a43c23345208e6a26e424c422a0","G.LOC.SKAGIT",1,1,1,1,1,1,1,"Skagit Fisheries Enhancement","",5,5,4,-99,-99,5
+"1148","978d3a43c23345208e6a26e424c422a0","G.OTHER.1",1,1,1,1,1,1,1,"Skagit Fisheries Enhancement","",NA,NA,NA,NA,NA,NA
+"1149","978d3a43c23345208e6a26e424c422a0","G.OTHER.2",1,1,1,1,1,1,1,"Skagit Fisheries Enhancement","",5,5,5,5,-99,-99
+"1150","978d3a43c23345208e6a26e424c422a0","G.OTHER.3",1,1,1,1,1,1,1,"Skagit Fisheries Enhancement","",5,5,5,5,4,5
+"1151","97e0d5de607d4bf8b4ca5e9131d2417a","G.ECO.SJ",1,1,1,1,1,1,0,"WRIA 2","",4,5,5,5,4,3
+"1152","97e0d5de607d4bf8b4ca5e9131d2417a","G.LIO.SJWATER",1,1,1,1,1,1,0,"WRIA 2","",5,5,5,5,5,5
+"1153","97e0d5de607d4bf8b4ca5e9131d2417a","G.LOC.SJ",1,1,1,1,1,1,0,"WRIA 2","",5,5,5,5,5,5
+"1154","97e0d5de607d4bf8b4ca5e9131d2417a","G.MRC.SJ",1,1,1,1,1,1,0,"WRIA 2","",5,5,5,5,5,3
+"1155","97e0d5de607d4bf8b4ca5e9131d2417a","G.PSNERP",1,0,0,1,1,0,0,"WRIA 2","",4,5,5,5,4,4
+"1156","97e0d5de607d4bf8b4ca5e9131d2417a","G.RITT",0,0,0,1,1,0,0,"WRIA 2","",4,5,5,5,5,2
+"1157","97e0d5de607d4bf8b4ca5e9131d2417a","G.SRC",0,1,1,1,1,0,0,"WRIA 2","",5,5,5,5,4,5
+"1158","97e0d5de607d4bf8b4ca5e9131d2417a","G.WLEADS",1,1,1,1,1,1,0,"WRIA 2","",5,5,5,5,5,4
+"1159","9826ea46c05e43f0912b94c7a7bab2b2","G.ECO.PIERCE",1,1,1,1,1,0,0,"Citizens for a Healthy Bay","",4,5,4,5,2,3
+"1160","9826ea46c05e43f0912b94c7a7bab2b2","G.LIO.SOUTHCENTRAL",1,1,0,0,1,0,1,"Citizens for a Healthy Bay","",4,5,4,5,2,3
+"1161","9826ea46c05e43f0912b94c7a7bab2b2","G.LIO.SOUTHSOUND",1,1,0,0,1,0,1,"Citizens for a Healthy Bay","",4,5,4,5,2,3
+"1162","9826ea46c05e43f0912b94c7a7bab2b2","G.OTHER.1",1,1,1,1,1,1,1,"Citizens for a Healthy Bay","",NA,NA,NA,NA,NA,NA
+"1163","9826ea46c05e43f0912b94c7a7bab2b2","G.OTHER.2",1,1,1,1,1,1,1,"Citizens for a Healthy Bay","",5,5,4,5,2,4
+"1164","99830c8841b248b88cec920429c2e5b1","G.LIO.SJWATER",1,1,0,1,0,0,0,"San Juan MRC","",5,5,5,5,3,2
+"1165","99830c8841b248b88cec920429c2e5b1","G.MRC.SJ",1,1,1,1,1,1,1,"San Juan MRC","",5,5,5,5,3,2
+"1166","99830c8841b248b88cec920429c2e5b1","G.OTHER.1",1,1,1,1,1,1,1,"San Juan MRC","",NA,NA,NA,NA,NA,NA
+"1167","99993c55759f4350b1b16dde374dc701","G.ECB",0,0,0,1,1,1,0,"WRIA 9","Watershed Ecosystem Forum",5,5,4,5,2,2
+"1168","99993c55759f4350b1b16dde374dc701","G.FED",0,0,0,0,1,0,0,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,3,2
+"1169","99993c55759f4350b1b16dde374dc701","G.LC",0,0,0,1,1,1,0,"WRIA 9","Watershed Ecosystem Forum",5,5,4,5,2,2
+"1170","99993c55759f4350b1b16dde374dc701","G.LIO.SOUTHCENTRAL",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,3,2
+"1171","99993c55759f4350b1b16dde374dc701","G.LOC.CEDAR",1,0,1,1,1,0,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,3
+"1172","99993c55759f4350b1b16dde374dc701","G.LOC.GREEN",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,5,5
+"1173","99993c55759f4350b1b16dde374dc701","G.LOC.HOOD",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1174","99993c55759f4350b1b16dde374dc701","G.LOC.ISLAND",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1175","99993c55759f4350b1b16dde374dc701","G.LOC.NISQ",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1176","99993c55759f4350b1b16dde374dc701","G.LOC.NOLY",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1177","99993c55759f4350b1b16dde374dc701","G.LOC.NOOK",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",1,7,1,4,NA,4
+"1178","99993c55759f4350b1b16dde374dc701","G.LOC.PUY",0,0,1,1,1,0,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,3
+"1179","99993c55759f4350b1b16dde374dc701","G.LOC.SJ",0,0,0,1,0,0,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,3
+"1180","99993c55759f4350b1b16dde374dc701","G.LOC.SKAGIT",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1181","99993c55759f4350b1b16dde374dc701","G.LOC.SNOHO",1,0,1,1,1,0,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,3
+"1182","99993c55759f4350b1b16dde374dc701","G.LOC.SOUTH",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1183","99993c55759f4350b1b16dde374dc701","G.LOC.STILL",0,0,0,0,0,0,1,"WRIA 9","Watershed Ecosystem Forum",1,8,1,4,NA,4
+"1184","99993c55759f4350b1b16dde374dc701","G.LOC.WEST",0,0,0,1,0,0,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,3
+"1185","99993c55759f4350b1b16dde374dc701","G.OTHER.1",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",NA,NA,NA,NA,NA,NA
+"1186","99993c55759f4350b1b16dde374dc701","G.OTHER.2",1,1,0,1,1,1,0,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,3,3
+"1187","99993c55759f4350b1b16dde374dc701","G.OTHER.3",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,3,3
+"1188","99993c55759f4350b1b16dde374dc701","G.OTHER.4",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,3,3
+"1189","99993c55759f4350b1b16dde374dc701","G.OTHER.5",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,3,3
+"1190","99993c55759f4350b1b16dde374dc701","G.PSNERP",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,4
+"1191","99993c55759f4350b1b16dde374dc701","G.RITT",0,0,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,4,3
+"1192","99993c55759f4350b1b16dde374dc701","G.SCIENCE",0,0,0,1,1,0,0,"WRIA 9","Watershed Ecosystem Forum",4,4,4,4,2,2
+"1193","99993c55759f4350b1b16dde374dc701","G.SRC",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,5,4
+"1194","99993c55759f4350b1b16dde374dc701","G.WLEADS",1,1,1,1,1,1,1,"WRIA 9","Watershed Ecosystem Forum",5,5,5,5,4,4
+"1195","9a2751b960aa4e7caf08cd07ca9e319e","G.ECO.KING",0,1,1,1,1,0,0,"King County","",3,4,4,5,3,3
+"1196","9a2751b960aa4e7caf08cd07ca9e319e","G.OTHER.1",1,0,0,0,0,0,0,"King County","",NA,NA,NA,NA,NA,NA
+"1197","9a2751b960aa4e7caf08cd07ca9e319e","G.OTHER.2",0,1,0,1,1,0,0,"King County","",3,4,4,4,3,3
+"1198","9a2751b960aa4e7caf08cd07ca9e319e","G.OTHER.3",1,1,0,1,1,0,0,"King County","",4,4,4,4,3,3
+"1199","9a2751b960aa4e7caf08cd07ca9e319e","G.OTHER.4",1,1,1,1,0,0,0,"King County","",4,4,4,4,3,3
+"1200","9a2751b960aa4e7caf08cd07ca9e319e","G.OTHER.5",1,1,0,1,1,1,1,"King County","",4,5,4,4,3,3
+"1201","9a3c634b7c1b409581a342856b9d151e","G.ECO.KITSAP",1,0,0,0,1,0,0,"Bainbridge Island Watershed Council","",2,4,2,2,2,2
+"1202","9a3c634b7c1b409581a342856b9d151e","G.WLEADS",0,1,0,0,1,0,0,"Bainbridge Island Watershed Council","",4,4,2,4,2,2
+"1203","9ab2ed8659e54ed8a64a3ffa8d353e5f","G.ENVIRO",1,1,0,0,1,0,1,"Washington Environmental Council","",4,5,5,5,3,4
+"1204","9ab2ed8659e54ed8a64a3ffa8d353e5f","G.LIO.STRAIT",1,1,0,0,0,0,1,"Washington Environmental Council","",4,5,4,5,3,3
+"1205","9ab2ed8659e54ed8a64a3ffa8d353e5f","G.OTHER.1",1,1,1,1,1,1,1,"Washington Environmental Council","",NA,NA,NA,NA,NA,NA
+"1206","9ab2ed8659e54ed8a64a3ffa8d353e5f","G.OTHER.2",1,0,0,0,0,0,0,"Washington Environmental Council","",5,5,5,5,3,4
+"1207","9b7da88b9fe84a7d8f88ee1c0719d766","G.MRC.WHAT",0,1,1,0,0,1,0,"Whatcom County","Public Works",3,5,5,5,3,3
+"1208","9c6a1d5f70e648b8a5428e430f23be23","G.ECO.THURST",1,1,1,0,0,0,0,"Nisqually Tribe","",4,4,5,2,4,4
+"1209","9c6a1d5f70e648b8a5428e430f23be23","G.LIO.SOUTHSOUND",1,1,0,0,0,0,0,"Nisqually Tribe","",3,4,3,4,2,3
+"1210","9c6a1d5f70e648b8a5428e430f23be23","G.LOC.NISQ",1,1,1,1,1,1,1,"Nisqually Tribe","",5,5,5,4,4,5
+"1211","9c6a1d5f70e648b8a5428e430f23be23","G.LOC.SOUTH",1,1,0,1,1,0,0,"Nisqually Tribe","",5,4,5,4,2,5
+"1212","9c6a1d5f70e648b8a5428e430f23be23","G.OTHER.1",1,1,0,1,1,1,0,"Nisqually Tribe","",NA,NA,NA,NA,NA,NA
+"1213","9c6a1d5f70e648b8a5428e430f23be23","G.OTHER.2",0,1,0,0,0,0,1,"Nisqually Tribe","",3,4,5,5,2,4
+"1214","9c6a1d5f70e648b8a5428e430f23be23","G.WLEADS",1,1,1,0,0,0,0,"Nisqually Tribe","",3,4,5,2,2,3
+"1215","9caa3905e24548d5939ca3084c31de90","G.ECO.WHID",1,0,0,0,0,0,0,"Whidbey Conservation District","",3,3,3,3,2,3
+"1216","9caa3905e24548d5939ca3084c31de90","G.LIO.ISLANDWATER",1,1,0,1,1,0,0,"Whidbey Conservation District","",4,4,3,4,2,2
+"1217","9caa3905e24548d5939ca3084c31de90","G.LOC.ISLAND",1,1,0,1,1,0,0,"Whidbey Conservation District","",4,4,3,4,2,2
+"1218","9d38c99e84284b68b599009073098a36","G.LIO.SOUTHCENTRAL",1,1,1,1,1,0,0,"Pierce County","",5,5,4,4,2,3
+"1219","9d38c99e84284b68b599009073098a36","G.LIO.SOUTHSOUND",1,1,1,1,1,1,1,"Pierce County","",5,5,4,4,2,3
+"1220","9d38c99e84284b68b599009073098a36","G.LOC.NISQ",1,1,1,1,1,1,1,"Pierce County","",5,4,4,4,2,4
+"1221","9d38c99e84284b68b599009073098a36","G.LOC.PUY",1,1,1,1,1,1,1,"Pierce County","",5,4,4,4,2,4
+"1222","9d38c99e84284b68b599009073098a36","G.LOC.WEST",1,1,1,1,1,1,1,"Pierce County","",5,4,4,4,2,4
+"1223","9d38c99e84284b68b599009073098a36","G.OTHER.1",1,1,1,1,1,1,1,"Pierce County","",NA,NA,NA,NA,NA,NA
+"1224","9d38c99e84284b68b599009073098a36","G.OTHER.2",1,1,1,1,1,1,1,"Pierce County","",5,4,4,5,2,2
+"1225","9d38c99e84284b68b599009073098a36","G.PSEMP",1,1,0,0,1,0,0,"Pierce County","",5,5,4,5,2,2
+"1226","9d38c99e84284b68b599009073098a36","G.SRC",1,1,1,1,1,0,0,"Pierce County","",5,4,4,4,2,4
+"1227","9d38c99e84284b68b599009073098a36","G.WLEADS",1,1,1,1,1,1,1,"Pierce County","",5,4,4,4,2,4
+"1228","9e1404ab3ab84088a02c1245fa1bc014","G.ECM.STORM",1,1,0,0,1,0,0,"City of Redmond","",4,3,2,4,2,2
+"1229","9e1404ab3ab84088a02c1245fa1bc014","G.LIO.SOUTHCENTRAL",0,1,0,0,0,0,1,"City of Redmond","",3,4,2,2,2,2
+"1230","9e1404ab3ab84088a02c1245fa1bc014","G.LOC.CEDAR",0,1,0,1,1,0,0,"City of Redmond","",4,4,2,3,2,5
+"1231","9e1404ab3ab84088a02c1245fa1bc014","G.OTHER.1",1,1,0,1,1,0,0,"City of Redmond","",NA,NA,NA,NA,NA,NA
+"1232","9e1404ab3ab84088a02c1245fa1bc014","G.OTHER.2",1,0,0,0,1,0,0,"City of Redmond","",4,4,4,3,4,5
+"1233","9e39bb17a1b94ab3848e3ed692ed0f4c","G.ECO.KITSAP",1,1,1,1,1,1,0,"Kitsap County","Solid Waste Division",5,5,5,4,4,5
+"1234","a0fdc45418a34fb597f9201ef6e73717","G.LIO.SOUTHCENTRAL",0,0,0,0,1,0,0,"King County","",3,3,3,3,3,3
+"1235","a0fdc45418a34fb597f9201ef6e73717","G.LOC.CEDAR",1,1,1,1,1,1,0,"King County","",5,4,3,4,3,5
+"1236","a0fdc45418a34fb597f9201ef6e73717","G.LOC.PUY",1,1,1,1,1,1,0,"King County","",5,4,3,4,3,3
+"1237","a2d74b3189e64ffea42e9789447f2333","G.LIO.NOOKWATER",0,1,0,0,1,0,0,"Whatcom MRC","",3,4,4,4,4,3
+"1238","a2d74b3189e64ffea42e9789447f2333","G.MRC.WHAT",1,1,1,1,1,1,0,"Whatcom MRC","",4,4,4,4,4,3
+"1239","a50a78a8c8044df7ad710910bc3afa53","G.ECO.KING",1,1,0,0,0,0,0,"City of Newcastle","",5,4,5,5,2,4
+"1240","a50a78a8c8044df7ad710910bc3afa53","G.LIO.SOUTHCENTRAL",1,1,0,0,0,0,0,"City of Newcastle","",5,4,5,5,2,4
+"1241","a50a78a8c8044df7ad710910bc3afa53","G.OTHER.1",1,1,0,1,0,0,0,"City of Newcastle","",NA,NA,NA,NA,NA,NA
+"1242","a50a78a8c8044df7ad710910bc3afa53","G.OTHER.2",1,1,0,1,0,0,0,"City of Newcastle","",5,4,5,5,2,4
+"1243","a510f353612a4ecdb024274cc90a888e","G.ECO.SJ",0,0,1,0,0,0,0,"Northwest Straits Commission","",4,4,3,3,-99,3
+"1244","a510f353612a4ecdb024274cc90a888e","G.ECO.SKAGIT",1,1,0,0,1,0,0,"Northwest Straits Commission","",4,3,3,3,-99,3
+"1245","a510f353612a4ecdb024274cc90a888e","G.ECO.WHAT",1,1,0,1,1,0,0,"Northwest Straits Commission","",4,4,3,4,-99,3
+"1246","a510f353612a4ecdb024274cc90a888e","G.MRC.CLALLAM",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1247","a510f353612a4ecdb024274cc90a888e","G.MRC.ISLAND",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1248","a510f353612a4ecdb024274cc90a888e","G.MRC.JEFF",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1249","a510f353612a4ecdb024274cc90a888e","G.MRC.SJ",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1250","a510f353612a4ecdb024274cc90a888e","G.MRC.SKAGIT",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1251","a510f353612a4ecdb024274cc90a888e","G.MRC.SNOHO",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1252","a510f353612a4ecdb024274cc90a888e","G.MRC.WHAT",1,1,1,0,1,0,1,"Northwest Straits Commission","",4,4,4,5,-99,-99
+"1253","a510f353612a4ecdb024274cc90a888e","G.OTHER.1",1,1,1,0,1,1,1,"Northwest Straits Commission","",NA,NA,NA,NA,NA,NA
+"1254","a5fb3a7c9b9e4261b02c763ec37a74c1","G.ECO.STRAIT",1,1,0,1,0,0,1,"NOSC","",5,5,5,3,3,4
+"1255","a62c52f17f42447c8ac40bf66765673a","G.OTHER.1",1,1,1,1,1,1,0,"WDOE","",NA,NA,NA,NA,NA,NA
+"1256","a646036157d84f2cb580ea5aa7abaa95","G.ECO.HOOD",0,0,0,0,0,0,1,"WSUX Beachwatchers","",2,4,4,2,1,3
+"1257","a646036157d84f2cb580ea5aa7abaa95","G.ECO.STRAIT",0,0,0,0,0,0,1,"WSUX Beachwatchers","",2,4,4,2,1,3
+"1258","a646036157d84f2cb580ea5aa7abaa95","G.LIO.HOOD",0,0,0,0,0,1,1,"WSUX Beachwatchers","",2,4,4,4,1,4
+"1259","a646036157d84f2cb580ea5aa7abaa95","G.LIO.STRAIT",0,0,0,0,0,1,1,"WSUX Beachwatchers","",2,4,4,4,1,3
+"1260","a646036157d84f2cb580ea5aa7abaa95","G.OTHER.1",1,1,1,1,1,1,1,"WSUX Beachwatchers","",NA,NA,NA,NA,NA,NA
+"1261","a646036157d84f2cb580ea5aa7abaa95","G.OTHER.2",1,0,0,1,0,0,1,"WSUX Beachwatchers","",5,5,5,4,1,5
+"1262","a6a66b6b9da448be8c1789e634d7a091","G.LIO.NOOKWATER",0,0,0,0,1,0,0,"Whatcom County","Health Department",-77,4,4,3,3,1
+"1263","a6a66b6b9da448be8c1789e634d7a091","G.LOC.NOOK",0,0,0,0,1,0,0,"Whatcom County","Health Department",2,14,9,-77,-77,4
+"1264","a6a66b6b9da448be8c1789e634d7a091","G.OTHER.1",0,0,0,0,1,0,0,"Whatcom County","Health Department",NA,NA,NA,NA,NA,NA
+"1265","a6a66b6b9da448be8c1789e634d7a091","G.OTHER.2",1,1,1,1,1,1,0,"Whatcom County","Health Department",4,5,5,5,3,3
+"1266","a70f4f908457497a9f803ffd1cf51683","G.ECO.KITSAP",0,1,0,0,0,0,0,"Olympic Outdoor Center","",4,5,5,5,4,2
+"1267","a70f4f908457497a9f803ffd1cf51683","G.OTHER.1",0,1,0,0,0,0,0,"Olympic Outdoor Center","",NA,NA,NA,NA,NA,NA
+"1268","a92d1924ecb74733a1a89cae0eca37b4","G.MRC.CLALLAM",1,1,1,1,1,0,0,"USCG","",4,5,5,3,3,3
+"1269","a92d1924ecb74733a1a89cae0eca37b4","G.MRC.SJ",1,0,0,1,0,0,0,"USCG","",4,5,5,4,4,3
+"1270","a92d1924ecb74733a1a89cae0eca37b4","G.OTHER.1",1,1,1,0,1,0,0,"USCG","",NA,NA,NA,NA,NA,NA
+"1271","a9a06bdd58a04523a92626871d013b07","G.ECO.HOOD",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1272","a9a06bdd58a04523a92626871d013b07","G.ECO.KING",1,1,1,1,1,1,0,"WDOE","",5,5,5,5,5,5
+"1273","a9a06bdd58a04523a92626871d013b07","G.ECO.KITSAP",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1274","a9a06bdd58a04523a92626871d013b07","G.ECO.MASON",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1275","a9a06bdd58a04523a92626871d013b07","G.ECO.SKAGIT",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1276","a9a06bdd58a04523a92626871d013b07","G.ECO.SNOHO",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1277","a9a06bdd58a04523a92626871d013b07","G.ECO.STRAIT",1,1,1,0,0,0,0,"WDOE","",5,5,5,5,5,5
+"1278","a9a06bdd58a04523a92626871d013b07","G.ECO.WHAT",1,1,1,0,1,0,0,"WDOE","",5,5,5,5,5,5
+"1279","a9a06bdd58a04523a92626871d013b07","G.OTHER.1",1,1,1,1,1,1,0,"WDOE","",NA,NA,NA,NA,NA,NA
+"1280","a9a06bdd58a04523a92626871d013b07","G.OTHER.2",1,1,1,1,1,1,0,"WDOE","",5,5,5,5,5,5
+"1281","aa04f525631c430eaf20ec8a14144f4a","G.LIO.STRAIT",1,1,0,1,1,0,0,"North Olympic Timber Action Committee","",5,4,3,3,-99,-99
+"1282","aa04f525631c430eaf20ec8a14144f4a","G.OTHER.1",1,1,1,1,1,0,0,"North Olympic Timber Action Committee","",NA,NA,NA,NA,NA,NA
+"1283","aa04f525631c430eaf20ec8a14144f4a","G.OTHER.2",1,1,1,1,1,0,0,"North Olympic Timber Action Committee","",5,5,4,3,-99,-99
+"1284","ab8dff5176c34e1ab28ed50d196a604a","G.WLEADS",1,1,1,1,1,1,0,"WDOE","",5,5,5,5,3,3
+"1285","acc5ccf38f0649cca560794ad0fd4f5e","G.LIO.HOOD",0,0,0,0,1,0,0,"WDOE","",4,4,4,3,2,3
+"1286","acc5ccf38f0649cca560794ad0fd4f5e","G.LIO.STRAIT",1,1,0,1,1,1,0,"WDOE","",5,4,4,4,2,3
+"1287","acc5ccf38f0649cca560794ad0fd4f5e","G.LOC.NOLY",1,1,0,1,1,0,0,"WDOE","",5,4,4,4,2,3
+"1288","acc5ccf38f0649cca560794ad0fd4f5e","G.OTHER.1",1,1,1,1,1,1,1,"WDOE","",NA,NA,NA,NA,NA,NA
+"1289","ad52c6af550e49e29d85c7bd2af92a89","G.ECO.SNOHO",1,1,0,0,0,0,0,"WSUX Beachwatchers","Island County",3,4,3,3,2,3
+"1290","ad52c6af550e49e29d85c7bd2af92a89","G.ECO.WHID",1,1,1,1,1,1,0,"WSUX Beachwatchers","Island County",5,5,3,3,2,3
+"1291","ad52c6af550e49e29d85c7bd2af92a89","G.MRC.ISLAND",1,1,1,1,1,1,0,"WSUX Beachwatchers","Island County",5,5,4,5,2,4
+"1292","adf07fd4d46e4303b2b580e38a3a7bb1","G.ECO.WHID",1,1,0,1,0,0,0,"Whidbey/Camano Land Trust","",4,4,4,4,-99,-99
+"1293","adf07fd4d46e4303b2b580e38a3a7bb1","G.OTHER.1",0,0,0,1,0,0,0,"Whidbey/Camano Land Trust","",NA,NA,NA,NA,NA,NA
+"1294","adf07fd4d46e4303b2b580e38a3a7bb1","G.OTHER.2",1,0,0,0,0,0,0,"Whidbey/Camano Land Trust","",4,4,4,4,-99,-99
+"1295","adf07fd4d46e4303b2b580e38a3a7bb1","G.OTHER.3",1,0,0,0,0,0,0,"Whidbey/Camano Land Trust","",4,4,4,4,-99,-99
+"1296","ae434580b98d437b8f4e18dc1a130fac","G.LOC.NOLY",1,1,0,0,0,0,0,"Clallam Conservation District","",4,5,5,5,3,4
+"1297","ae434580b98d437b8f4e18dc1a130fac","G.MRC.CLALLAM",1,1,1,0,1,0,0,"Clallam Conservation District","",4,4,5,4,3,4
+"1298","ae434580b98d437b8f4e18dc1a130fac","G.OTHER.1",1,1,1,1,1,0,1,"Clallam Conservation District","",NA,NA,NA,NA,NA,NA
+"1299","af3b175c583d4e40be8afe64a327bff0","G.ECB",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",4,2,4,3,1,1
+"1300","af3b175c583d4e40be8afe64a327bff0","G.ECM.STORM",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",4,2,4,1,1,1
+"1301","af3b175c583d4e40be8afe64a327bff0","G.LC",1,1,0,0,1,1,0,"Pierce County","Surface Water Management",4,2,4,1,1,1
+"1302","af3b175c583d4e40be8afe64a327bff0","G.LIO.NORTHCENTRAL",1,0,0,0,1,1,0,"Pierce County","Surface Water Management",4,4,3,2,1,1
+"1303","af3b175c583d4e40be8afe64a327bff0","G.LIO.SOUTHCENTRAL",1,0,0,0,1,1,0,"Pierce County","Surface Water Management",4,3,3,2,1,1
+"1304","af3b175c583d4e40be8afe64a327bff0","G.LIO.SOUTHSOUND",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,2,2,1,1,1
+"1305","af3b175c583d4e40be8afe64a327bff0","G.LOC.GREEN",1,0,0,0,1,0,0,"Pierce County","Surface Water Management",3,2,3,2,1,1
+"1306","af3b175c583d4e40be8afe64a327bff0","G.LOC.NISQ",1,0,0,0,1,1,0,"Pierce County","Surface Water Management",4,3,3,2,1,1
+"1307","af3b175c583d4e40be8afe64a327bff0","G.LOC.PUY",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,4,2,2,1,1
+"1308","af3b175c583d4e40be8afe64a327bff0","G.LOC.SOUTH",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,3,2,2,1,1
+"1309","af3b175c583d4e40be8afe64a327bff0","G.LOC.WEST",1,0,0,0,1,1,0,"Pierce County","Surface Water Management",4,3,3,2,1,1
+"1310","af3b175c583d4e40be8afe64a327bff0","G.OTHER.1",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"1311","af3b175c583d4e40be8afe64a327bff0","G.OTHER.2",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,4,2,2,1,1
+"1312","af3b175c583d4e40be8afe64a327bff0","G.OTHER.3",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,4,2,2,1,1
+"1313","af3b175c583d4e40be8afe64a327bff0","G.OTHER.4",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,4,2,2,1,1
+"1314","af3b175c583d4e40be8afe64a327bff0","G.OTHER.5",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",5,3,2,2,1,1
+"1315","af3b175c583d4e40be8afe64a327bff0","G.SRC",1,1,0,1,1,1,0,"Pierce County","Surface Water Management",4,2,4,4,1,1
+"1316","af3b175c583d4e40be8afe64a327bff0","G.WLEADS",1,0,0,0,1,0,0,"Pierce County","Surface Water Management",3,2,3,3,1,1
+"1317","af74f00a04984254a7b0b525cfab5290","G.ECO.KITSAP",0,1,1,1,1,0,0,"Taylor Shellfish Farms","",5,4,4,5,3,3
+"1318","af74f00a04984254a7b0b525cfab5290","G.ECO.MASON",0,1,1,1,1,0,0,"Taylor Shellfish Farms","",5,4,4,5,3,3
+"1319","af74f00a04984254a7b0b525cfab5290","G.ECO.THURST",0,1,1,1,1,0,0,"Taylor Shellfish Farms","",5,4,4,5,3,3
+"1320","af74f00a04984254a7b0b525cfab5290","G.OTHER.1",0,1,1,1,1,0,0,"Taylor Shellfish Farms","",NA,NA,NA,NA,NA,NA
+"1321","af74f00a04984254a7b0b525cfab5290","G.OTHER.2",0,1,0,0,1,0,0,"Taylor Shellfish Farms","",5,4,4,5,3,3
+"1322","b10e079b87e443ff8c1000f1be64c071","G.LIO.NORTHCENTRAL",0,1,0,0,1,0,0,"Kitsap Public Health District","",4,4,4,3,3,2
+"1323","b24504a277814bfd94fb7ee1595274c0","G.ECO.KING",1,0,1,0,1,0,1,"City of Bothell","",5,5,5,5,2,4
+"1324","b24504a277814bfd94fb7ee1595274c0","G.ECO.SNOHO",1,0,1,0,1,0,1,"City of Bothell","",5,5,5,5,2,4
+"1325","b24504a277814bfd94fb7ee1595274c0","G.LOC.CEDAR",1,1,0,0,0,0,0,"City of Bothell","",5,5,5,5,2,4
+"1326","b24504a277814bfd94fb7ee1595274c0","G.OTHER.1",1,1,1,1,1,1,1,"City of Bothell","",NA,NA,NA,NA,NA,NA
+"1327","b24504a277814bfd94fb7ee1595274c0","G.OTHER.2",1,1,1,1,1,1,1,"City of Bothell","",5,5,5,5,2,4
+"1328","b24504a277814bfd94fb7ee1595274c0","G.OTHER.3",1,1,1,1,1,1,1,"City of Bothell","",5,5,5,5,2,4
+"1329","b36c51dca5184e4aa354649738657fc6","G.LOC.GREEN",1,1,0,1,1,0,0,"City of SeaTac","",4,5,4,4,3,4
+"1330","b45ffba689b5443eab3b9dd95e39f91e","G.LOC.NISQ",0,1,0,0,1,0,1,"WRCO","",-99,-99,-99,-99,-99,-99
+"1331","b45ffba689b5443eab3b9dd95e39f91e","G.LOC.NOLY",0,1,0,0,1,0,1,"WRCO","",-99,-99,-99,-99,-99,-99
+"1332","b45ffba689b5443eab3b9dd95e39f91e","G.LOC.SOUTH",0,1,0,0,1,0,1,"WRCO","",-99,-99,-99,-99,-99,-99
+"1333","b5f3f302588849a2aefaf7992778f64d","G.LOC.HOOD",1,1,0,0,1,0,1,"Skokomish Tribe","",5,4,4,4,3,4
+"1334","b68cc381057a4670853edc3ba6f6a9f3","G.ECB",0,0,0,0,1,0,1,"City of Poulsbo","",2,4,5,5,2,2
+"1335","b68cc381057a4670853edc3ba6f6a9f3","G.OTHER.1",1,1,1,1,1,1,1,"City of Poulsbo","",NA,NA,NA,NA,NA,NA
+"1336","b6d3aaf03542471887dc49d6083b31fc","G.LOC.CEDAR",1,1,1,1,1,0,0,"Snohomish County","",4,5,4,5,2,4
+"1337","b6d3aaf03542471887dc49d6083b31fc","G.OTHER.1",1,0,1,1,1,0,0,"Snohomish County","",NA,NA,NA,NA,NA,NA
+"1338","b6d3aaf03542471887dc49d6083b31fc","G.OTHER.2",0,0,0,1,0,0,1,"Snohomish County","",3,5,4,3,2,3
+"1339","b6d3aaf03542471887dc49d6083b31fc","G.OTHER.3",0,0,0,1,0,0,1,"Snohomish County","",5,5,4,4,2,3
+"1340","b82965f81efa4bad8cb836e2681bd4de","G.LOC.HOOD",0,1,0,0,1,0,0,"Nisqually Land Trust","",4,4,2,4,1,1
+"1341","b82965f81efa4bad8cb836e2681bd4de","G.LOC.NISQ",0,1,0,1,1,0,0,"Nisqually Land Trust","",4,4,2,4,4,3
+"1342","b82965f81efa4bad8cb836e2681bd4de","G.LOC.NOLY",0,1,0,1,0,0,0,"Nisqually Land Trust","",3,4,2,4,1,3
+"1343","b82965f81efa4bad8cb836e2681bd4de","G.LOC.SOUTH",0,0,0,0,1,0,0,"Nisqually Land Trust","",3,3,2,3,1,3
+"1344","b82965f81efa4bad8cb836e2681bd4de","G.LOC.WEST",0,1,0,1,1,0,0,"Nisqually Land Trust","",4,4,2,4,1,1
+"1345","b82965f81efa4bad8cb836e2681bd4de","G.PSNERP",0,0,0,1,0,0,0,"Nisqually Land Trust","",2,2,4,4,1,1
+"1346","b8ec04b36841468c97afcbf1fcd7ec5f","G.ECM.MODEL",1,1,0,0,1,1,0,"UW","",5,5,5,5,3,3
+"1347","b8ec04b36841468c97afcbf1fcd7ec5f","G.OTHER.1",1,0,0,1,0,1,0,"UW","",NA,NA,NA,NA,NA,NA
+"1348","b8ec04b36841468c97afcbf1fcd7ec5f","G.PSI",1,1,0,0,1,1,0,"UW","",4,5,5,4,4,4
+"1349","b996f42ff2544867a16fc3112f2fb51e","G.ECO.PIERCE",0,1,1,1,1,0,0,"Citizens for a Healthy Bay","",4,4,3,3,2,3
+"1350","ba2d89f6cdb84ab0b0f06d83b32298d4","G.ECO.PIERCE",0,1,0,0,0,0,0,"South Sound Phase II Group","",3,3,4,4,3,4
+"1351","ba2d89f6cdb84ab0b0f06d83b32298d4","G.OTHER.1",0,1,0,0,0,0,0,"South Sound Phase II Group","",NA,NA,NA,NA,NA,NA
+"1352","ba2d89f6cdb84ab0b0f06d83b32298d4","G.OTHER.2",0,1,0,0,0,0,0,"South Sound Phase II Group","",3,4,4,4,4,4
+"1353","bace702a3ba64e6cac7e235cc9515a5b","G.LIO.SNOHOSTILL",1,1,0,0,1,0,0,"City of Snohomish","",5,5,4,4,3,3
+"1354","bace702a3ba64e6cac7e235cc9515a5b","G.LOC.SNOHO",1,1,0,0,1,0,0,"City of Snohomish","",5,5,4,4,3,4
+"1355","bcca398f87504eca8e9dcee511c2ce81","G.ECO.WHID",1,0,1,1,1,0,1,"Friends of Freeland","",4,5,4,4,3,3
+"1356","bcca398f87504eca8e9dcee511c2ce81","G.PSI",1,0,0,0,0,0,0,"Friends of Freeland","",3,3,2,3,3,3
+"1357","bd54595d77044cb1aa61dfe270f4a251","G.ECO.SNOHO",0,1,0,0,0,0,0,"Stillaguamish Tribe","Natural Resources",5,5,5,5,-99,4
+"1358","bd54595d77044cb1aa61dfe270f4a251","G.LOC.STILL",0,0,0,0,1,0,0,"Stillaguamish Tribe","Natural Resources",1,20,1,5,NA,5
+"1359","bd71b8da611f479d9006d282c7cb399d","G.LOC.STILL",1,1,1,0,1,0,0,"Stillaguamish Clean Water District","",1,25,1,5,NA,5
+"1360","bd71b8da611f479d9006d282c7cb399d","G.MRC.SNOHO",1,1,0,1,1,0,0,"Stillaguamish Clean Water District","",5,5,5,5,3,3
+"1361","bd71b8da611f479d9006d282c7cb399d","G.OTHER.1",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",NA,NA,NA,NA,NA,NA
+"1362","bd71b8da611f479d9006d282c7cb399d","G.OTHER.2",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,5,5,5,5
+"1363","bd71b8da611f479d9006d282c7cb399d","G.OTHER.3",1,0,1,1,0,0,0,"Stillaguamish Clean Water District","",5,5,5,5,5,4
+"1364","bd71b8da611f479d9006d282c7cb399d","G.PSEMP",1,0,0,0,1,0,0,"Stillaguamish Clean Water District","",4,5,5,4,3,3
+"1365","bd71b8da611f479d9006d282c7cb399d","G.PSNERP",1,0,0,0,1,0,0,"Stillaguamish Clean Water District","",5,5,5,5,3,3
+"1366","bd71b8da611f479d9006d282c7cb399d","G.WLEADS",1,1,0,0,1,0,1,"Stillaguamish Clean Water District","",4,5,5,4,3,3
+"1367","bd85f717d12c45a99734f2c78ed1c7e2","G.ECB",0,1,0,0,1,0,0,"City of Arlington","",4,4,3,4,2,3
+"1368","bd85f717d12c45a99734f2c78ed1c7e2","G.LIO.SNOHOSTILL",1,1,1,1,1,1,0,"City of Arlington","",4,3,3,4,3,3
+"1369","bd85f717d12c45a99734f2c78ed1c7e2","G.LOC.STILL",1,1,1,1,1,1,1,"City of Arlington","",3,4,15,5,4,4
+"1370","bd85f717d12c45a99734f2c78ed1c7e2","G.SRC",1,1,0,1,1,0,1,"City of Arlington","",5,4,3,4,2,5
+"1371","be6c4818298b4732a11d2a432f29f49c","G.ECM.MARINE",1,1,0,0,1,1,0,"Southwest Fisheries Science Center","",3,4,4,3,2,2
+"1372","bf8a125a2c7f497f9a0d14ecb920b2c2","G.FED",1,1,1,1,1,1,0,"USEPA","",5,5,5,4,-99,-99
+"1373","bf8a125a2c7f497f9a0d14ecb920b2c2","G.OTHER.1",1,1,0,0,1,0,0,"USEPA","",NA,NA,NA,NA,NA,NA
+"1374","bf8a125a2c7f497f9a0d14ecb920b2c2","G.OTHER.2",0,1,0,0,0,0,0,"USEPA","",2,4,4,3,-99,-99
+"1375","bf8a125a2c7f497f9a0d14ecb920b2c2","G.SRC",0,1,1,0,1,0,0,"USEPA","",5,5,5,5,-99,-99
+"1376","bfabe09b761544b19f641db12d8f790c","G.ECO.THURST",1,1,1,1,1,1,1,"WSUX Thurston","",4,4,4,4,3,4
+"1377","bfcc54b59f104ed993207a4fe7f5f6a7","G.OTHER.1",0,1,0,0,1,0,1,"City of Bainbridge Island","",NA,NA,NA,NA,NA,NA
+"1378","bfcc54b59f104ed993207a4fe7f5f6a7","G.OTHER.2",0,1,0,0,1,0,1,"City of Bainbridge Island","",5,5,3,4,1,2
+"1379","c164ed85263f44c88c9cc463bfa9dd5a","G.ECO.PIERCE",1,1,0,1,1,0,0,"City of Milton","",3,4,4,4,3,3
+"1380","c164ed85263f44c88c9cc463bfa9dd5a","G.OTHER.1",0,1,0,1,1,0,0,"City of Milton","",NA,NA,NA,NA,NA,NA
+"1381","c251e77cf58641309f9a2a59099fcd47","G.LIO.NOOKWATER",1,1,0,1,1,0,0,"City of Bellingham","",4,4,4,4,-99,3
+"1382","c251e77cf58641309f9a2a59099fcd47","G.MRC.WHAT",1,1,1,1,1,1,0,"City of Bellingham","",4,4,4,4,-99,4
+"1383","c2fdc7893416409694533ce3f777ec7c","G.LOC.SJ",1,1,0,1,0,0,0,"Washington Environmental Council","",4,4,4,5,4,5
+"1384","c2fdc7893416409694533ce3f777ec7c","G.MRC.SJ",0,0,0,1,1,0,0,"Washington Environmental Council","",4,5,3,4,3,4
+"1385","c2fdc7893416409694533ce3f777ec7c","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Washington Environmental Council","",5,5,4,4,4,5
+"1386","c2fdc7893416409694533ce3f777ec7c","G.OTHER.1",1,1,1,1,1,1,1,"Washington Environmental Council","",NA,NA,NA,NA,NA,NA
+"1387","c2fdc7893416409694533ce3f777ec7c","G.PSNERP",0,0,0,1,1,0,1,"Washington Environmental Council","",4,4,5,5,2,4
+"1388","c3a5859fbb6f448d856c66365b476d4c","G.ECB",1,1,1,1,1,1,1,"West Sound Watershed Council","",5,5,4,4,2,4
+"1389","c3a5859fbb6f448d856c66365b476d4c","G.LC",1,1,1,0,1,0,1,"West Sound Watershed Council","",4,4,4,4,2,3
+"1390","c3a5859fbb6f448d856c66365b476d4c","G.LIO.HOOD",1,1,1,1,1,1,1,"West Sound Watershed Council","",3,4,4,4,2,4
+"1391","c3a5859fbb6f448d856c66365b476d4c","G.LIO.NORTHCENTRAL",1,1,1,1,1,1,1,"West Sound Watershed Council","",5,5,4,4,2,5
+"1392","c3a5859fbb6f448d856c66365b476d4c","G.LIO.SOUTHSOUND",1,0,0,0,0,0,0,"West Sound Watershed Council","",3,3,4,4,2,3
+"1393","c3a5859fbb6f448d856c66365b476d4c","G.OTHER.1",1,1,0,1,1,0,0,"West Sound Watershed Council","",NA,NA,NA,NA,NA,NA
+"1394","c3a5859fbb6f448d856c66365b476d4c","G.OTHER.2",1,1,0,0,0,0,0,"West Sound Watershed Council","",5,5,4,4,2,3
+"1395","c3a5859fbb6f448d856c66365b476d4c","G.OTHER.3",1,1,0,1,1,0,0,"West Sound Watershed Council","",3,4,4,4,2,3
+"1396","c3a5859fbb6f448d856c66365b476d4c","G.OTHER.4",1,1,0,1,1,0,0,"West Sound Watershed Council","",4,4,4,4,2,4
+"1397","c3a5859fbb6f448d856c66365b476d4c","G.PSNERP",1,1,0,1,1,1,0,"West Sound Watershed Council","",4,5,4,4,2,3
+"1398","c3a5859fbb6f448d856c66365b476d4c","G.SRC",1,0,0,0,1,0,1,"West Sound Watershed Council","",3,3,4,4,2,3
+"1399","c416cd6482c14c98aa911ca1ea8e82b3","G.MRC.CLALLAM",0,1,0,0,0,0,0,"Port of Port Angeles","",2,4,4,4,3,2
+"1400","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.HOOD",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1401","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.KING",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1402","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.KITSAP",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1403","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.MASON",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1404","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.PIERCE",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1405","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.SJ",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1406","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.SKAGIT",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1407","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.SNOHO",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1408","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.STRAIT",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1409","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.THURST",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1410","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.WHAT",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1411","c5c55e20504b45d4b48eb07a502d73c3","G.ECO.WHID",0,0,1,0,0,0,0,"USEPA","",4,5,4,4,-99,-99
+"1412","c5c55e20504b45d4b48eb07a502d73c3","G.OTHER.1",1,1,1,1,1,0,0,"USEPA","",NA,NA,NA,NA,NA,NA
+"1413","c622faf6ab714c648d9444a332c097f3","G.ECO.SNOHO",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",5,4,5,5,3,4
+"1414","c622faf6ab714c648d9444a332c097f3","G.LOC.SNOHO",1,0,0,0,0,0,0,"Snohomish County","Surface Water Management",2,3,3,3,3,3
+"1415","c622faf6ab714c648d9444a332c097f3","G.LOC.STILL",1,1,0,0,0,0,0,"Snohomish County","Surface Water Management",1,26,1,3,NA,4
+"1416","c622faf6ab714c648d9444a332c097f3","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"1417","c622faf6ab714c648d9444a332c097f3","G.OTHER.2",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",5,5,5,5,3,5
+"1418","c622faf6ab714c648d9444a332c097f3","G.OTHER.3",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",5,5,5,5,3,4
+"1419","c622faf6ab714c648d9444a332c097f3","G.OTHER.4",1,1,1,1,1,0,1,"Snohomish County","Surface Water Management",5,5,5,3,3,3
+"1420","c6a4aca684724e5487419f950ec7d2b6","G.LOC.GREEN",0,0,0,1,0,0,1,"King County","",3,4,3,3,3,-99
+"1421","c6a4aca684724e5487419f950ec7d2b6","G.OTHER.1",1,1,1,1,1,1,0,"King County","",NA,NA,NA,NA,NA,NA
+"1422","c6a4aca684724e5487419f950ec7d2b6","G.OTHER.2",1,1,0,1,1,1,0,"King County","",5,5,5,5,3,4
+"1423","c6a4aca684724e5487419f950ec7d2b6","G.OTHER.3",1,1,0,0,1,1,1,"King County","",5,5,5,5,3,3
+"1424","c6a4aca684724e5487419f950ec7d2b6","G.OTHER.4",1,1,0,1,1,0,1,"King County","",4,4,5,5,3,4
+"1425","c6a4aca684724e5487419f950ec7d2b6","G.OTHER.5",1,1,1,1,1,1,1,"King County","",5,5,5,5,3,3
+"1426","c75c64322a764a888fd59e33ad901306","G.OTHER.1",1,1,0,0,1,0,1,"City of Kent","",NA,NA,NA,NA,NA,NA
+"1427","c75c64322a764a888fd59e33ad901306","G.OTHER.2",0,1,0,0,1,0,1,"City of Kent","",4,4,4,4,3,4
+"1428","c78826b68cb04b03bd61375101a04877","G.MRC.CLALLAM",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1429","c78826b68cb04b03bd61375101a04877","G.MRC.ISLAND",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1430","c78826b68cb04b03bd61375101a04877","G.MRC.JEFF",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1431","c78826b68cb04b03bd61375101a04877","G.MRC.SJ",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1432","c78826b68cb04b03bd61375101a04877","G.MRC.SKAGIT",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1433","c78826b68cb04b03bd61375101a04877","G.MRC.SNOHO",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1434","c78826b68cb04b03bd61375101a04877","G.MRC.WHAT",0,0,0,0,0,0,1,"SeaDoc Society","",4,4,2,2,2,1
+"1435","c78826b68cb04b03bd61375101a04877","G.OTHER.1",1,1,1,0,0,0,0,"SeaDoc Society","",NA,NA,NA,NA,NA,NA
+"1436","c78826b68cb04b03bd61375101a04877","G.OTHER.2",1,1,1,1,1,1,1,"SeaDoc Society","",4,4,2,4,2,1
+"1437","c78826b68cb04b03bd61375101a04877","G.PSI",1,0,0,0,1,0,0,"SeaDoc Society","",2,2,3,4,2,1
+"1438","c78826b68cb04b03bd61375101a04877","G.SCIENCE",1,1,1,1,1,1,1,"SeaDoc Society","",5,2,4,5,4,1
+"1439","c7fc2661399d4f478754fdf1c6434110","G.ECM.SALM",1,0,0,0,1,0,0,"WDFW","",2,3,3,4,3,3
+"1440","c7fc2661399d4f478754fdf1c6434110","G.ECM.TOXIC",1,1,0,0,1,0,0,"WDFW","",3,4,4,4,3,3
+"1441","c7fc2661399d4f478754fdf1c6434110","G.OTHER.1",1,1,0,1,1,1,0,"WDFW","",NA,NA,NA,NA,NA,NA
+"1442","c8b6752de01f42aeb4788518aa5fa4d6","G.SOCSCI",1,1,0,0,1,0,0,"NMFS","",2,1,1,4,1,1
+"1443","c98d44eacf4b4ca68e510df27436d32f","G.LIO.HOOD",0,1,1,1,1,0,0,"Great Peninsula Conservancy","",4,5,5,4,2,3
+"1444","c98d44eacf4b4ca68e510df27436d32f","G.LIO.NORTHCENTRAL",0,1,0,1,1,0,0,"Great Peninsula Conservancy","",5,5,5,5,2,4
+"1445","c98d44eacf4b4ca68e510df27436d32f","G.LOC.HOOD",0,1,1,1,1,0,0,"Great Peninsula Conservancy","",4,5,5,4,2,3
+"1446","c98d44eacf4b4ca68e510df27436d32f","G.LOC.WEST",0,1,1,1,1,0,0,"Great Peninsula Conservancy","",5,5,5,5,2,4
+"1447","c98d44eacf4b4ca68e510df27436d32f","G.OTHER.1",1,1,1,1,1,1,0,"Great Peninsula Conservancy","",NA,NA,NA,NA,NA,NA
+"1448","c9a4c7becc3940f9a7408efa70281bf1","G.LOC.HOOD",0,0,0,0,1,0,0,"Kitsap County","DCD/Natural Resources",3,4,5,5,2,4
+"1449","c9a4c7becc3940f9a7408efa70281bf1","G.LOC.WEST",1,1,0,1,1,0,0,"Kitsap County","DCD/Natural Resources",5,5,5,5,2,5
+"1450","ca22d290020c493cbd4043f31d0791f2","G.ECO.KING",0,0,0,1,1,1,0,"Resource Media","",4,4,3,4,2,3
+"1451","ca4d43fd60e14f279537911f13705c9b","G.LIO.SNOHOSTILL",1,1,0,0,1,0,0,"Snohomish County","Surface Water Management",4,4,4,4,2,2
+"1452","ca4d43fd60e14f279537911f13705c9b","G.LOC.STILL",1,1,1,1,1,1,0,"Snohomish County","Surface Water Management",3,17,7,5,4,4
+"1453","ca4d43fd60e14f279537911f13705c9b","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish County","Surface Water Management",NA,NA,NA,NA,NA,NA
+"1454","ca4d43fd60e14f279537911f13705c9b","G.WLEADS",1,1,1,1,1,0,0,"Snohomish County","Surface Water Management",4,4,4,4,4,4
+"1455","ca55cf1b51ed429d974d5617d027a9f2","G.LOC.SJ",1,0,0,0,0,0,0,"Citizens of Orcas Island","",2,2,3,2,2,1
+"1456","ca55cf1b51ed429d974d5617d027a9f2","G.MRC.SJ",0,0,0,0,1,0,0,"Citizens of Orcas Island","",2,2,3,2,2,1
+"1457","ca55cf1b51ed429d974d5617d027a9f2","G.OTHER.1",0,0,0,1,0,1,0,"Citizens of Orcas Island","",NA,NA,NA,NA,NA,NA
+"1458","ca55cf1b51ed429d974d5617d027a9f2","G.WLEADS",1,0,0,0,0,0,0,"Citizens of Orcas Island","",2,2,3,2,2,1
+"1459","ca6acfedd53b42b0aaeb1eca857050e7","G.MRC.SJ",1,1,0,1,1,0,0,"UW","",4,4,4,4,4,2
+"1460","ca6acfedd53b42b0aaeb1eca857050e7","G.SRC",1,1,0,1,1,0,0,"UW","",4,4,4,4,4,2
+"1461","ca7260b9b8f2404ea1cdda31025dfc92","G.OTHER.1",1,1,0,1,1,0,0,"City of Gig Harbor","",NA,NA,NA,NA,NA,NA
+"1462","ca7260b9b8f2404ea1cdda31025dfc92","G.OTHER.2",1,1,0,0,1,0,0,"City of Gig Harbor","",5,5,5,5,5,5
+"1463","cb7c2ca3f6f343fabb3f7100221c50be","G.ECO.PIERCE",0,0,1,0,1,0,0,"Point Defiance Zoo & Aquarium","",4,4,3,5,2,2
+"1464","cbd2922df03148d2908f4749bf7cbe19","G.SOCSCI",1,1,1,0,1,1,0,"UW","",4,4,4,4,2,4
+"1465","cbeb144a4c7f41fd900d50cbacf9a3c0","G.ECO.SKAGIT",1,0,0,0,1,0,0,"Skagit County","Planning and Development Services",4,4,3,4,2,3
+"1466","cbeb144a4c7f41fd900d50cbacf9a3c0","G.MRC.SKAGIT",1,1,1,1,1,0,0,"Skagit County","Planning and Development Services",5,4,4,4,2,3
+"1467","cbeb144a4c7f41fd900d50cbacf9a3c0","G.OTHER.1",1,1,1,1,1,0,0,"Skagit County","Planning and Development Services",NA,NA,NA,NA,NA,NA
+"1468","cbeb144a4c7f41fd900d50cbacf9a3c0","G.OTHER.2",0,0,0,1,0,0,0,"Skagit County","Planning and Development Services",5,4,4,4,2,3
+"1469","cc5cadb829b44cbd931675516420f225","G.ECO.PIERCE",1,0,0,0,0,0,0,"Pierce Conservation District","",2,4,4,4,3,3
+"1470","cc5cadb829b44cbd931675516420f225","G.LOC.NISQ",1,0,0,1,0,0,0,"Pierce Conservation District","",4,4,3,4,3,3
+"1471","cc5cadb829b44cbd931675516420f225","G.LOC.PUY",1,0,0,1,0,0,0,"Pierce Conservation District","",4,4,3,4,3,4
+"1472","cd5f1463af744cb2ad9460061456f830","G.FED",0,0,0,1,1,1,1,"NMFS","Habitat Consv Division",3,3,3,4,2,2
+"1473","cd5f1463af744cb2ad9460061456f830","G.OTHER.1",0,1,0,1,1,1,1,"NMFS","Habitat Consv Division",NA,NA,NA,NA,NA,NA
+"1474","cef4be0ed40b4e0f88ce119ad17658f0","G.LIO.ISLANDWATER",0,1,0,0,0,0,0,"WDOE","",4,4,2,3,1,-99
+"1475","cef4be0ed40b4e0f88ce119ad17658f0","G.LIO.SNOHOSTILL",0,1,0,0,0,0,0,"WDOE","",4,4,2,4,1,-99
+"1476","cef4be0ed40b4e0f88ce119ad17658f0","G.LOC.ISLAND",0,1,0,0,0,0,0,"WDOE","",4,4,2,4,1,-99
+"1477","cef4be0ed40b4e0f88ce119ad17658f0","G.LOC.SNOHO",0,1,0,0,0,0,0,"WDOE","",4,4,2,4,1,-99
+"1478","cef4be0ed40b4e0f88ce119ad17658f0","G.LOC.STILL",0,1,0,0,0,0,0,"WDOE","",3,5,2,4,4,4
+"1479","cef4be0ed40b4e0f88ce119ad17658f0","G.RITT",1,0,0,0,0,0,0,"WDOE","",4,4,2,4,1,-99
+"1480","d0256b4914fe4d48a44529f043388757","G.LC",0,1,0,0,0,0,0,"Washington Sea Grant","",4,4,3,4,2,3
+"1481","d0256b4914fe4d48a44529f043388757","G.OTHER.1",0,1,1,1,1,1,0,"Washington Sea Grant","",NA,NA,NA,NA,NA,NA
+"1482","d0256b4914fe4d48a44529f043388757","G.OTHER.2",1,0,0,0,0,0,1,"Washington Sea Grant","",5,5,5,5,4,5
+"1483","d0256b4914fe4d48a44529f043388757","G.OTHER.3",1,1,0,0,0,0,0,"Washington Sea Grant","",4,3,3,3,3,3
+"1484","d0e3703c62e44714a1e7e9e511f898c5","G.LIO.SNOHOSTILL",0,1,0,0,0,0,0,"King Conservation District","",3,3,3,4,3,4
+"1485","d0e3703c62e44714a1e7e9e511f898c5","G.LOC.CEDAR",0,1,1,0,0,0,1,"King Conservation District","",4,3,4,4,3,-99
+"1486","d0e3703c62e44714a1e7e9e511f898c5","G.LOC.GREEN",0,1,1,0,0,0,1,"King Conservation District","",4,4,4,4,5,-99
+"1487","d0e3703c62e44714a1e7e9e511f898c5","G.LOC.SNOHO",1,1,1,0,0,0,0,"King Conservation District","",5,5,5,4,5,-99
+"1488","d0e3703c62e44714a1e7e9e511f898c5","G.OTHER.1",1,1,1,1,0,0,0,"King Conservation District","",NA,NA,NA,NA,NA,NA
+"1489","d0e3703c62e44714a1e7e9e511f898c5","G.OTHER.2",1,1,1,1,1,0,1,"King Conservation District","",5,5,5,4,5,5
+"1490","d0e3703c62e44714a1e7e9e511f898c5","G.OTHER.3",1,1,1,0,0,0,1,"King Conservation District","",5,5,4,4,5,5
+"1491","d17dac5627ea499898fc19d11737deb0","G.ECM.SALM",1,0,0,0,1,0,0,"City of Redmond","",3,4,3,4,2,3
+"1492","d17dac5627ea499898fc19d11737deb0","G.LOC.CEDAR",0,0,0,0,1,0,0,"City of Redmond","",3,4,3,4,2,3
+"1493","d379440fe94f429982e9a00ccd429589","G.ECB",1,1,0,0,1,0,0,"WDFW","",5,4,4,3,2,2
+"1494","d379440fe94f429982e9a00ccd429589","G.LC",0,1,0,0,1,0,0,"WDFW","",3,3,3,3,2,2
+"1495","d379440fe94f429982e9a00ccd429589","G.OTHER.1",1,1,1,1,1,1,1,"WDFW","",NA,NA,NA,NA,NA,NA
+"1496","d379440fe94f429982e9a00ccd429589","G.OTHER.2",1,0,0,0,0,1,1,"WDFW","",5,5,4,5,4,4
+"1497","d379440fe94f429982e9a00ccd429589","G.PSNERP",1,1,0,1,1,0,1,"WDFW","",3,4,4,5,4,4
+"1498","d379440fe94f429982e9a00ccd429589","G.SCIENCE",1,1,0,0,1,0,1,"WDFW","",4,4,3,3,2,2
+"1499","d47fe547e29f4e0db908f0f10bf76e7c","G.ENVIRO",1,0,0,1,1,0,0,"Environmental Science Associates","",5,5,5,5,-99,-99
+"1500","d47fe547e29f4e0db908f0f10bf76e7c","G.LOC.HOOD",1,0,0,1,1,1,0,"Environmental Science Associates","",5,5,5,5,-99,-99
+"1501","d47fe547e29f4e0db908f0f10bf76e7c","G.MRC.JEFF",0,0,0,0,0,0,1,"Environmental Science Associates","",4,5,5,5,-99,-99
+"1502","d47fe547e29f4e0db908f0f10bf76e7c","G.MRC.WHAT",0,0,0,0,0,0,1,"Environmental Science Associates","",4,5,5,5,-99,-99
+"1503","d47fe547e29f4e0db908f0f10bf76e7c","G.PSNERP",1,1,1,1,1,1,1,"Environmental Science Associates","",5,5,5,5,-99,-99
+"1504","d47fe547e29f4e0db908f0f10bf76e7c","G.SRC",1,1,1,1,1,1,1,"Environmental Science Associates","",5,5,5,5,-99,-99
+"1505","d58b941148ce4685b836db79fe10b60d","G.LIO.SJWATER",0,1,0,0,1,0,0,"San Juan County","",4,5,4,4,-99,-99
+"1506","d58b941148ce4685b836db79fe10b60d","G.LOC.SJ",0,1,0,0,0,0,0,"San Juan County","",3,4,4,4,-99,-99
+"1507","d58b941148ce4685b836db79fe10b60d","G.MRC.SJ",0,1,1,0,1,0,0,"San Juan County","",4,5,4,4,-99,-99
+"1508","d6ee873da574412aa26c9c5b83259211","G.ECO.KING",0,0,1,0,0,0,0,"WRIA 9","",3,3,3,4,1,2
+"1509","d6ee873da574412aa26c9c5b83259211","G.LOC.CEDAR",0,0,0,0,0,0,1,"WRIA 9","",-99,-99,-99,-99,-99,-99
+"1510","d6ee873da574412aa26c9c5b83259211","G.LOC.GREEN",0,0,0,0,0,1,1,"WRIA 9","",5,5,5,5,5,5
+"1511","d6ee873da574412aa26c9c5b83259211","G.OTHER.1",0,0,0,0,0,0,1,"WRIA 9","",NA,NA,NA,NA,NA,NA
+"1512","d6ee873da574412aa26c9c5b83259211","G.OTHER.2",0,0,0,0,0,1,1,"WRIA 9","",4,5,3,1,1,1
+"1513","d6ee873da574412aa26c9c5b83259211","G.OTHER.3",0,1,0,0,0,0,0,"WRIA 9","",5,5,3,4,4,5
+"1514","d6ee873da574412aa26c9c5b83259211","G.OTHER.4",0,0,0,1,0,0,1,"WRIA 9","",4,5,3,3,1,1
+"1515","d6ee873da574412aa26c9c5b83259211","G.OTHER.5",0,0,0,0,0,0,1,"WRIA 9","",5,5,3,5,5,4
+"1516","d6ee873da574412aa26c9c5b83259211","G.RITT",0,1,0,0,0,0,0,"WRIA 9","",4,4,2,5,1,2
+"1517","d6ee873da574412aa26c9c5b83259211","G.SRC",0,1,0,0,0,0,0,"WRIA 9","",2,5,3,5,1,3
+"1518","d6f811700881466cb261de6d05e81ab1","G.ECO.STRAIT",1,1,1,0,1,0,0,"National Park Service","Olympic National Park",4,4,3,4,2,2
+"1519","d6f811700881466cb261de6d05e81ab1","G.OTHER.1",0,1,0,1,1,0,0,"National Park Service","Olympic National Park",NA,NA,NA,NA,NA,NA
+"1520","d6f811700881466cb261de6d05e81ab1","G.OTHER.2",1,0,0,0,1,0,0,"National Park Service","Olympic National Park",5,5,4,4,4,2
+"1521","d7be728662e94391ad5ccdfba8f01505","G.ECO.KITSAP",0,0,0,1,0,0,0,"Chico Creek Task Force","",4,4,5,4,3,3
+"1522","d7be728662e94391ad5ccdfba8f01505","G.LOC.WEST",1,1,1,1,1,1,1,"Chico Creek Task Force","",5,5,5,5,3,4
+"1523","d81458fe1d4c4ea68b6eefeb2ef18e6a","G.ENVIRO",1,1,0,1,1,0,0,"National Wildlife Federation","",4,4,4,4,2,3
+"1524","d81458fe1d4c4ea68b6eefeb2ef18e6a","G.OTHER.1",1,1,0,1,1,0,0,"National Wildlife Federation","",NA,NA,NA,NA,NA,NA
+"1525","d95fcaabc03448a1b75c7be41c88e14a","G.ECO.PIERCE",1,0,0,1,0,0,0,"Harbor Wildwatch","",5,5,5,3,4,5
+"1526","d95fcaabc03448a1b75c7be41c88e14a","G.LIO.SOUTHSOUND",0,0,0,1,0,0,0,"Harbor Wildwatch","",2,2,3,2,2,2
+"1527","d95fcaabc03448a1b75c7be41c88e14a","G.LOC.NISQ",0,0,0,1,0,0,0,"Harbor Wildwatch","",4,4,5,3,3,4
+"1528","d95fcaabc03448a1b75c7be41c88e14a","G.LOC.PUY",0,0,0,1,0,0,0,"Harbor Wildwatch","",3,4,4,2,2,5
+"1529","d95fcaabc03448a1b75c7be41c88e14a","G.LOC.SOUTH",0,0,0,1,0,0,0,"Harbor Wildwatch","",2,3,4,2,2,3
+"1530","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.ECO.STRAIT",1,1,0,1,1,0,0,"Clallam County","",5,5,4,3,5,5
+"1531","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.LOC.NOLY",0,0,0,0,0,0,1,"Clallam County","",-99,-99,-99,-99,-99,-99
+"1532","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.MRC.CLALLAM",0,0,0,1,0,1,0,"Clallam County","",3,4,3,4,2,4
+"1533","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.OTHER.1",1,1,1,1,1,1,0,"Clallam County","",NA,NA,NA,NA,NA,NA
+"1534","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.OTHER.2",1,1,1,1,1,1,0,"Clallam County","",5,5,5,5,4,4
+"1535","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.OTHER.3",1,1,1,1,1,1,0,"Clallam County","",5,5,5,4,2,5
+"1536","d9d74c2938cf4dbcbf26fe0bc8bd2463","G.OTHER.4",0,0,0,0,1,0,0,"Clallam County","",5,5,5,5,3,5
+"1537","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.LIO.ISLANDWATER",0,0,0,0,0,0,1,"Tulalip Tribe","",3,3,3,3,2,3
+"1538","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.LIO.SNOHOSTILL",0,0,0,0,1,0,1,"Tulalip Tribe","",3,4,2,2,2,2
+"1539","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.LOC.ISLAND",0,0,0,0,0,0,1,"Tulalip Tribe","",3,3,3,3,2,3
+"1540","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.LOC.SNOHO",1,1,1,1,1,1,0,"Tulalip Tribe","",4,4,4,4,2,5
+"1541","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.LOC.STILL",0,0,0,0,0,0,1,"Tulalip Tribe","",3,8,12,3,3,3
+"1542","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.MRC.ISLAND",0,0,0,0,0,0,1,"Tulalip Tribe","",3,3,3,3,2,3
+"1543","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.MRC.SNOHO",0,1,0,1,1,0,0,"Tulalip Tribe","",4,4,4,3,2,4
+"1544","d9fdf6bfa2de4d8bbdb5342f2171fffe","G.WLEADS",0,0,0,0,0,0,1,"Tulalip Tribe","",4,4,3,4,2,4
+"1545","da42f9439b0441718b9075282aa3b1d6","G.ECO.STRAIT",0,1,1,0,1,0,0,"Jefferson County","Environmental Health",4,5,4,5,2,4
+"1546","da42f9439b0441718b9075282aa3b1d6","G.LOC.HOOD",0,1,1,1,1,0,0,"Jefferson County","Environmental Health",4,5,4,4,2,4
+"1547","da42f9439b0441718b9075282aa3b1d6","G.MRC.JEFF",0,1,1,1,1,0,0,"Jefferson County","Environmental Health",4,5,4,4,2,4
+"1548","dad722bd7276440bb2dddd925019810f","G.ECO.WHID",0,0,0,1,1,0,0,"OrcaNet","",4,4,4,3,4,3
+"1549","dad722bd7276440bb2dddd925019810f","G.ENVIRO",0,0,0,0,1,0,0,"OrcaNet","",4,4,4,5,4,2
+"1550","dad722bd7276440bb2dddd925019810f","G.OTHER.1",0,1,0,1,1,0,0,"OrcaNet","",NA,NA,NA,NA,NA,NA
+"1551","dad722bd7276440bb2dddd925019810f","G.OTHER.2",0,0,1,0,1,1,1,"OrcaNet","",5,5,4,4,4,3
+"1552","daf158a0884244b79c52c728f90dc782","G.MRC.WHAT",1,1,1,1,1,1,1,"RE Sources","",4,5,5,5,4,4
+"1553","daf158a0884244b79c52c728f90dc782","G.OTHER.1",1,1,1,1,1,1,1,"RE Sources","",NA,NA,NA,NA,NA,NA
+"1554","daf158a0884244b79c52c728f90dc782","G.OTHER.2",1,0,0,0,1,1,1,"RE Sources","",5,4,5,5,5,5
+"1555","dc94a465520e42dda5f6d87f9087e798","G.LIO.HOOD",1,1,0,0,1,0,0,"Skokomish Tribe","",4,4,4,4,2,4
+"1556","dc94a465520e42dda5f6d87f9087e798","G.LOC.HOOD",1,1,0,0,1,0,0,"Skokomish Tribe","",4,4,4,4,2,4
+"1557","dc94a465520e42dda5f6d87f9087e798","G.OTHER.1",1,1,1,1,1,0,0,"Skokomish Tribe","",NA,NA,NA,NA,NA,NA
+"1558","dc94a465520e42dda5f6d87f9087e798","G.OTHER.2",1,1,1,1,1,0,0,"Skokomish Tribe","",4,4,4,4,2,3
+"1559","dcb2d49ab59e4e3d885641568843d67b","G.ECO.SNOHO",1,1,1,1,1,1,1,"Snohomish Conservation District","",4,4,4,2,2,4
+"1560","dd8febef00824b3aad051ab27829d03e","G.FED",0,1,0,0,1,1,0,"NWFSC","",5,5,4,4,1,3
+"1561","dd8febef00824b3aad051ab27829d03e","G.LC",0,1,0,0,0,0,0,"NWFSC","",4,4,4,4,1,3
+"1562","dd8febef00824b3aad051ab27829d03e","G.PSNERP",0,1,0,0,1,0,0,"NWFSC","",4,4,4,4,1,3
+"1563","dd8febef00824b3aad051ab27829d03e","G.SCIENCE",0,1,1,1,1,1,0,"NWFSC","",5,5,5,5,3,3
+"1564","dde90c069dd441179cc86d342892db0d","G.ECB",1,1,1,1,1,0,0,"Skagit County","",4,4,4,4,3,4
+"1565","de949b52664c442d91a773f57be6e9b9","G.PSI",1,1,1,1,1,1,1,"UW","",5,5,4,5,4,4
+"1566","de949b52664c442d91a773f57be6e9b9","G.SCIENCE",1,1,0,1,1,1,0,"UW","",5,5,4,4,3,3
+"1567","df2a5cbd5883484ea8d2dc75b3e6137e","G.LIO.STRAIT",1,1,0,0,1,0,0,"North Olympic Land Trust","",5,5,5,5,-99,4
+"1568","df2a5cbd5883484ea8d2dc75b3e6137e","G.LOC.NOLY",1,1,0,0,1,0,0,"North Olympic Land Trust","",5,5,5,5,-99,-99
+"1569","df2a5cbd5883484ea8d2dc75b3e6137e","G.OTHER.1",1,1,0,0,1,0,0,"North Olympic Land Trust","",NA,NA,NA,NA,NA,NA
+"1570","df2a5cbd5883484ea8d2dc75b3e6137e","G.OTHER.2",1,1,0,0,1,0,0,"North Olympic Land Trust","",5,5,5,5,-99,-99
+"1571","df2a5cbd5883484ea8d2dc75b3e6137e","G.OTHER.3",1,1,0,0,1,0,0,"North Olympic Land Trust","",5,5,5,5,-99,-99
+"1572","df2a5cbd5883484ea8d2dc75b3e6137e","G.OTHER.4",1,1,0,0,1,0,0,"North Olympic Land Trust","",5,5,5,5,-99,5
+"1573","dfa8c4d947c542df8ff6082c7022e2b4","G.ECO.KING",1,1,1,1,1,0,0,"City of Seattle","Public Utilities Restore Our Waters",5,4,3,4,2,4
+"1574","dfa8c4d947c542df8ff6082c7022e2b4","G.OTHER.1",1,1,1,0,0,0,0,"City of Seattle","Public Utilities Restore Our Waters",NA,NA,NA,NA,NA,NA
+"1575","e000e8ab48904332a0af932f859d24f0","G.LIO.SNOHOSTILL",1,1,0,0,1,0,1,"Snohomish MRC","",5,5,5,5,5,-77
+"1576","e000e8ab48904332a0af932f859d24f0","G.MRC.SNOHO",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,4
+"1577","e000e8ab48904332a0af932f859d24f0","G.OTHER.1",1,1,1,1,1,1,1,"Snohomish MRC","",NA,NA,NA,NA,NA,NA
+"1578","e000e8ab48904332a0af932f859d24f0","G.OTHER.2",1,1,1,1,1,1,1,"Snohomish MRC","",5,5,5,5,5,5
+"1579","e0309563a815430ebf30f4ad011cc3df","G.ECO.KING",0,1,1,1,1,0,0,"City of Seattle","Public Utilities",5,5,3,4,3,5
+"1580","e0309563a815430ebf30f4ad011cc3df","G.OTHER.1",0,1,1,1,1,0,0,"City of Seattle","Public Utilities",NA,NA,NA,NA,NA,NA
+"1581","e0309563a815430ebf30f4ad011cc3df","G.OTHER.2",1,1,0,1,1,0,0,"City of Seattle","Public Utilities",5,5,3,5,3,5
+"1582","e0309563a815430ebf30f4ad011cc3df","G.OTHER.3",1,1,1,1,1,1,0,"City of Seattle","Public Utilities",4,5,3,4,3,5
+"1583","e0309563a815430ebf30f4ad011cc3df","G.OTHER.4",1,1,1,1,1,1,0,"City of Seattle","Public Utilities",3,4,3,3,3,3
+"1584","e04bae2f2aeb4478b29ef892d51f6d5f","G.ECO.STRAIT",1,1,0,1,1,0,0,"Feiro Marine Life Center","",4,4,4,-77,-99,-99
+"1585","e04bae2f2aeb4478b29ef892d51f6d5f","G.SOCSCI",0,1,0,1,0,0,0,"Feiro Marine Life Center","",4,4,4,-77,-99,-99
+"1586","e09ffb29067a47a58d94bb65f4979378","G.ECO.KITSAP",1,0,0,0,1,0,0,"WSUX Kitsap","",4,5,5,5,2,3
+"1587","e09ffb29067a47a58d94bb65f4979378","G.OTHER.1",1,1,1,1,1,1,1,"WSUX Kitsap","",NA,NA,NA,NA,NA,NA
+"1588","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.CEDAR",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1589","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.GREEN",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1590","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.ISLAND",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1591","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.NISQ",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1592","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.NOOK",1,1,0,0,0,0,0,"WDFW","",1,6,1,5,NA,5
+"1593","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.PUY",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1594","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.SJ",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1595","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.SKAGIT",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1596","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.SNOHO",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1597","e23c9d52fe7e4d77af7d53be49c30334","G.LOC.STILL",1,1,0,0,0,0,0,"WDFW","",1,26,1,5,NA,5
+"1598","e23c9d52fe7e4d77af7d53be49c30334","G.MRC.SNOHO",1,1,0,0,0,0,0,"WDFW","",5,5,5,5,-99,-99
+"1599","e23c9d52fe7e4d77af7d53be49c30334","G.PSNERP",1,1,0,0,1,0,0,"WDFW","",5,5,5,5,-99,-99
+"1600","e23c9d52fe7e4d77af7d53be49c30334","G.RITT",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1601","e23c9d52fe7e4d77af7d53be49c30334","G.SRC",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1602","e23c9d52fe7e4d77af7d53be49c30334","G.WLEADS",1,1,1,1,1,1,0,"WDFW","",5,5,5,5,-99,-99
+"1603","e38ec2c4c10343d3bfe228a2266bdc9c","G.LOC.SNOHO",1,1,0,0,0,0,0,"Stewardship Partners","",5,5,5,5,3,5
+"1604","e38ec2c4c10343d3bfe228a2266bdc9c","G.OTHER.1",1,1,1,1,0,1,1,"Stewardship Partners","",NA,NA,NA,NA,NA,NA
+"1605","e38ec2c4c10343d3bfe228a2266bdc9c","G.OTHER.2",1,1,0,0,0,0,0,"Stewardship Partners","",5,5,5,5,3,4
+"1606","e38ec2c4c10343d3bfe228a2266bdc9c","G.OTHER.3",1,1,0,0,0,0,0,"Stewardship Partners","",5,5,5,5,3,5
+"1607","e52a819f6d2e445eb57a41ca76f58105","G.ECB",0,0,1,1,1,1,0,"The Nature Conservancy","",5,5,-99,4,2,2
+"1608","e52a819f6d2e445eb57a41ca76f58105","G.ENVIRO",0,1,1,0,0,0,0,"The Nature Conservancy","",2,5,-99,2,2,2
+"1609","e52a819f6d2e445eb57a41ca76f58105","G.LOC.HOOD",1,1,1,1,1,1,0,"The Nature Conservancy","",4,5,-99,4,2,3
+"1610","e52a819f6d2e445eb57a41ca76f58105","G.LOC.ISLAND",1,0,0,0,0,0,0,"The Nature Conservancy","",-99,-99,-99,-99,2,2
+"1611","e52a819f6d2e445eb57a41ca76f58105","G.LOC.SKAGIT",1,0,0,0,0,0,0,"The Nature Conservancy","",-99,-99,-99,-99,2,2
+"1612","e52a819f6d2e445eb57a41ca76f58105","G.LOC.STILL",1,0,0,0,0,0,0,"The Nature Conservancy","",1,24,1,-99,NA,5
+"1613","e52a819f6d2e445eb57a41ca76f58105","G.OTHER.1",0,1,1,1,0,0,0,"The Nature Conservancy","",NA,NA,NA,NA,NA,NA
+"1614","e52a819f6d2e445eb57a41ca76f58105","G.OTHER.2",0,1,1,0,0,0,0,"The Nature Conservancy","",4,5,-99,5,2,2
+"1615","e52a819f6d2e445eb57a41ca76f58105","G.OTHER.3",0,0,1,1,1,1,1,"The Nature Conservancy","",4,5,-99,5,2,2
+"1616","e52a819f6d2e445eb57a41ca76f58105","G.PSNERP",1,1,1,1,0,0,0,"The Nature Conservancy","",3,-99,-99,3,2,2
+"1617","e52a819f6d2e445eb57a41ca76f58105","G.WLEADS",1,0,0,0,0,0,0,"The Nature Conservancy","",-99,-99,-99,-99,2,2
+"1618","e52bb7f580704fb5ba600c1985e58188","G.ECO.HOOD",0,0,0,0,1,0,0,"Jefferson Conservation District","",3,3,3,3,3,3
+"1619","e52bb7f580704fb5ba600c1985e58188","G.LIO.STRAIT",0,0,0,0,1,0,0,"Jefferson Conservation District","",3,3,3,3,3,3
+"1620","e52bb7f580704fb5ba600c1985e58188","G.LOC.NOLY",0,0,0,0,1,0,0,"Jefferson Conservation District","",3,3,3,3,3,3
+"1621","e52bb7f580704fb5ba600c1985e58188","G.OTHER.1",1,1,0,1,1,0,0,"Jefferson Conservation District","",NA,NA,NA,NA,NA,NA
+"1622","e56e677694b34beba1502d4505925663","G.OTHER.1",1,1,1,1,1,1,1,"Puyallup Tribe","",NA,NA,NA,NA,NA,NA
+"1623","e56e677694b34beba1502d4505925663","G.OTHER.2",1,1,1,1,1,1,1,"Puyallup Tribe","",5,5,5,5,2,1
+"1624","e56e677694b34beba1502d4505925663","G.OTHER.3",1,1,1,1,1,1,1,"Puyallup Tribe","",5,5,5,5,2,1
+"1625","e56e677694b34beba1502d4505925663","G.OTHER.4",0,0,0,0,0,0,1,"Puyallup Tribe","",5,5,5,5,2,1
+"1626","e56e677694b34beba1502d4505925663","G.OTHER.5",0,0,0,0,0,0,1,"Puyallup Tribe","",5,5,5,5,2,1
+"1627","e749180241c149fd8ffa8a3540f39d9d","G.LOC.NOOK",1,1,1,1,1,1,0,"City of Bellingham","",1,2,1,4,NA,4
+"1628","e749180241c149fd8ffa8a3540f39d9d","G.MRC.WHAT",1,1,1,1,1,1,0,"City of Bellingham","",4,4,3,5,2,3
+"1629","e749180241c149fd8ffa8a3540f39d9d","G.OTHER.1",1,1,1,1,1,1,0,"City of Bellingham","",NA,NA,NA,NA,NA,NA
+"1630","e749180241c149fd8ffa8a3540f39d9d","G.OTHER.2",1,0,0,0,1,0,0,"City of Bellingham","",5,4,3,3,2,5
+"1631","e749180241c149fd8ffa8a3540f39d9d","G.OTHER.3",1,1,1,0,1,0,0,"City of Bellingham","",4,3,3,5,2,5
+"1632","e749180241c149fd8ffa8a3540f39d9d","G.OTHER.4",0,1,0,0,0,0,0,"City of Bellingham","",4,3,3,4,2,3
+"1633","e749180241c149fd8ffa8a3540f39d9d","G.OTHER.5",0,1,1,1,0,0,0,"City of Bellingham","",4,3,3,4,2,3
+"1634","e749180241c149fd8ffa8a3540f39d9d","G.PSNERP",1,0,1,0,1,0,0,"City of Bellingham","",2,3,3,5,2,4
+"1635","e7ae8d8b70d14b0ca4ab20f546443604","G.ECO.KING",0,0,1,0,1,0,0,"Trout Unlimited","",2,5,4,4,2,2
+"1636","e8088d5d08014025939a2911d2c2e6d6","G.ECB",1,1,1,1,1,1,0,"Association of Washington Cities","",4,4,4,4,2,2
+"1637","eaf3b414e624460091b577b2368e266c","G.ECM.SALM",0,1,0,0,0,0,0,"Kitsap County","",4,4,3,5,2,3
+"1638","eaf3b414e624460091b577b2368e266c","G.ECM.STORM",0,0,0,0,1,0,0,"Kitsap County","",4,4,3,5,2,3
+"1639","eaf3b414e624460091b577b2368e266c","G.LOC.WEST",0,1,0,0,0,0,0,"Kitsap County","",4,4,3,5,2,4
+"1640","ebc2f06c3cb24586893b7ba6b5eb214a","G.ECO.WHAT",1,1,1,1,0,0,0,"Whatcom MRC","",5,5,3,4,4,4
+"1641","ebc2f06c3cb24586893b7ba6b5eb214a","G.LIO.NOOKWATER",0,1,0,0,0,0,0,"Whatcom MRC","",3,-99,3,3,2,2
+"1642","ebc2f06c3cb24586893b7ba6b5eb214a","G.LOC.NOOK",0,1,0,0,0,0,0,"Whatcom MRC","",3,3,3,3,3,4
+"1643","ebc2f06c3cb24586893b7ba6b5eb214a","G.MRC.WHAT",1,1,1,1,1,1,0,"Whatcom MRC","",-99,-99,-99,-99,-99,-99
+"1644","ebc2f06c3cb24586893b7ba6b5eb214a","G.OTHER.1",0,0,1,1,0,0,0,"Whatcom MRC","",NA,NA,NA,NA,NA,NA
+"1645","ebc2f06c3cb24586893b7ba6b5eb214a","G.OTHER.2",0,0,0,1,0,0,0,"Whatcom MRC","",4,3,3,3,2,4
+"1646","ebc2f06c3cb24586893b7ba6b5eb214a","G.OTHER.3",0,0,0,1,0,0,0,"Whatcom MRC","",5,3,3,4,4,4
+"1647","ebc2f06c3cb24586893b7ba6b5eb214a","G.OTHER.4",0,1,0,1,0,0,0,"Whatcom MRC","",4,3,3,3,2,4
+"1648","ebc2f06c3cb24586893b7ba6b5eb214a","G.OTHER.5",0,0,0,1,0,0,0,"Whatcom MRC","",5,4,3,3,2,3
+"1649","ece61887c37b433baa22c5c99bf7eb75","G.ECO.WHID",0,0,0,1,0,0,0,"Coupeville Middle School","",3,3,4,3,2,4
+"1650","edadc5288a64424ca410c883f2659389","G.ECO.SNOHO",0,1,0,0,0,0,0,"Whidbey Conservation District","",5,4,4,4,2,4
+"1651","edadc5288a64424ca410c883f2659389","G.ECO.WHID",0,1,0,0,0,0,0,"Whidbey Conservation District","",5,4,4,4,2,4
+"1652","edadc5288a64424ca410c883f2659389","G.LIO.ISLANDWATER",0,1,0,0,0,0,0,"Whidbey Conservation District","",4,4,4,-99,2,2
+"1653","edadc5288a64424ca410c883f2659389","G.MRC.ISLAND",0,0,0,1,0,0,0,"Whidbey Conservation District","",4,4,4,4,2,4
+"1654","edadc5288a64424ca410c883f2659389","G.MRC.SNOHO",0,0,0,0,0,0,1,"Whidbey Conservation District","",3,3,-99,4,2,-99
+"1655","ede724751baf427b8a3f0a4348da3d8d","G.ECO.KITSAP",1,1,1,1,1,1,1,"Kitsap PUD","",4,4,4,3,2,5
+"1656","ef3c1e38eb9043f48229fd7042c519c4","G.LIO.STRAIT",0,1,1,0,1,0,0,"WDOE","",4,5,4,4,3,2
+"1657","ef3c1e38eb9043f48229fd7042c519c4","G.OTHER.1",1,1,1,1,1,1,0,"WDOE","",NA,NA,NA,NA,NA,NA
+"1658","ef3c1e38eb9043f48229fd7042c519c4","G.OTHER.2",1,1,1,1,1,1,0,"WDOE","",4,5,4,4,3,2
+"1659","ef3c1e38eb9043f48229fd7042c519c4","G.OTHER.3",1,1,1,0,1,1,0,"WDOE","",4,5,4,4,3,2
+"1660","ef7188b2a07849ddaddf32a893db7280","G.LIO.NORTHCENTRAL",1,1,0,1,1,1,0,"City of Gig Harbor","",5,5,4,4,3,4
+"1661","f0eba42e29fb4c80a9479249a51d81ab","G.LOC.CEDAR",1,1,0,0,0,0,0,"Nisqually River Council","",4,5,5,5,4,4
+"1662","f0eba42e29fb4c80a9479249a51d81ab","G.LOC.GREEN",1,1,0,0,0,0,0,"Nisqually River Council","",4,5,5,5,4,4
+"1663","f0eba42e29fb4c80a9479249a51d81ab","G.LOC.NISQ",1,1,0,1,1,0,0,"Nisqually River Council","",4,5,5,5,4,4
+"1664","f3b5e5675feb4ca9b61945248e9fc91b","G.OTHER.1",1,1,1,0,1,0,0,"City of Bellingham","Surface and Stormwater Utility",NA,NA,NA,NA,NA,NA
+"1665","f3b5e5675feb4ca9b61945248e9fc91b","G.OTHER.2",1,1,0,0,1,1,0,"City of Bellingham","Surface and Stormwater Utility",5,5,5,5,3,4
+"1666","f3b5e5675feb4ca9b61945248e9fc91b","G.OTHER.3",1,1,1,1,1,1,1,"City of Bellingham","Surface and Stormwater Utility",5,5,4,4,3,4
+"1667","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.ECM.MARINE",1,1,0,0,1,0,0,"Long Live the Kings","",5,4,5,5,4,2
+"1668","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.ECM.SALM",1,1,1,1,1,1,0,"Long Live the Kings","",5,4,5,5,4,2
+"1669","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.LOC.HOOD",1,1,0,0,0,0,0,"Long Live the Kings","",-77,-99,-99,-99,-99,-99
+"1670","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.OTHER.1",1,1,1,1,1,1,1,"Long Live the Kings","",NA,NA,NA,NA,NA,NA
+"1671","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.OTHER.2",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,5,5,5
+"1672","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.OTHER.3",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,5,5,5
+"1673","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.OTHER.4",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,5,5,2
+"1674","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.OTHER.5",1,1,1,1,1,1,1,"Long Live the Kings","",5,5,5,5,5,2
+"1675","f4aa9fc1bb214cc3bb9d5b565acfbfaf","G.SRC",0,1,0,0,0,0,0,"Long Live the Kings","",4,5,4,4,2,5
+"1676","f4becd5479334771855dd35fcc05ccc4","G.PSEMP",0,1,0,0,1,1,1,"Washington Sea Grant","",4,4,4,4,1,1
+"1677","f502dba170ca4ed6bb470a7a5a0dbf71","G.ECM.MARINE",1,1,1,1,1,1,1,"UW Tacoma","",4,4,3,4,2,2
+"1678","f502dba170ca4ed6bb470a7a5a0dbf71","G.LOC.PUY",1,1,1,1,1,1,1,"UW Tacoma","",4,4,3,4,2,2
+"1679","f502dba170ca4ed6bb470a7a5a0dbf71","G.PSI",0,0,1,1,0,0,1,"UW Tacoma","",4,4,3,4,2,2
+"1680","f5b7687f4aae45e9befc61afc0488566","G.LIO.HOOD",0,1,1,1,1,1,0,"Point No Point Treaty Council","",4,4,4,4,-99,-99
+"1681","f5b7687f4aae45e9befc61afc0488566","G.LIO.STRAIT",0,1,0,1,1,0,0,"Point No Point Treaty Council","",4,4,4,4,-99,-99
+"1682","f5b7687f4aae45e9befc61afc0488566","G.LOC.HOOD",0,1,1,1,0,0,0,"Point No Point Treaty Council","",4,4,4,4,-99,-99
+"1683","f5b7687f4aae45e9befc61afc0488566","G.LOC.NOLY",1,0,0,0,0,0,0,"Point No Point Treaty Council","",3,3,3,3,-99,-99
+"1684","f5b7687f4aae45e9befc61afc0488566","G.SRC",0,1,1,1,0,1,0,"Point No Point Treaty Council","",4,5,4,4,-99,-99
+"1685","f64e445c49144c87bd17567a47c48c4a","G.ECO.WHAT",1,0,0,0,1,0,0,"Dumas & Associates, Inc.","",2,3,3,3,2,3
+"1686","f64e445c49144c87bd17567a47c48c4a","G.LOC.NOOK",1,1,1,1,1,1,1,"Dumas & Associates, Inc.","",1,18,1,5,NA,4
+"1687","f64e445c49144c87bd17567a47c48c4a","G.LOC.SKAGIT",1,1,0,1,1,1,1,"Dumas & Associates, Inc.","",4,4,3,4,2,3
+"1688","f64e445c49144c87bd17567a47c48c4a","G.OTHER.1",1,1,1,1,1,1,1,"Dumas & Associates, Inc.","",NA,NA,NA,NA,NA,NA
+"1689","f64e445c49144c87bd17567a47c48c4a","G.OTHER.2",1,1,1,1,1,1,1,"Dumas & Associates, Inc.","",4,4,4,5,4,4
+"1690","f64e445c49144c87bd17567a47c48c4a","G.OTHER.3",1,1,1,1,1,0,1,"Dumas & Associates, Inc.","",3,5,4,5,4,4
+"1691","f800ba851bcf435c94e5a00e21050df1","G.ECO.THURST",1,1,1,1,1,0,1,"LOTT Clean Water Alliance","",5,5,5,4,4,4
+"1692","f800ba851bcf435c94e5a00e21050df1","G.OTHER.1",1,1,0,1,1,0,0,"LOTT Clean Water Alliance","",NA,NA,NA,NA,NA,NA
+"1693","f800ba851bcf435c94e5a00e21050df1","G.OTHER.2",1,1,1,1,0,0,0,"LOTT Clean Water Alliance","",5,5,5,4,2,2
+"1694","f800ba851bcf435c94e5a00e21050df1","G.OTHER.3",1,0,0,1,0,0,1,"LOTT Clean Water Alliance","",5,5,5,4,4,4
+"1695","f8465281779e46a58b12bea9de915c01","G.ECO.SJ",1,1,0,0,0,0,0,"San Juan County Land Bank","",3,4,3,3,2,2
+"1696","f8465281779e46a58b12bea9de915c01","G.OTHER.1",1,1,1,1,1,1,1,"San Juan County Land Bank","",NA,NA,NA,NA,NA,NA
+"1697","f8465281779e46a58b12bea9de915c01","G.OTHER.2",1,1,0,0,1,0,0,"San Juan County Land Bank","",5,4,3,3,2,2
+"1698","f8e5d5df7bf64071b28dff3446f4a32c","G.ECO.KITSAP",1,1,1,1,1,1,0,"Kitsap Conservation District","",5,5,4,4,4,5
+"1699","f8e5d5df7bf64071b28dff3446f4a32c","G.OTHER.1",1,1,1,1,1,1,0,"Kitsap Conservation District","",NA,NA,NA,NA,NA,NA
+"1700","f8e5d5df7bf64071b28dff3446f4a32c","G.OTHER.2",1,1,1,1,1,1,0,"Kitsap Conservation District","",5,5,4,4,3,3
+"1701","f8e5d5df7bf64071b28dff3446f4a32c","G.OTHER.3",1,1,1,1,1,1,0,"Kitsap Conservation District","",5,5,4,4,3,3
+"1702","f98a3362d52f44e48e9f4014cef6447c","G.LIO.SNOHOSTILL",1,1,0,0,1,0,0,"Snoqualmie Watershed Forum","",4,4,3,3,1,3
+"1703","f98a3362d52f44e48e9f4014cef6447c","G.LOC.SNOHO",1,1,0,0,1,1,1,"Snoqualmie Watershed Forum","",4,5,2,5,1,4
+"1704","f98a3362d52f44e48e9f4014cef6447c","G.OTHER.1",1,1,1,1,1,1,1,"Snoqualmie Watershed Forum","",NA,NA,NA,NA,NA,NA
+"1705","f98a3362d52f44e48e9f4014cef6447c","G.OTHER.2",1,1,0,1,1,1,0,"Snoqualmie Watershed Forum","",5,5,4,5,4,5
+"1706","f98a3362d52f44e48e9f4014cef6447c","G.OTHER.3",1,1,0,0,0,0,0,"Snoqualmie Watershed Forum","",5,4,4,5,1,4
+"1707","f98a3362d52f44e48e9f4014cef6447c","G.WLEADS",0,1,0,0,0,0,0,"Snoqualmie Watershed Forum","",4,3,2,4,1,2
+"1708","fa52b07923e14ccb82ba141ec433c65d","G.ECO.STRAIT",1,1,0,0,1,0,0,"Jamestown S'Klallam Tribe","",3,4,4,3,2,2
+"1709","fa52b07923e14ccb82ba141ec433c65d","G.LOC.NOLY",1,1,0,0,1,0,1,"Jamestown S'Klallam Tribe","",5,4,5,5,4,5
+"1710","fa52b07923e14ccb82ba141ec433c65d","G.OTHER.1",1,1,1,1,1,0,0,"Jamestown S'Klallam Tribe","",NA,NA,NA,NA,NA,NA
+"1711","fa52b07923e14ccb82ba141ec433c65d","G.OTHER.2",1,1,1,1,1,1,1,"Jamestown S'Klallam Tribe","",5,5,4,4,3,4
+"1712","fa52b07923e14ccb82ba141ec433c65d","G.OTHER.3",1,1,1,1,1,0,1,"Jamestown S'Klallam Tribe","",5,5,5,4,3,5
+"1713","fa756dada5a446658af0544e6973a0fa","G.ECM.FRESH",1,0,0,0,1,0,0,"Clallam County Streamkeepers","",1,4,3,3,1,1
+"1714","fa756dada5a446658af0544e6973a0fa","G.ECM.SALM",1,0,0,0,1,0,0,"Clallam County Streamkeepers","",1,4,4,3,1,1
+"1715","fa756dada5a446658af0544e6973a0fa","G.ECM.STORM",1,1,0,0,1,0,0,"Clallam County Streamkeepers","",4,5,5,5,1,1
+"1716","fa756dada5a446658af0544e6973a0fa","G.ECO.STRAIT",1,0,0,0,1,0,0,"Clallam County Streamkeepers","",1,4,4,4,1,1
+"1717","fa756dada5a446658af0544e6973a0fa","G.OTHER.1",1,0,0,0,0,0,1,"Clallam County Streamkeepers","",NA,NA,NA,NA,NA,NA
+"1718","fa756dada5a446658af0544e6973a0fa","G.OTHER.2",1,0,0,0,0,0,1,"Clallam County Streamkeepers","",4,5,4,4,1,4
+"1719","fa756dada5a446658af0544e6973a0fa","G.OTHER.3",1,1,0,0,0,0,0,"Clallam County Streamkeepers","",4,4,3,3,1,3
+"1720","fa756dada5a446658af0544e6973a0fa","G.OTHER.4",1,0,0,0,1,0,1,"Clallam County Streamkeepers","",4,5,4,4,1,4
+"1721","fa756dada5a446658af0544e6973a0fa","G.OTHER.5",1,0,0,0,1,0,1,"Clallam County Streamkeepers","",3,4,4,3,1,4
+"1722","fa8818e7d27d471ebd10872eb478856a","G.MRC.ISLAND",1,1,0,1,0,0,1,"WSUX Beachwatchers","",5,4,4,4,4,4
+"1723","fa8818e7d27d471ebd10872eb478856a","G.OTHER.1",1,1,0,1,0,0,0,"WSUX Beachwatchers","",NA,NA,NA,NA,NA,NA
+"1724","fa8818e7d27d471ebd10872eb478856a","G.OTHER.2",0,0,0,1,0,0,0,"WSUX Beachwatchers","",5,4,4,4,4,4
+"1725","fa8818e7d27d471ebd10872eb478856a","G.OTHER.3",0,0,0,1,0,0,0,"WSUX Beachwatchers","",5,4,4,4,4,4
+"1726","fb535e382d6c40fb9ff598bcec28de55","G.LOC.STILL",1,1,0,1,1,0,0,"Stillaguamish Watershed Council","",1,12,1,4,NA,4
+"1727","fb6cab0bd1494da2a25979f7ce8e17a8","G.ECO.SKAGIT",1,1,0,1,0,0,1,"Stillaguamish Clean Water District","",5,4,2,2,2,4
+"1728","fb6cab0bd1494da2a25979f7ce8e17a8","G.LIO.SNOHOSTILL",1,1,0,1,1,0,0,"Stillaguamish Clean Water District","",5,5,4,5,5,4
+"1729","fb6cab0bd1494da2a25979f7ce8e17a8","G.LOC.SKAGIT",1,0,0,1,1,0,1,"Stillaguamish Clean Water District","",3,5,3,3,3,2
+"1730","fb6cab0bd1494da2a25979f7ce8e17a8","G.LOC.STILL",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",3,6,5,5,5,5
+"1731","fb6cab0bd1494da2a25979f7ce8e17a8","G.MRC.SKAGIT",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,4,5,3,5
+"1732","fb6cab0bd1494da2a25979f7ce8e17a8","G.MRC.SNOHO",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",5,5,5,5,5,5
+"1733","fb6cab0bd1494da2a25979f7ce8e17a8","G.OTHER.1",1,1,1,1,0,1,1,"Stillaguamish Clean Water District","",NA,NA,NA,NA,NA,NA
+"1734","fb6cab0bd1494da2a25979f7ce8e17a8","G.OTHER.2",1,1,1,1,1,1,1,"Stillaguamish Clean Water District","",4,5,5,5,5,3
+"1735","fb8a8ad463f04c73b35cf56c6f363b7e","G.ECO.HOOD",0,0,0,0,0,0,1,"Greenfleet Monitoring Expeditions","",4,3,4,-77,-77,-77
+"1736","fb8a8ad463f04c73b35cf56c6f363b7e","G.OTHER.1",0,1,0,1,0,0,0,"Greenfleet Monitoring Expeditions","",NA,NA,NA,NA,NA,NA
+"1737","fb8a8ad463f04c73b35cf56c6f363b7e","G.OTHER.2",1,1,0,1,1,1,0,"Greenfleet Monitoring Expeditions","",4,5,4,-77,-77,-77
+"1738","fc9cb2c343d443bb8ea2bb5f4ed60490","G.LIO.SNOHOSTILL",0,1,0,0,0,0,0,"WDFW","",4,-77,3,3,3,3
+"1739","fc9cb2c343d443bb8ea2bb5f4ed60490","G.LOC.ISLAND",1,1,0,1,1,0,0,"WDFW","",5,4,4,4,3,3
+"1740","fc9cb2c343d443bb8ea2bb5f4ed60490","G.LOC.SNOHO",1,1,0,1,1,1,0,"WDFW","",5,5,4,5,4,5
+"1741","fc9cb2c343d443bb8ea2bb5f4ed60490","G.LOC.STILL",1,1,0,1,1,0,0,"WDFW","",3,28,2,5,4,5
+"1742","fc9cb2c343d443bb8ea2bb5f4ed60490","G.OTHER.1",0,1,0,1,1,0,0,"WDFW","",NA,NA,NA,NA,NA,NA
+"1743","fc9cb2c343d443bb8ea2bb5f4ed60490","G.OTHER.2",1,1,1,1,1,1,1,"WDFW","",4,3,3,3,3,3
+"1744","fc9cb2c343d443bb8ea2bb5f4ed60490","G.PSNERP",0,0,0,1,0,0,0,"WDFW","",4,4,3,4,3,3
+"1745","fd4ca636a86a43c1982097efbb087b4e","G.LIO.SOUTHCENTRAL",1,1,0,0,0,0,0,"Citizens for a Healthy Bay","",3,4,3,3,3,3
+"1746","fd4ca636a86a43c1982097efbb087b4e","G.LOC.PUY",1,1,1,1,1,1,0,"Citizens for a Healthy Bay","",3,4,3,3,3,3
+"1747","fd4ca636a86a43c1982097efbb087b4e","G.OTHER.1",1,1,0,1,1,1,0,"Citizens for a Healthy Bay","",NA,NA,NA,NA,NA,NA
+"1748","fe062de1fe1e496c98f6fcab6ac2283c","G.ECO.MASON",0,1,0,0,0,0,0,"South Puget Sound Salmon Enhancement","",-77,3,-77,2,1,-77
+"1749","fe062de1fe1e496c98f6fcab6ac2283c","G.LOC.NISQ",1,1,0,1,1,1,0,"South Puget Sound Salmon Enhancement","",4,4,4,4,1,4
+"1750","fe062de1fe1e496c98f6fcab6ac2283c","G.LOC.SOUTH",1,1,1,1,1,1,0,"South Puget Sound Salmon Enhancement","",4,4,4,-77,1,4
+"1751","fe062de1fe1e496c98f6fcab6ac2283c","G.PSNERP",0,0,0,0,0,0,1,"South Puget Sound Salmon Enhancement","",-99,-99,4,4,1,4
+"1752","ffaf48fd5aa744de8f983563f0a52413","G.LOC.HOOD",1,0,0,0,0,0,1,"USFWS","",4,4,3,3,-99,-99
+"1753","ffaf48fd5aa744de8f983563f0a52413","G.LOC.NISQ",0,1,0,1,1,0,1,"USFWS","",5,5,3,5,-99,-99
+"1754","ffaf48fd5aa744de8f983563f0a52413","G.LOC.SOUTH",0,1,0,0,0,0,1,"USFWS","",4,5,3,4,-99,-99
+"1755","ffcb5e8b4a3743778505edd1861f8f5b","G.LOC.WEST",0,0,0,0,0,0,1,"WDOE","",4,5,4,5,2,-77
+"1756","ffcb5e8b4a3743778505edd1861f8f5b","G.OTHER.1",1,0,1,0,0,0,0,"WDOE","",NA,NA,NA,NA,NA,NA
