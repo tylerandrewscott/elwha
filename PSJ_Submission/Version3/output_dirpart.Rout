@@ -1,0 +1,945 @@
+
+R version 3.1.3 (2015-03-09) -- "Smooth Sidewalk"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #rm(list=ls())
+> #rm(list=ls())
+> require(statnet)
+Loading required package: statnet
+Loading required package: network
+network: Classes for Relational Data
+Version 1.11.3 created on 2014-12-05.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+Loading required package: ergm
+Loading required package: statnet.common
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.3-2 created on 2014-01-13.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+Attaching package: ‘sna’
+
+The following object is masked from ‘package:network’:
+
+    %c%
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.7.1, created on 2014-09-29
+Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+Loading required package: tergm
+
+tergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.1.1, created on 2013-03-29
+Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+Loading required package: latentnet
+
+latentnet: version 2.5.1, created on 2014-02-17
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    Susan M. Shortreed
+                    Jeremy Tantrum
+                    Peter D. Hoff
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("latentnet").
+
+
+Attaching package: ‘latentnet’
+
+The following object is masked from ‘package:base’:
+
+    scale
+
+
+statnet: version 2014.2.0, created on 2014-02-05
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+> library(snow)
+> library(rlecuyer)
+> library(Rmpi)
+
+Attaching package: ‘Rmpi’
+
+The following object is masked from ‘package:rlecuyer’:
+
+    .onUnload
+
+> #setwd('H:/passtosim')
+> #setwd("//Users/TScott/Google Drive/elwha")
+> #setwd('H:/elwha/Dissert_Scripts/')
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+> load('NetworkReady.RData')
+> #load('Ready_to_ERGM.RData')
+> g <- sum(net %e% "TVAL")/network.dyadcount(net)
+> init.geo<-log(1 - 1/(g+1))
+> geo.init = init.geo
+> 
+> as.mcmc.default <- coda:::as.mcmc.default
+> as.mcmc.list.default <- coda:::as.mcmc.list.default
+> 
+> dpx <- dppsp * dpn
+> spx <- sppsp * spn
+> spn7 <- spn/7
+> spx7 <- spx/7
+> sppsp7 <- sppsp/7
+> dpn7 <- dpn/7
+> dpx7 <- dpx/7
+> dppsp7 <- dppsp/7
+> ipn_pt<-get.vertex.attribute(net,'IPn7')*as.sociomatrix(net,"PRIOR_TIE")
+> ippsp_pt<-get.vertex.attribute(net,'IPpsp7')*as.sociomatrix(net,"PRIOR_TIE")
+> ipx_pt<-get.vertex.attribute(net,'IPx7')*as.sociomatrix(net,"PRIOR_TIE")
+> dpn_pt<-dpn7*as.sociomatrix(net,"PRIOR_TIE")
+> dppsp_pt<-dppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> dpx_pt<-dpx7*as.sociomatrix(net,"PRIOR_TIE")
+> spn_pt<-spn7*as.sociomatrix(net,"PRIOR_TIE")
+> sppsp_pt<-sppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> spx_pt<-spx7*as.sociomatrix(net,"PRIOR_TIE")
+> all_sp_quad<-((spn7+sppsp7)^2)
+> all_sp_pt<-((spn7+sppsp7)*as.sociomatrix(net,"PRIOR_TIE"))
+> all_sp<-(spn7+sppsp7)
+> 
+> 
+> # mod_base <-
+> #   ergm(net~sum+mutual(form="geometric")+
+> #          transitiveweights("geomean","sum","geomean")+
+> #                     nodecov("NUMRESP",form='sum')+
+> #         nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
+> #           nodematch("ORGTYPE",form='sum',diff=FALSE)+
+> #         nodecov('allpart',form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 7)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="SOCK",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # 
+> 
+> 
+> # mod_indpart<-
+> # ergm(net~sum+mutual(form="geometric")+
+> #        transitiveweights("geomean","sum","geomean")+
+> #        nodecov("NUMRESP",form='sum')+
+> #        nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
+> #        nodematch("ORGTYPE",form='sum',diff=FALSE)+
+> #        nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
+> #      response="TVAL", reference=~DiscUnif(0,3),
+> #      control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                           MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                           MCMLE.trustregion=100,MCMC.addto.se=T,
+> #                           parallel.type="SOCK",parallel=8,
+> #                           MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                           MCMC.burnin=15000,MCMC.interval=1000,MCMLE.steplength=.25,
+> #                           MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
+> 
+> 
+> mod_dirpart <-
++   ergm(net~sum+mutual(form="geometric")+
++          transitiveweights("geomean","sum","geomean")+
++          nodecov("NUMRESP",form='sum')+
++          nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
++          nodematch("ORGTYPE",form='sum',diff=FALSE)+
++ edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
++          response="TVAL", reference=~DiscUnif(0,3),
++          control=control.ergm(init=c(geo.init, rep(0, 9)),
++                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
++ MCMLE.trustregion=100,MCMC.addto.se=T,
++ parallel.type="SOCK",parallel=8,
++ MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
++ MCMC.burnin=15000,MCMC.interval=1000,MCMLE.steplength=.25,
++ MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                            -3.091141                              0.000000 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                             0.000000                              0.000000 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                             0.000000                              0.000000 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             0.000000                              0.000000 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                             0.000000                              0.000000 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            -11.25288                            -314.99277 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1559.92401                           -7559.97226 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            -90.61883                           -6364.07609 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -28.68066                           -2422.83774 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1089.17512                          -13758.46758 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            -11.25288                            -314.99277 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1559.92401                           -7559.97226 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            -90.61883                           -6364.07609 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -28.68066                           -2422.83774 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1089.17512                          -13758.46758 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 18.44 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.1664401158                          0.2334899993 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         0.0829364864                         -0.0016479631 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         0.0007358769                          0.0001941464 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                        -0.0073736650                         -0.0195193229 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                        -0.0588411505                          0.0049558842 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             72.37722                            -299.24713 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1403.75339                           -7398.13167 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            649.09501                           -4909.02001 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -22.24460                           -2452.60554 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1108.16688                          -13853.43876 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             72.37722                            -299.24713 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1403.75339                           -7398.13167 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            649.09501                           -4909.02001 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -22.24460                           -2452.60554 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1108.16688                          -13853.43876 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0271394848823547  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 6.18 
+Iteration 3 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.264524e+00                          3.803567e-01 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         1.273402e-01                          4.998160e-03 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         5.344709e-05                          2.159814e-04 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         4.985928e-04                          6.130313e-02 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         5.946053e-02                          2.274695e-03 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             83.86122                            -287.73741 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1343.21890                           -7078.76020 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            753.58778                           -4642.33227 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -21.42348                           -2348.53288 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1066.74420                          -13185.33636 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             83.86122                            -287.73741 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1343.21890                           -7078.76020 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            753.58778                           -4642.33227 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -21.42348                           -2348.53288 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1066.74420                          -13185.33636 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.033999651670456  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.026 
+Iteration 4 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.3591566374                          0.4665970421 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         0.1687689857                          0.0093798051 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         0.0007332623                          0.0002109829 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         0.0037723442                          0.1086757138 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         0.1669614051                         -0.0014598810 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             85.10054                            -278.71629 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1288.99948                           -6780.09570 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            813.73400                           -4438.87700 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -19.94810                           -2245.08430 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1021.23083                          -12593.36718 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             85.10054                            -278.71629 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1288.99948                           -6780.09570 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            813.73400                           -4438.87700 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -19.94810                           -2245.08430 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          -1021.23083                          -12593.36718 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0389858782291412  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.573 
+Iteration 5 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.4419288537                          0.5956777419 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         0.2049669256                          0.0109529817 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                        -0.0005993467                          0.0008941319 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         0.0071690562                          0.1450413311 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         0.2473451524                         -0.0041316328 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             82.99164                            -262.99782 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1229.87921                           -6444.81216 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            782.13981                           -4169.51215 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -21.58440                           -2120.19108 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -967.42499                          -11821.78966 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             82.99164                            -262.99782 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1229.87921                           -6444.81216 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            782.13981                           -4169.51215 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -21.58440                           -2120.19108 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -967.42499                          -11821.78966 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0592882335186005  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.062 
+Iteration 6 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.5290936260                          0.7036961063 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         0.2355446699                          0.0150159089 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                        -0.0006014789                          0.0010649819 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         0.0209970767                          0.1707241451 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         0.3087560622                         -0.0078156323 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             85.84732                            -245.85182 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1135.58612                           -5931.27052 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            832.57474                           -3751.89718 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -19.95794                           -1975.19433 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -905.31106                          -11199.61916 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             85.84732                            -245.85182 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          -1135.58612                           -5931.27052 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            832.57474                           -3751.89718 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                            -19.95794                           -1975.19433 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -905.31106                          -11199.61916 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0643950104713441  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.235 
+Iteration 7 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.609329e+00                          7.696664e-01 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         2.563043e-01                          1.643731e-02 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         3.244496e-05                          1.699002e-03 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         3.892176e-02                          1.960445e-01 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         3.675771e-01                         -1.040877e-02 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             114.8300                             -224.2376 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            -972.9493                            -5219.2609 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            1167.1564                            -2545.1595 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -16.7368                            -1808.1061 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                            -825.7918                           -10311.2851 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             114.8300                             -224.2376 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            -972.9493                            -5219.2609 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            1167.1564                            -2545.1595 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -16.7368                            -1808.1061 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                            -825.7918                           -10311.2851 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0988261699676515  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.52 
+Iteration 8 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                        -3.6555587173                          0.8955823736 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                         0.2670360210                          0.0144752794 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                        -0.0004482624                          0.0017984375 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                         0.0609624686                          0.2203373661 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                         0.4322583110                         -0.0124029743 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            150.00056                            -186.99262 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -744.32269                           -4324.59010 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1499.05233                           -1512.03218 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -8.16378                           -1560.38635 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -712.15224                           -8763.55142 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            150.00056                            -186.99262 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -744.32269                           -4324.59010 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1499.05233                           -1512.03218 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -8.16378                           -1560.38635 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -712.15224                           -8763.55142 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0998215675354006  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.081 
+Iteration 9 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.687408948                           0.965056965 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.257656890                           0.015120550 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.001751433                           0.002522814 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.084044492                           0.248779419 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.481895769                          -0.014088325 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            141.86888                            -163.20146 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -624.08598                           -3784.47180 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1384.14087                           -1113.41720 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -6.99342                           -1365.73573 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -622.48095                           -7570.02480 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            141.86888                            -163.20146 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -624.08598                           -3784.47180 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1384.14087                           -1113.41720 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -6.99342                           -1365.73573 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -622.48095                           -7570.02480 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.139249920845032  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.606 
+Iteration 10 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.711220569                           1.033915917 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.229581004                           0.021939189 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.003204069                           0.003239530 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.092445675                           0.272026099 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.519465881                          -0.016035977 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            134.96650                            -140.10735 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -525.94535                           -3162.14836 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1300.90417                            -698.04070 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -9.22936                           -1207.51561 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -536.01647                           -6610.48993 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            134.96650                            -140.10735 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -525.94535                           -3162.14836 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1300.90417                            -698.04070 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -9.22936                           -1207.51561 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -536.01647                           -6610.48993 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.141563355922699  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.121 
+Iteration 11 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.754214865                           1.072097413 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.214799849                           0.027040833 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.004540001                           0.004283951 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.116367974                           0.295171274 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.556498750                          -0.017816276 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             135.7151                             -120.3232 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            -417.6207                            -2645.4162 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            1298.2465                             -265.8765 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                              -4.1121                            -1054.0854 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                            -468.5269                            -5736.6755 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             135.7151                             -120.3232 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            -417.6207                            -2645.4162 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            1298.2465                             -265.8765 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                              -4.1121                            -1054.0854 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                            -468.5269                            -5736.6755 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.153145730495453  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.664 
+Iteration 12 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.792156990                           1.119955193 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.198053785                           0.033802311 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.007039230                           0.004848981 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.135717130                           0.325234843 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.589631152                          -0.019833696 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            129.73470                             -95.61322 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -279.61706                           -1977.34836 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1153.72831                             211.18636 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -4.21212                            -868.61376 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -388.64406                           -4684.36350 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            129.73470                             -95.61322 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -279.61706                           -1977.34836 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           1153.72831                             211.18636 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -4.21212                            -868.61376 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -388.64406                           -4684.36350 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.198364973068237  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.593 
+Iteration 13 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.807036841                           1.157286407 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.173697211                           0.040404650 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.009115052                           0.004867355 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.133874472                           0.355941190 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.628973439                          -0.021922514 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            100.52630                             -81.77711 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -259.77503                           -1716.04292 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            865.91238                            -272.59948 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -6.91082                            -720.30703 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -324.02838                           -3872.17365 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            100.52630                             -81.77711 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -259.77503                           -1716.04292 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            865.91238                            -272.59948 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -6.91082                            -720.30703 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -324.02838                           -3872.17365 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.202234029769898  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.048 
+Iteration 14 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.869526957                           1.194191642 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.154714973                           0.045039290 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.009538780                           0.006300888 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.166569024                           0.387177571 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.670767425                          -0.024327744 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             82.98612                             -64.61578 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -205.67820                           -1365.65166 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            761.88367                            -109.60322 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -2.49092                            -585.61581 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -263.10995                           -3270.81571 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             82.98612                             -64.61578 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -205.67820                           -1365.65166 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            761.88367                            -109.60322 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -2.49092                            -585.61581 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -263.10995                           -3270.81571 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.236715853214264  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.761 
+Iteration 15 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.930146656                           1.208099464 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.131696502                           0.052223636 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.009948209                           0.007429776 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.203229602                           0.419044602 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.700906477                          -0.026268273 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             55.98730                             -53.82093 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -186.15161                           -1089.37240 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            545.22025                            -205.97974 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -0.65820                            -442.34589 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -221.92451                           -2592.54402 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                             55.98730                             -53.82093 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -186.15161                           -1089.37240 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            545.22025                            -205.97974 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                             -0.65820                            -442.34589 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -221.92451                           -2592.54402 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.416 
+Step length converged once. Increasing MCMC sample size.
+Iteration 16 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.958631091                           1.238217266 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.120833642                           0.054730903 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.011986551                           0.008038537 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                          0.218756873                           0.440131377 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                          0.734848178                          -0.027311694 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                             35.48191                             -40.38950 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           -151.45162                            -894.33920 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                            331.27024                            -344.25010 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                              1.66970                            -338.66287 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                           -157.89250                           -1854.28006 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                              35.4819                              -40.3895 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            -151.4516                             -894.3392 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                             331.2702                             -344.2501 
+                nodematch.sum.ORGTYPE                      edgecov.dpn7.sum 
+                               1.6697                             -338.6629 
+                   edgecov.dppsp7.sum                      edgecov.dpx7.sum 
+                            -157.8925                            -1854.2801 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.469 
+Step length converged twice. Stopping.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> 
+> save.image('result_dirpart.RData')
+> # 
+> # mod_shapart <-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          edgecov(spn7,form='sum')+edgecov(sppsp7,form='sum')+edgecov(spx7,form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="MPI",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # detach(file:NetworkReady.RData)
+> # 
+> # rm(
+> # list=ls()[intersect(grep('shapart',ls(),invert=T),grep('dirpart',ls(),
+> #                                                        invert=T))])
+> 
+> rm(list=ls())
+> 
