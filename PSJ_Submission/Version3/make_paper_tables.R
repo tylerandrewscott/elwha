@@ -4,7 +4,7 @@ require(stargazer)
 require(grid)
 rm(list=ls())
 
-setwd('/homes/tscott1/win/user/elwha/Dissert_Scripts/')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
 
 
 load('only_model_results.RData')

@@ -6,7 +6,7 @@ require(Rmpi)
 #setwd('H:/passtosim')
 #setwd("//Users/TScott/Google Drive/elwha")
 #setwd('win/user/elwha/Dissert_Scripts/')
-setwd('/homes/tscott1/win/user/elwha/Dissert_Scripts')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
 load('NetworkReady.RData')
 
 

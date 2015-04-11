@@ -1,5 +1,5 @@
 rm(list=ls())
-setwd('/homes/tscott1/win/user/elwha/Dissert_Scripts/')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
 
 mod.names = c('mod_base','mod_allpart','mod_allpartquad',
               'mod_dirpart','mod_indpart','mod_shapart','modpast_allpart7')
