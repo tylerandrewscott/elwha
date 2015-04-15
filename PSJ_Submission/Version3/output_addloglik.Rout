@@ -155,4 +155,41 @@ or type citation("statnet").
 +               'mod_dirpart','mod_indpart','mod_shapart','modpast_allpart7')
 > 
 > load('result_base.RData')
-> mod_base <- logLik.ergm(mod_base,add=TRUE)
+> load('result_allpartmod.RData')
+> load('result_indpart.RData')
+> load('result_dirpart.RData')
+> load('result_shapart.RData')
+> rm(list=ls()[ls() %in% mod.names==FALSE])
+> load('result_pasttie.RData')
+> 
+> 
+> mod.names = c('mod_base','mod_allpart','mod_allpartquad',
++               'mod_dirpart','mod_indpart','mod_shapart','modpast_allpart7')
+> 
+> control.settings = control.logLik.ergm(nsteps=5,
++                                        MCMC.burnin=1000,
++                                        MCMC.interval=500,
++                                        MCMC.samplesize=10000,
++                                        obs.MCMC.samplesize=10000,
++                                        obs.MCMC.interval=500,
++                                        obs.MCMC.burnin=1000,
++                                        MCMC.prop.weights="random",
++                                        MCMC.prop.args=NULL,
++                                        warn.dyads=TRUE,
++                                        MCMC.init.maxedges=10000,
++                                        seed=24)
+> 
+> mod.list = list(mod_base,mod_allpart,mod_allpartquad,
++                 mod_dirpart,mod_indpart,mod_shapart,modpast_allpart7)
+> 
+> #test = logLik.ergm(mod.list[[1]],control.logLik.ergm=control.settings,add=TRUE,verbose=T)
+> 
+> 
+> require(parallel)
+Loading required package: parallel
+> require(statnet)
+> 
+> 
+> mod_base = logLik.ergm(object = mod_base,control = control.settings,
++                        add = TRUE,eval.loglik = TRUE,verbose=T)
+Running theta=[-0.3299712300, 0.1236307055, 0.0186607357, 0.0069402437,-0.0004730770, 0.0003228172, 0.0154271171].
