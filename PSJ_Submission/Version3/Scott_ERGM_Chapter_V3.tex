@@ -135,7 +135,7 @@ Pr_{h,g}(Y=y_{i};\theta)= h(y) \frac{\exp(\theta^{T}g(y))}{c_{h,g}(\theta)}, y \
 \label{eq:ERGM}
 \end{equation}
 
-with a normalizing constant represented by $c$ and the reference distribution represented by $h(y)$ \parencite{krivitsky2013}. The normalizing constant simply ensures that all probabilities sum to one. The reference distribution specifies the the model prior to the addition of any model terms; thus it represents the observed baseline distribution of network ties. For the discrete uniform-reference model, $h(y) = 1$ \parencite{krivitsky2012}. Additional terms can then be added to the model to account for structural characteristics of the network, or for exogenous attributes of the nodes (organizations) or edges (collaborative ties). For instance, adding a basic summation term for the value of all observed network relations (the equivalent of adding a term for the total number of edges in a binary model \texticte{wyatt2010}) produces the following specification \parencite{krivitsky2013}:
+with a normalizing constant represented by $c$ and the reference distribution represented by $h(y)$ \parencite{krivitsky2013}. The normalizing constant simply ensures that all probabilities sum to one. The reference distribution specifies the the model prior to the addition of any model terms; thus it represents the observed baseline distribution of network ties. For the discrete uniform-reference model, $h(y) = 1$ \parencite{krivitsky2012}. Additional terms can then be added to the model to account for structural characteristics of the network, or for exogenous attributes of the nodes (organizations) or edges (collaborative ties). For instance, adding a basic summation term for the value of all observed network relations (the equivalent of adding a term for the total number of edges in a binary model \textcite{wyatt2010}) produces the following specification \parencite{krivitsky2013}:
 
 \begin{equation}
 Pr_{h,g} (Y = y; \theta) \propto h(y) \exp(\theta \sum_{(i,j) \in Y} y_{ij})
@@ -173,7 +173,7 @@ Figure \ref{figure:traceplots} shows traceplots for each parameter across iterat
 
 \begin{figure}[!ht]
 \caption{\textit{Traceplots of MCMC Chains}}
-\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/NetworkChapter'}}
+\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/PSJ_Submission/Version3'}}
 \noindent
 \includegraphics[width=6.5in]
 {traceplotdu}
@@ -184,7 +184,7 @@ Further, Figure \ref{figure:densityplots} shows smoothed parameter density plots
 
 \begin{figure}[!ht]
 \caption{\textit{Density Plots of MCMC Parameters}}
-\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/NetworkChapter'}}
+\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/PSJ_Submission/Version3'}}
 \noindent
 \includegraphics[width=6.5in]
 {densityplotdu}
