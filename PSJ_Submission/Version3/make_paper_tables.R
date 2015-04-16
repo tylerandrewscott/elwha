@@ -6,9 +6,9 @@ rm(list=ls())
 
 setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
 
-
-load('only_model_results.RData')
 load('NetworkReady.RData')
+load('only_model_results.RData')
+
 
 
 g <- sum(net %e% "TVAL")/network.dyadcount(net)
