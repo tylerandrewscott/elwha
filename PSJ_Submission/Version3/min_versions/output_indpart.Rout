@@ -811,3 +811,49 @@ Calling MCMLE Optimization...
 Using Newton-Raphson Step with step length  0.25  ...
 Using lognormal metric (see control.ergm function).
 Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.828 
+Step length converged twice. Stopping.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> save.image('result_indpart.RData')
+> #mod_dirpart <-
+> #     ergm(net~sum+mutual(form="min")+
+> # transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> # nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE")+
+> # edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
+> #          response="TVAL", reference=~DiscUnif(0,3),
+> #          control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                               MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                               MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                               parallel.type="MPI",parallel=8,
+> #                               MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                               MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                               MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_shapart <-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          edgecov(spn7,form='sum')+edgecov(sppsp7,form='sum')+edgecov(spx7,form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="MPI",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # detach(file:NetworkReady.RData)
+> # 
+> # rm(
+> # list=ls()[intersect(grep('shapart',ls(),invert=T),grep('dirpart',ls(),
+> #                                                        invert=T))])
+> 
+> rm(list=ls())
+> 

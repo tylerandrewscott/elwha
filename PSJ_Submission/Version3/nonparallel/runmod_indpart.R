@@ -7,7 +7,7 @@ library(Rmpi)
 #setwd('H:/passtosim')
 #setwd("//Users/TScott/Google Drive/elwha")
 #setwd('H:/elwha/Dissert_Scripts/')
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/nonparallel/')
 load('NetworkReady.RData')
 #load('Ready_to_ERGM.RData')
 g <- sum(net %e% "TVAL")/network.dyadcount(net)
@@ -58,43 +58,38 @@ all_sp<-(spn7+sppsp7)
 # 
 
 
-# mod_indpart<-
-# ergm(net~sum+mutual(form="geometric")+
-#        transitiveweights("geomean","sum","geomean")+
-#        nodecov("NUMRESP",form='sum')+
-#        nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
-#        nodematch("ORGTYPE",form='sum',diff=FALSE)+
-#        nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
-#      response="TVAL", reference=~DiscUnif(0,3),
-#      control=control.ergm(init=c(geo.init, rep(0, 9)),
-#                           MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
-#                           MCMLE.trustregion=100,MCMC.addto.se=T,
-#                           parallel.type="SOCK",parallel=8,
-#                           MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
-#                           MCMC.burnin=15000,MCMC.interval=1000,MCMLE.steplength=.25,
-#                           MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
+mod_indpart<-
+ergm(net~sum+
+       mutual(form="min")+
+       transitiveweights(twopath="min",combine="max",affect="min")+
+       nodecov("NUMRESP",form='sum')+
+       nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
+       nodematch("ORGTYPE",form='sum',diff=FALSE)+
+       nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
+     response="TVAL", reference=~DiscUnif(0,3),
+     control=control.ergm(init=c(geo.init, rep(0, 9)),
+                          MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+                          MCMLE.trustregion=1000,MCMC.addto.se=T,
+                          # parallel.type="SOCK",parallel=8,
+                          MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+                          # MCMC.burnin=15000,
+                          MCMC.interval=1000,MCMLE.steplength=.25,
+                          MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
 
-
-mod_dirpart <-
-  ergm(net~sum+
-         mutual(form="min")+
-         transitiveweights(twopath="min",combine="max",affect="min")+
-         nodecov("NUMRESP",form='sum')+
-         nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
-         nodematch("ORGTYPE",form='sum',diff=FALSE)+
-edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
-         response="TVAL", reference=~DiscUnif(0,3),
-         control=control.ergm(init=c(geo.init, rep(0, 9)),
-                              MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
-                              MCMLE.trustregion=1000,MCMC.addto.se=T,
-                              # parallel.type="SOCK",parallel=8,
-                              MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
-                              # MCMC.burnin=15000,
-                              MCMC.interval=1000,MCMLE.steplength=.25,
-                              MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
-
-
-save.image('result_dirpart.RData')
+save.image('result_indpart.RData')
+#mod_dirpart <-
+#     ergm(net~sum+mutual(form="min")+
+# transitiveweights("min","max","min")+nodecov("NUMRESP")+
+# nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE")+
+# edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
+#          response="TVAL", reference=~DiscUnif(0,3),
+#          control=control.ergm(init=c(geo.init, rep(0, 9)),
+#                               MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+#                               MCMLE.trustregion=1000,MCMC.addto.se=T,
+#                               parallel.type="MPI",parallel=8,
+#                               MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+#                               MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+#                               MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
 # 
 # mod_shapart <-
 #   ergm(net~sum+mutual(form="min")+

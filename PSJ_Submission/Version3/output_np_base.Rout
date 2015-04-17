@@ -508,3 +508,74 @@ transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP
                          -0.005332643                           0.002477284 
                 nodematch.sum.ORGTYPE 
                           0.134665429 
+Sampler accepted   3.746% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            594.63776                              21.31600 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           1360.26968                            1710.44580 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           5023.61788                            9543.91474 
+                nodematch.sum.ORGTYPE 
+                             30.12486 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            594.63776                              21.31600 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           1360.26968                            1710.44580 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           5023.61788                            9543.91474 
+                nodematch.sum.ORGTYPE 
+                             30.12486 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.244352817535401  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.612 
+Iteration 10 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.891951549                           1.429402348 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.228409987                           0.078806062 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.006646236                           0.002907765 
+                nodematch.sum.ORGTYPE 
+                          0.147626365 
+Sampler accepted   3.603% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            484.78568                              27.54842 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           1153.89763                            1567.99960 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           4062.60334                            7770.23794 
+                nodematch.sum.ORGTYPE 
+                             22.30490 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            484.78568                              27.54842 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                           1153.89763                            1567.99960 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           4062.60334                            7770.23794 
+                nodematch.sum.ORGTYPE 
+                             22.30490 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.094 
+Step length converged once. Increasing MCMC sample size.
+Iteration 11 of at most 30 with parameter: 
+                                  sum                      mutual.geom.mean 
+                         -3.939264724                           1.504904817 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                          0.209686480                           0.086740584 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                         -0.007242472                           0.003857707 
+                nodematch.sum.ORGTYPE 
+                          0.161369346 
