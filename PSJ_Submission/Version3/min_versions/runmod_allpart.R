@@ -6,7 +6,7 @@ require(Rmpi)
 #setwd('H:/passtosim')
 #setwd("//Users/TScott/Google Drive/elwha")
 #setwd('win/user/elwha/Dissert_Scripts/')
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions')
 load('NetworkReady.RData')
 
 
@@ -42,8 +42,9 @@ all_sp<-(spn7+sppsp7)
 
 
 mod_allpart <-
-  ergm(net~sum+mutual(form="geometric")+
-         transitiveweights("geomean","sum","geomean")+
+  ergm(net~sum+
+         mutual(form="min")+
+         transitiveweights(twopath="min",combine="max",affect="min")+
          nodecov("NUMRESP",form='sum')+
          nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
          nodematch("ORGTYPE",form='sum',diff=FALSE)+
@@ -58,8 +59,9 @@ mod_allpart <-
                             MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
 
 mod_allpartquad <-
-  ergm(net~sum+mutual(form="geometric")+
-         transitiveweights("geomean","sum","geomean")+
+  ergm(net~sum+
+         mutual(form="min")+
+         transitiveweights(twopath="min",combine="max",affect="min")+
          nodecov("NUMRESP",form='sum')+
          nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
          nodematch("ORGTYPE",form='sum',diff=FALSE)+

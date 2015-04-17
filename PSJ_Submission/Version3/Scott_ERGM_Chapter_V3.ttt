@@ -1,0 +1,89 @@
+\begin{table}[!htbp] \centering
+  \caption{Baseline Models}
+  \label{table:basemods}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
+\\[-1.8ex]\hline \\[-1.8ex]
+ & Baseline Model & Group Participation & Group Participation$^2$ \\
+\hline \\[-1.8ex]
+ Sum & $-$3.96$^{***}$ & $-$4.02$^{***}$ & $-$4.20$^{***}$ \\
+  & (0.05) & (0.05) & (0.06) \\
+  Mutual & 1.48$^{***}$ & 1.50$^{***}$ & 1.55$^{***}$ \\
+  & (0.08) & (0.08) & (0.08) \\
+  Transitivity & 0.22$^{***}$ & 0.26$^{***}$ & 0.16$^{***}$ \\
+  & (0.02) & (0.02) & (0.02) \\
+  Num. Resp. & 0.08$^{***}$ & 0.05$^{***}$ & 0.05$^{***}$ \\
+  & (0.01) & (0.004) & (0.01) \\
+  Num.Groups & $-$0.01 & $-$0.003 & $-$0.01$^{*}$ \\
+  & (0.004) & (0.004) & (0.005) \\
+  Years & 0.004$^{**}$ & 0.002 & 0.01$^{***}$ \\
+  & (0.002) & (0.002) & (0.002) \\
+  Org. Type & 0.19$^{***}$ & 0.24$^{***}$ & 0.20$^{***}$ \\
+  & (0.07) & (0.07) & (0.07) \\
+  Group Partic. &  & 0.01$^{***}$ & 0.07$^{***}$ \\
+  &  & (0.002) & (0.01) \\
+  Group Partic.$^2$ &  &  & $-$0.001$^{***}$ \\
+  &  &  & (0.0001) \\
+ AIC & $-$8,098.10 & 60,343.09 & $-$88,521.40 \\
+BIC & $-$8,036.56 & 60,413.42 & $-$88,442.28 \\
+\hline \\[-1.8ex]
+\textit{Note:} & \multicolumn{3}{l}{$^{***}$p $<$ .01; $^{**}$p $<$ .05; $^{*}$p $<$ .1} \\
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[!htbp] \centering
+  \caption{Triangulating Participation}
+  \label{table:partmods}
+\begin{tabular}{@{\extracolsep{5pt}}lccc}
+\\[-1.8ex]\hline \\[-1.8ex]
+ & Group Participation & Direct Participation & Co-Participation \\
+\hline \\[-1.8ex]
+ Group Partic. non-PSP & 0.04$^{***}$ &  0.46$^{***}$&0.94$^{***}$  \\
+  & (0.01) & (0.02) &(0.04)   \\
+  Group Partic. PSP & 0.03$^{***}$ &  0.76$^{***}$ &1.37$^{***}$  \\
+  & (0.01) & (0.03) & (0.06)  \\
+  Group Partic. non-PSP*PSP & $-$0.01$^{***}$ &  $-$0.03$^{***}$ &$-$0.09$^{***}$  \\
+  & (0.001) & (0.002) &  (0.01) \\
+%  edgecov.dpn7.sum &  & 0.46$^{***}$ &  \\
+%  &  & (0.02) &  \\
+%  edgecov.dppsp7.sum &  & 0.76$^{***}$ &  \\
+%  &  & (0.03) &  \\
+%  edgecov.dpx7.sum &  & $-$0.03$^{***}$ &  \\
+%  &  & (0.002) &  \\
+%  edgecov.spn7.sum &  &  & 0.94$^{***}$ \\
+%  &  &  & (0.04) \\
+%  edgecov.sppsp7.sum &  &  & 1.37$^{***}$ \\
+%  &  &  & (0.06) \\
+%  edgecov.spx7.sum &  &  & $-$0.09$^{***}$ \\
+%  &  &  & (0.01) \\
+ AIC & 56,313.17 & $-$106,794.40 & $-$110,112.40 \\
+BIC & 56,401.09 & $-$106,706.50 & $-$110,024.50 \\
+\hline \\[-1.8ex]
+\textit{Note:} & \multicolumn{3}{l}{$^{***}$p $<$ .01; $^{**}$p $<$ .05; $^{*}$p $<$ .1} \\
+\end{tabular}
+\end{table}
+\efloatseparator
+ 
+\begin{table}[!htbp] \centering
+  \caption{Pre-Existing Ties}
+  \label{table:pastties}
+\begin{tabular}{@{\extracolsep{5pt}}lc}
+\\[-1.8ex]\hline \\[-1.8ex]
+ & Past Tie \\
+\hline \\[-1.8ex]
+ Past Tie (PT) & 4.37$^{***}$ \\
+  & (0.08) \\
+  All Group Co-Part. & 1.55$^{***}$ \\
+  & (0.06) \\
+  All Group Co-Part.$^2$ & $-$0.19$^{***}$ \\
+  & (0.01) \\
+  All Group Co-Part. * PT & $-$0.85$^{***}$ \\
+  & (0.05) \\
+ AIC & $-$114,084.80 \\
+BIC & $-$113,988.10 \\
+\hline \\[-1.8ex]
+\textit{Note:} & \multicolumn{1}{l}{$^{***}$p $<$ .01; $^{**}$p $<$ .05; $^{*}$p $<$ .1} \\
+\end{tabular}
+\end{table}
+\efloatseparator
+ 

@@ -1,0 +1,20 @@
+\begin{figure}[!ht]
+\caption{\textit{Traceplots of MCMC Chains}}
+\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/PSJ_Submission/Version3'}}
+\noindent
+\includegraphics[width=6.5in]
+{traceplotdu}
+\label{figure:traceplots}
+\end{figure}
+\efloatseparator
+ 
+\begin{figure}[!ht]
+\caption{\textit{Density Plots of MCMC Parameters}}
+\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/PSJ_Submission/Version3'}}
+\noindent
+\includegraphics[width=6.5in]
+{densityplotdu}
+\label{figure:densityplots}
+\end{figure}
+\efloatseparator
+ 

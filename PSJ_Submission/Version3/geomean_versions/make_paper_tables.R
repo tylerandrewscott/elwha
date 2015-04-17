@@ -4,8 +4,8 @@ require(stargazer)
 require(grid)
 rm(list=ls())
 
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
-
+#setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+setwd('//Users/TScott/Google Drive/elwha/PSJ_Submission/Version3')
 load('NetworkReady.RData')
 load('only_model_results.RData')
 
@@ -46,7 +46,7 @@ stargazer(mod_base,mod_allpart,mod_allpartquad, covariate.labels=
               'Org. Type','Group Partic.', 'Group Partic.$^2$'),
           digits=2, title = 'Baseline Models',label='table:basemods',
           style='jpam',
-          column.separate = c(1,1), 
+          column.separate = c(1,1), keep.stat=c('bic','aic'),
           column.labels=c('Baseline Model','Group Participation','Group Participation$^2$'),
           digits.extra=2,float=TRUE,
           model.numbers=FALSE,
@@ -70,14 +70,15 @@ sink()
 #           #header=FALSE, 
 #           dep.var.labels.include=FALSE)  
 # sink()
-
+b
 sink('multipart.tex')
 stargazer(mod_indpart, mod_dirpart, mod_shapart, covariate.labels=
             c('Group Partic. non-PSP', 'Group Partic. PSP', 'Group Partic. non-PSP*PSP'),
           digits=2, title = 'Triangulating Participation',label='table:partmods',
           dep.var.caption=NULL,
           dep.var.labels=NULL,
-          omit = 1:7,style='jpam',
+          omit = 1:7,
+          style='jpam',
           model.numbers=FALSE,
           column.separate = c(1,1), 
           column.labels=c('Group Participation','Direct Participation','Co-Participation'),
@@ -105,6 +106,5 @@ stargazer(modpast_allpart7, covariate.labels=
 sink()
 rm(list=ls())
 #detach('file:model_results.RData')
-
 
 

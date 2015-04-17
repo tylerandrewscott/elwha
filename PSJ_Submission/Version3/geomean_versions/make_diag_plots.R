@@ -2,16 +2,17 @@ require(statnet)
 require(ggplot2)
 require(ggmcmc)
 require(grid)
+library(ergm)
 
 rm(list=ls())
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+#setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+setwd('//Users/TScott/Google Drive/elwha/PSJ_Submission/Version3')
 load('only_model_results.RData')
 
 #load('result_base.RData')
 
 temp2<-ggs(mod_base$sample)
 temp2<-(merge(temp2,mod_base$target.stats))
-
 
 levels(temp2$Parameter)<-c("Sum","Mutual","Transitive Weights",
                            "Number Resp.","Number Groups", 'Mean Years', 'Org. Type')
@@ -39,12 +40,13 @@ ggdu = ggplot(data=temp2,aes(colour=as.character(Chain),x=Iteration,y=value))+ge
         legend.position=c(.85,.15),legend.text.align=.5,
         axis.text=element_text(size=6),legend.title.align=.5, legend.key.size=unit(.5,'cm'),
         legend.background = element_rect(colour = "black"))
-ggsave(ggdu,filename="traceplotdu.png",dpi=400)
+
+ggsave(ggdu,filename="traceplotdu.png",dpi=500)
 rm(ggdu)
 
 
 ggdudens = ggplot(data=temp2,aes(colour=as.character(Chain),x=value))+
-  geom_density(aes(),size=.5,trim=TRUE,adjust=2.5)+ 
+  geom_density(aes(),size=.5,trim=TRUE)+ 
   facet_wrap(~Parameter,scales="free")+
   scale_colour_brewer(type="qual",palette='Set1',
                       guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,
@@ -56,10 +58,11 @@ ggdudens = ggplot(data=temp2,aes(colour=as.character(Chain),x=value))+
         axis.title = element_text(size=12),
         legend.title = element_text(size=12),
         legend.text = element_text(size=10),
-        legend.position=c(.85,.25),legend.text.align=.5, 
+        legend.position=c(.85,.15),legend.text.align=.5, 
         legend.title.align=.5, legend.key.size=unit(.5,'cm'),
         axis.text=element_text(size=6),
         legend.background = element_rect(colour = "black"))
-ggsave(ggdudens,filename="densityplotdu.png",dpi=400)
+plot(ggdudens)
+ggsave(ggdudens,filename="densityplotdu.png",dpi=500)
 rm(ggdudens)
 
