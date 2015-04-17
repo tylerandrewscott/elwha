@@ -1,0 +1,703 @@
+
+R version 3.1.3 (2015-03-09) -- "Smooth Sidewalk"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #rm(list=ls())
+> #rm(list=ls())
+> require(statnet)
+Loading required package: statnet
+Loading required package: network
+network: Classes for Relational Data
+Version 1.11.3 created on 2014-12-05.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+Loading required package: ergm
+Loading required package: statnet.common
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.3-2 created on 2014-01-13.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+Attaching package: ‘sna’
+
+The following object is masked from ‘package:network’:
+
+    %c%
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.7.1, created on 2014-09-29
+Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+Loading required package: tergm
+
+tergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.1.1, created on 2013-03-29
+Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+Loading required package: latentnet
+
+latentnet: version 2.5.1, created on 2014-02-17
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    Susan M. Shortreed
+                    Jeremy Tantrum
+                    Peter D. Hoff
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("latentnet").
+
+
+Attaching package: ‘latentnet’
+
+The following object is masked from ‘package:base’:
+
+    scale
+
+
+statnet: version 2014.2.0, created on 2014-02-05
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+> library(snow)
+> library(rlecuyer)
+> library(Rmpi)
+
+Attaching package: ‘Rmpi’
+
+The following object is masked from ‘package:rlecuyer’:
+
+    .onUnload
+
+> #setwd('H:/passtosim')
+> #setwd("//Users/TScott/Google Drive/elwha")
+> #setwd('H:/elwha/Dissert_Scripts/')
+> 
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions')
+> load('NetworkReady.RData')
+> #load('Ready_to_ERGM.RData')
+> g <- sum(net %e% "TVAL")/network.dyadcount(net)
+> init.geo<-log(1 - 1/(g+1))
+> geo.init = init.geo
+> 
+> as.mcmc.default <- coda:::as.mcmc.default
+> as.mcmc.list.default <- coda:::as.mcmc.list.default
+> 
+> dpx <- dppsp * dpn
+> spx <- sppsp * spn
+> spn7 <- spn/7
+> spx7 <- spx/7
+> sppsp7 <- sppsp/7
+> dpn7 <- dpn/7
+> dpx7 <- dpx/7
+> dppsp7 <- dppsp/7
+> ipn_pt<-get.vertex.attribute(net,'IPn7')*as.sociomatrix(net,"PRIOR_TIE")
+> ippsp_pt<-get.vertex.attribute(net,'IPpsp7')*as.sociomatrix(net,"PRIOR_TIE")
+> ipx_pt<-get.vertex.attribute(net,'IPx7')*as.sociomatrix(net,"PRIOR_TIE")
+> dpn_pt<-dpn7*as.sociomatrix(net,"PRIOR_TIE")
+> dppsp_pt<-dppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> dpx_pt<-dpx7*as.sociomatrix(net,"PRIOR_TIE")
+> spn_pt<-spn7*as.sociomatrix(net,"PRIOR_TIE")
+> sppsp_pt<-sppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> spx_pt<-spx7*as.sociomatrix(net,"PRIOR_TIE")
+> all_sp_quad<-((spn7+sppsp7)^2)
+> all_sp_pt<-((spn7+sppsp7)*as.sociomatrix(net,"PRIOR_TIE"))
+> all_sp<-(spn7+sppsp7)
+> 
+> 
+> mod_base <-
++   ergm(net~sum+
++          mutual(form="min")+
++          transitiveweights(twopath="min",combine="max",affect="min")+
++                     nodecov("NUMRESP",form='sum')+
++         nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
++           nodematch("ORGTYPE",form='sum',diff=FALSE),
++        response="TVAL", reference=~DiscUnif(0,3),
++        control=control.ergm(init=c(geo.init, rep(0, 6)),
++                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
++                             MCMLE.trustregion=1000,MCMC.addto.se=T,
++                             parallel.type="SOCK",parallel=8,
++                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
++                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                    -3.091141                      0.000000 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                     0.000000                      0.000000 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     0.000000                      0.000000 
+        nodematch.sum.ORGTYPE 
+                     0.000000 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     -7.95148                    -267.57596 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -620.02808                   -7573.97296 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    -75.15851                   -6345.78547 
+        nodematch.sum.ORGTYPE 
+                    -28.29800 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     -7.95148                    -267.57596 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -620.02808                   -7573.97296 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    -75.15851                   -6345.78547 
+        nodematch.sum.ORGTYPE 
+                    -28.29800 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 23.03 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.178636e+00                  4.077069e-01 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 1.105592e-01                  8.356053e-04 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 4.695510e-04                  9.637673e-05 
+        nodematch.sum.ORGTYPE 
+                 1.196017e-02 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    118.52092                    -238.13668 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -431.95936                   -7175.94297 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1029.13103                   -4141.05261 
+        nodematch.sum.ORGTYPE 
+                    -15.51795 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    118.52092                    -238.13668 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -431.95936                   -7175.94297 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1029.13103                   -4141.05261 
+        nodematch.sum.ORGTYPE 
+                    -15.51795 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0495545566082001  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 6.13 
+Iteration 3 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.3245053501                  0.5788320465 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.1475858319                  0.0245237912 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 0.0001179421                  0.0007718795 
+        nodematch.sum.ORGTYPE 
+                 0.0268890557 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     118.6422                     -224.2708 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -399.1061                    -6725.0808 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1056.8753                    -3778.0898 
+        nodematch.sum.ORGTYPE 
+                     -12.8053 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     118.6422                     -224.2708 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -399.1061                    -6725.0808 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1056.8753                    -3778.0898 
+        nodematch.sum.ORGTYPE 
+                     -12.8053 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0564306378364563  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.498 
+Iteration 4 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.4196944442                  0.7239832264 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.1725599241                  0.0398049904 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                -0.0009642253                  0.0012014195 
+        nodematch.sum.ORGTYPE 
+                 0.0326467573 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     115.7466                     -210.2276 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -370.7692                    -6375.3199 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     985.0270                    -3483.7761 
+        nodematch.sum.ORGTYPE 
+                     -14.1291 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     115.7466                     -210.2276 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -370.7692                    -6375.3199 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     985.0270                    -3483.7761 
+        nodematch.sum.ORGTYPE 
+                     -14.1291 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0630955100059511  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.737 
+Iteration 5 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.524640443                   0.862663824 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.191977851                   0.055076734 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.001807248                   0.002081023 
+        nodematch.sum.ORGTYPE 
+                  0.059906998 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    117.43958                    -194.17262 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -335.12670                   -5891.82332 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1007.30119                   -3000.64488 
+        nodematch.sum.ORGTYPE 
+                    -11.32512 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    117.43958                    -194.17262 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -335.12670                   -5891.82332 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1007.30119                   -3000.64488 
+        nodematch.sum.ORGTYPE 
+                    -11.32512 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0781974792480469  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.095 
+Iteration 6 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.616569923                   0.991023890 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.208179381                   0.069676540 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.003251615                   0.002564086 
+        nodematch.sum.ORGTYPE 
+                  0.081707155 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     100.7025                     -178.1111 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -309.3920                    -5412.1569 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     829.0007                    -2869.4855 
+        nodematch.sum.ORGTYPE 
+                      -8.0901 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     100.7025                     -178.1111 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -309.3920                    -5412.1569 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     829.0007                    -2869.4855 
+        nodematch.sum.ORGTYPE 
+                      -8.0901 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0883242189884186  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.37 
+Iteration 7 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.694418400                   1.101818095 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.211760730                   0.082326701 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.003776723                   0.003016565 
+        nodematch.sum.ORGTYPE 
+                  0.091242676 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     118.5567                     -156.9321 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -246.5963                    -4731.1823 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1003.5943                    -2106.3135 
+        nodematch.sum.ORGTYPE 
+                      -7.6728 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     118.5567                     -156.9321 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -246.5963                    -4731.1823 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1003.5943                    -2106.3135 
+        nodematch.sum.ORGTYPE 
+                      -7.6728 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.111691892147064  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.421 
+Iteration 8 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.761762554                   1.202461838 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.210937749                   0.093342900 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.005453686                   0.003776831 
+        nodematch.sum.ORGTYPE 
+                  0.114829889 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    104.71750                    -138.56344 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -215.50002                   -4167.84160 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    862.28462                   -1748.24796 
+        nodematch.sum.ORGTYPE 
+                     -4.58716 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    104.71750                    -138.56344 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -215.50002                   -4167.84160 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    862.28462                   -1748.24796 
+        nodematch.sum.ORGTYPE 
+                     -4.58716 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.13947719335556  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.388 
+Iteration 9 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.809990427                   1.288750543 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.202717060                   0.104249047 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.007605450                   0.003949467 
+        nodematch.sum.ORGTYPE 
+                  0.129597389 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    100.44828                    -118.36018 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -171.33816                   -3526.39936 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    770.59146                   -1508.17811 
+        nodematch.sum.ORGTYPE 
+                     -3.90856 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    100.44828                    -118.36018 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -171.33816                   -3526.39936 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    770.59146                   -1508.17811 
+        nodematch.sum.ORGTYPE 
+                     -3.90856 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.162904679775238  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.136 
+Iteration 10 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.882385416                   1.375894612 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.189043055                   0.113846741 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.007935955                   0.004865724 
+        nodematch.sum.ORGTYPE 
+                  0.141658337 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     79.58716                     -98.91448 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -143.64240                   -2925.47822 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    614.17616                   -1165.44376 
+        nodematch.sum.ORGTYPE 
+                     -7.87854 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     79.58716                     -98.91448 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -143.64240                   -2925.47822 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    614.17616                   -1165.44376 
+        nodematch.sum.ORGTYPE 
+                     -7.87854 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.247634291648865  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.537 
+Iteration 11 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.942089647                   1.468752513 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.164923978                   0.125144452 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.009088329                   0.005074566 
+        nodematch.sum.ORGTYPE 
+                  0.172686795 
+Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     63.52216                     -75.04156 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -112.43238                   -2223.73644 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    468.13510                    -963.98004 
+        nodematch.sum.ORGTYPE 
+                     -3.35610 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     63.52216                     -75.04156 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -112.43238                   -2223.73644 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    468.13510                    -963.98004 
+        nodematch.sum.ORGTYPE 
+                     -3.35610 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.397 
+Step length converged once. Increasing MCMC sample size.
+Iteration 12 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.991762747                   1.538754570 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.152441476                   0.133799772 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.010751048                   0.005154966 
+        nodematch.sum.ORGTYPE 
+                  0.193218696 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     35.24097                     -56.06132 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -87.20609                   -1684.95376 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    207.99787                   -1075.21127 
+        nodematch.sum.ORGTYPE 
+                     -4.11822 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     35.24097                     -56.06132 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -87.20609                   -1684.95376 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    207.99787                   -1075.21127 
+        nodematch.sum.ORGTYPE 
+                     -4.11822 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.644 
+Step length converged twice. Stopping.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> 
+> save.image('result_base.RData')
+> 
+> # mod_indpart3<-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,parallel.type="SOCK",
+> #                             MPLE.max.dyad.types=1e+7,parallel=4,MCMC.samplesize=16000,
+> #                             MCMC.burnin=10000,MCMC.interval=1000,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_indpart<-mod_indpart3
+> # 
+> # mod_dirpart <-
+> #     ergm(net~sum+mutual(form="min")+
+> # transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> # nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE")+
+> # edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
+> #          response="TVAL", reference=~DiscUnif(0,3),
+> #          control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                               MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                               MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                               parallel.type="MPI",parallel=8,
+> #                               MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                               MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                               MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_shapart <-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          edgecov(spn7,form='sum')+edgecov(sppsp7,form='sum')+edgecov(spx7,form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="MPI",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # detach(file:NetworkReady.RData)
+> # 
+> # rm(
+> # list=ls()[intersect(grep('shapart',ls(),invert=T),grep('dirpart',ls(),
+> #                                                        invert=T))])
+> 
+> rm(list=ls())
+> 
