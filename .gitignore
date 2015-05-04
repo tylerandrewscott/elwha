@@ -45,3 +45,7 @@ Thumbs.db
 *.gsheet
 *.gslides
 *.RData
+*.sbx
+*.shp
+*.shx
+*.png
