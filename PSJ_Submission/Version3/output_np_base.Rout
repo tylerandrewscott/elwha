@@ -579,3 +579,52 @@ transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP
                          -0.007242472                           0.003857707 
                 nodematch.sum.ORGTYPE 
                           0.161369346 
+Sampler accepted   3.510% of 200000000 proposed steps.
+Sample size = 200000 by 2e+05 
+Back from unconstrained MCMC. Average statistics:
+                                  sum                      mutual.geom.mean 
+                            413.38970                              29.76091 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            996.39220                            1473.73468 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           3462.76145                            6991.33316 
+                nodematch.sum.ORGTYPE 
+                             15.20296 
+Average estimating equation values:
+                                  sum                      mutual.geom.mean 
+                            413.38970                              29.76091 
+transitiveweights.geomean.sum.geomean                  nodecov.sum..NUMRESP 
+                            996.39220                            1473.73468 
+               nodecov.sum..NUMGROUPS                nodecov.sum..MEANYEARS 
+                           3462.76145                            6991.33316 
+                nodematch.sum.ORGTYPE 
+                             15.20296 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.441 
+Step length converged twice. Stopping.
+Evaluating log-likelihood at the estimate.
+
+ *** caught bus error ***
+address 0x7f0f1f2a7d98, cause 'non-existent physical address'
+
+Traceback:
+ 1: .C("wt_network_stats_wrapper", as.integer(Clist$tails), as.integer(Clist$heads),     as.double(Clist$weights), as.integer(!is.null(Clist$time)),     as.integer(Clist$time), as.integer(NVL(Clist$lasttoggle,         0)), as.integer(Clist$nedges), as.integer(Clist$n), as.integer(Clist$dir),     as.integer(Clist$bipartite), as.integer(Clist$nterms), as.character(Clist$fnamestring),     as.character(Clist$snamestring), as.double(Clist$inputs),     gs = as.double(gs), PACKAGE = "ergm")
+ 2: ergm.getglobalstats(nw, m, response = response)
+ 3: summary.statistics.network(form, response = response)
+ 4: summary.formula(form, response = response)
+ 5: summary(form, response = response)
+ 6: simulate.formula(form, coef = theta, nsim = 1, response = response,     constraints = constraints, statsonly = FALSE, verbose = max(verbose -         1, 0), control = control.simulate.formula(MCMC.burnin = if (i ==         1) control$MCMC.burnin else ceiling(control$MCMC.burnin/sqrt(control$nsteps)),         MCMC.interval = 1, MCMC.prop.args = control$MCMC.prop.args,         MCMC.prop.weights = control$MCMC.prop.weights, MCMC.packagenames = control$MCMC.packagenames),     ...)
+ 7: simulate(form, coef = theta, nsim = 1, response = response, constraints = constraints,     statsonly = FALSE, verbose = max(verbose - 1, 0), control = control.simulate.formula(MCMC.burnin = if (i ==         1) control$MCMC.burnin else ceiling(control$MCMC.burnin/sqrt(control$nsteps)),         MCMC.interval = 1, MCMC.prop.args = control$MCMC.prop.args,         MCMC.prop.weights = control$MCMC.prop.weights, MCMC.packagenames = control$MCMC.packagenames),     ...)
+ 8: ergm.bridge.llr(object, from = rep(0, length(coef)), to = coef,     response = response, control = control, ...)
+ 9: ergm.bridge.0.llk(formula, response = object$response, reference = reference,     constraints = constraints, coef = coef(object), control = loglik.control,     llkonly = FALSE, ...)
+10: eval(expr, envir, enclos)
+11: eval(substitute(expr), data, enclos = parent.frame())
+12: with.default(object, {    if (!eval.loglik)         stop(nologLik.message(deparse(substitute(object))))    if (estimate == "MPLE" || (is.dyad.independent(object) &&         is.null(object$sample) && is.null(object$response)))         if (control$MPLE.type == "penalized")             object$glm$loglik - object$glm.null$loglik        else -object$glm$deviance/2 - -object$glm.null$deviance/2    else if (is.dyad.independent(object$constrained, object$constrained.obs) &&         is.null(object$response))         ergm.bridge.dindstart.llk(formula, reference = reference,             constraints = constraints, coef = coef(object), control = loglik.control,             llkonly = FALSE, ...)    else ergm.bridge.0.llk(formula, response = object$response,         reference = reference, constraints = constraints, coef = coef(object),         control = loglik.control, llkonly = FALSE, ...)})
+13: with(object, {    if (!eval.loglik)         stop(nologLik.message(deparse(substitute(object))))    if (estimate == "MPLE" || (is.dyad.independent(object) &&         is.null(object$sample) && is.null(object$response)))         if (control$MPLE.type == "penalized")             object$glm$loglik - object$glm.null$loglik        else -object$glm$deviance/2 - -object$glm.null$deviance/2    else if (is.dyad.independent(object$constrained, object$constrained.obs) &&         is.null(object$response))         ergm.bridge.dindstart.llk(formula, reference = reference,             constraints = constraints, coef = coef(object), control = loglik.control,             llkonly = FALSE, ...)    else ergm.bridge.0.llk(formula, response = object$response,         reference = reference, constraints = constraints, coef = coef(object),         control = loglik.control, llkonly = FALSE, ...)})
+14: logLik.ergm(mainfit, add = TRUE, control = control$loglik.control)
+15: ergm(net ~ sum + mutual(form = "geometric") + transitiveweights("geomean",     "sum", "geomean") + nodecov("NUMRESP", form = "sum") + nodecov("NUMGROUPS",     form = "sum") + nodecov("MEANYEARS", form = "sum") + nodematch("ORGTYPE",     form = "sum", diff = FALSE), response = "TVAL", reference = ~DiscUnif(0,     3), control = control.ergm(init = c(geo.init, rep(0, 6)),     MCMLE.maxit = 30, MCMC.runtime.traceplot = F, seed = 24,     MCMLE.trustregion = 1000, MCMC.addto.se = T, MPLE.max.dyad.types = 1e+07,     MCMC.samplesize = 50000, MCMC.burnin = 1000, MCMC.interval = 1000,     MCMLE.steplength = 0.25, MCMC.prop.args = list(p0 = 0.5)),     eval.loglik = T, verbose = T)
+aborting ...

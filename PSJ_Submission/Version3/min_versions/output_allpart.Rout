@@ -1231,3 +1231,224 @@ sh: 0: getcwd() failed: No such file or directory
 shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
 sh: 0: getcwd() failed: No such file or directory
 shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+h: 0: Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     78.61136                     -90.13200 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -132.59342                   -2878.28992 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    642.00727                   -1072.86739 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -4.51074                   -5933.11239 
+ nodecov.sum..allpartdiv7quad 
+                -132749.18701 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     78.61136                     -90.13200 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -132.59342                   -2878.28992 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    642.00727                   -1072.86739 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -4.51074                   -5933.11239 
+ nodecov.sum..allpartdiv7quad 
+                -132749.18701 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.185952395200729  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.88 
+Iteration 12 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -4.054276326                   1.456160880 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.166164196                   0.065074503 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.008905222                   0.005671447 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                  0.156425713                   0.067696172 
+ nodecov.sum..allpartdiv7quad 
+                 -0.001223839 
+Using SOCK.
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directoryssh: 0:sgetcwd() failed: No such file or directory
+: 0: Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     90.43128                     -70.77334 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -78.33152                   -2194.58628 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    753.38892                    -446.83238 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -5.27546                   -4630.37873 
+ nodecov.sum..allpartdiv7quad 
+                -105753.25276 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     90.43128                     -70.77334 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -78.33152                   -2194.58628 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    753.38892                    -446.83238 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -5.27546                   -4630.37873 
+ nodecov.sum..allpartdiv7quad 
+                -105753.25276 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.234953969717026  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.118 
+Iteration 13 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -4.129288097                   1.508160893 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.147599757                   0.065115884 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.009516111                   0.006574414 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                  0.183070849                   0.077242212 
+ nodecov.sum..allpartdiv7quad 
+                 -0.001405910 
+Using SOCK.
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: sh: 0: getcwd() failed: No such file or directory
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     83.47698                     -50.61284 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -47.08914                   -1639.49804 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    701.68807                     -53.29789 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -1.69394                   -3324.40298 
+ nodecov.sum..allpartdiv7quad 
+                 -72446.24467 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     83.47698                     -50.61284 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -47.08914                   -1639.49804 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    701.68807                     -53.29789 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     -1.69394                   -3324.40298 
+ nodecov.sum..allpartdiv7quad 
+                 -72446.24467 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.847 
+Step length converged once. Increasing MCMC sample size.
+Iteration 14 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -4.184911878                   1.519672728 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.130663796                   0.067852137 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.010807146                   0.006916547 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                  0.209845215                   0.085057411 
+ nodecov.sum..allpartdiv7quad 
+                 -0.001586546 
+Using SOCK.
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: getcwd() failed: No such file or directory
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+sh: 0: sh: 0: sh: 0: getcwd() failed: No such file or directory
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    86.102205                    -36.770345 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -15.651985                  -1112.468790 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   707.004543                    286.833155 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     3.826175                  -2374.820261 
+ nodecov.sum..allpartdiv7quad 
+                -55792.025196 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    86.102205                    -36.770345 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -15.651985                  -1112.468790 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   707.004543                    286.833155 
+        nodematch.sum.ORGTYPE      nodecov.sum..allpartdiv7 
+                     3.826175                  -2374.820261 
+ nodecov.sum..allpartdiv7quad 
+                -55792.025196 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.852 
+Step length converged twice. Stopping.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> save.image('result_allpartmod.RData')
+> rm(list=ls())
+> # 
+> # 
+> # rm(list=ls()[grep('mod_allpart',ls(),invert = T)])
+> # 
+> # save.image('Union.allpart.RData')
+> 
+sh: 0: getcwd() failed: No such file or directory

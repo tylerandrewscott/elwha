@@ -1,0 +1,1287 @@
+
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #rm(list=ls())
+> #rm(list=ls())
+> 
+> require(statnet)
+Loading required package: statnet
+Loading required package: network
+network: Classes for Relational Data
+Version 1.12.0 created on 2015-03-04.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+Loading required package: ergm
+Loading required package: statnet.common
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.3-2 created on 2014-01-13.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+Attaching package: ‘sna’
+
+The following object is masked from ‘package:network’:
+
+    %c%
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.7.1, created on 2014-09-29
+Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+Loading required package: tergm
+
+tergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.1.1, created on 2013-03-29
+Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+Loading required package: latentnet
+
+latentnet: version 2.7.0, created on 2015-03-21
+Copyright (c) 2015, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    Susan M. Shortreed
+                    Jeremy Tantrum
+                    Peter D. Hoff
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("latentnet").
+NOTE: BIC calculation prior latentnet 2.7.0 had a bug in the calculation of the effective number of parameters. See help(summary.ergmm) for details.
+
+statnet: version 2014.2.0, created on 2014-02-05
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+> library(snow)
+> library(rlecuyer)
+> library(Rmpi)
+
+Attaching package: ‘Rmpi’
+
+The following object is masked from ‘package:rlecuyer’:
+
+    .onUnload
+
+> #setwd('H:/passtosim')
+> #setwd("//Users/TScott/Google Drive/elwha")
+> #setwd('H:/elwha/Dissert_Scripts/')
+> 
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+> load('NetworkReady.RData')
+> #load('Ready_to_ERGM.RData')
+> g <- sum(net %e% "TVAL")/network.dyadcount(net)
+> init.geo<-log(1 - 1/(g+1))
+> geo.init = init.geo
+> 
+> as.mcmc.default <- coda:::as.mcmc.default
+> as.mcmc.list.default <- coda:::as.mcmc.list.default
+> 
+> dpx <- dppsp * dpn
+> spx <- sppsp * spn
+> spn7 <- spn/7
+> spx7 <- spx/7
+> sppsp7 <- sppsp/7
+> dpn7 <- dpn/7
+> dpx7 <- dpx/7
+> dppsp7 <- dppsp/7
+> ipn_pt<-get.vertex.attribute(net,'IPn7')*as.sociomatrix(net,"PRIOR_TIE")
+> ippsp_pt<-get.vertex.attribute(net,'IPpsp7')*as.sociomatrix(net,"PRIOR_TIE")
+> ipx_pt<-get.vertex.attribute(net,'IPx7')*as.sociomatrix(net,"PRIOR_TIE")
+> dpn_pt<-dpn7*as.sociomatrix(net,"PRIOR_TIE")
+> dppsp_pt<-dppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> dpx_pt<-dpx7*as.sociomatrix(net,"PRIOR_TIE")
+> spn_pt<-spn7*as.sociomatrix(net,"PRIOR_TIE")
+> sppsp_pt<-sppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> spx_pt<-spx7*as.sociomatrix(net,"PRIOR_TIE")
+> all_sp_quad<-((spn7+sppsp7)^2)
+> all_sp_pt<-((spn7+sppsp7)*as.sociomatrix(net,"PRIOR_TIE"))
+> all_sp<-(spn7+sppsp7)
+> central.actors = c('Federal_Agency','State_Agency','Regional_Commission')
+> set.vertex.attribute(net,attrname = 'Central',
++                      value = ifelse(get.vertex.attribute(net,'ORGTYPE') %in% central.actors,1,0))
+> 
+> 
+> form1 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")
+> 
+> form2 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   cyclicalweights(twopath="min",combine="max",affect="min")
+> 
+> form3 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   cyclicalweights(twopath="min",combine="max",affect="min") + 
++  nodesqrtcovar(TRUE)
+>   
+> form4 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   cyclicalweights(twopath="min",combine="max",affect="min")+
++   nodesqrtcovar(TRUE)
+> 
+> form5 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   nodesqrtcovar(TRUE)
+> 
+> form6 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   cyclicalweights(twopath="min",combine="max",affect="min")+
++   nodesqrtcovar(TRUE)+
++ nodecov("NUMRESP",form='sum')+
++   nodecov("NUMGROUPS",form='sum')+
++   nodecov("MEANYEARS",form='sum')
+> 
+> form7 = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   cyclicalweights(twopath="min",combine="max",affect="min")+
++   nodesqrtcovar(TRUE)+
++   nodecov("NUMRESP",form='sum')+
++   nodecov("NUMGROUPS",form='sum')+
++   nodecov("MEANYEARS",form='sum')+
++ nodefactor('Central')
+> 
+> form8 = net~sum(pow=.5)+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   nodesqrtcovar(TRUE)
+> 
+> form9 = net~sum(pow=.5)+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")
+> 
+> npar1 = length(summary(form1,response='TVAL'))-1
+> npar2 = length(summary(form2,response='TVAL'))-1
+> npar3 = length(summary(form3,response='TVAL'))-1
+> npar4 = length(summary(form4,response='TVAL'))-1
+> npar5 = length(summary(form5,response='TVAL'))-1
+> npar6 = length(summary(form6,response='TVAL'))-1
+> npar7 = length(summary(form7,response='TVAL'))-1
+> npar8 = length(summary(form8,response='TVAL'))-1
+> npar9 = length(summary(form9,response='TVAL'))-1
+> 
+> mod1 <-
++   ergm(form1,
++        response="TVAL", reference=~DiscUnif(0,3),
++        control=control.ergm(init=c(geo.init, rep(0, npar1)),
++                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
++                             MCMLE.trustregion=1000,MCMC.addto.se=T,
++                           #  parallel.type="SOCK",parallel=8,
++                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=10000,
++                             MCMC.burnin=10000,MCMC.interval=1000,
++                             MCMLE.steplength=.25,
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                    -3.091141                      0.000000 
+transitiveweights.min.max.min 
+                     0.000000 
+Sampler accepted   3.167% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     -17.8877                     -268.2258 
+transitiveweights.min.max.min 
+                    -634.0656 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     -17.8877                     -268.2258 
+transitiveweights.min.max.min 
+                    -634.0656 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 20.86 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.1702779                     0.3531609 
+transitiveweights.min.max.min 
+                    0.1160069 
+Sampler accepted   3.334% of 40000000 proposed steps.
+Sample size = 40000 by 40000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     114.0752                     -241.7519 
+transitiveweights.min.max.min 
+                    -433.5296 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     114.0752                     -241.7519 
+transitiveweights.min.max.min 
+                    -433.5296 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.103604793548584  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 6.554 
+Iteration 3 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.2648610                     0.6989489 
+transitiveweights.min.max.min 
+                    0.1901434 
+Sampler accepted   3.338% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     108.4540                     -213.8658 
+transitiveweights.min.max.min 
+                    -378.4552 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     108.4540                     -213.8658 
+transitiveweights.min.max.min 
+                    -378.4552 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0956945717334748  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.312 
+Iteration 4 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.3657743                     0.9409002 
+transitiveweights.min.max.min 
+                    0.2626345 
+Sampler accepted   3.325% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     112.7393                     -188.9764 
+transitiveweights.min.max.min 
+                    -314.6717 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     112.7393                     -188.9764 
+transitiveweights.min.max.min 
+                    -314.6717 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.120373904705048  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.434 
+Iteration 5 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.4452814                     1.0959922 
+transitiveweights.min.max.min 
+                    0.3223132 
+Sampler accepted   3.319% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     128.0412                     -166.0311 
+transitiveweights.min.max.min 
+                    -245.6757 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     128.0412                     -166.0311 
+transitiveweights.min.max.min 
+                    -245.6757 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.159288167953491  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.198 
+Iteration 6 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.5450389                     1.3088815 
+transitiveweights.min.max.min 
+                    0.3921138 
+Sampler accepted   3.339% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                      124.152                      -137.263 
+transitiveweights.min.max.min 
+                     -188.088 
+Average estimating equation values:
+                          sum                    mutual.min 
+                      124.152                      -137.263 
+transitiveweights.min.max.min 
+                     -188.088 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.17323786020279  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.749 
+Iteration 7 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.6338623                     1.4625910 
+transitiveweights.min.max.min 
+                    0.4514441 
+Sampler accepted   3.317% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                      98.9223                     -115.9075 
+transitiveweights.min.max.min 
+                    -159.6661 
+Average estimating equation values:
+                          sum                    mutual.min 
+                      98.9223                     -115.9075 
+transitiveweights.min.max.min 
+                    -159.6661 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.94 
+Step length converged once. Increasing MCMC sample size.
+Iteration 8 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.7522894                     1.6735049 
+transitiveweights.min.max.min 
+                    0.5225996 
+Sampler accepted   3.263% of 40000000 proposed steps.
+Sample size = 40000 by 40000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     72.18065                     -80.91948 
+transitiveweights.min.max.min 
+                   -109.23695 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     72.18065                     -80.91948 
+transitiveweights.min.max.min 
+                   -109.23695 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.541 
+Step length converged twice. Stopping.
+Evaluating log-likelihood at the estimate.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> mod2 <-
++   ergm(form2,
++        response="TVAL", reference=~DiscUnif(0,3),
++        control=control.ergm(init=c(geo.init, rep(0, npar2)),
++                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
++                             MCMLE.trustregion=1000,MCMC.addto.se=T,
++                             #  parallel.type="SOCK",parallel=8,
++                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=10000,
++                             MCMC.burnin=10000,MCMC.interval=1000,
++                             MCMLE.steplength=.25,
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                    -3.091141                      0.000000 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     0.000000                      0.000000 
+Sampler accepted   3.167% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     -17.8877                     -268.2258 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -634.0656                     -212.7295 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     -17.8877                     -268.2258 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -634.0656                     -212.7295 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 21.43 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.18742900                    0.37166278 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.10606374                    0.02938835 
+Sampler accepted   3.341% of 40000000 proposed steps.
+Sample size = 40000 by 40000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    120.58272                    -239.87303 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -428.98343                     -31.43145 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    120.58272                    -239.87303 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -428.98343                     -31.43145 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0975899994373322  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.271 
+Iteration 3 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.26617817                    0.66485428 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.17206312                    0.02608084 
+Sampler accepted   3.362% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     129.0010                     -215.1659 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -369.4638                      -20.1006 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     129.0010                     -215.1659 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -369.4638                      -20.1006 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0960578620433809  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.021 
+Iteration 4 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.34371306                    0.89331989 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.23938455                    0.01035738 
+Sampler accepted   3.337% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     122.3426                     -194.3530 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -319.5311                       -6.6258 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     122.3426                     -194.3530 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -319.5311                       -6.6258 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.1031414270401  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.432 
+Iteration 5 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.42235823                    1.07089590 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.30984461                   -0.00386551 
+Sampler accepted   3.337% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     132.5900                     -169.5934 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -253.2688                        1.0478 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     132.5900                     -169.5934 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -253.2688                        1.0478 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.161597698926926  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.565 
+Iteration 6 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.526832274                   1.280513846 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                  0.386719634                  -0.005035132 
+Sampler accepted   3.371% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     149.3057                     -137.9803 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -168.3449                       61.2002 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     149.3057                     -137.9803 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -168.3449                       61.2002 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.175120890140534  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.207 
+Iteration 7 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.62207476                    1.44216664 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.45122519                   -0.01584649 
+Sampler accepted   3.253% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                      55.5431                     -124.1027 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -211.4954                      -21.7581 
+Average estimating equation values:
+                          sum                    mutual.min 
+                      55.5431                     -124.1027 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -211.4954                      -21.7581 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.174629151821137  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.614 
+Iteration 8 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.71861751                    1.61051618 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.52368977                   -0.02473923 
+Sampler accepted   3.272% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                      79.6217                      -91.4093 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -113.9382                       44.8901 
+Average estimating equation values:
+                          sum                    mutual.min 
+                      79.6217                      -91.4093 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -113.9382                       44.8901 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.907 
+Step length converged once. Increasing MCMC sample size.
+Iteration 9 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.77725447                    1.72962642 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.58196814                   -0.04827213 
+Sampler accepted   3.256% of 40000000 proposed steps.
+Sample size = 40000 by 40000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     69.03798                     -73.94695 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -80.08760                      37.63490 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     69.03798                     -73.94695 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -80.08760                      37.63490 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.279 
+Step length converged twice. Stopping.
+Evaluating log-likelihood at the estimate.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> mod3 <-
++   ergm(form3,
++        response="TVAL", reference=~DiscUnif(0,3),
++        control=control.ergm(init=c(geo.init, rep(0, npar3)),
++                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
++                             MCMLE.trustregion=1000,MCMC.addto.se=T,
++                             #  parallel.type="SOCK",parallel=8,
++                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=10000,
++                             MCMC.burnin=10000,MCMC.interval=1000,
++                             MCMLE.steplength=.25,
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                    -3.091141                      0.000000 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     0.000000                      0.000000 
+       nodesqrtcovar.centered 
+                     0.000000 
+Sampler accepted   3.167% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    -17.88770                    -268.22580 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -634.06560                    -212.72950 
+       nodesqrtcovar.centered 
+                    -64.95621 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    -17.88770                    -268.22580 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -634.06560                    -212.72950 
+       nodesqrtcovar.centered 
+                    -64.95621 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 21.44 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.19075446                    0.36122556 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.10334956                    0.02893331 
+       nodesqrtcovar.centered 
+                   0.07308696 
+Sampler accepted   3.340% of 40000000 proposed steps.
+Sample size = 40000 by 40000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    119.44620                    -240.75088 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -431.76322                     -32.21925 
+       nodesqrtcovar.centered 
+                   -101.57364 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    119.44620                    -240.75088 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -431.76322                     -32.21925 
+       nodesqrtcovar.centered 
+                   -101.57364 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.065033107995987  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.836 
+Iteration 3 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.27084348                    0.57357767 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.14235044                    0.02252868 
+       nodesqrtcovar.centered 
+                   0.47318248 
+Sampler accepted   3.366% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     133.6718                     -222.0189 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -379.7722                      -13.8451 
+       nodesqrtcovar.centered 
+                    -107.6897 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     133.6718                     -222.0189 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -379.7722                      -13.8451 
+       nodesqrtcovar.centered 
+                    -107.6897 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0326262414455414  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.144 
+Iteration 4 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.379840487                   0.658053444 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                  0.161005679                   0.001173676 
+       nodesqrtcovar.centered 
+                  1.463222596 
+Sampler accepted   3.316% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     109.6375                     -218.3990 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -374.7796                      -34.5492 
+       nodesqrtcovar.centered 
+                    -110.7166 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     109.6375                     -218.3990 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -374.7796                      -34.5492 
+       nodesqrtcovar.centered 
+                    -110.7166 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0459072589874268  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.036 
+Iteration 5 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.475908087                   0.749225459 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                  0.159509824                  -0.008635831 
+       nodesqrtcovar.centered 
+                  2.454363379 
+Sampler accepted   3.311% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     114.2455                     -208.0494 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -348.9585                      -32.1594 
+       nodesqrtcovar.centered 
+                    -123.3606 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     114.2455                     -208.0494 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    -348.9585                      -32.1594 
+       nodesqrtcovar.centered 
+                    -123.3606 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0387754142284394  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.77 
+Iteration 6 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.57679277                    0.83880226 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.16579538                   -0.01690018 
+       nodesqrtcovar.centered 
+                   3.44516630 
+Sampler accepted   3.357% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    133.07640                    -195.34420 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -303.93650                      10.83140 
+       nodesqrtcovar.centered 
+                    -95.99039 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    133.07640                    -195.34420 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   -303.93650                      10.83140 
+       nodesqrtcovar.centered 
+                    -95.99039 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0473068654537202  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.374 
+Iteration 7 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.66099998                    0.91768153 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.15877150                   -0.03859988 
+       nodesqrtcovar.centered 
+                   4.43822570 
+Sampler accepted   3.432% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     873.5027                      161.1359 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     853.2870                     1215.8591 
+       nodesqrtcovar.centered 
+                     608.1919 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     873.5027                      161.1359 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     853.2870                     1215.8591 
+       nodesqrtcovar.centered 
+                     608.1919 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.124115228652954  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.679 
+Iteration 8 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -3.72380005                    1.10127622 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                   0.24455797                   -0.08971688 
+       nodesqrtcovar.centered 
+                   4.36413190 
+Sampler accepted   3.375% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    1349.5890                      431.4025 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1589.6331                     2000.3286 
+       nodesqrtcovar.centered 
+                    1048.2400 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    1349.5890                      431.4025 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1589.6331                     2000.3286 
+       nodesqrtcovar.centered 
+                    1048.2400 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0154550671577454  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.106 
+Iteration 9 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.6211746                     1.1513009 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.8849383                    -0.8085478 
+       nodesqrtcovar.centered 
+                    4.1188732 
+Sampler accepted   3.383% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     1300.370                       415.046 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     1551.679                      1948.180 
+       nodesqrtcovar.centered 
+                     1018.590 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     1300.370                       415.046 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     1551.679                      1948.180 
+       nodesqrtcovar.centered 
+                     1018.590 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0215535163879395  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.944 
+Iteration 10 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.5012953                     1.1761172 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.9254049                    -0.9340481 
+       nodesqrtcovar.centered 
+                    3.8658956 
+Sampler accepted   3.466% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    1311.0613                      401.5272 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1578.0662                     1946.3213 
+       nodesqrtcovar.centered 
+                     995.1461 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    1311.0613                      401.5272 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1578.0662                     1946.3213 
+       nodesqrtcovar.centered 
+                     995.1461 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.02289679646492  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.872 
+Iteration 11 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.2647737                     1.2208412 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.7368537                    -0.9292636 
+       nodesqrtcovar.centered 
+                    3.4859823 
+Sampler accepted   3.671% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    1344.7169                      355.2154 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1616.4591                     1795.2073 
+       nodesqrtcovar.centered 
+                     918.8285 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    1344.7169                      355.2154 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1616.4591                     1795.2073 
+       nodesqrtcovar.centered 
+                     918.8285 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0357151329517365  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.859 
+Iteration 12 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.1263822                     1.2348553 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.5446465                    -0.8475558 
+       nodesqrtcovar.centered 
+                    3.2213567 
+Sampler accepted   3.686% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    1284.0326                      324.3538 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1557.9464                     1710.7506 
+       nodesqrtcovar.centered 
+                     833.0377 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    1284.0326                      324.3538 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1557.9464                     1710.7506 
+       nodesqrtcovar.centered 
+                     833.0377 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0412020683288575  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.717 
+Iteration 13 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.0284029                     1.2839401 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.4076146                    -0.8000940 
+       nodesqrtcovar.centered 
+                    3.0516981 
+Sampler accepted   3.722% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    1226.7532                      288.5428 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1492.2987                     1564.5482 
+       nodesqrtcovar.centered 
+                     759.1939 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    1226.7532                      288.5428 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    1492.2987                     1564.5482 
+       nodesqrtcovar.centered 
+                     759.1939 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0741346180438996  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.522 
+Iteration 14 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -2.9170356                     1.3126568 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2472680                    -0.7481337 
+       nodesqrtcovar.centered 
+                    2.9082534 
+Sampler accepted   4.091% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     928.2014                       23.9824 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     634.0462                       97.3311 
+       nodesqrtcovar.centered 
+                     173.1257 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     928.2014                       23.9824 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     634.0462                       97.3311 
+       nodesqrtcovar.centered 
+                     173.1257 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.133744180202484  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.487 
+Iteration 15 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -2.9912580                     1.4234673 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2600544                    -0.7396401 
+       nodesqrtcovar.centered 
+                    2.8516988 
+Sampler accepted   4.091% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     664.8347                     -108.8420 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      73.4255                     -699.7297 
+       nodesqrtcovar.centered 
+                    -134.1911 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     664.8347                     -108.8420 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      73.4255                     -699.7297 
+       nodesqrtcovar.centered 
+                    -134.1911 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0240085422992707  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.444 
+Iteration 16 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.1044718                     1.4440218 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2477456                    -0.7211009 
+       nodesqrtcovar.centered 
+                    3.8448075 
+Sampler accepted   4.029% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     626.7482                     -108.3127 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      53.4739                     -675.7906 
+       nodesqrtcovar.centered 
+                    -127.1934 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     626.7482                     -108.3127 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      53.4739                     -675.7906 
+       nodesqrtcovar.centered 
+                    -127.1934 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0276231765747071  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.482 
+Iteration 17 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.2170505                     1.4854857 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2419408                    -0.7035109 
+       nodesqrtcovar.centered 
+                    4.8374120 
+Sampler accepted   4.041% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     636.1334                     -100.0242 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      72.6343                     -648.6494 
+       nodesqrtcovar.centered 
+                    -120.0331 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     636.1334                     -100.0242 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      72.6343                     -648.6494 
+       nodesqrtcovar.centered 
+                    -120.0331 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0260332822799683  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.603 
+Iteration 18 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.3222626                     1.5104814 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2335986                    -0.6952116 
+       nodesqrtcovar.centered 
+                    5.8314780 
+Sampler accepted   4.045% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     632.1014                      -91.7905 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      83.0734                     -623.9836 
+       nodesqrtcovar.centered 
+                    -114.8674 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     632.1014                      -91.7905 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                      83.0734                     -623.9836 
+       nodesqrtcovar.centered 
+                    -114.8674 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0295773446559906  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.613 
+Iteration 19 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.4271410                     1.5176542 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2294195                    -0.6879998 
+       nodesqrtcovar.centered 
+                    6.7448209 
+Sampler accepted   4.028% of 10000000 proposed steps.
+Sample size = 10000 by 10000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     632.5897                      -88.2891 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     115.6594                     -584.6311 
+       nodesqrtcovar.centered 
+                    -104.4462 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     632.5897                      -88.2891 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                     115.6594                     -584.6311 
+       nodesqrtcovar.centered 
+                    -104.4462 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0427535176277161  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.696 
+Iteration 20 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                   -3.5372589                     1.5495199 
+transitiveweights.min.max.min   cyclicalweights.min.max.min 
+                    0.2203178                    -0.6784376 
+       nodesqrtcovar.centered 
+                    7.6428793 
+Error in ergm.MCMLE(init, nw, model, initialfit = (initialfit <- NULL),  : 
+  Number of edges in a simulated network exceeds that in the observed by a factor of more than 20. This is a strong indicator of model degeneracy or a very poor starting parameter configuration. If you are reasonably certain that neither of these is the case, increase the MCMLE.density.guard control.ergm() parameter.
+Calls: ergm -> ergm.MCMLE
+Execution halted

@@ -1,5 +1,5 @@
 
-R version 3.1.3 (2015-03-09) -- "Smooth Sidewalk"
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
 Copyright (C) 2015 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
@@ -18,11 +18,14 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 > rm(list=ls())
-> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
-> library(statnet)
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
+> 
+> 
+> library(ergm)
+Loading required package: statnet.common
 Loading required package: network
 network: Classes for Relational Data
-Version 1.11.3 created on 2014-12-05.
+Version 1.12.0 created on 2015-03-04.
 copyright (c) 2005, Carter T. Butts, University of California-Irvine
                     Mark S. Handcock, University of California -- Los Angeles
                     David R. Hunter, Penn State University
@@ -31,8 +34,6 @@ copyright (c) 2005, Carter T. Butts, University of California-Irvine
  For citation information, type citation("network").
  Type help("network-package") to get started.
 
-Loading required package: ergm
-Loading required package: statnet.common
 
 ergm: version 3.2.4, created on 2014-12-13
 Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
@@ -54,107 +55,13 @@ boilerplate files (the files that you did not write or modify) from
 ‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
 instructions.
 
-Loading required package: sna
-sna: Tools for Social Network Analysis
-Version 2.3-2 created on 2014-01-13.
-copyright (c) 2005, Carter T. Butts, University of California-Irvine
- For citation information, type citation("sna").
- Type help(package="sna") to get started.
-
-
-Attaching package: ‘sna’
-
-The following object is masked from ‘package:network’:
-
-    %c%
-
-Loading required package: networkDynamic
-
-networkDynamic: version 0.7.1, created on 2014-09-29
-Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
-                    Ayn Leslie-Cook, University of Washington
-                    Pavel N. Krivitsky, University of Wollongong
-                    Skye Bender-deMoll, University of Washington
-                    with contributions from
-                    Zack Almquist, University of California -- Irvine
-                    David R. Hunter, Penn State University
-                    Li Wang
-                    Kirk Li, University of Washington
-                    Steven M. Goodreau, University of Washington
-                    Jeffrey Horner
-                    Martina Morris, University of Washington
-Based on "statnet" project software (statnet.org).
-For license and citation information see statnet.org/attribution
-or type citation("networkDynamic").
-
-Loading required package: tergm
-
-tergm: version 3.2.4, created on 2014-12-13
-Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
-                    Mark S. Handcock, University of California -- Los Angeles
-                    with contributions from
-                    David R. Hunter, Penn State University
-                    Steven M. Goodreau, University of Washington
-                    Martina Morris, University of Washington
-                    Nicole Bohme Carnegie, New York University
-                    Carter T. Butts, University of California -- Irvine
-                    Ayn Leslie-Cook, University of Washington
-                    Skye Bender-deMoll
-                    Li Wang
-                    Kirk Li, University of Washington
-Based on "statnet" project software (statnet.org).
-For license and citation information see statnet.org/attribution
-or type citation("tergm").
-
-Loading required package: ergm.count
-
-ergm.count: version 3.1.1, created on 2013-03-29
-Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
-                    with contributions from
-                    Mark S. Handcock, University of California -- Los Angeles
-                    David R. Hunter, Penn State University
-Based on "statnet" project software (statnet.org).
-For license and citation information see statnet.org/attribution
-or type citation("ergm.count").
-
-Loading required package: latentnet
-
-latentnet: version 2.5.1, created on 2014-02-17
-Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
-                    Mark S. Handcock, University of California -- Los Angeles
-                    with contributions from
-                    Susan M. Shortreed
-                    Jeremy Tantrum
-                    Peter D. Hoff
-Based on "statnet" project software (statnet.org).
-For license and citation information see statnet.org/attribution
-or type citation("latentnet").
-
-
-Attaching package: ‘latentnet’
-
-The following object is masked from ‘package:base’:
-
-    scale
-
-
-statnet: version 2014.2.0, created on 2014-02-05
-Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
-                    David R. Hunter, Penn State University
-                    Carter T. Butts, University of California -- Irvine
-                    Steven M. Goodreau, University of Washington
-                    Pavel N. Krivitsky, University of Wollongong
-                    Skye Bender-deMoll
-                    Martina Morris, University of Washington
-Based on "statnet" project software (statnet.org).
-For license and citation information see statnet.org/attribution
-or type citation("statnet").
-
+> library(coda)
 > 
 > mod.names = c('mod_base','mod_allpart','mod_allpartquad',
 +               'mod_dirpart','mod_indpart','mod_shapart','modpast_allpart7')
 > 
 > load('result_base.RData')
+> 
 > load('result_allpartmod.RData')
 > load('result_indpart.RData')
 > load('result_dirpart.RData')
@@ -166,18 +73,18 @@ or type citation("statnet").
 > mod.names = c('mod_base','mod_allpart','mod_allpartquad',
 +               'mod_dirpart','mod_indpart','mod_shapart','modpast_allpart7')
 > 
-> control.settings = control.logLik.ergm(nsteps=5,
-+                                        MCMC.burnin=1000,
-+                                        MCMC.interval=500,
-+                                        MCMC.samplesize=10000,
-+                                        obs.MCMC.samplesize=10000,
-+                                        obs.MCMC.interval=500,
-+                                        obs.MCMC.burnin=1000,
-+                                        MCMC.prop.weights="random",
-+                                        MCMC.prop.args=NULL,
-+                                        warn.dyads=TRUE,
-+                                        MCMC.init.maxedges=10000,
-+                                        seed=24)
+> # control.settings = control.logLik.ergm(nsteps=5,
+> #                                        MCMC.burnin=1000,
+> #                                        MCMC.interval=500,
+> #                                        MCMC.samplesize=10000,
+> #                                        obs.MCMC.samplesize=10000,
+> #                                        obs.MCMC.interval=500,
+> #                                        obs.MCMC.burnin=1000,
+> #                                        MCMC.prop.weights="random",
+> #                                        MCMC.prop.args=NULL,
+> #                                        warn.dyads=TRUE,
+> #                                        MCMC.init.maxedges=10000,
+> #                                        seed=24)
 > 
 > mod.list = list(mod_base,mod_allpart,mod_allpartquad,
 +                 mod_dirpart,mod_indpart,mod_shapart,modpast_allpart7)
@@ -185,74 +92,56 @@ or type citation("statnet").
 > #test = logLik.ergm(mod.list[[1]],control.logLik.ergm=control.settings,add=TRUE,verbose=T)
 > 
 > 
-> require(parallel)
-Loading required package: parallel
-> require(statnet)
+> mod_base = logLik(object = mod_base,
++                        add = TRUE,verbose=T)
+Running theta=[-0.0961267931, 0.0377120035, 0.0033429255, 0.0033188367,-0.0002565430, 0.0001352797, 0.0050136427].
+Running theta=[-0.2984989891, 0.1171056950, 0.0103806633, 0.0103058612,-0.0007966335, 0.0004200790, 0.0155686800].
+Running theta=[-0.5008711851, 0.1964993864, 0.0174184011, 0.0172928857,-0.0013367240, 0.0007048783, 0.0261237173].
+Running theta=[-0.7032433811, 0.2758930779, 0.0244561390, 0.0242799103,-0.0018768146, 0.0009896777, 0.0366787546].
+Running theta=[-0.905615577, 0.355286769, 0.031493877, 0.031266935,-0.002416905, 0.001274477, 0.047233792].
+Running theta=[-1.107987773, 0.434680461, 0.038531615, 0.038253959,-0.002956996, 0.001559276, 0.057788829].
+Running theta=[-1.310359969, 0.514074152, 0.045569352, 0.045240984,-0.003497086, 0.001844076, 0.068343866].
+Running theta=[-1.512732165, 0.593467844, 0.052607090, 0.052228008,-0.004037177, 0.002128875, 0.078898904].
+Running theta=[-1.715104361, 0.672861535, 0.059644828, 0.059215033,-0.004577267, 0.002413674, 0.089453941].
+Running theta=[-1.917476557, 0.752255227, 0.066682566, 0.066202057,-0.005117358, 0.002698474, 0.100008978].
+Running theta=[-2.119848753, 0.831648918, 0.073720304, 0.073189082,-0.005657448, 0.002983273, 0.110564016].
+Running theta=[-2.322220949, 0.911042610, 0.080758042, 0.080176107,-0.006197539, 0.003268072, 0.121119053].
+Running theta=[-2.524593145, 0.990436301, 0.087795779, 0.087163131,-0.006737629, 0.003552872, 0.131674090].
+Running theta=[-2.726965341, 1.069829993, 0.094833517, 0.094150156,-0.007277720, 0.003837671, 0.142229127].
+Running theta=[-2.92933754, 1.14922368, 0.10187126, 0.10113718,-0.00781781, 0.00412247, 0.15278416].
+Running theta=[-3.131709733, 1.228617376, 0.108908993, 0.108124205,-0.008357901, 0.004407270, 0.163339202].
+Running theta=[-3.334081929, 1.308011067, 0.115946731, 0.115111229,-0.008897991, 0.004692069, 0.173894239].
+Running theta=[-3.536454125, 1.387404759, 0.122984469, 0.122098254,-0.009438082, 0.004976868, 0.184449276].
+Running theta=[-3.738826321, 1.466798450, 0.130022206, 0.129085278,-0.009978172, 0.005261668, 0.195004314].
+Running theta=[-3.941198517, 1.546192142, 0.137059944, 0.136072303,-0.010518263, 0.005546467, 0.205559351].
 > 
 > 
-> mod_base = logLik.ergm(object = mod_base,control = control.settings,
-+                        add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.3299712300, 0.1236307055, 0.0186607357, 0.0069402437,-0.0004730770, 0.0003228172, 0.0154271171].
-Running theta=[-1.154899305, 0.432707469, 0.065312575, 0.024290853,-0.001655769, 0.001129860, 0.053994910].
-Running theta=[-1.979827380, 0.741784233, 0.111964414, 0.041641462,-0.002838462, 0.001936903, 0.092562703].
-Running theta=[-2.804755455, 1.050860997, 0.158616254, 0.058992072,-0.004021154, 0.002743946, 0.131130495].
-Running theta=[-3.629683530, 1.359937761, 0.205268093, 0.076342681,-0.005203847, 0.003550989, 0.169698288].
+> mod_allpart = logLik.ergm(object = mod_allpart,
++                        add = TRUE,verbose=T)
+Running theta=[-0.0969162961, 0.0377310119, 0.0029467371, 0.0024779864,-0.0001922694, 0.0001334436, 0.0054762500, 0.0005826671].
+Running theta=[-0.3009506037, 0.1171647213, 0.0091503942, 0.0076947999,-0.0005970472, 0.0004143775, 0.0170051973, 0.0018093346].
+Running theta=[-0.5049849113, 0.1965984306, 0.0153540514, 0.0129116133,-0.0010018249, 0.0006953115, 0.0285341446, 0.0030360022].
+Running theta=[-0.7090192189, 0.2760321399, 0.0215577085, 0.0181284268,-0.0014066027, 0.0009762454, 0.0400630919, 0.0042626697].
+Running theta=[-0.913053526, 0.355465849, 0.027761366, 0.023345240,-0.001811380, 0.001257179, 0.051592039, 0.005489337].
+Running theta=[-1.117087834, 0.434899559, 0.033965023, 0.028562054,-0.002216158, 0.001538113, 0.063120987, 0.006716005].
+Running theta=[-1.321122142, 0.514333268, 0.040168680, 0.033778867,-0.002620936, 0.001819047, 0.074649934, 0.007942672].
+Running theta=[-1.525156449, 0.593766977, 0.046372337, 0.038995681,-0.003025714, 0.002099981, 0.086178881, 0.009169340].
+Running theta=[-1.729190757, 0.673200687, 0.052575994, 0.044212494,-0.003430491, 0.002380915, 0.097707829, 0.010396008].
+Running theta=[-1.933225064, 0.752634396, 0.058779651, 0.049429308,-0.003835269, 0.002661849, 0.109236776, 0.011622675].
+Running theta=[-2.137259372, 0.832068105, 0.064983308, 0.054646121,-0.004240047, 0.002942783, 0.120765723, 0.012849343].
+Running theta=[-2.341293680, 0.911501814, 0.071186965, 0.059862935,-0.004644825, 0.003223717, 0.132294670, 0.014076010].
+Running theta=[-2.545327987, 0.990935524, 0.077390623, 0.065079748,-0.005049602, 0.003504651, 0.143823618, 0.015302678].
+Running theta=[-2.749362295, 1.070369233, 0.083594280, 0.070296562,-0.005454380, 0.003785585, 0.155352565, 0.016529345].
+Running theta=[-2.953396602, 1.149802942, 0.089797937, 0.075513375,-0.005859158, 0.004066519, 0.166881512, 0.017756013].
+Running theta=[-3.157430910, 1.229236652, 0.096001594, 0.080730189,-0.006263936, 0.004347452, 0.178410460, 0.018982680].
+Running theta=[-3.361465218, 1.308670361, 0.102205251, 0.085947002,-0.006668713, 0.004628386, 0.189939407, 0.020209348].
+Running theta=[-3.565499525, 1.388104070, 0.108408908, 0.091163815,-0.007073491, 0.004909320, 0.201468354, 0.021436015].
+Running theta=[-3.769533833, 1.467537780, 0.114612565, 0.096380629,-0.007478269, 0.005190254, 0.212997302, 0.022662683].
+Running theta=[-3.973568140, 1.546971489, 0.120816222, 0.101597442,-0.007883047, 0.005471188, 0.224526249, 0.023889351].
 > 
-> 
-> mod_allpart = logLik.ergm(object = mod_allpart,control = control.settings,
-+                        add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.3348122904, 0.1247704515, 0.0219771736, 0.0045550503,-0.0002766112, 0.0001815646, 0.0199688941, 0.0011120713].
-Running theta=[-1.1718430163, 0.4366965801, 0.0769201077, 0.0159426762,-0.0009681394, 0.0006354762, 0.0698911293, 0.0038922496].
-Running theta=[-2.008873742, 0.748622709, 0.131863042, 0.027330302,-0.001659667, 0.001089388, 0.119813365, 0.006672428].
-Running theta=[-2.845904468, 1.060548837, 0.186805976, 0.038717928,-0.002351196, 0.001543299, 0.169735600, 0.009452606].
-Running theta=[-3.682935194, 1.372474966, 0.241748910, 0.050105554,-0.003042724, 0.001997211, 0.219657835, 0.012232785].
-> 
-> mod_allpartquad = logLik.ergm(object = mod_allpartquad,control = control.settings,
-+                           add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.3497592964, 0.1289124275, 0.0132603513, 0.0045178740,-0.0007090810, 0.0005059484, 0.0162779086, 0.0060139237,-0.0001198165].
-Running theta=[-1.2241575374, 0.4511934962, 0.0464112294, 0.0158125590,-0.0024817837, 0.0017708194, 0.0569726803, 0.0210487329,-0.0004193579].
-Running theta=[-2.0985557784, 0.7734745649, 0.0795621076, 0.0271072439,-0.0042544863, 0.0030356903, 0.0976674519, 0.0360835422,-0.0007188993].
-Running theta=[-2.972954019, 1.095755634, 0.112712986, 0.038401929,-0.006027189, 0.004300561, 0.138362223, 0.051118351,-0.001018441].
-Running theta=[-3.847352260, 1.418036702, 0.145863864, 0.049696614,-0.007799892, 0.005565432, 0.179056995, 0.066153161,-0.001317982].
-> 
-> mod_dirpart = logLik.ergm(object = mod_dirpart,control = control.settings,
-+                           add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.332553282, 0.104280098, 0.009061922, 0.004863357,-0.001086351, 0.000728097, 0.019212506, 0.038210580, 0.063357347,-0.002372523].
-Running theta=[-1.163936486, 0.364980341, 0.031716728, 0.017021750,-0.003802227, 0.002548339, 0.067243771, 0.133737029, 0.221750715,-0.008303830].
-Running theta=[-1.995319691, 0.625680585, 0.054371534, 0.029180143,-0.006518104, 0.004368582, 0.115275037, 0.229263478, 0.380144083,-0.014235136].
-Running theta=[-2.826702895, 0.886380829, 0.077026340, 0.041338536,-0.009233981, 0.006188824, 0.163306302, 0.324789927, 0.538537451,-0.020166443].
-Running theta=[-3.658086100, 1.147081073, 0.099681145, 0.053496929,-0.011949857, 0.008009067, 0.211337567, 0.420316376, 0.696930819,-0.026097750].
-> 
-> mod_indpart = logLik.ergm(object = mod_indpart,control = control.settings,
-+                           add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.3254979683, 0.0925018278, 0.0218430830, 0.0039899587,-0.0004271390, 0.0002993536, 0.0071947421, 0.0036168299, 0.0024802864,-0.0006297474].
-Running theta=[-1.139242889, 0.323756397, 0.076450791, 0.013964856,-0.001494986, 0.001047738, 0.025181597, 0.012658905, 0.008681003,-0.002204116].
-Running theta=[-1.952987810, 0.555010967, 0.131058498, 0.023939752,-0.002562834, 0.001796121, 0.043168453, 0.021700980, 0.014881719,-0.003778484].
-Running theta=[-2.766732730, 0.786265536, 0.185666206, 0.033914649,-0.003630681, 0.002544505, 0.061155308, 0.030743055, 0.021082435,-0.005352853].
-Running theta=[-3.580477651, 1.017520106, 0.240273913, 0.043889546,-0.004698529, 0.003292889, 0.079142163, 0.039785129, 0.027283151,-0.006927221].
-> 
-> mod_shapart = logLik.ergm(object = mod_shapart,control = control.settings,
-+                           add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.3323423604, 0.0728487005, 0.0067561194, 0.0056238162,-0.0012094814, 0.0008687039, 0.0148804428, 0.0781524666, 0.1142141659,-0.0078339041].
-Running theta=[-1.163198261, 0.254970452, 0.023646418, 0.019683357,-0.004233185, 0.003040464, 0.052081550, 0.273533633, 0.399749581,-0.027418664].
-Running theta=[-1.994054163, 0.437092203, 0.040536717, 0.033742897,-0.007256889, 0.005212224, 0.089282657, 0.468914800, 0.685284995,-0.047003425].
-Running theta=[-2.824910064, 0.619213954, 0.057427015, 0.047802438,-0.010280592, 0.007383983, 0.126483764, 0.664295966, 0.970820410,-0.066588185].
-Running theta=[-3.655765965, 0.801335705, 0.074317314, 0.061861978,-0.013304296, 0.009555743, 0.163684871, 0.859677133, 1.256355825,-0.086172945].
-> 
-> modpast_allpart7= logLik.ergm(object = modpast_allpart7,control = control.settings,
-+                           add = TRUE,eval.loglik = TRUE,verbose=T)
-Running theta=[-0.382232598, 0.062870646, 0.011536492, 0.002312817,-0.001729176, 0.001038648, 0.004276225, 0.364539608, 0.129222995,-0.015646059,-0.071246960].
-Running theta=[-1.337814091, 0.220047263, 0.040377723, 0.008094861,-0.006052117, 0.003635269, 0.014966787, 1.275888628, 0.452280484,-0.054761207,-0.249364360].
-Running theta=[-2.29339559, 0.37722388, 0.06921895, 0.01387690,-0.01037506, 0.00623189, 0.02565735, 2.18723765, 0.77533797,-0.09387636,-0.42748176].
-Running theta=[-3.24897708, 0.53440049, 0.09806019, 0.01965895,-0.01469800, 0.00882851, 0.03634791, 3.09858667, 1.09839546,-0.13299150,-0.60559916].
-Running theta=[-4.20455857, 0.69157711, 0.12690142, 0.02544099,-0.01902094, 0.01142513, 0.04703847, 4.00993569, 1.42145295,-0.17210665,-0.78371656].
-> 
-> 
-> save.image('only_model_results.RData')
-> # 
-> # test <- lapply(1:100,function(x) rnorm(10000))
-> # system.time(x <- lapply(test,function(x) loess.smooth(x,x)))
-> # system.time(x <- mclapply(test,function(x) loess.smooth(x,x), mc.cores=7))
-> 
-> rm(list=ls())
-> 
+> mod_allpartquad = logLik.ergm(object = mod_allpartquad,
++                           add = TRUE,verbose=T)
+Running theta=[-0.1010890584, 0.0366547124, 0.0028294215, 0.0016491881,-0.0002747462, 0.0001797476, 0.0054699067, 0.0021754166,-0.0000410981].
+Running theta=[-0.3139081288, 0.1138225280, 0.0087860984, 0.0051211632,-0.0008531592, 0.0005581637, 0.0169854998, 0.0067552410,-0.0001276204].
+Running theta=[-0.5267271992, 0.1909903435, 0.0147427753, 0.0085931383,-0.0014315723, 0.0009365798, 0.0285010928, 0.0113350654,-0.0002141427].
+Running theta=[-0.7395462696, 0.2681581591, 0.0206994522, 0.0120651133,-0.0020099853, 0.0013149958, 0.0400166859, 0.0159148899,-0.0003006651].

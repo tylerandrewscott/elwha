@@ -228,3 +228,443 @@ transitiveweights.min.max.min          nodecov.sum..NUMRESP
                      0.000000                      0.000000 
         nodematch.sum.ORGTYPE 
                      0.000000 
+Sampler accepted   3.170% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     -8.07428                    -268.75910 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -623.32998                   -7625.26268 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    -66.13039                   -6434.43854 
+        nodematch.sum.ORGTYPE 
+                    -27.71566 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     -8.07428                    -268.75910 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -623.32998                   -7625.26268 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    -66.13039                   -6434.43854 
+        nodematch.sum.ORGTYPE 
+                    -27.71566 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 59.93 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.2839050150                  0.7480363978 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.1766532509                  0.0231989818 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                -0.0011436191                 -0.0009518177 
+        nodematch.sum.ORGTYPE 
+                -0.0313188025 
+Sampler accepted   3.482% of 200000000 proposed steps.
+Sample size = 200000 by 2e+05 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    226.18040                    -199.66068 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -265.80363                   -6354.02627 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1893.82901                   -2410.76777 
+        nodematch.sum.ORGTYPE 
+                    -16.58917 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    226.18040                    -199.66068 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -265.80363                   -6354.02627 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1893.82901                   -2410.76777 
+        nodematch.sum.ORGTYPE 
+                    -16.58917 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0634930729866029  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.927 
+Iteration 3 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.4057972074                  0.8653397895 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.2072025239                  0.0427056478 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                -0.0022528043                 -0.0003817565 
+        nodematch.sum.ORGTYPE 
+                -0.0214565628 
+Sampler accepted   3.473% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     217.5195                     -185.8606 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -232.4970                    -5842.5596 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1782.7867                    -2133.7412 
+        nodematch.sum.ORGTYPE 
+                     -17.1426 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     217.5195                     -185.8606 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -232.4970                    -5842.5596 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1782.7867                    -2133.7412 
+        nodematch.sum.ORGTYPE 
+                     -17.1426 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0703716278076172  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.768 
+Iteration 4 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.5161631896                  0.9565221422 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.2281453879                  0.0571463197 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                -0.0036203540                  0.0008542308 
+        nodematch.sum.ORGTYPE 
+                -0.0067242069 
+Sampler accepted   3.430% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    185.21002                    -175.93434 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -230.26516                   -5490.23238 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1519.99322                   -2107.02907 
+        nodematch.sum.ORGTYPE 
+                    -18.96632 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    185.21002                    -175.93434 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -230.26516                   -5490.23238 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1519.99322                   -2107.02907 
+        nodematch.sum.ORGTYPE 
+                    -18.96632 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.0805718004703523  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.666 
+Iteration 5 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                -3.6010661678                  1.0720291705 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                 0.2357829804                  0.0711248743 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                -0.0037815224                  0.0009916197 
+        nodematch.sum.ORGTYPE 
+                 0.0315328086 
+Sampler accepted   3.427% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     183.1561                     -158.5394 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -194.1736                    -4918.2906 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1526.9387                    -1798.7642 
+        nodematch.sum.ORGTYPE 
+                     -10.8699 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     183.1561                     -158.5394 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -194.1736                    -4918.2906 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1526.9387                    -1798.7642 
+        nodematch.sum.ORGTYPE 
+                     -10.8699 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.108573645353317  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 5.352 
+Iteration 6 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.695019840                   1.177849108 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.244696672                   0.083287464 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.004322163                   0.002113867 
+        nodematch.sum.ORGTYPE 
+                  0.050857084 
+Sampler accepted   3.440% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    191.64348                    -134.94340 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -128.25234                   -4191.69108 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1620.95057                    -883.71154 
+        nodematch.sum.ORGTYPE 
+                     -9.06806 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    191.64348                    -134.94340 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -128.25234                   -4191.69108 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1620.95057                    -883.71154 
+        nodematch.sum.ORGTYPE 
+                     -9.06806 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.120734304189682  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.871 
+Iteration 7 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.769226696                   1.290014004 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.239732953                   0.095411028 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.004860243                   0.002259296 
+        nodematch.sum.ORGTYPE 
+                  0.067591252 
+Sampler accepted   3.393% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     159.9987                     -114.6541 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -112.2759                    -3671.8866 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1327.2569                    -1043.7882 
+        nodematch.sum.ORGTYPE 
+                      -9.5649 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     159.9987                     -114.6541 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -112.2759                    -3671.8866 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                    1327.2569                    -1043.7882 
+        nodematch.sum.ORGTYPE 
+                      -9.5649 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.142468631267548  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.336 
+Iteration 8 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.841237112                   1.375318850 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.224431034                   0.105859829 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.005844575                   0.003401058 
+        nodematch.sum.ORGTYPE 
+                  0.111047574 
+Sampler accepted   3.378% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    164.25994                     -92.39958 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -57.01052                   -2875.09688 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1378.74993                    -191.11349 
+        nodematch.sum.ORGTYPE 
+                     -2.38226 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    164.25994                     -92.39958 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -57.01052                   -2875.09688 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1378.74993                    -191.11349 
+        nodematch.sum.ORGTYPE 
+                     -2.38226 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.19182899594307  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 4.704 
+Iteration 9 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.906906353                   1.453019301 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.207158648                   0.116415705 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.006912151                   0.004310049 
+        nodematch.sum.ORGTYPE 
+                  0.139310171 
+Sampler accepted   3.339% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    148.66484                     -69.50170 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -12.80478                   -2125.74976 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1262.46949                     326.47333 
+        nodematch.sum.ORGTYPE 
+                     -1.74508 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    148.66484                     -69.50170 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -12.80478                   -2125.74976 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1262.46949                     326.47333 
+        nodematch.sum.ORGTYPE 
+                     -1.74508 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.236584186553956  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 3.75 
+Iteration 10 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -3.966213092                   1.529060313 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.188082429                   0.124950402 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.006707897                   0.004556792 
+        nodematch.sum.ORGTYPE 
+                  0.159812013 
+Sampler accepted   3.276% of 50000000 proposed steps.
+Sample size = 50000 by 50000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                    115.13100                     -51.41282 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                     -4.47970                   -1648.06304 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1005.75338                     108.23870 
+        nodematch.sum.ORGTYPE 
+                     -0.29768 
+Average estimating equation values:
+                          sum                    mutual.min 
+                    115.13100                     -51.41282 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                     -4.47970                   -1648.06304 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   1005.75338                     108.23870 
+        nodematch.sum.ORGTYPE 
+                     -0.29768 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.457 
+Step length converged once. Increasing MCMC sample size.
+Iteration 11 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                 -4.009362361                   1.576699988 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                  0.167544123                   0.131922920 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                 -0.007619499                   0.005321714 
+        nodematch.sum.ORGTYPE 
+                  0.180081221 
+Sampler accepted   3.239% of 200000000 proposed steps.
+Sample size = 200000 by 2e+05 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                   107.816065                    -36.174440 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    12.375895                  -1162.016680 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   938.119376                    459.638332 
+        nodematch.sum.ORGTYPE 
+                    -2.455335 
+Average estimating equation values:
+                          sum                    mutual.min 
+                   107.816065                    -36.174440 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    12.375895                  -1162.016680 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                   938.119376                    459.638332 
+        nodematch.sum.ORGTYPE 
+                    -2.455335 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.627 
+Step length converged twice. Stopping.
+Evaluating log-likelihood at the estimate.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> 
+> save.image('result_base.RData')
+> 
+> # mod_indpart3<-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,parallel.type="SOCK",
+> #                             MPLE.max.dyad.types=1e+7,parallel=4,MCMC.samplesize=16000,
+> #                             MCMC.burnin=10000,MCMC.interval=1000,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_indpart<-mod_indpart3
+> # 
+> # mod_dirpart <-
+> #     ergm(net~sum+mutual(form="min")+
+> # transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> # nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE")+
+> # edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
+> #          response="TVAL", reference=~DiscUnif(0,3),
+> #          control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                               MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                               MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                               parallel.type="MPI",parallel=8,
+> #                               MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                               MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                               MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_shapart <-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          edgecov(spn7,form='sum')+edgecov(sppsp7,form='sum')+edgecov(spx7,form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="MPI",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # detach(file:NetworkReady.RData)
+> # 
+> # rm(
+> # list=ls()[intersect(grep('shapart',ls(),invert=T),grep('dirpart',ls(),
+> #                                                        invert=T))])
+> 
+> rm(list=ls())
+> 

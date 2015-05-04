@@ -5,18 +5,21 @@ require(grid)
 library(ergm)
 
 rm(list=ls())
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/nonparallel/')
 #setwd('//Users/TScott/Google Drive/elwha/PSJ_Submission/Version3')
 #load('only_model_results.RData')
 
+
 load('result_base.RData')
 
+
 temp2<-ggs(mod_base$sample)
-temp2<-(merge(temp2,mod_base$target.stats))
+#temp2<-(merge(temp2,mod_base$target.stats))
 
 levels(temp2$Parameter)<-c("Sum","Mutual","Transitive Weights",
                            "Number Resp.","Number Groups", 'Mean Years', 'Org. Type')
 vline.dat.du <- data.frame(z=unique(temp2$y), vl=levels(temp2$Parameter))
+
 
 
 # 

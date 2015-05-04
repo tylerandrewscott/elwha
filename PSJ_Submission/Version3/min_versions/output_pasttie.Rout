@@ -1508,3 +1508,97 @@ transitiveweights.min.max.min          nodecov.sum..NUMRESP
         edgecov.all_sp_pt.sum 
                  -0.864915046 
 Using SOCK.
+Sample size = 50000 by 6250 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     2.681240                    -32.548100 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -67.603160                   -905.626540 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     5.581268                   -854.439760 
+        nodematch.sum.ORGTYPE     edgecov.net.PRIOR_TIE.sum 
+                    -1.430540                   -134.922320 
+           edgecov.all_sp.sum       edgecov.all_sp_quad.sum 
+                  -270.521871                   -722.106877 
+        edgecov.all_sp_pt.sum 
+                  -134.038714 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     2.681240                    -32.548100 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   -67.603160                   -905.626540 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     5.581268                   -854.439760 
+        nodematch.sum.ORGTYPE     edgecov.net.PRIOR_TIE.sum 
+                    -1.430540                   -134.922320 
+           edgecov.all_sp.sum       edgecov.all_sp_quad.sum 
+                  -270.521871                   -722.106877 
+        edgecov.all_sp_pt.sum 
+                  -134.038714 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 2.954 
+Step length converged once. Increasing MCMC sample size.
+Iteration 29 of at most 30 with parameter: 
+                          sum                    mutual.min 
+                  -4.68741162                    0.96010892 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   0.54504604                    0.01652742 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                  -0.01792807                    0.01051642 
+        nodematch.sum.ORGTYPE     edgecov.net.PRIOR_TIE.sum 
+                   0.08782712                    4.38381554 
+           edgecov.all_sp.sum       edgecov.all_sp_quad.sum 
+                   1.44898812                   -0.17050992 
+        edgecov.all_sp_pt.sum 
+                  -0.87037776 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                      8.19839                     -22.15081 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -37.80313                    -608.48402 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     58.15737                    -511.15514 
+        nodematch.sum.ORGTYPE     edgecov.net.PRIOR_TIE.sum 
+                      0.81419                    -100.27671 
+           edgecov.all_sp.sum       edgecov.all_sp_quad.sum 
+                   -190.01225                    -500.97835 
+        edgecov.all_sp_pt.sum 
+                    -96.71484 
+Average estimating equation values:
+                          sum                    mutual.min 
+                      8.19839                     -22.15082 
+transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                    -37.80313                    -608.48402 
+       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+                     58.15737                    -511.15514 
+        nodematch.sum.ORGTYPE     edgecov.net.PRIOR_TIE.sum 
+                      0.81419                    -100.27671 
+           edgecov.all_sp.sum       edgecov.all_sp_quad.sum 
+                   -190.01225                    -500.97835 
+        edgecov.all_sp_pt.sum 
+                    -96.71484 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 1.697 
+Step length converged twice. Stopping.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> save.image('result_pasttie.RData')
+> rm(list=ls())
+> #rm(list=ls()[grep('mod_allpart',ls(),invert = T)])
+> 
+> #save.image('Union.allpart.RData')
+> 
