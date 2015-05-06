@@ -1,9 +1,10 @@
 #rm(list=ls())
 #rm(list=ls())
+install.packages('Rglpk')
 require(statnet)
 library(snow)
 library(rlecuyer)
-library(Rmpi)
+
 #setwd('H:/passtosim')
 #setwd("//Users/TScott/Google Drive/elwha")
 #setwd('H:/elwha/Dissert_Scripts/')
@@ -38,26 +39,47 @@ spx_pt<-spx7*as.sociomatrix(net,"PRIOR_TIE")
 all_sp_quad<-((spn7+sppsp7)^2)
 all_sp_pt<-((spn7+sppsp7)*as.sociomatrix(net,"PRIOR_TIE"))
 all_sp<-(spn7+sppsp7)
+central.actors = c('Federal_Agency','State_Agency','Regional_Commission')
+set.vertex.attribute(net,attrname = 'Central',
+                     value = ifelse(get.vertex.attribute(net,'ORGTYPE') %in% central.actors,1,0))
 
 
+form_base = net~sum+
+  nonzero+
+  mutual(form="min")+
+  transitiveweights(twopath="min",combine="max",affect="min")+
+  nodecov("NUMRESP")+
+  nodecov("NUMGROUPS")+
+  nodecov("MEANYEARS")+
+  nodematch("ORGTYPE",diff=FALSE)+
+  nodefactor('Central')
+  
+npar = length(summary(form_base,response='TVAL'))-1
+
+
+  
 mod_base <-
-  ergm(net~sum+
-         mutual(form="min")+
-         transitiveweights(twopath="min",combine="max",affect="min")+
-                    nodecov("NUMRESP",form='sum')+
-        nodecov("NUMGROUPS",form='sum')+nodecov("MEANYEARS",form='sum')+
-          nodematch("ORGTYPE",form='sum',diff=FALSE),
+  ergm(form_base,
        response="TVAL", reference=~DiscUnif(0,3),
-       control=control.ergm(init=c(geo.init, rep(0, 6)),
+       control=control.ergm(init=c(geo.init, rep(0, npar)),
                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
                             MCMLE.trustregion=1000,MCMC.addto.se=T,
                             parallel.type="SOCK",parallel=8,
-                            MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+                            MPLE.max.dyad.types=1e+7,MCMC.samplesize=200000,
                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
                             MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
 
+sim_base = simulate.ergm(mod_base,nsim = 200000,statsonly=TRUE,response="TVAL", reference=~DiscUnif(0,3),
+                    control=control.simulate.ergm(MCMC.burnin=15000,
+                                                  MCMC.interval=1500,
+                                                  MCMC.prop.args=list(p0=0.5),
+                                                  MCMC.runtime.traceplot=FALSE,
+                                                  parallel=8,
+                                                  parallel.type='SOCK'))
 
-save.image('result_base.RData')
+sim_base.dat = melt(sim_base,id.vars=rownames(sim_base))
+
+save.image('result_base2.RData')
 
 # mod_indpart3<-
 #   ergm(net~sum+mutual(form="min")+

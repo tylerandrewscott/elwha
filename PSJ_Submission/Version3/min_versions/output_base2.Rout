@@ -31,7 +31,7 @@ ERROR: failed to lock directory ‘/homes/tscott1/R/x86_64-pc-linux-gnu-library/
 Try removing ‘/homes/tscott1/R/x86_64-pc-linux-gnu-library/3.2/00LOCK-Rglpk’
 
 The downloaded source packages are in
-	‘/tmp/Rtmplr4qNM/downloaded_packages’
+	‘/tmp/RtmpyOat9j/downloaded_packages’
 Warning message:
 In install.packages("Rglpk") :
   installation of package ‘Rglpk’ had non-zero exit status
@@ -205,12 +205,14 @@ or type citation("statnet").
 > 
 > 
 > form_base = net~sum+
++   nonzero+
 +   mutual(form="min")+
 +   transitiveweights(twopath="min",combine="max",affect="min")+
 +   nodecov("NUMRESP")+
 +   nodecov("NUMGROUPS")+
 +   nodecov("MEANYEARS")+
-+   nodematch("ORGTYPE",diff=FALSE)
++   nodematch("ORGTYPE",diff=FALSE)+
++   nodefactor('Central')
 >   
 > npar = length(summary(form_base,response='TVAL'))-1
 > 
@@ -233,48 +235,37 @@ Fitting initial model.
 Fitting ERGM.
 Density guard set to 20989 from an initial count of 1045  edges.
 Iteration 1 of at most 30 with parameter: 
-                          sum                    mutual.min 
+                          sum                       nonzero 
                     -3.091141                      0.000000 
-transitiveweights.min.max.min          nodecov.sum..NUMRESP 
+                   mutual.min transitiveweights.min.max.min 
                      0.000000                      0.000000 
-       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
                      0.000000                      0.000000 
-        nodematch.sum.ORGTYPE 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                     0.000000                      0.000000 
+     nodefactor.sum.Central.1 
                      0.000000 
 Using SOCK.
 Sample size = 200000 by 25000 
 Back from unconstrained MCMC. Average statistics:
-                          sum                    mutual.min 
-                     -3.88177                    -268.31162 
-transitiveweights.min.max.min          nodecov.sum..NUMRESP 
-                   -617.71673                   -7610.34573 
-       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
-                    -25.22701                   -6295.27055 
-        nodematch.sum.ORGTYPE 
-                    -28.03383 
+                          sum                       nonzero 
+                     -3.88177                    1159.76813 
+                   mutual.min transitiveweights.min.max.min 
+                   -268.31162                    -617.71673 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                  -7610.34573                     -25.22701 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                  -6295.27055                     -28.03383 
+     nodefactor.sum.Central.1 
+                   -580.49771 
 Average estimating equation values:
-                          sum                    mutual.min 
-                     -3.88177                    -268.31162 
-transitiveweights.min.max.min          nodecov.sum..NUMRESP 
-                   -617.71673                   -7610.34573 
-       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
-                    -25.22701                   -6295.27055 
-        nodematch.sum.ORGTYPE 
-                    -28.03383 
-Calling MCMLE Optimization...
-Using Newton-Raphson Step with step length  0.25  ...
-Using lognormal metric (see control.ergm function).
-Optimizing loglikelihood
-Starting MCMC s.e. computation.
-The log-likelihood improved by 52.09 
-Step length converged once. Increasing MCMC sample size.
-Iteration 2 of at most 30 with parameter: 
-                          sum                    mutual.min 
-                -3.2830621064                  0.6464500574 
-transitiveweights.min.max.min          nodecov.sum..NUMRESP 
-                 0.1546513131                  0.0189042166 
-       nodecov.sum..NUMGROUPS        nodecov.sum..MEANYEARS 
-                -0.0003773123                  0.0006645955 
-        nodematch.sum.ORGTYPE 
-                 0.0166005662 
-Using SOCK.
+                          sum                       nonzero 
+                     -3.88177                    1159.76813 
+                   mutual.min transitiveweights.min.max.min 
+                   -268.31162                    -617.71673 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                  -7610.34573                     -25.22701 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                  -6295.27055                     -28.03383 
+     nodefactor.sum.Central.1 
+                   -580.49771 
