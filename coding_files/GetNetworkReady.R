@@ -1,24 +1,21 @@
 rm(list=ls())
 #install.packages('statnet',dependencies=TRUE,repos='http://cran.us.r-project.org')
-setwd("//Users/TScott/Google Drive/elwha/")
+setwd("win/user/elwha/data_files/")
 require(statnet)
 
 dat_all=read.csv(file="edgelist_all.csv",row.names=1)
 temp<-dat_all[as.character(dat_all$ORG)!=as.character(dat_all$Contact),]
-temp1<-paste(temp$ORG,temp$Contact)
-temp$paste<-temp1
 
-temptab<-table(temp$paste)
-for (i in 1:nrow(temp))
-{
-	loc<-which(names(table(temp$paste))==temp$paste[i])
-	temp$count[i]<-temptab[loc]
-}
+temp$paste<-paste(temp$ORG,temp$Contact)
+
+temptab<-data.frame(table(temp$paste))
+colnames(temptab) = c('paste','Freq')
+
+temp$count = temptab$Freq[match(temp$paste,temptab$paste)]
 
 t<-temp[order(temp$TType,decreasing=T),]
-t$dup<-duplicated(t$paste)
-tt<-t[duplicated(t$paste)!=TRUE,]
 
+tt<-t[!duplicated(t$paste),]
 
 resp.dat=read.csv(file="Response.Used.csv",row.names=1)
 
@@ -33,16 +30,8 @@ vertex_attributes  = data.frame(sort(unique(resp.dat$ORG)))
 colnames(vertex_attributes) = "NAME"
 network.vertex.names(net_temp)<-as.character(vertex_attributes$NAME)
 
-TAIL_ID = rep(0,nrow(t1))
-HEAD_ID = rep(0,nrow(t1))
-
-
-for (i in 1:nrow(t1))
-{
-	TAIL_ID[i] = (which(network.vertex.names(net_temp)==t1$ORG[i]))
-	HEAD_ID[i] = (which(network.vertex.names(net_temp)==t1$Contact[i]))
-}
-
+TAIL_ID = match(t1$ORG,network.vertex.names(net_temp))
+HEAD_ID = match(t1$Contact,network.vertex.names(net_temp))
 
 for (i in 1:length(TAIL_ID))
 {
@@ -56,83 +45,38 @@ for (i in 1:length(TAIL_ID))
 }
 
 
-TOTALYEARS = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(TOTALYEARS))
-{
-	TOTALYEARS[i]=resp.dat$total.years[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]]
-}
-vertex_attributes$TOTALYEARS = TOTALYEARS
+vertex_attributes$TOTALYEARS = resp.dat$total.years[match(vertex_attributes$NAME,resp.dat$ORG)]
 
 
-NUMGROUPS = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(NUMGROUPS))
-{
-	NUMGROUPS[i]=mean(resp.dat$NumGroups[which(resp.dat$ORG==vertex_attributes$NAME[i])])
-}
-vertex_attributes$NUMGROUPS = NUMGROUPS
+library(plyr)
+library(dplyr)
+vertex_attributes$NUMGROUPS = data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(NumGroups)))[,2][
+  match(vertex_attributes$NAME, data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(NumGroups)))[,1])]
+ 
+vertex_attributes$NUMRESP = data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(Numres)))[,2][
+  match(vertex_attributes$NAME, data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(Numres)))[,1])]
 
-NUMRESP = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(NUMRESP))
-{
-	NUMRESP[i]=mean(resp.dat$Numres[which(resp.dat$ORG==vertex_attributes$NAME[i])])
-}
-vertex_attributes$NUMRESP = NUMRESP
+vertex_attributes$MEANYEARS= data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(Years)))[,2][
+  match(vertex_attributes$NAME, data.frame(resp.dat %>% group_by(ORG) %>% summarise(mean(Years)))[,1])]
 
-MEANYEARS = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(MEANYEARS))
-{
-	MEANYEARS[i]=mean(resp.dat$Years[which(resp.dat$ORG==vertex_attributes$NAME[i])])
-}
-vertex_attributes$MEANYEARS = MEANYEARS
+vertex_attributes$ORGTYPE = resp.dat$ORGType[match(vertex_attributes$NAME,resp.dat$ORG)]
 
-ORGTYPE = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(ORGTYPE))
-{
-	ORGTYPE[i]=as.character(resp.dat$ORGType[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
-}
-vertex_attributes$ORGTYPE = ORGTYPE
-
-USEPLAN = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(USEPLAN))
-{
-	USEPLAN[i]=as.character(resp.dat$useful_plan[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
-}
-vertex_attributes$USEPLAN = USEPLAN
-
-USEWORK = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(USEWORK))
-{
-	USEWORK[i]=as.character(resp.dat$useful_work[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
-}
-vertex_attributes$USEWORK = USEWORK
-
-USECONS = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(USECONS))
-{
-	USECONS[i]=as.character(resp.dat$useful_cons[which(resp.dat$ORG==vertex_attributes$NAME[i])[1]])
-}
-vertex_attributes$USECONS = USECONS
+vertex_attributes$USEPLAN = resp.dat$useful_plan[match(vertex_attributes$NAME,resp.dat$ORG)]
+vertex_attributes$USEWORK = resp.dat$useful_work[match(vertex_attributes$NAME,resp.dat$ORG)]
+vertex_attributes$USECONS = resp.dat$useful_cons[match(vertex_attributes$NAME,resp.dat$ORG)]
 
 
-for (i in 1:nrow(resp.dat))
-{resp.dat$npsp[i]<-tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(sort(unique(resp.dat$ORG))==resp.dat$ORG[i])]}
+
+org.npsp.mean = data.frame(tapply(resp.dat$npsp,resp.dat$ORG,mean))
+resp.dat$npsp = org.npsp.mean$mean.npsp.[match(resp.dat$ORG,org.npsp.mean$ORG)]
+
+org.psp.mean = data.frame(tapply(resp.dat$psp,resp.dat$ORG,mean))
+resp.dat$psp = org.psp.mean$mean.psp.[match(resp.dat$ORG,org.psp.mean$ORG)]
 
 
-PSP_N = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(PSP_N))
-{
-	{
-	PSP_N[i]=tapply(resp.dat$psp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$psp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]
-}
-}
-vertex_attributes$PSP_N = PSP_N
+vertex_attributes$PSP_N = tapply(resp.dat$psp,resp.dat$ORG,mean)[match(vertex_attributes$NAME, rownames(tapply(resp.dat$psp,resp.dat$ORG,mean)))]
 
-NPSP_N = rep(0,length(vertex_attributes$NAME))
-for (i in 1:length(PSP_N))
-{
-	NPSP_N[i]=tapply(resp.dat$npsp,resp.dat$ORG,mean)[which(rownames(tapply(resp.dat$npsp,resp.dat$ORG,mean))==vertex_attributes$NAME[i])[1]]
-}
-vertex_attributes$NPSP_N = NPSP_N
+vertex_attributes$NPSP_N = tapply(resp.dat$psp,resp.dat$ORG,mean)[match(vertex_attributes$NAME, rownames(tapply(resp.dat$npsp,resp.dat$ORG,mean)))]
 
 
 network.vertex.names(net_temp) = as.character(vertex_attributes$NAME)
@@ -146,7 +90,6 @@ set.vertex.attribute(net_temp,"NPSP_N",value=vertex_attributes$NPSP_N)
 set.vertex.attribute(net_temp,"USEWORK",value=ifelse(is.na(as.numeric(vertex_attributes$USEWORK)),0,as.numeric(vertex_attributes$USEWORK)))
 set.vertex.attribute(net_temp,"USEPLAN",value=ifelse(is.na(as.numeric(vertex_attributes$USEPLAN)),0,as.numeric(vertex_attributes$USEPLAN)))
 set.vertex.attribute(net_temp,"USECONS",value=ifelse(is.na(as.numeric(vertex_attributes$USECONS)),0,as.numeric(vertex_attributes$USECONS)))
-
 
 
 net<-net_temp
@@ -207,7 +150,6 @@ emp<-matrix(0,nrow=(network.size(net)),ncol=network.size(net))
 colnames(emp)<-network.vertex.names(net)
 rownames(emp)<-network.vertex.names(net)
 
-
 fullmatrix<-function(netx,fm)
 {
 emp<-matrix(0,nrow=(network.size(netx)),ncol=network.size(netx))
@@ -229,6 +171,5 @@ dpn<-fullmatrix(net,dpn)
 dppsp<-fullmatrix(net,dppsp)
 sppsp<-fullmatrix(net,sppsp)
 spn<-fullmatrix(net,spn)
-
 
 save.image('NetworkReady.RData')

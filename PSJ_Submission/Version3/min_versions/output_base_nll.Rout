@@ -373,9 +373,9 @@ downloaded 17 KB
 * installing *source* package ‘Rglpk’ ...
 ** package ‘Rglpk’ successfully unpacked and MD5 sums checked
 ** libs
-gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -O2 -pipe -g  -c Rglpk_initialize.c -o Rglpk_initialize.o
-gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -O2 -pipe -g  -c Rglpk_read_file.c -o Rglpk_read_file.o
-gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -O2 -pipe -g  -c Rglpk_solve.c -o Rglpk_solve.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_initialize.c -o Rglpk_initialize.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_read_file.c -o Rglpk_read_file.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_solve.c -o Rglpk_solve.o
 gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o Rglpk.so Rglpk_initialize.o Rglpk_read_file.o Rglpk_solve.o -lglpk -L/usr/lib/R/lib -lR
 installing to /homes/tscott1/R/x86_64-pc-linux-gnu-library/3.2/Rglpk/libs
 ** R
@@ -388,7 +388,7 @@ installing to /homes/tscott1/R/x86_64-pc-linux-gnu-library/3.2/Rglpk/libs
 * DONE (Rglpk)
 
 The downloaded source packages are in
-	‘/tmp/RtmpPpJ5Ws/downloaded_packages’
+	‘/tmp/RtmpuXGugT/downloaded_packages’
 > require(statnet)
 > library(snow)
 > library(rlecuyer)
@@ -454,7 +454,7 @@ The downloaded source packages are in
 +                             parallel.type="SOCK",parallel=8,
 +                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
 +                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
-+                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T,verbose=T)
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
 Evaluating network in model
 Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
 Initializing model.
@@ -884,4 +884,72 @@ Optimizing loglikelihood
 Starting MCMC s.e. computation.
 The log-likelihood improved by 1.361 
 Step length converged twice. Stopping.
-Evaluating log-likelihood at the estimate.
+
+This model was fit using MCMC.  To examine model diagnostics and check for degeneracy, use the mcmc.diagnostics() function.
+Warning message:
+In logLikNull.ergm(mainfit) :
+  Null model likelihood calculation is not implemented for valued ERGMs at this time.
+> 
+> sim_base = simulate.ergm(mod_base,nsim = 200000,statsonly=TRUE,response="TVAL", reference=~DiscUnif(0,3),
++                     control=control.simulate.ergm(MCMC.burnin=15000,
++                                                   MCMC.interval=1500,
++                                                   MCMC.prop.args=list(p0=0.5),
++                                                   MCMC.runtime.traceplot=FALSE,
++                                                   parallel=8,
++                                                   parallel.type='SOCK'))
+> 
+> sim_base.dat = melt(sim_base,id.vars=rownames(sim_base))
+> 
+> save.image('result_base_nll.RData')
+> 
+> # mod_indpart3<-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          nodecov('IPn7')+nodecov('IPpsp7')+nodecov('IPx7'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,parallel.type="SOCK",
+> #                             MPLE.max.dyad.types=1e+7,parallel=4,MCMC.samplesize=16000,
+> #                             MCMC.burnin=10000,MCMC.interval=1000,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_indpart<-mod_indpart3
+> # 
+> # mod_dirpart <-
+> #     ergm(net~sum+mutual(form="min")+
+> # transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> # nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE")+
+> # edgecov(dpn7,form='sum')+edgecov(dppsp7,form='sum')+edgecov(dpx7,form='sum'),
+> #          response="TVAL", reference=~DiscUnif(0,3),
+> #          control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                               MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                               MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                               parallel.type="MPI",parallel=8,
+> #                               MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                               MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                               MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # mod_shapart <-
+> #   ergm(net~sum+mutual(form="min")+
+> #          transitiveweights("min","max","min")+nodecov("NUMRESP")+
+> #          nodecov("NUMGROUPS")+nodecov("MEANYEARS")+nodematch("ORGTYPE",form='sum')+
+> #          edgecov(spn7,form='sum')+edgecov(sppsp7,form='sum')+edgecov(spx7,form='sum'),
+> #        response="TVAL", reference=~DiscUnif(0,3),
+> #        control=control.ergm(init=c(geo.init, rep(0, 9)),
+> #                             MCMLE.maxit=30,MCMC.runtime.traceplot=F,seed=24,
+> #                             MCMLE.trustregion=1000,MCMC.addto.se=T,
+> #                             parallel.type="MPI",parallel=8,
+> #                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=50000,
+> #                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
+> #                             MCMC.prop.args=list(p0=0.5)),eval.loglik=T)
+> # 
+> # detach(file:NetworkReady.RData)
+> # 
+> # rm(
+> # list=ls()[intersect(grep('shapart',ls(),invert=T),grep('dirpart',ls(),
+> #                                                        invert=T))])
+> 
+> rm(list=ls())
+> 

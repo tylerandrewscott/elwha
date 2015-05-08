@@ -1,0 +1,328 @@
+
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #rm(list=ls())
+> #rm(list=ls())
+> #install.packages('Rglpk')
+> library(Rglpk)
+Loading required package: slam
+Using the GLPK callable library version 4.45
+> require(statnet)
+Loading required package: statnet
+Loading required package: network
+network: Classes for Relational Data
+Version 1.12.0 created on 2015-03-04.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+Loading required package: ergm
+Loading required package: statnet.common
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.3-2 created on 2014-01-13.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+Attaching package: ‘sna’
+
+The following object is masked from ‘package:network’:
+
+    %c%
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.7.1, created on 2014-09-29
+Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+Loading required package: tergm
+
+tergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.1.1, created on 2013-03-29
+Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+Loading required package: latentnet
+
+latentnet: version 2.7.0, created on 2015-03-21
+Copyright (c) 2015, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    Susan M. Shortreed
+                    Jeremy Tantrum
+                    Peter D. Hoff
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("latentnet").
+NOTE: BIC calculation prior latentnet 2.7.0 had a bug in the calculation of the effective number of parameters. See help(summary.ergmm) for details.
+
+statnet: version 2014.2.0, created on 2014-02-05
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+> library(snow)
+> library(rlecuyer)
+> library(plyr)
+
+Attaching package: ‘plyr’
+
+The following object is masked from ‘package:network’:
+
+    is.discrete
+
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:plyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> library(reshape2)
+> library(mail)
+> #search.ergmTerms(categories=c('valued'))
+> #setwd('H:/passtosim')
+> #setwd("//Users/TScott/Google Drive/elwha")
+> #setwd('H:/elwha/Dissert_Scripts/')
+> 
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions')
+> load('NetworkReady.RData')
+> #load('Ready_to_ERGM.RData')
+> g <- sum(net %e% "TVAL")/network.dyadcount(net)
+> init.geo<-log(1 - 1/(g+1))
+> geo.init = init.geo
+> 
+> as.mcmc.default <- coda:::as.mcmc.default
+> as.mcmc.list.default <- coda:::as.mcmc.list.default
+> 
+> dpx <- dppsp * dpn
+> spx <- sppsp * spn
+> spn7 <- spn/7
+> spx7 <- spx/7
+> sppsp7 <- sppsp/7
+> dpn7 <- dpn/7
+> dpx7 <- dpx/7
+> dppsp7 <- dppsp/7
+> ipn_pt<-get.vertex.attribute(net,'IPn7')*as.sociomatrix(net,"PRIOR_TIE")
+> ippsp_pt<-get.vertex.attribute(net,'IPpsp7')*as.sociomatrix(net,"PRIOR_TIE")
+> ipx_pt<-get.vertex.attribute(net,'IPx7')*as.sociomatrix(net,"PRIOR_TIE")
+> dpn_pt<-dpn7*as.sociomatrix(net,"PRIOR_TIE")
+> dppsp_pt<-dppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> dpx_pt<-dpx7*as.sociomatrix(net,"PRIOR_TIE")
+> spn_pt<-spn7*as.sociomatrix(net,"PRIOR_TIE")
+> sppsp_pt<-sppsp7*as.sociomatrix(net,"PRIOR_TIE")
+> spx_pt<-spx7*as.sociomatrix(net,"PRIOR_TIE")
+> all_sp_quad<-((spn7+sppsp7)^2)
+> all_sp_pt<-((spn7+sppsp7)*as.sociomatrix(net,"PRIOR_TIE"))
+> all_sp<-(spn7+sppsp7)
+> central.actors = c('Federal_Agency','State_Agency','Regional_Commission')
+> set.vertex.attribute(net,attrname = 'Central',
++                      value = ifelse(get.vertex.attribute(net,'ORGTYPE') %in% central.actors,1,0))
+> 
+> 
+> form_base = net~sum+
++   mutual(form="min")+
++   transitiveweights(twopath="min",combine="max",affect="min")+
++   nodeisqrtcovar+
++   nodecov("NUMRESP")+
++   nodecov("NUMGROUPS")+
++   nodecov("MEANYEARS")+
++   nodematch("ORGTYPE",diff=FALSE)+
++  nodefactor('Central')
+>   
+> npar = length(summary(form_base,response='TVAL'))-1
+> 
+> 
+>   
+> mod_base <-
++   ergm(form_base,
++        response="TVAL", reference=~DiscUnif(0,3),
++        control=control.ergm(init=c(geo.init, rep(0, npar)),
++                             MCMLE.maxit=36,MCMC.runtime.traceplot=F,seed=24,
++                             MCMLE.trustregion=1000,MCMC.addto.se=T,
++                           parallel.type="SOCK",parallel=8,
++                             MPLE.max.dyad.types=1e+7,MCMC.samplesize=200000,
++                             MCMC.burnin=15000,MCMC.interval=1500,MCMLE.steplength=.25,
++                             MCMC.prop.args=list(p0=0.5)),eval.loglik=F,verbose=T)
+Evaluating network in model
+Initializing Metropolis-Hastings proposal(s): ergm:MH_DiscUnif
+Initializing model.
+Fitting initial model.
+Fitting ERGM.
+Density guard set to 20989 from an initial count of 1045  edges.
+Iteration 1 of at most 36 with parameter: 
+                          sum                    mutual.min 
+                    -3.091141                      0.000000 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                     0.000000                      0.000000 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                     0.000000                      0.000000 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                     0.000000                      0.000000 
+     nodefactor.sum.Central.1 
+                     0.000000 
+Using SOCK.
+Sample size = 200000 by 25000 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                     -3.88177                    -268.31162 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                   -617.71673                     -26.68771 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                  -7610.34573                     -25.22701 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                  -6295.27055                     -28.03383 
+     nodefactor.sum.Central.1 
+                   -580.49771 
+Average estimating equation values:
+                          sum                    mutual.min 
+                     -3.88177                    -268.31162 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                   -617.71673                     -26.68771 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                  -7610.34573                     -25.22701 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                  -6295.27055                     -28.03383 
+     nodefactor.sum.Central.1 
+                   -580.49771 
+Calling MCMLE Optimization...
+Using Newton-Raphson Step with step length  0.25  ...
+Using lognormal metric (see control.ergm function).
+Optimizing loglikelihood
+Starting MCMC s.e. computation.
+The log-likelihood improved by 53.59 
+Step length converged once. Increasing MCMC sample size.
+Iteration 2 of at most 36 with parameter: 
+                          sum                    mutual.min 
+                -3.3022415547                  0.6087375740 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                 0.1468314366                  0.7498021455 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                 0.0170503549                 -0.0003444682 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                 0.0004806784                  0.0179857071 
+     nodefactor.sum.Central.1 
+                 0.0221996317 
+Using SOCK.
+Sample size = 800000 by 1e+05 
+Back from unconstrained MCMC. Average statistics:
+                          sum                    mutual.min 
+                   200.134634                   -215.320358 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                  -314.929827                    -16.027713 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                 -6550.950722                   1722.307846 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                 -2441.547228                     -8.613775 
+     nodefactor.sum.Central.1 
+                  -517.206554 
+Average estimating equation values:
+                          sum                    mutual.min 
+                   200.134634                   -215.320358 
+transitiveweights.min.max.min                nodeisqrtcovar 
+                  -314.929827                    -16.027713 
+         nodecov.sum..NUMRESP        nodecov.sum..NUMGROUPS 
+                 -6550.950722                   1722.307846 
+       nodecov.sum..MEANYEARS         nodematch.sum.ORGTYPE 
+                 -2441.547228                     -8.613775 
+     nodefactor.sum.Central.1 
+                  -517.206554 
