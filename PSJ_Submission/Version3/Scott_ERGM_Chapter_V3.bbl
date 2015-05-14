@@ -84,26 +84,24 @@
       \field{pages}{543\bibrangedash 571}
     \endentry
     \entry{berardo2014}{article}{}
-      \name{labelname}{3}{}{%
+      \name{labelname}{1}{}{%
         {{hash=72d08c8bd045a0b2b433e961bbf9b159}{Berardo}{B\bibinitperiod}{Ramiro}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=dcbc2bf0115a6c90ac65e52e6ccb531f}{Heikkila}{H\bibinitperiod}{Tanya}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=ea8a63481bb5f345be7e01479371c7af}{Gerlak}{G\bibinitperiod}{Andrea\bibnamedelima K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
       }
-      \name{author}{3}{}{%
+      \name{author}{1}{}{%
         {{hash=72d08c8bd045a0b2b433e961bbf9b159}{Berardo}{B\bibinitperiod}{Ramiro}{R\bibinitperiod}{}{}{}{}}%
-        {{hash=dcbc2bf0115a6c90ac65e52e6ccb531f}{Heikkila}{H\bibinitperiod}{Tanya}{T\bibinitperiod}{}{}{}{}}%
-        {{hash=ea8a63481bb5f345be7e01479371c7af}{Gerlak}{G\bibinitperiod}{Andrea\bibnamedelima K.}{A\bibinitperiod\bibinitdelim K\bibinitperiod}{}{}{}{}}%
       }
-      \strng{namehash}{64bc78f28bd5176a06cc82dd77e69460}
-      \strng{fullhash}{bd7038026162d2fd37ef7fedf86616a4}
+      \strng{namehash}{72d08c8bd045a0b2b433e961bbf9b159}
+      \strng{fullhash}{72d08c8bd045a0b2b433e961bbf9b159}
       \field{sortinit}{B}
       \field{labelyear}{2014}
       \field{datelabelsource}{}
-      \field{labeltitle}{Interorganizational Engagement in Collaborative Environmental Management: Evidence from the South Florida Ecosystem Restoration Task Force}
-      \field{journaltitle}{Journal of Public Administration Research and Theory}
-      \field{title}{Interorganizational Engagement in Collaborative Environmental Management: Evidence from the South Florida Ecosystem Restoration Task Force}
+      \field{labeltitle}{Bridging and Bonding Capital in {Two-Mode} Collaboration Networks}
+      \field{journaltitle}{Policy Studies Journal}
+      \field{number}{2}
+      \field{title}{Bridging and Bonding Capital in {Two-Mode} Collaboration Networks}
+      \field{volume}{42}
       \field{year}{2014}
-      \field{pages}{muu003}
+      \field{pages}{197\bibrangedash 225}
     \endentry
     \entry{berardo2010}{article}{}
       \name{labelname}{2}{}{%
@@ -1685,7 +1683,7 @@
       \field{year}{2011}
       \field{pages}{151\bibrangedash 177}
     \endentry
-    \entry{scott2015}{article}{}
+    \entry{scott2015-a}{article}{}
       \name{labelname}{2}{}{%
         {{hash=502f4ce42c548570d9fa198f78d582d0}{Scott}{S\bibinitperiod}{Tyler}{T\bibinitperiod}{}{}{}{}}%
         {{hash=47444349cf0299142ed8e4fcc540e950}{Thomas}{T\bibinitperiod}{Craig}{C\bibinitperiod}{}{}{}{}}%
@@ -1907,7 +1905,7 @@
       \endverb
     \endentry
   \endsortlist
-  \missing{handock2014-a}
+  \missing{handcock2014a}
 \endrefsection
 \endinput
 

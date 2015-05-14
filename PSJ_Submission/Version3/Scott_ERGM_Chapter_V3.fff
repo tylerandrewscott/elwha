@@ -18,3 +18,13 @@
 \end{figure}
 \efloatseparator
  
+\begin{figure}[!ht]
+\caption{\textit{Density of Simulated Network Statistics}}
+\graphicspath{ {`/Users/TScott/Google\space Drive/elwha/PSJ_Submission/Version3'}}
+\noindent
+\includegraphics[width=6.5in]
+{simulationplot}
+\label{figure:simplots}
+\end{figure}
+\efloatseparator
+ 

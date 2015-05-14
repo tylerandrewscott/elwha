@@ -1,0 +1,166 @@
+
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> rm(list=ls())
+> 
+> install.packages('Rglpk')
+Installing package into ‘/homes/tscott1/R/x86_64-pc-linux-gnu-library/3.2’
+(as ‘lib’ is unspecified)
+trying URL 'http://cran.fhcrc.org/src/contrib/Rglpk_0.6-0.tar.gz'
+Content type 'application/x-gzip' length 18284 bytes (17 KB)
+==================================================
+downloaded 17 KB
+
+* installing *source* package ‘Rglpk’ ...
+** package ‘Rglpk’ successfully unpacked and MD5 sums checked
+** libs
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_initialize.c -o Rglpk_initialize.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_read_file.c -o Rglpk_read_file.o
+gcc -std=gnu99 -I/usr/share/R/include -DNDEBUG      -fpic  -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -g  -c Rglpk_solve.c -o Rglpk_solve.o
+gcc -std=gnu99 -shared -L/usr/lib/R/lib -Wl,-z,relro -o Rglpk.so Rglpk_initialize.o Rglpk_read_file.o Rglpk_solve.o -lglpk -L/usr/lib/R/lib -lR
+installing to /homes/tscott1/R/x86_64-pc-linux-gnu-library/3.2/Rglpk/libs
+** R
+** inst
+** preparing package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (Rglpk)
+
+The downloaded source packages are in
+	‘/tmp/RtmpjvVHYw/downloaded_packages’
+> library(ergm)
+Loading required package: statnet.common
+Loading required package: network
+network: Classes for Relational Data
+Version 1.12.0 created on 2015-03-04.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+> library(coda)
+> library(mail)
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
+> load('result_allpartmod.RData')
+> load('result_allpartmodquad.RData')
+> load('result_base.RData')
+> load('result_dirpart.RData')
+> load('result_indpart.RData')
+> load('result_shapart.RData')
+> load('result_pasttie.RData')
+> 
+> small.control = control.logLik.ergm(
++   nsteps=4,
++   MCMC.burnin=100,
++   MCMC.interval=100,
++   MCMC.samplesize=1000,
++   obs.MCMC.samplesize=1000,
++   obs.MCMC.interval=100,
++   obs.MCMC.burnin=100,
++   MCMC.prop.args=list(p0=0.5),
++   warn.dyads=TRUE,
++   MCMC.init.maxedges=NULL,
++   MCMC.packagenames=NULL,
++   seed=24)
+> 
+> 
+> mod_base = logLik(object = mod_base,
++                   add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.4184121760, 0.1702782140, 0.0104868236, 0.0155715265,-0.0011470551, 0.0007645405, 0.0263831123].
+Running theta=[-1.534177979, 0.624353451, 0.038451687, 0.057095597,-0.004205869, 0.002803315, 0.096738078].
+Running theta=[-2.649943781, 1.078428689, 0.066416550, 0.098619668,-0.007264682, 0.004842090, 0.167093045].
+Running theta=[-3.765709584, 1.532503926, 0.094381413, 0.140143738,-0.010323496, 0.006880864, 0.237448011].
+> 
+> mod_allpart = logLik.ergm(object = mod_allpart,
++                           add = TRUE,verbose=T,
++                           control=small.control)
+Running theta=[-0.4194302944, 0.1658278428, 0.0095821012, 0.0116220911,-0.0009096973, 0.0006932839, 0.0284204093, 0.0026454911].
+Running theta=[-1.537911080, 0.608035424, 0.035134371, 0.042614334,-0.003335557, 0.002542041, 0.104208167, 0.009700134].
+Running theta=[-2.656391865, 1.050243004, 0.060686641, 0.073606577,-0.005761416, 0.004390798, 0.179995925, 0.016754777].
+Running theta=[-3.774872650, 1.492450585, 0.086238911, 0.104598820,-0.008187275, 0.006239555, 0.255783683, 0.023809419].
+> 
+> mod_allpartquad = logLik.ergm(object = mod_allpartquad,
++                               add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.4241424646, 0.1550708643, 0.0119359819, 0.0069646222,-0.0011314445, 0.0007567194, 0.0204304986, 0.0087595515,-0.0001631118].
+Running theta=[-1.5551890368, 0.5685931692, 0.0437652669, 0.0255369482,-0.0041486299, 0.0027746378, 0.0749118283, 0.0321183556,-0.0005980768].
+Running theta=[-2.686235609, 0.982115474, 0.075594552, 0.044109274,-0.007165815, 0.004792556, 0.129393158, 0.055477160,-0.001033042].
+Running theta=[-3.817282181, 1.395637779, 0.107423837, 0.062681600,-0.010183001, 0.006810475, 0.183874488, 0.078835964,-0.001468007].
+> 
+> mod_dirpart = logLik.ergm(object = mod_dirpart,
++                           add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.420368995, 0.126516608, 0.027640792, 0.006918536,-0.001610363, 0.001089113, 0.025456398, 0.053836966, 0.086063173,-0.003318642].
+Running theta=[-1.541352982, 0.463894231, 0.101349571, 0.025367965,-0.005904664, 0.003993416, 0.093340126, 0.197402208, 0.315564968,-0.012168355].
+Running theta=[-2.662336968, 0.801271853, 0.175058349, 0.043817394,-0.010198965, 0.006897718, 0.161223854, 0.340967450, 0.545066764,-0.021018067].
+Running theta=[-3.78332096, 1.13864948, 0.24876713, 0.06226682,-0.01449327, 0.00980202, 0.22910758, 0.48453269, 0.77456856,-0.02986778].
+> 
+> mod_indpart = logLik.ergm(object = mod_indpart,
++                           add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.466589960, 0.156886952, 0.006864813, 0.011982547,-0.001925949, 0.001231440, 0.024485688, 0.014621214, 0.011651305,-0.002644310].
+Running theta=[-1.710829855, 0.575252157, 0.025170982, 0.043936005,-0.007061814, 0.004515278, 0.089780856, 0.053611117, 0.042721450,-0.009695804].
+Running theta=[-2.955069750, 0.993617363, 0.043477151, 0.075889463,-0.012197678, 0.007799117, 0.155076024, 0.092601020, 0.073791596,-0.016747297].
+Running theta=[-4.19930964, 1.41198257, 0.06178332, 0.10784292,-0.01733354, 0.01108296, 0.22037119, 0.13159092, 0.10486174,-0.02379879].
+> 
+> 
+> mod_shapart = logLik.ergm(object = mod_shapart,
++                           add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.423691847, 0.069090520, 0.025097717, 0.008001035,-0.001758904, 0.001148691, 0.022639338, 0.112165970, 0.158818361,-0.011141138].
+Running theta=[-1.553536773, 0.253331905, 0.092024961, 0.029337128,-0.006449315, 0.004211867, 0.083010908, 0.411275224, 0.582333989,-0.040850839].
+Running theta=[-2.683381698, 0.437573291, 0.158952205, 0.050673221,-0.011139725, 0.007275043, 0.143382477, 0.710384477, 1.005849617,-0.070560540].
+Running theta=[-3.81322662, 0.62181468, 0.22587945, 0.07200931,-0.01583014, 0.01033822, 0.20375405, 1.00949373, 1.42936525,-0.10027024].
+> 
+> modpast_pasttie = logLik.ergm(object = modpast_pasttie,
++                               add = TRUE,verbose=T,control=small.control)
+Running theta=[-0.495371375, 0.096303680, 0.052291436, 0.002489375,-0.002210478, 0.001439108, 0.009711763, 0.472653498, 0.164825632,-0.020455900,-0.088402108].
+Running theta=[-1.816361707, 0.353113494, 0.191735265, 0.009127707,-0.008105087, 0.005276729, 0.035609798, 1.733062826, 0.604360652,-0.075004966,-0.324141063].
+Running theta=[-3.13735204, 0.60992331, 0.33117909, 0.01576604,-0.01399970, 0.00911435, 0.06150783, 2.99347215, 1.04389567,-0.12955403,-0.55988002].
+Running theta=[-4.45834237, 0.86673312, 0.47062292, 0.02240437,-0.01989430, 0.01295197, 0.08740587, 4.25388148, 1.48343069,-0.18410310,-0.79561897].
+> 
+> save.image('small_logliks.RData')
+> sendmail(recipient = 'tyler.andrew.scott@gmail.com','test loglik values added','add loglik finished')
+[1] "Message was sent to tyler.andrew.scott@gmail.com! You have 19 messages left."
+> # test <- lapply(1:100,function(x) rnorm(10000))
+> # system.time(x <- lapply(test,function(x) loess.smooth(x,x)))
+> # system.time(x <- mclapply(test,function(x) loess.smooth(x,x), mc.cores=7))
+> 

@@ -1,0 +1,3 @@
+setwd('//Users/TScott/Google Drive/elwha/data_files')
+resp.dat=read.csv(file="Response.Used.csv",row.names=1)
+names(resp.dat)

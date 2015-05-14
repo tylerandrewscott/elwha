@@ -1,0 +1,286 @@
+
+R version 3.2.0 (2015-04-16) -- "Full of Ingredients"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> require(statnet)
+Loading required package: statnet
+Loading required package: network
+network: Classes for Relational Data
+Version 1.12.0 created on 2015-03-04.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Martina Morris, University of Washington
+                    Skye Bender-deMoll, University of Washington
+ For citation information, type citation("network").
+ Type help("network-package") to get started.
+
+Loading required package: ergm
+Loading required package: statnet.common
+
+ergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Martina Morris, University of Washington
+                    with contributions from
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm").
+
+NOTE: If you use custom ERGM terms based on ‘ergm.userterms’ version
+prior to 3.1, you will need to perform a one-time update of the package
+boilerplate files (the files that you did not write or modify) from
+‘ergm.userterms’ 3.1 or later. See help('eut-upgrade') for
+instructions.
+
+Loading required package: sna
+sna: Tools for Social Network Analysis
+Version 2.3-2 created on 2014-01-13.
+copyright (c) 2005, Carter T. Butts, University of California-Irvine
+ For citation information, type citation("sna").
+ Type help(package="sna") to get started.
+
+
+Attaching package: ‘sna’
+
+The following object is masked from ‘package:network’:
+
+    %c%
+
+Loading required package: networkDynamic
+
+networkDynamic: version 0.7.1, created on 2014-09-29
+Copyright (c) 2014, Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll, University of Washington
+                    with contributions from
+                    Zack Almquist, University of California -- Irvine
+                    David R. Hunter, Penn State University
+                    Li Wang
+                    Kirk Li, University of Washington
+                    Steven M. Goodreau, University of Washington
+                    Jeffrey Horner
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("networkDynamic").
+
+Loading required package: tergm
+
+tergm: version 3.2.4, created on 2014-12-13
+Copyright (c) 2014, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    David R. Hunter, Penn State University
+                    Steven M. Goodreau, University of Washington
+                    Martina Morris, University of Washington
+                    Nicole Bohme Carnegie, New York University
+                    Carter T. Butts, University of California -- Irvine
+                    Ayn Leslie-Cook, University of Washington
+                    Skye Bender-deMoll
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("tergm").
+
+Loading required package: ergm.count
+
+ergm.count: version 3.1.1, created on 2013-03-29
+Copyright (c) 2013, Pavel N. Krivitsky, University of Wollongong
+                    with contributions from
+                    Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("ergm.count").
+
+Loading required package: latentnet
+
+latentnet: version 2.7.0, created on 2015-03-21
+Copyright (c) 2015, Pavel N. Krivitsky, University of Wollongong
+                    Mark S. Handcock, University of California -- Los Angeles
+                    with contributions from
+                    Susan M. Shortreed
+                    Jeremy Tantrum
+                    Peter D. Hoff
+                    Li Wang
+                    Kirk Li, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("latentnet").
+NOTE: BIC calculation prior latentnet 2.7.0 had a bug in the calculation of the effective number of parameters. See help(summary.ergmm) for details.
+
+statnet: version 2014.2.0, created on 2014-02-05
+Copyright (c) 2014, Mark S. Handcock, University of California -- Los Angeles
+                    David R. Hunter, Penn State University
+                    Carter T. Butts, University of California -- Irvine
+                    Steven M. Goodreau, University of Washington
+                    Pavel N. Krivitsky, University of Wollongong
+                    Skye Bender-deMoll
+                    Martina Morris, University of Washington
+Based on "statnet" project software (statnet.org).
+For license and citation information see statnet.org/attribution
+or type citation("statnet").
+
+> require(ggplot2)
+Loading required package: ggplot2
+> require(ggmcmc)
+Loading required package: ggmcmc
+Loading required package: dplyr
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:stats’:
+
+    filter
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading required package: tidyr
+> require(grid)
+Loading required package: grid
+> library(ergm)
+> library(reshape2)
+> library(plyr)
+------------------------------------------------------------------------------
+You have loaded plyr after dplyr - this is likely to cause problems.
+If you need functions from both plyr and dplyr, please load plyr first, then dplyr:
+library(plyr); library(dplyr)
+------------------------------------------------------------------------------
+
+Attaching package: ‘plyr’
+
+The following objects are masked from ‘package:dplyr’:
+
+    arrange, count, desc, failwith, id, mutate, rename, summarise,
+    summarize
+
+The following object is masked from ‘package:network’:
+
+    is.discrete
+
+> library(dplyr)
+> 
+> rm(list=ls())
+> setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
+> 
+> load('/homes/tscott1/win/result_base.RData')
+> 
+> temp2<-ggs(mod_base$sample)
+> 
+> 
+> levels(temp2$Parameter)<-c("Sum","Mutual","Transitive Weights",
++                            "Number Resp.","Number Groups", 'Mean Years', 'Org. Type')
+> 
+> 
+> ggdu = ggplot(data=temp2,aes(colour=as.character(Chain),x=Iteration,y=value))+
++   geom_line(aes(),size=.10,alpha=.75)+
++   facet_wrap(~Parameter,scales="free")+
++   scale_colour_brewer(type="qual",palette='Set1',guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,override.aes=list(size=1.5,alpha=1)))+
++   scale_x_continuous("Iteration",expand=c(0,0),breaks = c(10000,20000),labels=c('10000','20000'))+
++   scale_y_continuous("Parameter Value")+
++   theme_bw()+
++   theme(axis.text=element_text(size=10),
++         axis.title = element_text(size=12),
++         legend.title = element_text(size=12),
++         legend.text = element_text(size=10),
++         legend.position=c(.85,.15),legend.text.align=.5,
++         axis.text=element_text(size=6),legend.title.align=.5, legend.key.size=unit(.5,'cm'),
++         legend.background = element_rect(colour = "black"))
+> 
+> ggsave(ggdu,filename="traceplotdu.png")
+Saving 7 x 7 in image
+Fontconfig warning: "/etc/fonts/conf.d/65-droid-sans-fonts.conf", line 103: Having multiple values in <test> isn't supported and may not work as expected
+Fontconfig warning: "/etc/fonts/conf.d/65-droid-sans-fonts.conf", line 138: Having multiple values in <test> isn't supported and may not work as expected
+> rm(ggdu)
+> 
+> 
+> ggdudens = ggplot(data=temp2,aes(colour=as.character(Chain),x=value))+
++   geom_density(aes(),size=.5,trim=TRUE,adjust=1.5)+ 
++   facet_wrap(~Parameter,scales="free")+
++   scale_colour_brewer(type="qual",palette='Set1',
++                       guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,
++                                          override.aes=list(size=.5,alpha=1)))+
++   scale_x_continuous("Parameter Value",expand=c(0,0))+
++   scale_y_continuous("Density") +
++   theme_bw()+
++   theme(axis.text=element_text(size=10),
++         axis.title = element_text(size=12),
++         legend.title = element_text(size=12),
++         legend.text = element_text(size=10),
++         legend.position=c(.85,.15),legend.text.align=.5, 
++         legend.title.align=.5, legend.key.size=unit(.5,'cm'),
++         axis.text=element_text(size=6),
++         legend.background = element_rect(colour = "black"))
+> 
+> ggsave(ggdudens,filename="densityplotdu.png")
+Saving 7 x 7 in image
+> rm(ggdudens)
+> 
+> 
+> sim = simulate.ergm(mod_base,nsim = 50000,statsonly=TRUE,control=control.simulate.ergm(MCMC.burnin=15000,
++                                                                                        MCMC.interval=1500,
++                                                                                        MCMC.prop.args=list(p0=0.5),
++                                                                                        MCMC.runtime.traceplot=FALSE,
++                                                                                        parallel=8,
++                                                                                        parallel.type='SOCK'))
+> sim.dat = melt(sim,id.vars=nrow(sim))
+> 
+> net.obs <- data.frame(summary(mod_base$formula,
++                               response="TVAL",reference=~DiscUnif(0,3)))
+> 
+> names(net.obs)[1] = 'Observed.Value'
+> net.obs[,2] = rownames(net.obs)
+> names(net.obs)[2] = 'Var2'
+> 
+> sim.dat= join(sim.dat,net.obs)
+Joining by: Var2
+> 
+> levels(sim.dat$Var2) = c('Sum','Mutual','Transitive Weights','Number Resp.','Number Groups','Mean Years','Org. Type')
+> 
+> sim.plot = ggplot(sim.dat) + 
++   geom_density(aes(x=value),adjust=1.5,colour='black',trim=TRUE) + facet_wrap(~Var2,scales='free') + 
++   geom_vline(aes(xintercept=Observed.Value,linetype = "expected"),show_guide = TRUE,lwd=1.25)+
++   theme_bw()  + ylab('Density') + xlab('Simulated Value') + 
++   theme(panel.background=element_blank(),
++         panel.grid = element_blank(),
++         axis.title = element_text(size=12),
++         strip.text = element_text(size=12),
++         axis.text = element_text(size=10),
++         legend.position=c(.7,.2),
++         legend.key.height = unit(2,'cm'),
++        # legend.title = element_blank(),
++         legend.text = element_text(size=12))+
++   scale_linetype_manual(name='',values = 2,labels='Observed value')
+> 
+> ggsave(sim.plot,filename="simulationplot.png",dpi=500)
+Saving 7 x 7 in image
+> rm(sim.plot)
+> 
+> 
+> 
+> 
