@@ -4,10 +4,17 @@ require(stargazer)
 require(grid)
 rm(list=ls())
 
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
-load('small_logliks.RData')
 
-
+setwd('/homes/tscott1/win/')
+load('result_base_wll.RData')
+load('result_allpartmodquad_wll.RData')
+load('result_allpartmod_wll.RData')
+load('result_dirpart_wll.RData')
+load('result_indpart_wll.RData')
+load('result_shapart_wll.RData')
+load('result_pasttie_wll.RData')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
+#load('small_logliks.RData')
 
 #setwd('//Users/TScott/Google Drive/elwha/PSJ_Submission/Version3')
 # load('result_base.RData')

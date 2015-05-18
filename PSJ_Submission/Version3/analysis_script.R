@@ -380,23 +380,6 @@ stargazer(mod_base,mod_allpart,mod_allpartquad, covariate.labels=
           dep.var.labels.include=FALSE)
 sink()
 
-# 
-# sink('splitpart.tex')
-# stargazer(mod_indpart1, mod_indpart2, mod_indpart3, covariate.labels=
-#             c('Group Partic. non-PSP', 'Group Partic. PSP', 'Group Partic. non-PSP*PSP'),
-#           digits=2, title = 'Existing Groups',label='table:splitpart',
-#           style='jpam',
-#           dep.var.caption=NULL,
-#           dep.var.labels=NULL,
-#           omit = 1:7,
-#           model.numbers=FALSE,
-#           column.separate = c(1,1), 
-#           column.labels=c('Non-PSP','PSP + Non-PSP','PSP * Non-PSP'),
-#           digits.extra=2,float=TRUE,
-#           #header=FALSE, 
-#           dep.var.labels.include=FALSE)  
-# sink()
-
 sink('multipart.tex')
 stargazer(mod_indpart, mod_dirpart, mod_shapart, covariate.labels=
             c('Group Partic. non-PSP', 'Group Partic. PSP', 'Group Partic. non-PSP*PSP'),
