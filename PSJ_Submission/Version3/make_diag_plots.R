@@ -8,7 +8,7 @@ library(plyr)
 library(dplyr)
 
 rm(list=ls())
-setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/min_versions/')
+setwd('/homes/tscott1/win/user/elwha/PSJ_Submission/Version3/')
 
 load('/homes/tscott1/win/result_base.RData')
 
@@ -80,9 +80,13 @@ sim.dat= join(sim.dat,net.obs)
 levels(sim.dat$Var2) = c('Sum','Mutual','Transitive Weights','Number Resp.','Number Groups','Mean Years','Org. Type')
 
 sim.plot = ggplot(sim.dat) + 
-  geom_density(aes(x=value),adjust=1.5,colour='black',trim=TRUE) + facet_wrap(~Var2,scales='free') + 
+  #geom_density(aes(x=value),adjust=1.5,colour='black',trim=TRUE) + 
+  geom_line(aes(x=value),stat='density',adjust=1.5,colour='black',trim=TRUE) + 
+  facet_wrap(~Var2,scales='free') + 
   geom_vline(aes(xintercept=Observed.Value,linetype = "expected"),show_guide = TRUE,lwd=1.25)+
   theme_bw()  + ylab('Density') + xlab('Simulated Value') + 
+  scale_x_continuous(breaks=pretty_breaks(n=3))+
+ # scale_x_continuous(breaks = c(min(df$x), 0, max(df$x)))
   theme(panel.background=element_blank(),
         panel.grid = element_blank(),
         axis.title = element_text(size=12),
