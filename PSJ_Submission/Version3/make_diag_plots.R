@@ -19,43 +19,46 @@ levels(temp2$Parameter)<-c("Sum","Mutual","Transitive Weights",
                            "Number Resp.","Number Groups", 'Mean Years', 'Org. Type')
 
 
-ggdu = ggplot(data=temp2,aes(colour=as.character(Chain),x=Iteration,y=value))+
-  geom_line(aes(),size=.10,alpha=.75)+
+ggdu = ggplot(data=temp2,aes(colour=as.character(Chain),x=Iteration,y=value),alpha=0.75)+
+  geom_line(aes(),size=.05,alpha=1)+
   facet_wrap(~Parameter,scales="free")+
-  scale_colour_brewer(type="qual",palette='Set1',guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,override.aes=list(size=1.5,alpha=1)))+
+  scale_colour_grey(guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,override.aes=list(size=1.5,alpha=1)))+
+ # scale_colour_brewer(type="qual",palette='Set1',guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,override.aes=list(size=1.5,alpha=1)))+
   scale_x_continuous("Iteration",expand=c(0,0),breaks = c(10000,20000),labels=c('10000','20000'))+
   scale_y_continuous("Parameter Value")+
   theme_bw()+
-  theme(axis.text=element_text(size=10),
+  theme(panel.background=element_blank(),
+        panel.grid = element_blank(),
         axis.title = element_text(size=12),
-        legend.title = element_text(size=12),
-        legend.text = element_text(size=10),
-        legend.position=c(.85,.15),legend.text.align=.5,
-        axis.text=element_text(size=6),legend.title.align=.5, legend.key.size=unit(.5,'cm'),
-        legend.background = element_rect(colour = "black"))
+        strip.text = element_text(size=12),
+        axis.text = element_text(size=10),
+        legend.position=c(.85,.15),legend.text.align=.5, 
+        legend.title.align=.5, legend.key.size=unit(.5,'cm'),
+        # legend.title = element_blank(),
+        legend.text = element_text(size=12))
 
 ggsave(ggdu,filename="traceplotdu.png")
 rm(ggdu)
 
 
-ggdudens = ggplot(data=temp2,aes(colour=as.character(Chain),x=value))+
-  geom_density(aes(),size=.5,trim=TRUE,adjust=1.5)+ 
+ggdudens = ggplot(data=temp2,aes(colour=as.character(Chain),x=value),alpha=0.75)+
+  geom_density(aes(),size=.5,trim=TRUE,adjust=1.75)+ 
   facet_wrap(~Parameter,scales="free")+
-  scale_colour_brewer(type="qual",palette='Set1',
-                      guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,
-                                         override.aes=list(size=.5,alpha=1)))+
+  scale_colour_grey(guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2,override.aes=list(size=1.5,alpha=1)))+
+  #scale_colour_brewer(type="qual",palette='Set1', guide=guide_legend(title="MCMC Chain", label.position="bottom",nrow=2, override.aes=list(size=.5,alpha=1)))+
   scale_x_continuous("Parameter Value",expand=c(0,0))+
   scale_y_continuous("Density") +
   theme_bw()+
-  theme(axis.text=element_text(size=10),
+  theme(panel.background=element_blank(),
+        panel.grid = element_blank(),
         axis.title = element_text(size=12),
-        legend.title = element_text(size=12),
-        legend.text = element_text(size=10),
+        strip.text = element_text(size=12),
+        axis.text = element_text(size=10),
         legend.position=c(.85,.15),legend.text.align=.5, 
         legend.title.align=.5, legend.key.size=unit(.5,'cm'),
-        axis.text=element_text(size=6),
-        legend.background = element_rect(colour = "black"))
-
+        # legend.title = element_blank(),
+        legend.text = element_text(size=12))
+  
 ggsave(ggdudens,filename="densityplotdu.png")
 rm(ggdudens)
 
