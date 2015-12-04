@@ -84,16 +84,12 @@ vignettes/*.html
 vignettes/*.pdf
 
 .Rproj.user
-Readingsx/
-Docfiles/
-Icon?
+
 Icon\r
-Code/Icon\r
-Input/Icon\r
-Icon\r
-Scraps/Icon\r
-Readingsx
-Input/neep
-Input/master.wq.data.csv
 Icon?
-Input/Icon?
+*/Icon?
+*Icon\r
+Scraps
+Deliverables
+Scraps/*
+Deliverables/*
