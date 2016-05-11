@@ -93,3 +93,7 @@ Scraps
 Deliverables
 Scraps/*
 Deliverables/*
+output/*
+output
+*.RData
+*.RData
